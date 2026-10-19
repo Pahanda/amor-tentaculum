@@ -1,0 +1,303 @@
+<Defs>
+<ThingDef ParentName="BuildingBase">
+    <defName>Turret_Tentacle</defName>
+    <label>Amor Defender</label>
+    <description>A portable tentacle that grows more like a plant. Fires low damage spikes at long range.</description>
+    <thingClass>Building_TurretGun</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Buildings/Turret/TTurretBase</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <uiIconPath>Things/Buildings/Turret/TTurretHead</uiIconPath>
+    <uiIconScale>0.90</uiIconScale>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+    <stealable>false</stealable>
+    <rotatable>false</rotatable>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>0.7</Flammability>
+      <WorkToBuild>1800</WorkToBuild>
+      <Mass>8</Mass>
+      <Beauty>-20</Beauty>
+      <ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+    </statBases>
+    <tickerType>Normal</tickerType>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <fillPercent>0.4</fillPercent>
+    <hasTooltip>true</hasTooltip>
+    <costList>
+      <Hresin>25</Hresin>
+      <SmallTEggFert>1</SmallTEggFert>
+    </costList>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Security</designationCategory>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <building>
+      <combatPower>45</combatPower>   <!-- same as a scavenger -->
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>Gun_TentacleTurret</turretGunDef>
+      <turretBurstCooldownTime>2.8</turretBurstCooldownTime>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_ShowTurretRadius</li>
+    </placeWorkers>
+      <researchPrerequisites>
+          <li>ATStrut</li>
+      </researchPrerequisites>
+    <designationHotKey>Misc2</designationHotKey>
+  </ThingDef>
+
+<ThingDef ParentName="BaseWeaponTurret">
+    <defName>Gun_TentacleTurret</defName>
+    <label>turret tentacle</label>
+    <description>A spike firing tentacle defending it's colony.</description>
+    <graphicData>
+      <texPath>Things/Buildings/Turret/TTurretHead</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1,1)</drawSize>
+    </graphicData>
+    <statBases>
+      <AccuracyTouch>0.97</AccuracyTouch>
+      <AccuracyShort>0.95</AccuracyShort>
+      <AccuracyMedium>0.87</AccuracyMedium>
+      <AccuracyLong>0.75</AccuracyLong>
+      <RangedWeapon_Cooldown>0.6</RangedWeapon_Cooldown>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <verbs>
+      <li>
+        <verbClass>Verb_Shoot</verbClass>
+        <defaultProjectile>Bullet_TentTurret</defaultProjectile>
+        <warmupTime>0</warmupTime>
+        <range>50</range>
+        <ticksBetweenBurstShots>2</ticksBetweenBurstShots>
+        <burstShotCount>1</burstShotCount>
+        <soundCast>Gorehulk_Spine_Launch</soundCast>
+      </li>
+    </verbs>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseBullet">
+    <defName>Bullet_TentTurret</defName>
+    <label>tentacle spike</label>
+    <graphicData>
+      <texPath>Things/Projectile/Projectile_Fingerspike</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>5</damageAmountBase>
+      <armorPenetrationBase>1</armorPenetrationBase>
+      <stoppingPower>1</stoppingPower>
+      <speed>75</speed>
+    </projectile>
+  </ThingDef>
+
+   <ThingDef ParentName="BuildingBase">
+    <defName>THeater</defName>
+    <label>Amor Calor</label>
+    <description>A stationary Amor tentacle that generates heat. Requires no fuel or power, but generates less heat than industrial counterparts. The smell is some what suspicious.</description>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Buildings/Heater/HeaterT</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.2,1.2)</drawSize>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+      <shadowData>
+        <volume>(0,0,0)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0,0.6,0.1)</rect>
+      </damageData>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <constructEffect>ConstructDirt</constructEffect>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.40</fillPercent>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Flammability>1</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <costList>
+      <softresin>50</softresin>
+      <SmallTEggFert>1</SmallTEggFert>
+    </costList>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+    </building>
+    <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>10</heatPerSecond>
+        <heatPushMinTemperature>-60</heatPushMinTemperature>
+      </li>
+      <li Class="CompProperties_ThrownFleckEmitter">
+        <fleck>Smoke</fleck>
+        <offsetMin>(-2,0,3)</offsetMin>
+        <offsetMax>(2,0,3)</offsetMax>
+        <emissionInterval>15</emissionInterval>
+        <burstCount>2</burstCount>
+        <scale>1~2</scale>
+        <rotationRate>-30~30</rotationRate>
+        <velocityX>-40~40</velocityX>
+        <velocityY>0.5~1</velocityY>
+        <colorA>(203,120,227,1)</colorA>
+        <colorB>(203,20,227,1)</colorB>
+      </li>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <designationHotKey>Misc4</designationHotKey>
+    <researchPrerequisites>
+      <li>ATStrut</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+   <ThingDef ParentName="BuildingBase">
+    <defName>TCooler</defName>
+    <label>Amor Frigus</label>
+    <description>A stationary Amor tentacle that sucks in heat. Requires no fuel or power, but chills the air far below safe limits.</description>
+    <category>Building</category>
+    <graphicData>
+      <texPath>Things/Buildings/Heater/CoolerT</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <allowFlip>false</allowFlip>
+      <drawSize>(2,2)</drawSize>
+      <shadowData>
+        <volume>(0,0,0)</volume>
+      </shadowData>
+      <damageData>
+        <rect>(0.2,0,0.6,0.1)</rect>
+      </damageData>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <size>(2,2)</size>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <constructEffect>ConstructDirt</constructEffect>
+    <tickerType>Normal</tickerType>
+    <drawerType>RealtimeOnly</drawerType>
+    <fillPercent>0.40</fillPercent>
+    <statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <WorkToBuild>200</WorkToBuild>
+      <Flammability>1</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <costList>
+      <softresin>50</softresin>
+    </costList>
+    <building>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+    </building>
+    <soundImpactDefault>BulletImpact_Ground</soundImpactDefault>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>0</resourcesFractionWhenDeconstructed>
+    <placeWorkers>
+      <li>PlaceWorker_CoolerSimple</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>-22</heatPerSecond>
+        <heatPushMinTemperature>-90</heatPushMinTemperature>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(173, 216, 230, 0.2)</glowColor>
+      </li>
+    </comps>
+    <designationCategory>Temperature</designationCategory>
+    <designationHotKey>Misc4</designationHotKey>
+    <researchPrerequisites>
+      <li>ATStrut</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="DoorBase">
+    <defName>sphincterdoor</defName>
+    <label>sphincterdoor</label>
+    <description>Divides rooms. Organic tentacle sphincter allows people to move through the door without slowing down.</description>
+    <statBases>
+      <WorkToBuild>1100</WorkToBuild>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Buildings/Sphincter/DoorTS</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <damageData>
+        <enabled>false</enabled>
+      </damageData>
+    </graphicData>
+    <uiIconPath>Things/Buildings/Sphincter/DoorTSUI</uiIconPath>
+    <costList>
+      <Hresin>40</Hresin>
+      <SmallTEggFert>1</SmallTEggFert>
+    </costList>
+    <costStuffCount>25</costStuffCount>
+    <comps>
+      <li Class="CompProperties_Styleable" />
+    </comps>
+    <designationHotKey>Misc2</designationHotKey>
+    <researchPrerequisites>
+      <li>Autodoors</li>
+      <li>ATStrut</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
+
+    <TerrainDef ParentName="FloorBase">
+    <defName>TentFloor</defName>
+    <label>Tentacle floor</label>
+    <description>A warm, wriggling floor. Enhances cleanliness as the tentacles eat dust and bactiria. Might suck your toes.</description>
+    <texturePath>Things/Buildings/Floor/TentFloor</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>240</renderPrecedence>
+    <pathCost>0.98</pathCost>
+    <statBases>
+      <Beauty>1</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+      <WorkToBuild>400</WorkToBuild>
+      <FilthMultiplier>0.05</FilthMultiplier>
+    </statBases>
+    <costList>
+      <softresin>5</softresin>
+    </costList>
+        <researchPrerequisites>
+      <li>ATStrut</li>
+    </researchPrerequisites>
+  </TerrainDef>
+
+</Defs>

@@ -1,0 +1,27 @@
+<Defs>
+
+  <StatDef>
+    <defName>TStorage</defName>
+    <label>max brood</label>
+    <description>How many tentacles a host body can store.</description>
+    <offsetLabel>brood offset</offsetLabel>
+    <category>BasicsPawn</category>
+    <showOnDefaultValue>true</showOnDefaultValue>
+    <defaultBaseValue>0.01</defaultBaseValue>
+    <minValue>0.01</minValue>
+    <toStringStyle>FloatTwo</toStringStyle>
+  </StatDef>
+
+    <StatDef>
+    <defName>TStorageIncrease</defName>
+    <label>max brood multiplier</label>
+    <description>Increase the maximum brood of the host.</description>
+    <offsetLabel>brood multiplier</offsetLabel>
+    <category>BasicsPawn</category>
+    <showOnDefaultValue>true</showOnDefaultValue>
+    <defaultBaseValue>1</defaultBaseValue>
+    <minValue>1</minValue>
+    <toStringStyle>FloatTwo</toStringStyle>
+  </StatDef>
+
+</Defs>

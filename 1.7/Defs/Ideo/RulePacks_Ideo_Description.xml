@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<IdeoStoryPatternDef>
+		<defName>TentDescription</defName>
+		<segments>
+			<li>TentBasis</li>
+			<li>TentFact</li>
+			<li>TentProphecy</li>
+		</segments>
+		<rules>
+			<include>
+				<li>IdeoDescriptionGlobal</li>
+			</include>
+			<rulesStrings>
+
+				<li>TentBasis   ->Tentacles are cold. We should warm them up with our bodies.</li>
+				<li>TentBasis   ->Humans where created to be hosts for the Amor tentacles, we serve no other purpose.</li>
+				<li>TentBasis   ->The tentacle is the most sacred form life can take, it is our duty to serve them.</li>
+				<li>TentBasis   ->Our bodies are perfectly suited to hosting the Amor Tentacula spieces. We where created for eachother.</li>
+				<li>TentBasis   ->If we serve the tentacles with all our hearts they will deliver onto us divine pleasure and safety.</li>
+				<li>TentBasis   ->Amor tentacles are decinants of gods that walk among us in the flesh. We have no choice but to allow them free use of our bodies.</li>
+				<li>TentBasis   ->Divine purpose drives us to submit to the glory of the tentacle.</li>
+				<li>TentBasis   ->Our glorious tentacle children must be protected.</li>
+				<li>TentBasis   ->The purpose of life is to breed tentacles.</li>
+				<li>TentBasis   ->The purpose of life is to fuck tentacles.</li>
+
+				<li>TentFact    ->A [TentAdjective], [TentAdjective2], [TentAdjective3] tentacle, is a good tentacle.</li>
+				<li>TentFact    ->[TentAdjective], [TentAdjective2], [TentAdjective3] tentacles are the best.</li>
+				<li>TentFact    ->A body not filled with [TentAdjective] tentacles is wasted.</li>
+				<li>TentFact    ->All [TentAdjective2] tentacles must go in the ass, all [TentAdjective] tentacles must go down the throat.</li>
+
+				<li>itIsSaid->They who host the queen,</li>
+				<li>itIsSaid->The thickest of tentacles,</li>
+				<li>itIsSaid->The grand Amor Matrons,</li>
+				<li>itIsSaid->The holy Amor Warriors,</li>
+				<li>itIsSaid->They who can fit the largest tentacle,</li>
+				<li>itIsSaid->They who fillith every hole,</li>
+				<li>itIsSaid->It that yerns for our holes,</li>
+				
+				<li>TentProphecy->[itIsSaid] will become one with the universe.</li>
+				<li>TentProphecy->[itIsSaid] can fillith the holes of reality.</li>
+				<li>TentProphecy->[itIsSaid] is the most sacred being.</li>
+				<li>TentProphecy->[itIsSaid] will breed the Eater of Stars.</li>
+				<li>TentProphecy->[itIsSaid] will breed the Filler of Holes.</li>
+
+				<li>TentAdjective->slimy</li>
+				<li>TentAdjective->creamy</li>
+				<li>TentAdjective->fleshy</li>
+				<li>TentAdjective->ribbed</li>
+				<li>TentAdjective->thick</li>
+				<li>TentAdjective->moist</li>
+				
+				<li>TentAdjective2->drooling</li>
+				<li>TentAdjective2->sweet</li>
+				<li>TentAdjective2->warm</li>
+				<li>TentAdjective2->girthy</li>
+				
+				<li>TentAdjective3->pussy</li>
+				<li>TentAdjective3->cock</li>
+				<li>TentAdjective3->mouth</li>
+				<li>TentAdjective3->ass</li>
+				<li>TentAdjective3->anal</li>
+				
+			</rulesStrings>
+		</rules>
+	</IdeoStoryPatternDef>
+	
+</Defs>

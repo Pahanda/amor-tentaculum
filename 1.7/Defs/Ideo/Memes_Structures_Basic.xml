@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <MemeDef>
+    <defName>Structure_Tent</defName>
+    <label>tentacle</label>
+    <description>The amor tentacles love us, they are divine beings to whom we must surrender or bodies to their holy ecstasy.</description>
+    <category>Structure</category>
+	<iconPath>Ideo/UI/Structures/Tent</iconPath>
+	<impact>0</impact>
+    <deityCount>0</deityCount>
+    <symbolPackOverride>true</symbolPackOverride>
+    <worshipRoomLabel>incubation chamber</worshipRoomLabel>
+	<randomizationSelectionWeightFactor>2</randomizationSelectionWeightFactor>
+    <requireAnyRitualSeat><li>KneelPillow</li><li>KneelSheet</li></requireAnyRitualSeat>
+    <generalRules>
+      <rulesStrings>
+	    <li>r_ideoName(p=99)->[globalAdjective] [packIdeoName]</li>
+        <li>r_ideoName(p=99)->[memeAdjective] [packIdeoName]</li>
+        <li>r_ideoName(p=99)->[packAdjective] [packIdeoName]</li>
+        <li>r_ideoName(p=99)->[packIdeoName]</li>
+	    <li>memeAdjective->slimey</li>
+		<li>memeAdjective->zesty</li>
+		<li>memeAdjective->desirable</li>
+		<li>memeAdjective->tasty</li>
+		<li>memeAdjective->delicious</li>
+		<li>memeAdjective->erogenous</li>
+		<li>memeAdjective->breedable</li>
+		<li>memeAdjective->filthy</li>
+		<li>memeAdjective->carnal</li>
+		<li>memeAdjective->inviting</li>
+		<li>memeAdjective->wet</li>
+		<li>memeAdjective->alluring</li>
+        <li>memeLeaderAdjective->juicy</li>
+		<li>memeLeaderAdjective->inviting</li>
+		<li>memeLeaderAdjective->horny</li>
+		<li>memeLeaderAdjective->appetizing</li>
+		<li>memeLeaderAdjective->satisfying</li>
+		<li>memeLeaderAdjective->slimy</li>
+		<li>memeLeaderAdjective->heavenly</li>
+		<li>memeLeaderAdjective->swollen</li>
+		<li>memeLeaderAdjective->pregnant</li>
+		<li>memeLeaderAdjective->comfortable</li>
+		<li>memeLeaderAdjective->warm</li>
+		<li>memeLeaderAdjective->sacred</li>
+        <li>memeLeaderNoun->host</li>
+        <li>memeLeaderNoun->mistress</li>
+		<li>memeLeaderNoun->body</li>
+		<li>memeLeaderNoun->hive</li>
+		<li>memeLeaderNoun->belly</li>
+		<li>memeLeaderNoun->womb</li>
+        <li>memeLeaderNoun->incubator</li>
+		<li>memeLeaderNoun->baby warmer</li>
+		<li>memeLeaderNoun->hatcher</li>
+		<li>memeLeaderNoun->brooder</li>
+		<li>memeLeaderNoun->egg oven</li>
+		<li>memeLeaderNoun->mother</li>
+		<li>memeLeaderNoun->father</li>
+		<li>memeLeaderNoun->daddy</li>
+		<li>memeLeaderNoun->queen</li>
+        <li>memeMoralist->tender</li>
+        <li>memeMoralist->servant</li>
+		<li>memeMoralist->lover</li>
+		<li>memeMoralist->anus</li>
+		<li>memeMoralist->nanny</li>
+		<li>memeMoralist->egg carrier</li>
+		<li>memeMoralist->entomon</li>
+		<li>memeMoralist->translator</li>
+		<li>memeMoralist->speaker</li>
+		<li>memeMoralist->sleeve</li>
+		<li>memeMoralist->throat</li>
+		<li>memeMoralist->egg</li>
+		<li>memeMoralistAdjective->hot</li>
+		<li>memeMoralistAdjective->tasty</li>
+		<li>memeMoralistAdjective->horny</li>
+		<li>memeMoralistAdjective->heated</li>
+		<li>memeMoralistAdjective->pleasurable</li>
+		<li>memeMoralistAdjective->toasty</li>
+		<li>memeMoralistAdjective->fervent</li>
+		<li>memeMoralistAdjective->enthusiastic</li>
+		<li>memeMoralistAdjective->glowing</li>
+		<li>memeMoralistAdjective->sloppy</li>
+		<li>memeMoralistAdjective->gushing</li>
+		<li>memeMoralistAdjective->organic</li>
+		<li>memeConcept->tentacle</li>
+        <li>memeConcept->egg</li>
+		<li>memeConcept->pleasure</li>
+		<li>memeConcept->womb</li>
+		<li>memeConcept->breeding</li>
+		<li>memeConcept->incubation</li>
+		<li>memeConcept->procreation</li>
+		<li>memeConcept->metamorphosis</li>
+		<li>memeConcept->oviposition</li>
+		<li>memeConcept->oviparous</li>
+		<li>memeConcept->Amor</li>
+		<li>memeCreed->slime</li>
+		<li>memeCreed->eggs</li>
+		<li>memeCreed->pleasure</li>
+		<li>memeCreed->incubation</li>
+		<li>memeCreed->breeding</li>
+		<li>memeCreed->mating</li>
+		<li>memeCreed->procreation</li>
+		<li>memeCreed->warmth</li>
+		<li>memeCreed->host</li>
+		<li>memeCreed->hive</li>
+		<li>memeCreed->penatration</li>
+		<li>memeCreed->euphoria</li>
+      </rulesStrings>
+    </generalRules>
+    <descriptionMaker>
+      <patterns>
+        <li><def>TentDescription</def></li>
+      </patterns>
+      <constants>
+        <li><key>Structure_Tent</key><value>true</value></li>
+      </constants>
+    </descriptionMaker>
+    <symbolPacks>
+      <li>
+	  <ideoName>tentaclism</ideoName>
+	  <adjective>tentacle</adjective>
+	  <member>host</member><prefix>true</prefix>
+	  </li>
+    </symbolPacks>
+    <thingStyleCategories>
+      <li>
+        <category>Tent</category>
+        <priority>5</priority>
+      </li>
+    </thingStyleCategories>
+  </MemeDef>
+</Defs>

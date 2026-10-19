@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Name="Cum" ParentName="OrganicProductBase">
+		<defName>slimefood</defName>
+		<label>Slime Bowl</label>
+		<description>A bowl of sweet warm slime.</description>
+		<thingCategories>
+			<li>AnimalProductRaw</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Things/Items/Food/Slime</texPath>
+			<drawSize>1</drawSize>
+      		<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<stackLimit>64</stackLimit>
+
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<Mass>1</Mass>
+			<Nutrition>0.5</Nutrition>
+			<FoodPoisonChanceFixedHuman>0.00</FoodPoisonChanceFixedHuman>
+			<DeteriorationRate>30</DeteriorationRate>
+			<Flammability>0.0</Flammability>
+		</statBases>
+
+		<ingestible>
+			<foodType>Fluid, AnimalProduct</foodType>
+			<preferability>RawTasty</preferability>
+			<baseIngestTicks>250</baseIngestTicks>
+
+			<optimalityOffsetHumanlikes>0</optimalityOffsetHumanlikes>
+			<optimalityOffsetFeedingAnimals>0</optimalityOffsetFeedingAnimals>
+		</ingestible>
+	</ThingDef>
+
+</Defs>

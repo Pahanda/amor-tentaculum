@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>QueenEgg</defName>
+        <label>Amor Queen Egg</label>
+        <description>An Amor Tentaculum queen egg. When eatten will hatch in the hosts womb. Leathal for pawns without a vagina.</description>
+        <graphicData>
+            <texPath>Things/Items/StartEgg</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(256,256,256)</color>
+        </graphicData>
+        <statBases>
+            <WorkToMake>500</WorkToMake>
+            <MarketValue>600</MarketValue>
+            <Mass>0.04</Mass>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>AmorTentaculumCultavation</researchPrerequisite>
+            <recipeUsers>
+              <li>DrugLab</li>
+            </recipeUsers>
+            <soundWorking>Recipe_Drug</soundWorking>
+        </recipeMaker>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <costList>
+      <HumpShroom>5</HumpShroom>
+      <Neutroamine>30</Neutroamine>
+      <Luciferium>3</Luciferium>
+    </costList>
+    </ThingDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallAmorQueen</defName>
+    <label>implant amor queen egg</label>
+    <description>Implant an amor queen. Lethal for pawns without a vagina.</description>
+    <descriptionHyperlinks>
+      <ThingDef>QueenEgg</ThingDef>
+      <HediffDef>queenimplant</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Implanting queen egg.</jobString>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <anesthetize>false</anesthetize>
+    <surgerySuccessChanceFactor>100</surgerySuccessChanceFactor>
+    <workAmount>500</workAmount>
+    <developmentalStageFilter>Adult</developmentalStageFilter>
+    <skillRequirements>
+      <Medicine>0</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>QueenEgg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>QueenEgg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+      <li>Genitals</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>queenimplant</addsHediff>
+  </RecipeDef>
+
+        <ThingDef ParentName="BodyPartProstheticBase">
+        <defName>QueenEggM</defName>
+        <label>Malum Lord Egg(wip don't use)</label>
+        <description>A Malum Tentaculum egg. When eatten will hatch in the hosts stomach. Leathal for pawns with out a penis.</description>
+        <graphicData>
+            <texPath>Things/Items/StartEgg</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <color>(256,256,256)</color>
+        </graphicData>
+        <statBases>
+            <WorkToMake>500</WorkToMake>
+            <MarketValue>600</MarketValue>
+            <Mass>0.04</Mass>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>AmorTentaculumCultavation</researchPrerequisite>
+            <recipeUsers>
+              <li>DrugLab</li>
+            </recipeUsers>
+            <soundWorking>Recipe_Drug</soundWorking>
+        </recipeMaker>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <costList>
+      <HumpShroom>5</HumpShroom>
+      <Neutroamine>10</Neutroamine>
+      <Luciferium>5</Luciferium>
+    </costList>
+    </ThingDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallMalumLord</defName>
+    <label>implant malum lord egg</label>
+    <description>Implant a malum lord. Lethal for pawns without a penis.</description>
+    <descriptionHyperlinks>
+      <ThingDef>QueenEggM</ThingDef>
+      <HediffDef>queenimplantM</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Implanting malum egg.</jobString>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <anesthetize>false</anesthetize>
+    <surgerySuccessChanceFactor>100</surgerySuccessChanceFactor>
+    <workAmount>500</workAmount>
+    <developmentalStageFilter>Adult</developmentalStageFilter>
+    <skillRequirements>
+      <Medicine>0</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>QueenEggM</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>QueenEggM</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+      <li>Anus</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>queenimplantM</addsHediff>
+  </RecipeDef>
+
+<HediffDef>
+    <defName>dickchech</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>host rejection</label>
+    <labelNoun>rejection</labelNoun>
+    <description>A tentacle egg is rejecting this host body. It's a slow and painful death.</description>
+    <defaultLabelColor>(2,2,2)</defaultLabelColor>
+    <minSeverity>0</minSeverity>
+    <initialSeverity>0</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <stages>
+      <li>
+        <minSeverity>0.001</minSeverity>
+        <painOffset>2</painOffset>
+        <statOffsets>
+          <MoveSpeed>-0.5</MoveSpeed>
+        </statOffsets>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>OrganDecay</hediff>
+            <mtbDays>0.4</mtbDays>
+            <partsToAffect>
+              <li>Stomach</li>
+              <li>Anus</li>
+              <li>Genitals</li>
+              <li>Neck</li>
+              <li>Jaw</li>
+              <li>Heart</li>
+              <li>Liver</li>
+              <li>Brain</li>
+            </partsToAffect>
+            <countToAffect>1</countToAffect>
+            </li>
+        </hediffGivers>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.6</severityPerDay>
+      </li>
+            <li Class="EBSGFramework.HediffCompProperties_SeverityByOtherHediffSeverities">
+                <baseSeverity>0</baseSeverity>
+                <hediffSets>
+                    <li>
+                        <hediff>Penis</hediff>
+                        <factor>1</factor>
+                    </li>
+                    <li>
+                        <hediff>DragonPenis</hediff>
+                        <factor>1</factor>
+                    </li>
+                    <li>
+                        <hediff>DemonPenis</hediff>
+                        <factor>1</factor>
+                    </li>
+                    <li>
+                        <hediff>DogPenis</hediff>
+                        <factor>1</factor>
+                    </li>
+                    <li>
+                        <hediff>HorsePenis</hediff>
+                        <factor>1</factor>
+                    </li>
+                    <li>
+                        <hediff>RodentPenis</hediff>
+                        <factor>1</factor>
+                    </li>
+                </hediffSets>
+            </li>
+                        <li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
+                <hediff>queenimplant</hediff>
+                <severity>-2</severity>
+                <interval>20</interval>
+                <bodyParts>
+                  <li>Anus</li>
+                </bodyParts>
+                <validSeverities>0.1~0.9</validSeverities>
+            </li>
+    </comps>
+  </HediffDef>
+
+<HediffDef>
+    <defName>vagchech</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>host rejection</label>
+    <labelNoun>rejection</labelNoun>
+    <description>A tentacle egg is rejecting this host body. It's a slow and painful death.</description>
+    <defaultLabelColor>(2,2,2)</defaultLabelColor>
+    <minSeverity>0</minSeverity>
+    <initialSeverity>0</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <stages>
+      <li>
+        <minSeverity>0.001</minSeverity>
+        <painOffset>2</painOffset>
+        <statOffsets>
+          <MoveSpeed>-0.5</MoveSpeed>
+        </statOffsets>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>OrganDecay</hediff>
+            <mtbDays>0.6</mtbDays>
+            <partsToAffect>
+              <li>Stomach</li>
+              <li>Anus</li>
+              <li>Genitals</li>
+              <li>Neck</li>
+              <li>Jaw</li>
+              <li>Heart</li>
+              <li>Liver</li>
+              <li>Brain</li>
+            </partsToAffect>
+            <countToAffect>1</countToAffect>
+            </li>
+        </hediffGivers>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.6</severityPerDay>
+      </li>
+            <li Class="EBSGFramework.HediffCompProperties_SeverityByOtherHediffSeverities">
+                <baseSeverity>0</baseSeverity>
+                <hediffSets>
+                    <li>
+                        <hediff>Vagina</hediff>
+                        <factor>1</factor>
+                    </li>
+                    <li>
+                        <hediff>DragonVagina</hediff>
+                        <factor>1</factor>
+                    </li>
+                    <li>
+                        <hediff>DemonVagina</hediff>
+                        <factor>1</factor>
+                    </li>
+                    <li>
+                        <hediff>DogVagina</hediff>
+                        <factor>1</factor>
+                    </li>
+                    <li>
+                        <hediff>HorseVagina</hediff>
+                        <factor>1</factor>
+                    </li>
+                    <li>
+                        <hediff>RodentVagina</hediff>
+                        <factor>1</factor>
+                    </li>
+                </hediffSets>
+            </li>
+                        <li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
+                <hediff>queenimplantM</hediff>
+                <severity>-2</severity>
+                <interval>2000</interval>
+                <bodyParts>
+                  <li>Anus</li>
+                </bodyParts>
+                <validSeverities>0.1~0.9</validSeverities>
+            </li>
+    </comps>
+  </HediffDef>
+
+    <ThingDef ParentName="BodyPartBase">
+        <defName>BroodEgg</defName>
+        <label>Amor Nymph</label>
+        <description>An Amor Nymph. Can be implated in pawns to create a baroness, which will birth amor drones and amor warriors. WARNING: Will incapacitate the host! Leathal for pawns without a vagina.</description>
+        <graphicData>
+            <texPath>Things/Items/BroodEggAmor/BaronessAmor</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(256,256,256)</color>
+        </graphicData>
+        <statBases>
+            <WorkToMake>500</WorkToMake>
+            <MarketValue>600</MarketValue>
+            <Mass>0.04</Mass>
+        </statBases>
+    </ThingDef>
+
+  <RecipeDef ParentName="SurgeryFlesh">
+    <defName>InstallAmorBrood</defName>
+    <label>implant amor nymph</label>
+    <description>Implant an amor nymph. WARNING: Will incapacitate the host! Lethal for pawns without a vagina.</description>
+    <descriptionHyperlinks>
+      <ThingDef>BroodEgg</ThingDef>
+      <HediffDef>amorbrood</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Implanting amor nymph.</jobString>
+    <workerClass>Recipe_InstallImplant</workerClass>
+    <anesthetize>false</anesthetize>
+    <surgerySuccessChanceFactor>100</surgerySuccessChanceFactor>
+    <workAmount>500</workAmount>
+    <developmentalStageFilter>Adult</developmentalStageFilter>
+    <skillRequirements>
+      <Medicine>0</Medicine>
+    </skillRequirements>
+    <recipeUsers>
+      <li>Human</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>BroodEgg</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>BroodEgg</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+        <appliedOnFixedBodyParts>
+      <li>Genitals</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>amorbrood</addsHediff>
+  </RecipeDef>
+</Defs>

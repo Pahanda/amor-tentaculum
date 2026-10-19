@@ -1,0 +1,355 @@
+<Defs>
+
+    <AbilityDef ParentName="AbilityTouchBase">
+        <defName>UnbirthAi</defName>
+        <label>crawl inside anus</label>
+        <description>Commands the Internum to crawl inside a incubator's anus to increase drone production.</description>
+        <iconPath>Abilities/ButtVore</iconPath>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <cooldownTicksRange>5</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <hostile>false</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <verbProperties>
+         <verbClass>Verb_CastAbilityTouch</verbClass>
+         <drawAimPie>false</drawAimPie>
+         <range>1</range>
+         <warmupTime>2</warmupTime>
+         <soundCast>AcidSpray_Resolve</soundCast>
+            <targetParams>
+            <canTargetPawns>true</canTargetPawns>
+            </targetParams>
+        </verbProperties>
+        <comps>
+			<li Class="EBSGFramework.CompProperties_AbilityGiveResource">
+                <amount>0.01</amount>
+                <mainResourceGene>tentaclebabyneed</mainResourceGene>
+            </li>
+            <li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+            <targetHasAnyOfHediffs>
+                <li>tentaclegrowthA</li>
+            </targetHasAnyOfHediffs>
+            <casterHasNoneOfHediffs>
+                <li>FullofTentacles</li>
+            </casterHasNoneOfHediffs>
+            </li>
+            <li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
+                <hediffsToGive>
+				<li>
+                    <hediffDef>AStorage</hediffDef>
+                    <onlyApplyToSelf>false</onlyApplyToSelf>
+                    <severity>1</severity>
+                    <bodyParts>
+                        <li>Anus</li>
+                    </bodyParts>
+                    </li>
+                    <li>
+                    <hediffDef>BodyCleaner</hediffDef>
+                        <onlyApplyToSelf>true</onlyApplyToSelf>
+                        <replaceExisting>false</replaceExisting>
+                    <bodyParts>
+                        <li>Brain</li>
+                    </bodyParts>
+                    </li>
+                    <li>
+                    <hediffDef>tentaclegrowthA</hediffDef>
+                        <replaceExisting>false</replaceExisting>
+                    <bodyParts>
+                        <li>Anus</li>
+                    </bodyParts>
+                    </li>
+                </hediffsToGive>
+            </li>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>Heart</fleckDef>
+            </li>
+            </comps>
+</AbilityDef>
+
+    <AbilityDef ParentName="AbilityTouchBase">
+        <defName>UnbirthVi</defName>
+        <label>crawl inside vagina</label>
+        <description>Commands the Internum to crawl inside a incubator's womb to increase warrior production.</description>
+        <iconPath>Abilities/ButtVore</iconPath>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <cooldownTicksRange>5</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <hostile>false</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <verbProperties>
+         <verbClass>Verb_CastAbilityTouch</verbClass>
+         <drawAimPie>false</drawAimPie>
+         <range>1</range>
+         <warmupTime>2</warmupTime>
+         <soundCast>AcidSpray_Resolve</soundCast>
+            <targetParams>
+            <canTargetPawns>true</canTargetPawns>
+            </targetParams>
+        </verbProperties>
+        <comps>
+			<li Class="EBSGFramework.CompProperties_AbilityGiveResource">
+                <amount>0.01</amount>
+                <mainResourceGene>tentaclebabyneed</mainResourceGene>
+            </li>
+            <li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+            <targetHasAnyOfHediffs>
+                <li>tentaclegrowthV</li>
+            </targetHasAnyOfHediffs>
+            <casterHasNoneOfHediffs>
+                <li>FullofTentacles</li>
+            </casterHasNoneOfHediffs>
+            </li>
+            <li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
+                <hediffsToGive>
+				<li>
+                    <hediffDef>VStorage</hediffDef>
+                    <onlyApplyToSelf>false</onlyApplyToSelf>
+                    <severity>1</severity>
+                    <bodyParts>
+                        <li>Genitals</li>
+                    </bodyParts>
+                    </li>
+                    <li>
+                    <hediffDef>BodyCleaner</hediffDef>
+                        <onlyApplyToSelf>true</onlyApplyToSelf>
+                        <replaceExisting>false</replaceExisting>
+                    <bodyParts>
+                        <li>Brain</li>
+                    </bodyParts>
+                    </li>
+                    <li>
+                    <hediffDef>tentaclegrowthV</hediffDef>
+                        <replaceExisting>false</replaceExisting>
+                    <bodyParts>
+                        <li>Genitals</li>
+                    </bodyParts>
+                    </li>
+                </hediffsToGive>
+            </li>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>Heart</fleckDef>
+            </li>
+            </comps>
+</AbilityDef>
+
+    <AbilityDef ParentName="AbilityTouchBase">
+        <defName>UnbirthSi</defName>
+        <label>squirm down throat</label>
+        <description>Commands the Internum to crawl inside an incubator's stomach to increase drone production.</description>
+        <iconPath>Abilities/ButtVore</iconPath>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <cooldownTicksRange>5</cooldownTicksRange>
+        <aiCanUse>true</aiCanUse>
+        <hostile>false</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <verbProperties>
+         <verbClass>Verb_CastAbilityTouch</verbClass>
+         <drawAimPie>false</drawAimPie>
+         <range>1</range>
+         <warmupTime>2</warmupTime>
+         <soundCast>AcidSpray_Resolve</soundCast>
+            <targetParams>
+            <canTargetPawns>true</canTargetPawns>
+            </targetParams>
+        </verbProperties>
+        <comps>
+			<li Class="EBSGFramework.CompProperties_AbilityGiveResource">
+                <amount>0.01</amount>
+                <mainResourceGene>tentaclebabyneed</mainResourceGene>
+            </li>
+            <li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+            <targetHasAnyOfHediffs>
+                <li>tentaclegrowthS</li>
+            </targetHasAnyOfHediffs>
+            <casterHasNoneOfHediffs>
+                <li>FullofTentacles</li>
+            </casterHasNoneOfHediffs>
+            </li>
+            <li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
+                <hediffsToGive>
+				<li>
+                    <hediffDef>SStorage</hediffDef>
+                    <onlyApplyToSelf>false</onlyApplyToSelf>
+                    <severity>1</severity>
+                    <bodyParts>
+                        <li>Stomach</li>
+                    </bodyParts>
+                    </li>
+                    <li>
+                    <hediffDef>BodyCleaner</hediffDef>
+                        <onlyApplyToSelf>true</onlyApplyToSelf>
+                        <replaceExisting>false</replaceExisting>
+                    <bodyParts>
+                        <li>Brain</li>
+                    </bodyParts>
+                    </li>
+                    <li>
+                    <hediffDef>tentaclegrowthS</hediffDef>
+                        <replaceExisting>false</replaceExisting>
+                    <bodyParts>
+                        <li>Stomach</li>
+                    </bodyParts>
+                    </li>
+                </hediffsToGive>
+            </li>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>Heart</fleckDef>
+            </li>
+            </comps>
+</AbilityDef>
+
+    <AbilityDef ParentName="AbilityTouchBase">
+        <defName>Genitalsretract</defName>
+        <label>produce amornuum</label>
+        <description>Swaps the matron from egg production Amornuum production.</description>
+        <iconPath>Abilities/ButtVore</iconPath>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <cooldownTicksRange>60000</cooldownTicksRange>
+        <hostile>false</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <verbProperties>
+         <verbClass>Verb_CastAbilityTouch</verbClass>
+         <drawAimPie>false</drawAimPie>
+         <range>1</range>
+         <warmupTime>2</warmupTime>
+         <soundCast>AcidSpray_Resolve</soundCast>
+            <targetParams>
+            <canTargetSelf>true</canTargetSelf>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+            <casterHasNoneOfHediffs>
+                <li>maketentbeer</li>
+            </casterHasNoneOfHediffs>
+            </li>
+            <li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
+                <hediffsToGive>
+                    <li>
+                    <hediffDef>maketentbeer</hediffDef>
+                        <replaceExisting>false</replaceExisting>
+                    <bodyParts>
+                        <li>Genitals</li>
+                    </bodyParts>
+                    </li>
+                    <li>
+                    <hediffDef>OvipositorTFoff</hediffDef>
+                        <replaceExisting>True</replaceExisting>
+                    <bodyParts>
+                        <li>Genitals</li>
+                    </bodyParts>
+                    </li>
+                </hediffsToGive>
+            </li>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>Heart</fleckDef>
+            </li>
+            <li Class="EBSGFramework.CompProperties_AbilityRemoveMultipleHediffs">
+                <compClass>EBSGFramework.CompAbilityEffect_RemoveMultipleHediffs</compClass>
+                <hediffs>
+                    <li>OvipositorTFS</li>
+                    <li>TentacleEggSmall</li>
+                </hediffs>
+                <recursiveChecks>3</recursiveChecks> <!--No reason to have this, but maybe I'm paranoid-->
+            </li>
+            </comps>
+</AbilityDef>
+
+    <AbilityDef ParentName="AbilityTouchBase">
+        <defName>GenitalsEggActivate</defName>
+        <label>produce eggs</label>
+        <description>Swaps the matron from Amornuum production to egg production.</description>
+        <iconPath>Abilities/ButtVore</iconPath>
+        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+        <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <cooldownTicksRange>60000</cooldownTicksRange>
+        <hostile>false</hostile>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <verbProperties>
+         <verbClass>Verb_CastAbilityTouch</verbClass>
+         <drawAimPie>false</drawAimPie>
+         <range>1</range>
+         <warmupTime>2</warmupTime>
+         <soundCast>AcidSpray_Resolve</soundCast>
+            <targetParams>
+            <canTargetSelf>true</canTargetSelf>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+            <casterHasNoneOfHediffs>
+                <li>OvipositorTFS</li>
+            </casterHasNoneOfHediffs>
+            </li>
+            <li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
+                <hediffsToGive>
+                    <li>
+                    <hediffDef>OvipositorTFS</hediffDef>
+                        <replaceExisting>True</replaceExisting>
+                    <bodyParts>
+                        <li>Genitals</li>
+                    </bodyParts>
+                    </li>
+                </hediffsToGive>
+            </li>
+            <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>Heart</fleckDef>
+            </li>
+            <li Class="EBSGFramework.CompProperties_AbilityRemoveMultipleHediffs">
+                <compClass>EBSGFramework.CompAbilityEffect_RemoveMultipleHediffs</compClass>
+                <hediffs>
+                    <li>OvipositorTFoff</li>
+                    <li>maketentbeer</li>
+                </hediffs>
+                <recursiveChecks>3</recursiveChecks> <!--No reason to have this, but maybe I'm paranoid-->
+            </li>
+            </comps>
+</AbilityDef>
+
+  <HediffDef>
+    <defName>maketentbeer</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>producing Amornuum</label>
+    <labelNoun>producing</labelNoun>
+    <description>This creature is producing Amornuum in it's many dick tentacles. Amornuum is an alcohol like substance that is also a minor aphrodisiac. Produces once a day.</description>
+    <stages>
+      <li>
+        <painOffset>-0.40</painOffset>
+        <statOffsets>
+          <MeleeCooldownFactor>0.05</MeleeCooldownFactor>
+          <MoveSpeed>-0.1</MoveSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_CreateItems">
+                <intervalTicks>60000</intervalTicks>
+                <intervalThings>
+                    <li>
+                        <li>
+                            <thing>TentBeer</thing>
+                            <count>5</count>
+                        </li>
+                        <li>
+                            <thing>TentBeer</thing>
+                            <count>8</count>
+                        </li>
+                        <li>
+                            <thing>TentBeer</thing>
+                            <count>10</count>
+                        </li>
+                        <li>
+                            <thing>TentBeer</thing>
+                            <count>12</count>
+                        </li>
+                    </li>
+                </intervalThings>
+            </li>
+        </comps>
+  </HediffDef>
+
+</Defs>

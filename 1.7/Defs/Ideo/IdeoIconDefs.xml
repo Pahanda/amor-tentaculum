@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IdeoIconDef>
+		<defName>Ideoligion_TentPrintA</defName>
+		<iconPath>Ideo/UI/Icons/Ideoligion_TentPrintA</iconPath>
+		<memes>
+			<li>Structure_Tent</li>
+		</memes>
+	</IdeoIconDef>
+	<IdeoIconDef>
+		<defName>Ideoligion_TentPrintB</defName>
+		<iconPath>Ideo/UI/Icons/Ideoligion_TentPrintB</iconPath>
+		<memes>
+			<li>Structure_Tent</li>
+		</memes>
+	</IdeoIconDef>
+
+</Defs>

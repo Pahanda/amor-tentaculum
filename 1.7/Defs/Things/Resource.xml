@@ -1,0 +1,28 @@
+<Defs>
+
+<ThingDef ParentName="LeatherBase">
+    <defName>LeatherTentacle</defName>
+    <label>soft flesh</label>
+    <description>The skin is super soft and feels like genital skin.</description>
+    <graphicData>
+      <color>(235,205,180)</color>
+      <colorTwo>(235,235,235)</colorTwo>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.5</MarketValue>
+      <StuffPower_Armor_Sharp>0.05</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.05</StuffPower_Armor_Blunt>	  
+      <StuffPower_Insulation_Cold>25</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(235,205,180)</color>
+      <commonality>0.001</commonality>
+            <statFactors>
+        <MaxHitPoints>0.5</MaxHitPoints>
+        <Beauty>2.5</Beauty>
+        <Flammability>0</Flammability>
+      </statFactors>
+    </stuffProps>
+  </ThingDef>
+</Defs>

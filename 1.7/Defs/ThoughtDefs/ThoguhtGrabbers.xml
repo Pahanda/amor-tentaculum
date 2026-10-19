@@ -1,0 +1,409 @@
+<Defs>
+ <ThoughtDef>
+    <defName>grabberAThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>AttachedA</hediff>
+    <stackLimit>1</stackLimit>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits>
+      <li>Masochist</li>
+	  <li>Nymphomaniac</li>
+      <li>Zoophile</li>
+      <li>TentacleSlut</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>Eggs Hatching</label>
+        <description>It's slowed down, but it's putting something inside me, and whatever it is... is writhing around.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>Grabbed Anus</label>
+        <description>Is this going to go on forever?!?!</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+      <li>
+        <label>Tears</label>
+        <description>It stopped... but it hasn't left. I can't even blink the tears from my eyes.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>Grabbed Anus</label>
+        <description>Aaahh! Get this thing off me! Why can't I scream???</description>
+        <baseMoodEffect>-18</baseMoodEffect>
+      </li>
+      <li>
+        <label>I can't move!</label>
+        <description>Why isn't my body working!</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>venom</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>grabbed</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>grabberAThoughtLiked</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>AttachedA</hediff>
+    <stackLimit>1</stackLimit>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>Masochist</li>
+	  <li>Nymphomaniac</li>
+      <li>Zoophile</li>
+      <li>TentacleSlut</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>Eggs Hatching</label>
+        <description>Ohh fuck... never felt cum that wiggles around, god it is hot though.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+      <li>
+        <label>Grabbed Anus</label>
+        <description>More! More! Use my ass, whatever you are!</description>
+        <baseMoodEffect>18</baseMoodEffect>
+      </li>
+      <li>
+        <label>Not Thrusting</label>
+        <description>It stopped??!!? It better not be done...</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>Grabbed Anus</label>
+        <description>Ohh fuck take me yessss... I wish I could rock back into this thing.</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+      <li>
+        <label>I can't move!</label>
+        <description>Why isn't my body working!</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>venom</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>grabbed</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+ <ThoughtDef>
+    <defName>grabberMThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>AttachedM</hediff>
+    <stackLimit>1</stackLimit>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits>
+      <li>Masochist</li>
+	  <li>Nymphomaniac</li>
+      <li>Zoophile</li>
+      <li>TentacleSlut</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>Eggs Hatching</label>
+        <description>Gulp... eemmhmm, gulp...</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>Grabbed Face</label>
+        <description>Mhmm. mhmm. mhmm.</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+      <li>
+        <label>Tears</label>
+        <description>Mhm hm hm... mhmm.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>Grabbed Face</label>
+        <description>Mhmmh, echkk mmmmhhh!!??</description>
+        <baseMoodEffect>-18</baseMoodEffect>
+      </li>
+      <li>
+        <label>Not the face!</label>
+        <description>No no no! Why is it going for my fac- mhmhmm.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>venom</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>grabbed</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>grabberMThoughtLiked</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>AttachedM</hediff>
+    <stackLimit>1</stackLimit>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>Masochist</li>
+	  <li>Nymphomaniac</li>
+      <li>Zoophile</li>
+      <li>TentacleSlut</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>Eggs Hatching</label>
+        <description>Gulp... mhmm, gulp...</description>
+        <baseMoodEffect>18</baseMoodEffect>
+      </li>
+      <li>
+        <label>Grabbed Face</label>
+        <description>Mhmm! mhmm. mhmm. yemmhmm</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+      <li>
+        <label>Stopped Thrusting</label>
+        <description>Hhmeym wmhhmy yomhmu shmtoph</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <li>
+        <label>Grabbed Face</label>
+        <description>Mhmmh!!?... Ohhmm... mmhmm</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+      <li>
+        <label>Not the face!</label>
+        <description>No no no! Why is it going for my fac- mhmhmm.</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>venom</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>grabbed</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+ <ThoughtDef>
+    <defName>grabberPThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>AttachedP</hediff>
+    <stackLimit>1</stackLimit>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits>
+      <li>Masochist</li>
+	  <li>Nymphomaniac</li>
+      <li>Zoophile</li>
+      <li>TentacleSlut</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>Eggs Hatching</label>
+        <description>Ahh. Fuck that! Things don't go in that hole!</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>Milked Penis</label>
+        <description>Fucck I can't cum anymore! Why won't it stop?</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <label>Resting</label>
+        <description>It stopped... it better not be getting ready to bite it off.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>Milked Penis</label>
+        <description>Aaahh! Ohhh... Oh that's kinda nice</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>I can't move!</label>
+        <description>Why isn't my body working!</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>venom</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>grabbed</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>grabberPThoughtLiked</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>AttachedP</hediff>
+    <stackLimit>1</stackLimit>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>Masochist</li>
+	  <li>Nymphomaniac</li>
+      <li>Zoophile</li>
+      <li>TentacleSlut</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>Upsteam</label>
+        <description>They are swiming down my dickhole! I'm in heaven.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+      <li>
+        <label>Milked Penis</label>
+        <description>I'm empty but it just keeps going!</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+      <li>
+        <label>Not Sucking</label>
+        <description>It stopped??!!? It better not be done...</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>Milked Penis</label>
+        <description>Ohh fuck yessss...</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+      <li>
+        <label>I can't move!</label>
+        <description>Why isn't my body working!</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>venom</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>grabbed</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+ <ThoughtDef>
+    <defName>grabberVThought</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>AttachedV</hediff>
+    <stackLimit>1</stackLimit>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits>
+      <li>Masochist</li>
+	  <li>Nymphomaniac</li>
+      <li>Zoophile</li>
+      <li>TentacleSlut</li>
+    </nullifyingTraits>
+    <stages>
+      <li>
+        <label>Eggs Hatching</label>
+        <description>It's slowed down, but it's putting something inside me, and whatever it is... is writhing around.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>Grabbed Vagina</label>
+        <description>Is this going to go on forever?!?!</description>
+        <baseMoodEffect>-12</baseMoodEffect>
+      </li>
+      <li>
+        <label>Tears</label>
+        <description>It stopped... but it hasn't left. I can't even blink the tears from my eyes.</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>Grabbed Vagina</label>
+        <description>Aaahh! Get this thing off me! Why can't I scream???</description>
+        <baseMoodEffect>-18</baseMoodEffect>
+      </li>
+      <li>
+        <label>I can't move!</label>
+        <description>Why isn't my body working!</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>venom</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>grabbed</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>grabberVThoughtLiked</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>AttachedV</hediff>
+    <stackLimit>1</stackLimit>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>Masochist</li>
+	  <li>Nymphomaniac</li>
+      <li>Zoophile</li>
+      <li>TentacleSlut</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>Eggs Hatching</label>
+        <description>Ohh fuck... never felt cum that wiggles around, god it is hot though.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+      <li>
+        <label>Grabbed Vagina</label>
+        <description>More! More! Use me, whatever you are!</description>
+        <baseMoodEffect>18</baseMoodEffect>
+      </li>
+      <li>
+        <label>Not Thrusting</label>
+        <description>It stopped??!!? It better not be done...</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>Grabbed Vagina</label>
+        <description>Ohh fuck take me yessss... I wish I could rock back into this thing.</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+      <li>
+        <label>I can't move!</label>
+        <description>Why isn't my body working!</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>venom</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>grabbed</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

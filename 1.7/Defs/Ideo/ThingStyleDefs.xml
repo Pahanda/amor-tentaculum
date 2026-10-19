@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingStyleDef>
+    <defName>Tent_SculptureSmall</defName>
+    <graphicData>
+      <texPath>Ideo/Sculp/Sculptures/Small</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Tent_SculptureLarge</defName>
+    <graphicData>
+      <texPath>Ideo/Sculp/Sculptures/Large</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(3.5,3.5)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Tent_SculptureGrand</defName>
+    <graphicData>
+      <texPath>Ideo/Sculp/Sculptures/Grand</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef ParentName="IdeoColumnStyleBase">
+    <defName>Tent_Column</defName>
+    <graphicData>
+		<texPath>Ideo/Sculp/Tent_Colum</texPath>
+		<graphicClass>Graphic_Single</graphicClass>
+		<drawSize>1.0</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+  <ThingStyleDef>
+    <defName>Tent_IdeogramA</defName>
+    <graphicData>
+      <texPath>Ideo/Sculp/IconTentA</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+  
+  <ThingStyleDef>
+    <defName>Tent_IdeogramB</defName>
+    <graphicData>
+      <texPath>Ideo/Sculp/IconTentB</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,3)</drawSize>
+    </graphicData>
+  </ThingStyleDef>
+
+	<ThingStyleDef ParentName="IdeoTableStyleBase">
+        <defName>Tent_Table1x2c</defName>
+        <graphicData>
+            <texPath>Ideo/Table/Tent_Table1x2</texPath>
+            <drawSize>(3,4)</drawSize>
+        </graphicData>
+    </ThingStyleDef>
+
+</Defs>

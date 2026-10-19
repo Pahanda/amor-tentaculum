@@ -1,0 +1,200 @@
+<Defs>
+<HediffDef>
+    <defName>malumeggA</defName>
+    <hediffClass>HediffWithComps</hediffClass>
+    <label>malum natator</label>
+    <labelNoun>natator</labelNoun>
+    <description>A group of parasitic malum larvae. They will continue to grow until they are to big for the orifice they are in, or until they are surgiclly removed.</description>
+    <defaultLabelColor>(203,120,227)</defaultLabelColor>
+    <minSeverity>0.001</minSeverity>
+    <initialSeverity>0.001</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <stages>
+      <li>
+        <minSeverity>0.001</minSeverity>
+        <label>2-3</label>
+        <painOffset>0.1</painOffset>
+        <partEfficiencyOffset>-0.2</partEfficiencyOffset>
+        <statOffsets>
+          <MoveSpeed>-0.03</MoveSpeed>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>0.22</minSeverity>
+        <label>4-6</label>
+        <painOffset>0.3</painOffset>
+        <partEfficiencyOffset>-0.3</partEfficiencyOffset>
+        <statOffsets>
+          <MoveSpeed>-0.05</MoveSpeed>
+        </statOffsets>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>TentInteralRupture</hediff>
+            <mtbDays>25</mtbDays>
+            <partsToAffect>
+              <li>Stomach</li>
+              <li>Anus</li>
+              <li>Genitals</li>
+              <li>Neck</li>
+              <li>Jaw</li>
+            </partsToAffect>
+            <countToAffect>1</countToAffect>
+          </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <minSeverity>0.45</minSeverity>
+        <label>7-10</label>
+        <painOffset>0.6</painOffset>
+        <partEfficiencyOffset>-0.4</partEfficiencyOffset>
+        <statOffsets>
+          <MoveSpeed>-0.08</MoveSpeed>
+        </statOffsets>
+          <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>TentInteralRupture</hediff>
+            <mtbDays>18</mtbDays>
+            <partsToAffect>
+              <li>Stomach</li>
+              <li>Anus</li>
+              <li>Genitals</li>
+              <li>Neck</li>
+              <li>Jaw</li>
+            </partsToAffect>
+            <countToAffect>1</countToAffect>
+          </li>
+          </hediffGivers>
+      </li>
+      <li>
+        <minSeverity>0.65</minSeverity>
+        <label>11-14</label>
+        <painOffset>1.2</painOffset>
+        <partEfficiencyOffset>-0.6</partEfficiencyOffset>
+        <statOffsets>
+          <MoveSpeed>-0.1</MoveSpeed>
+        </statOffsets>
+          <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>TentInteralRupture</hediff>
+            <mtbDays>13</mtbDays>
+            <partsToAffect>
+              <li>Stomach</li>
+              <li>Anus</li>
+              <li>Genitals</li>
+              <li>Neck</li>
+              <li>Jaw</li>
+            </partsToAffect>
+            <countToAffect>1</countToAffect>
+            </li>
+        </hediffGivers>
+      </li>
+      <li>
+        <minSeverity>0.85</minSeverity>
+        <label>15+</label>
+        <partEfficiencyOffset>-0.8</partEfficiencyOffset>
+        <painOffset>1.8</painOffset>
+        <statOffsets>
+          <MoveSpeed>-30</MoveSpeed>
+        </statOffsets>
+      </li>
+      <li>
+        <minSeverity>0.99</minSeverity>
+        <label>birthing brood</label>
+        <partEfficiencyOffset>-0.8</partEfficiencyOffset>
+        <painOffset>1.8</painOffset>
+        <statOffsets>
+          <MoveSpeed>-30</MoveSpeed>
+        </statOffsets>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>1</severityPerDay>
+      </li>
+            <li Class="EBSGFramework.HediffCompProperties_RemoveAtSeverities">
+                <severity>1</severity>
+            </li>
+            <li Class="EBSGFramework.HediffCompProperties_CreateItems">
+                <intervalTicks>55500</intervalTicks>
+                <intervalThings>
+                    <li>
+                        <li>
+                            <thing>swimmers</thing>
+                            <count>16</count>
+                            <weight>1</weight>
+                        </li>
+                        <li>
+                            <thing>swimmers</thing>
+                            <count>18</count>
+                            
+                        </li>
+                        <li>
+                            <thing>swimmers</thing>
+                            <count>20</count>
+                            
+                        </li>
+                        <li>
+                            <thing>swimmers</thing>
+                            <count>25</count>
+                            
+                        </li>
+                    </li>
+                </intervalThings>
+            </li>
+    </comps>
+  </HediffDef>
+
+  <ThingDef>
+    <defName>swimmers</defName>
+    <label>malum natator</label>
+    <description>Small wiggling malum larva. They can be used to create implants or you can eat them if you are brave enough.</description>
+    <thingClass>ThingWithComps</thingClass>
+    <selectable>true</selectable>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <tickerType>Rare</tickerType>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Item</altitudeLayer>
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <stackLimit>75</stackLimit>
+    <alwaysHaulable>true</alwaysHaulable>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <tradeability>Sellable</tradeability>
+    <pathCost>14</pathCost>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <Beauty>-7</Beauty>
+      <DeteriorationRate>10</DeteriorationRate>
+      <Mass>0.03</Mass>
+      <Flammability>0</Flammability>
+      <Nutrition>0.1</Nutrition>
+      <FoodPoisonChanceFixedHuman>0.02</FoodPoisonChanceFixedHuman>
+      <MarketValue>0.7</MarketValue>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Items/Food/Swimmer/Babytentacles</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <thingCategories>
+      <li>MeatRaw</li>
+    </thingCategories>
+    <ingestible>
+      <foodType>Meat</foodType>
+      <preferability>RawBad</preferability>
+      <ingestEffect>EatMeat</ingestEffect>
+      <ingestSound>RawMeat_Eat</ingestSound>
+      <specialThoughtDirect>Atelarva</specialThoughtDirect>
+      <specialThoughtAsIngredient>Atelarva</specialThoughtAsIngredient>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>2</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+
+</Defs>

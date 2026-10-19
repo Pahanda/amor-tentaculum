@@ -1,0 +1,350 @@
+<Defs>
+
+<rjw.RaceGroupDef>
+		<defName>Tentacles</defName>
+		<raceNames>
+			<li>TDrone</li>
+		</raceNames>
+		
+		<anuses>
+		</anuses>
+
+		<femaleBreasts>
+		</femaleBreasts>
+		
+		<femaleGenitals>
+			<li>OvipositorTM</li>
+		</femaleGenitals>
+
+		<maleBreasts>
+		</maleBreasts>
+
+		<maleGenitals>
+			<li>OvipositorTM</li>
+		</maleGenitals>
+		
+		<hasSingleGender>false</hasSingleGender>
+		<hasSexNeed>true</hasSexNeed>
+		<raceSexDrive>3</raceSexDrive>
+		<hasFertility>true</hasFertility>
+		<hasPregnancy>true</hasPregnancy>
+		<oviPregnancy>true</oviPregnancy>
+		<ImplantEggs>true</ImplantEggs>
+    </rjw.RaceGroupDef>
+
+<rjw.RaceGroupDef>
+		<defName>War</defName>
+		<raceNames>
+      <li>TWar</li>
+		</raceNames>
+		
+		<anuses>
+		</anuses>
+
+		<femaleBreasts>
+		</femaleBreasts>
+		
+		<femaleGenitals>
+			<li>OvipositorTF</li>
+		</femaleGenitals>
+
+		<maleBreasts>
+		</maleBreasts>
+
+		<maleGenitals>
+            <li>UdderTentacle</li>
+		</maleGenitals>
+		
+		<hasSingleGender>true</hasSingleGender>
+		<hasSexNeed>true</hasSexNeed>
+		<raceSexDrive>3</raceSexDrive>
+		<hasFertility>false</hasFertility>
+		<hasPregnancy>false</hasPregnancy>
+		<oviPregnancy>true</oviPregnancy>
+		<ImplantEggs>true</ImplantEggs>
+    </rjw.RaceGroupDef>
+
+    <rjw.RaceGroupDef>
+		<defName>Matrons</defName>
+		<raceNames>
+			<li>TMatron</li>
+		</raceNames>
+		
+		<anuses>
+		</anuses>
+
+		<femaleBreasts>
+		</femaleBreasts>
+		
+		<femaleGenitals>
+			<li>OvipositorTFS</li>
+		</femaleGenitals>
+
+		<maleBreasts>
+		</maleBreasts>
+
+		<maleGenitals>
+		</maleGenitals>
+		
+		<hasSingleGender>true</hasSingleGender>
+		<hasSexNeed>true</hasSexNeed>
+		<raceSexDrive>3</raceSexDrive>
+		<hasFertility>true</hasFertility>
+		<hasPregnancy>false</hasPregnancy>
+		<oviPregnancy>true</oviPregnancy>
+		<ImplantEggs>true</ImplantEggs>
+    </rjw.RaceGroupDef>
+
+    <rjw.RaceGroupDef>
+		<defName>Larvae</defName>
+		<raceNames>
+			<li>TLarvaMat</li>
+            <li>TLarvaD</li>
+		</raceNames>
+		
+		<anuses>
+		</anuses>
+
+		<femaleBreasts>
+		</femaleBreasts>
+		
+		<femaleGenitals>
+		<li>OvipositorTFSS</li>
+		</femaleGenitals>
+
+		<maleBreasts>
+		</maleBreasts>
+
+		<maleGenitals>
+		<li>OvipositorTFSS</li>
+		</maleGenitals>
+		
+		<hasSingleGender>false</hasSingleGender>
+		<hasSexNeed>true</hasSexNeed>
+		<raceSexDrive>3</raceSexDrive>
+		<hasFertility>true</hasFertility>
+		<hasPregnancy>true</hasPregnancy>
+		<oviPregnancy>true</oviPregnancy>
+		<ImplantEggs>true</ImplantEggs>
+    </rjw.RaceGroupDef>
+
+    <rjw.RaceGroupDef>
+		<defName>Internal</defName>
+		<raceNames>
+            <li>TInternal</li>
+		</raceNames>
+		
+		<anuses>
+		</anuses>
+
+		<femaleBreasts>
+		</femaleBreasts>
+		
+		<femaleGenitals>
+		</femaleGenitals>
+
+		<maleBreasts>
+		</maleBreasts>
+
+		<maleGenitals>
+		</maleGenitals>
+		
+		<hasSingleGender>false</hasSingleGender>
+		<hasSexNeed>true</hasSexNeed>
+		<raceSexDrive>3</raceSexDrive>
+		<hasFertility>true</hasFertility>
+		<hasPregnancy>true</hasPregnancy>
+		<oviPregnancy>true</oviPregnancy>
+		<ImplantEggs>true</ImplantEggs>
+    </rjw.RaceGroupDef>
+
+	<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartVagina">
+		<defName>TentBigVag</defName>
+		<label>gaping face vagina</label>
+		<labelNoun>a gaping face vagina</labelNoun>
+		<description>A huge vagina that also serves as the mouth of a warrior tentacle. Don't worry it's rows of venom-fangs are retractable.</description>
+		<descriptionHyperlinks>
+			<ThingDef>DogVagina</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>DogVagina</spawnThingOnRemoved>
+		<partTags>
+			<li>Loose</li>
+			<li>Deep</li>
+		</partTags>
+	</rjw.HediffDef_SexPart>
+
+	<rjw.RacePartDef>
+	<defName>OvipositorTF</defName>
+	<hediffName>TentBigVag</hediffName>
+	</rjw.RacePartDef>
+
+	<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartVagina">
+		<defName>OvipositorTFS</defName>
+		<label>seven ovipositor tenetacles</label>
+		<labelNoun>ovipositors</labelNoun>
+		<description>A set of seven tentacles, some of which lay eggs. Two flared, two tongue, two tendlly, and one cock.</description>
+		<descriptionHyperlinks>
+			<ThingDef>OvipositorF</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>OvipositorF</spawnThingOnRemoved>
+		<sizeProfile>DefaultPenisSizes</sizeProfile>
+		<genitalFamily>FemaleOvipositor</genitalFamily>
+		<genitalTags>
+			<li>CanPenetrate</li>
+			<li>CanBePenetrated</li>
+			<li>CanEgg</li>
+		</genitalTags>
+		<partTags>
+        	<li>Tapered</li>
+			<li>Internal</li>
+		    <li>Prehensile</li>
+		</partTags>
+		<comps>
+			<li Class="rjw.HediffCompProperties_Ovipositor">
+				<eggCount>2~4</eggCount> <!-- How many eggs to produce at once. This is a FloatRange, so you can also have e.g. 2~5 -->
+				<!-- Time to produce new eggs -->
+				<eggIntervalTicks>120000~200000</eggIntervalTicks>
+			</li>
+		</comps>
+	</rjw.HediffDef_SexPart>
+
+	<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartVagina">
+		<defName>OvipositorTFoff</defName>
+		<label>seven ovipositor tenetacles</label>
+		<labelNoun>ovipositors</labelNoun>
+		<description>A set of seven tentacles, some of which produce amornuum. Two flared, two tongue, two tendlly, and one cock.</description>
+		<descriptionHyperlinks>
+			<ThingDef>OvipositorF</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>OvipositorF</spawnThingOnRemoved>
+		<sizeProfile>DefaultPenisSizes</sizeProfile>
+		<genitalFamily>FemaleOvipositor</genitalFamily>
+		<genitalTags>
+			<li>CanPenetrate</li>
+			<li>CanBePenetrated</li>
+			<li>CanEgg</li>
+		</genitalTags>
+		<partTags>
+        	<li>Tapered</li>
+			<li>Internal</li>
+		    <li>Prehensile</li>
+		</partTags>
+	</rjw.HediffDef_SexPart>
+
+	<rjw.RacePartDef>
+	<defName>OvipositorTFS</defName>
+	<hediffName>OvipositorTFS</hediffName>
+	</rjw.RacePartDef>
+
+	<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartVagina">
+		<defName>OvipositorTFSS</defName>
+		<label>lil tongue ovipositor</label>
+		<labelNoun>ovipositors</labelNoun>
+		<description>A retractable ovipositor that produces small eggs which hatch into Amor Internum.</description>
+		<descriptionHyperlinks>
+			<ThingDef>OvipositorF</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>OvipositorF</spawnThingOnRemoved>
+		<sizeProfile>DefaultPenisSizes</sizeProfile>
+		<genitalFamily>FemaleOvipositor</genitalFamily>
+		<genitalTags>
+			<li>CanPenetrate</li>
+			<li>CanBePenetrated</li>
+			<li>CanEgg</li>
+		</genitalTags>
+		<partTags>
+        	<li>Tapered</li>
+			<li>Internal</li>
+		    <li>Prehensile</li>
+		</partTags>
+		<comps>
+			<li Class="rjw.HediffCompProperties_Ovipositor">
+				<eggCount>1~2</eggCount> <!-- How many eggs to produce at once. This is a FloatRange, so you can also have e.g. 2~5 -->
+				<!-- Time to produce new eggs -->
+				<eggIntervalTicks>120000~200000</eggIntervalTicks>
+			</li>
+		</comps>
+	</rjw.HediffDef_SexPart>
+
+	<rjw.RacePartDef>
+	<defName>OvipositorTFSS</defName>
+	<hediffName>OvipositorTFSS</hediffName>
+	</rjw.RacePartDef>
+
+	<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartPenis">
+		<defName>OvipositorTM</defName>
+		<label>bulb tentacle</label>
+		<labelNoun>an tentacle</labelNoun>
+		<description>A tentacle for training the host's orifices for future egg laying.</description>
+		<descriptionHyperlinks>
+			<ThingDef>OvipositorM</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>OvipositorM</spawnThingOnRemoved>
+		<fluid>Cum</fluid>
+		<genitalFamily>MaleOvipositor</genitalFamily>
+		<genitalTags>
+			<li>CanPenetrate</li>
+			<li>CanFertilizeEgg</li>
+		</genitalTags>
+		<partTags>
+			<li>Internal</li>
+		    <li>Prehensile</li>
+		</partTags>
+	</rjw.HediffDef_SexPart>
+
+	<rjw.RacePartDef>
+	<defName>OvipositorTM</defName>
+	<hediffName>OvipositorTM</hediffName>
+	</rjw.RacePartDef>
+
+	<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartBreast">
+		<defName>UdderTentacle</defName>
+		<label>rows of tits</label>
+		<labelNoun>rows of tits</labelNoun>
+		<description>Several rows of breasts for feeding multiple drones or hosts. Each breast contains a feeder tentacle to directly provide nutrition into the stomach.</description>
+		<descriptionHyperlinks>
+			<ThingDef>UdderBreasts</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>UdderBreasts</spawnThingOnRemoved>
+		<!-- 'Udders' GenitalfFamily currently unsupported. -->
+		<genitalFamily>Breasts</genitalFamily>
+		<genitalTags>
+			<li>CanLactate</li>
+		</genitalTags>
+	</rjw.HediffDef_SexPart>
+
+	<rjw.RacePartDef>
+	<defName>UdderTentacle</defName>
+	<hediffName>UdderTentacle</hediffName>
+	</rjw.RacePartDef>
+
+    <rjw.RaceGroupDef>
+		<defName>TentNoparts</defName>
+		<raceNames>
+            <li>TInternal</li>
+		</raceNames>
+		
+		<anuses>
+		</anuses>
+
+		<femaleBreasts>
+		</femaleBreasts>
+		
+		<femaleGenitals>
+		</femaleGenitals>
+
+		<maleBreasts>
+		</maleBreasts>
+
+		<maleGenitals>
+		</maleGenitals>
+		
+		<hasSingleGender>false</hasSingleGender>
+		<hasSexNeed>true</hasSexNeed>
+		<raceSexDrive>3</raceSexDrive>
+		<hasFertility>true</hasFertility>
+		<hasPregnancy>true</hasPregnancy>
+		<oviPregnancy>true</oviPregnancy>
+		<ImplantEggs>true</ImplantEggs>
+    </rjw.RaceGroupDef>
+</Defs>

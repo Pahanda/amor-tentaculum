@@ -1,0 +1,53 @@
+<Defs>
+
+    <XenotypeDef>
+    <defName>Thost</defName>
+    <label>Amor Brood Mother</label>
+    <description>A human host that has been modified genetically to birth amor tentacles.</description>
+    <descriptionShort>A human host that has been modified genetically to birth amor tentacles.</descriptionShort>
+    <iconPath>Genes/Xenotype-host</iconPath>
+    <inheritable>false</inheritable>
+    <chanceToUseNameMaker>0</chanceToUseNameMaker>
+    <genes>
+      <li>THostBody</li>
+      <li>rjw_genes_tentinfest_genitalia</li>
+      <li>tentaclebabyneed</li>
+      <li>ThostAdult</li>
+      <li>rjw_genes_female_only</li>
+    </genes>
+  </XenotypeDef>
+
+    <XenotypeDef>
+    <defName>ThostM</defName>
+    <label>Malum Brood Mother</label>
+    <description>A human host that has been modified genetically to birth malar tentacles.</description>
+    <descriptionShort>A human host that has been modified genetically to birth malar tentacles.</descriptionShort>
+    <iconPath>Genes/Xenotype-host</iconPath>
+    <inheritable>false</inheritable>
+    <chanceToUseNameMaker>0</chanceToUseNameMaker>
+    <genes>
+      <li>THostBodyM</li>
+      <li>rjw_genes_tentinfest_Malegenitalia</li>
+      <li>tentaclebabyneedM</li>
+	  <li>MalumHost</li>
+      <li>rjw_genes_male_only</li>
+    </genes>
+  </XenotypeDef>
+
+    <XenotypeDef>
+    <defName>ThostB</defName>
+    <label>Amor Baroness</label>
+    <description>A human host that has been modified genetically to birth amor tentacles.</description>
+    <descriptionShort>A human host that has been modified genetically to birth amor tentacles.</descriptionShort>
+    <iconPath>Genes/Xenotype-host</iconPath>
+    <inheritable>false</inheritable>
+    <chanceToUseNameMaker>0</chanceToUseNameMaker>
+    <genes>
+      <li>THostBodyB</li>
+      <li>rjw_genes_tentinfest_genitalia</li>
+      <li>rjw_genes_female_only</li>
+      <li>ThostBrooder</li>
+    </genes>
+  </XenotypeDef>
+
+</Defs>

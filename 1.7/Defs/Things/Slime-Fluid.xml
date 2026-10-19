@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ThingDef ParentName="BaseFilth">
+    <defName>FilthSlime</defName>
+		<label>slime</label>
+		<statBases>
+			<Beauty>-30</Beauty>
+			<Cleanliness>0</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/Spatter</texPath>
+			<color>(203,40,227,100)</color>
+		</graphicData>
+		<filth>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>50</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+		</filth>
+	</ThingDef>
+
+	<rjw.SexFluidDef>
+		<defName>slime</defName>
+		<filth>FilthSlime</filth>
+		<consumable>slimefood</consumable>
+		<consumableFluidRatio>1</consumableFluidRatio>
+		<ingestThroughAnyOrifice>true</ingestThroughAnyOrifice>
+		<alwaysProduceFilth>true</alwaysProduceFilth>
+		<baseNutritionCost>0.3</baseNutritionCost>
+		<quenchesThirst>true</quenchesThirst>
+		<tags>
+			<li>Warm and sweet</li>
+		</tags>
+	</rjw.SexFluidDef>
+
+</Defs>
