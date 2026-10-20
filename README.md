@@ -27,6 +27,9 @@ The most basic type of tentacle. Mindless, writing, and not able to survive outs
 ### Amor Larva
 A newly-born tentacle that can be triggered to grow into one of several different types of mature tentacles once it has reached sufficient age.
 
+### Amor Womb
+A captured pawn, converted entirely into Amor Internum storage.  Immobile and no longer useful as a pawn.
+
 ## Male Tentacles
 
 ### Amor Striker
@@ -63,11 +66,19 @@ A powerful mass of tentacles, designed to help grow Amor Internum tentacles to e
 
 A male host specialized for melee combat, at the cost of intelligence and work proficiency.  Uses stored Amor Internum to power its abilities.
 
+### Amor Rogue
+
+A male host specialized for stealth and reconnaissance.  Minimal combat potential, but naturally difficult to see and can become mostly invisible for a short time.  Uses stored Amor Internum to power its abilities.
+
 ### Amor Baron
 
 A male host specialized for defense, providing buffs to other host and tentacle pawns.  Uses stored Amor Internum to power its abilities.
 
 ## Female Hosts
+
+### Amor Nymph
+
+A female host specialized for seducing and placating other pawns.  Can convert infected pawns into immobile Amor Wombs.
 
 ### Amor Baroness
 
