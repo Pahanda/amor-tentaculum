@@ -1,0 +1,8 @@
+<Defs>
+	
+	<AbilityCategoryDef>
+		<defName>Tentacle</defName>
+		<displayOrder>42</displayOrder>
+	</AbilityCategoryDef>
+	
+</Defs>

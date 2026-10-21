@@ -1,0 +1,213 @@
+<Defs>
+
+	<!-- Animal Abilities -->
+
+	<!-- Amor Internum Resource Abilities -->
+
+	<!-- Anal Insertion -->
+	
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>TentacleUnbirthAnus</defName>
+		<label>crawl inside anus</label>
+		<description>Commands the Amor Internum to crawl inside a host's anus to add tentacle resources.</description>
+		<iconPath>Abilities/ButtVore</iconPath>
+		<category>Tentacle</category>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<cooldownTicksRange>5</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<range>1</range>
+			<warmupTime>2</warmupTime>
+			<soundCast>AcidSpray_Resolve</soundCast>
+			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="EBSGFramework.CompProperties_AbilityGiveResource">
+				<amount>0.01</amount>
+				<mainResourceGene>tentaclebabyneed</mainResourceGene>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+				<targetHasAnyOfHediffs>
+					<li>tentaclegrowthA</li>
+				</targetHasAnyOfHediffs>
+				<casterHasNoneOfHediffs>
+					<li>FullofTentacles</li>
+				</casterHasNoneOfHediffs>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
+				<hediffsToGive>
+					<li>
+						<hediffDef>AStorage</hediffDef>
+						<onlyApplyToSelf>false</onlyApplyToSelf>
+						<severity>1</severity>
+						<bodyParts>
+							<li>Anus</li>
+						</bodyParts>
+					</li>
+					<li>
+						<hediffDef>BodyCleaner</hediffDef>
+						<onlyApplyToSelf>true</onlyApplyToSelf>
+						<replaceExisting>false</replaceExisting>
+						<bodyParts>
+							<li>Brain</li>
+						</bodyParts>
+					</li>
+					<li>
+						<hediffDef>tentaclegrowthA</hediffDef>
+						<replaceExisting>false</replaceExisting>
+						<bodyParts>
+							<li>Anus</li>
+						</bodyParts>
+					</li>
+				</hediffsToGive>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>Heart</fleckDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>TentacleUnbirthVagina</defName>
+		<label>crawl inside vagina</label>
+		<description>Commands the Amor Internum to crawl inside a host's womb via the vagina to add tentacle resources.</description>
+		<iconPath>Abilities/ButtVore</iconPath>
+		<category>Tentacle</category>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<cooldownTicksRange>5</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<range>1</range>
+			<warmupTime>2</warmupTime>
+			<soundCast>AcidSpray_Resolve</soundCast>
+			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="EBSGFramework.CompProperties_AbilityGiveResource">
+				<amount>0.01</amount>
+				<mainResourceGene>tentaclebabyneed</mainResourceGene>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+				<targetHasAnyOfHediffs>
+					<li>tentaclegrowthV</li>
+				</targetHasAnyOfHediffs>
+				<casterHasNoneOfHediffs>
+					<li>FullofTentacles</li>
+				</casterHasNoneOfHediffs>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
+				<hediffsToGive>
+					<li>
+						<hediffDef>VStorage</hediffDef>
+						<onlyApplyToSelf>false</onlyApplyToSelf>
+						<severity>1</severity>
+						<bodyParts>
+							<li>Genitals</li>
+						</bodyParts>
+					</li>
+					<li>
+						<hediffDef>BodyCleaner</hediffDef>
+						<onlyApplyToSelf>true</onlyApplyToSelf>
+						<replaceExisting>false</replaceExisting>
+						<bodyParts>
+							<li>Brain</li>
+						</bodyParts>
+					</li>
+					<li>
+						<hediffDef>tentaclegrowthV</hediffDef>
+						<replaceExisting>false</replaceExisting>
+						<bodyParts>
+							<li>Genitals</li>
+						</bodyParts>
+					</li>
+				</hediffsToGive>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>Heart</fleckDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>TentacleUnbirthStomach</defName>
+		<label>squirm down throat</label>
+		<description>Commands the Amor Internum to crawl inside a host's stomach via the mouth to add tentacle resources.</description>
+		<iconPath>Abilities/ButtVore</iconPath>
+		<category>Tentacle</category>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<cooldownTicksRange>5</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<drawAimPie>false</drawAimPie>
+			<range>1</range>
+			<warmupTime>2</warmupTime>
+			<soundCast>AcidSpray_Resolve</soundCast>
+			<targetParams>
+				<canTargetPawns>true</canTargetPawns>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="EBSGFramework.CompProperties_AbilityGiveResource">
+				<amount>0.01</amount>
+				<mainResourceGene>tentaclebabyneed</mainResourceGene>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+				<targetHasAnyOfHediffs>
+					<li>tentaclegrowthS</li>
+				</targetHasAnyOfHediffs>
+				<casterHasNoneOfHediffs>
+					<li>FullofTentacles</li>
+				</casterHasNoneOfHediffs>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
+				<hediffsToGive>
+					<li>
+						<hediffDef>SStorage</hediffDef>
+						<onlyApplyToSelf>false</onlyApplyToSelf>
+						<severity>1</severity>
+						<bodyParts>
+							<li>Stomach</li>
+						</bodyParts>
+					</li>
+					<li>
+						<hediffDef>BodyCleaner</hediffDef>
+						<onlyApplyToSelf>true</onlyApplyToSelf>
+						<replaceExisting>false</replaceExisting>
+						<bodyParts>
+							<li>Brain</li>
+						</bodyParts>
+					</li>
+					<li>
+						<hediffDef>tentaclegrowthS</hediffDef>
+						<replaceExisting>false</replaceExisting>
+						<bodyParts>
+							<li>Stomach</li>
+						</bodyParts>
+					</li>
+				</hediffsToGive>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>Heart</fleckDef>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+</Defs>

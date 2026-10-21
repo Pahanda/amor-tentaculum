@@ -192,7 +192,7 @@
         <severityPerDay>0.25</severityPerDay>
       </li>
 	  <li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
-                <hediff>AMStorage</hediff>
+                <hediff>AStorage</hediff>
                 <severity>2</severity>
                 <interval>5000</interval>
                 <bodyParts>
@@ -272,7 +272,7 @@
         <severityPerDay>0.25</severityPerDay>
       </li>
 	  <li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
-                <hediff>SMStorage</hediff>
+                <hediff>SStorage</hediff>
                 <severity>2</severity>
                 <interval>5000</interval>
                 <bodyParts>

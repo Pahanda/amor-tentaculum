@@ -226,60 +226,6 @@
             </comps>
     </AbilityDef>
 
-            <AbilityDef ParentName="AbilityTouchBase">
-        <defName>UnbirthSM</defName>
-        <label>swallow</label>
-        <description>Swallows the selected Amorinternum to live in the stomach.</description>
-        <iconPath>Abilities/MouthVore</iconPath>
-        <category>Sanguophage</category>
-        <targetRequired>True</targetRequired>
-        <stunTargetWhileCasting>true</stunTargetWhileCasting>
-        <cooldownTicksRange>5</cooldownTicksRange>
-        <hostile>false</hostile>
-        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-        <verbProperties>
-         <verbClass>Verb_CastAbilityTouch</verbClass>
-         <drawAimPie>false</drawAimPie>
-         <range>1</range>
-         <warmupTime>2</warmupTime>
-         <soundCast>PiercingSpine_Launch</soundCast>
-            <targetParams>
-                <canTargetAnimals>true</canTargetAnimals>
-            </targetParams>
-        </verbProperties>
-        <comps>
-            <li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
-            <targetHasAnyOfHediffs>
-                <li>Mvagrancy</li>
-            </targetHasAnyOfHediffs>
-            <casterHasNoneOfHediffs>
-                <li>FullofMalumTentacles</li>
-            </casterHasNoneOfHediffs>
-            </li>
-            <li Class="EBSGFramework.CompProperties_AbilityResourceCost">
-                <resourceCost>-0.01</resourceCost>
-                <mainResourceGene>tentaclebabyneedM</mainResourceGene>
-            </li>
-             <li Class="EBSGFramework.CompProperties_InstantKill">
-             <filthReplacement>FilthSlime</filthReplacement>
-            </li>
-            <li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
-                <hediffsToGive>
-                    <li>
-                    <hediffDef>SStorage</hediffDef>
-                    <onlyApplyToSelf>true</onlyApplyToSelf>
-                    <bodyParts>
-                        <li>Stomach</li>
-                    </bodyParts>
-                    </li>
-                </hediffsToGive>
-            </li>
-            <li Class="CompProperties_AbilityFleckOnTarget">
-        <fleckDef>Heart</fleckDef>
-            </li>
-            </comps>
-    </AbilityDef>
-
     <AbilityDef>
         <defName>BirthAM</defName>
         <label>incubate warrior egg</label>
@@ -304,7 +250,7 @@
         <comps>
             <li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
             <casterHasAnyOfHediffs>
-                <li>AMStorage</li>
+                <li>AStorage</li>
             </casterHasAnyOfHediffs>
             </li>
             <li Class="EBSGFramework.CompProperties_AbilityResourceCost">
@@ -314,7 +260,7 @@
             <li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
                 <hediffsToGive>
                     <li>
-                        <hediffDef>AMStorage</hediffDef>
+                        <hediffDef>AStorage</hediffDef>
                         <onlyApplyToSelf>true</onlyApplyToSelf>
                         <replaceExisting>false</replaceExisting>
                         <bodyParts>
@@ -355,7 +301,7 @@
         <comps>
                     <li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
             <casterHasAnyOfHediffs>
-                <li>SMStorage</li>
+                <li>SStorage</li>
             </casterHasAnyOfHediffs>
             </li>
             <li Class="EBSGFramework.CompProperties_AbilityResourceCost">
@@ -365,7 +311,7 @@
             <li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
                 <hediffsToGive>
                     <li>
-                        <hediffDef>SMStorage</hediffDef>
+                        <hediffDef>SStorage</hediffDef>
                         <onlyApplyToSelf>true</onlyApplyToSelf>
                         <replaceExisting>false</replaceExisting>
                         <severity>-1</severity>

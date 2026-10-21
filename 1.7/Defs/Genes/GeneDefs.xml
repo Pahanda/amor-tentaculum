@@ -16,9 +16,9 @@
         <displayOrderInCategory>89</displayOrderInCategory>
         <geneClass>EBSGFramework.HediffAdder</geneClass>
         <abilities>
-            <li>UnbirthA</li>
-            <li>UnbirthV</li>
-            <li>UnbirthS</li>
+            <li>TentacleIngestAnus</li>
+            <li>TentacleIngestVagina</li>
+            <li>TentacleIngestStomach</li>
             <li>AttackTent</li>
         </abilities>
         <modExtensions>
@@ -64,8 +64,8 @@
         <displayOrderInCategory>89</displayOrderInCategory>
         <geneClass>EBSGFramework.HediffAdder</geneClass>
         <abilities>
-            <li>UnbirthAM</li>
-            <li>UnbirthSM</li>
+            <li>TentacleIngestAnus</li>
+            <li>TentacleIngestStomach</li>
         </abilities>
         <modExtensions>
             <li Class="EBSGFramework.EBSGBodyExtension">
@@ -230,7 +230,7 @@
                         </bodyParts>
                     </li>
                     <li>
-                        <hediff>SMStorage</hediff>
+                        <hediff>SStorage</hediff>
                         <onlyIfNew>true</onlyIfNew>
                         <severity>2</severity>
                         <bodyParts>
@@ -246,7 +246,7 @@
                         </bodyParts>
                     </li>
                     <li>
-                        <hediff>AMStorage</hediff>
+                        <hediff>AStorage</hediff>
                         <onlyIfNew>true</onlyIfNew>
                         <severity>2</severity>
                         <bodyParts>
