@@ -9,10 +9,12 @@
 			<texPath>Things/Items/StartEgg</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 			<color>(256,256,256)</color>
+			<drawSize>(2.0, 2.0)</drawSize>
 		</graphicData>
 		<socialPropernessMatters>false</socialPropernessMatters>
 		<rotatable>false</rotatable>
 		<stackLimit>10</stackLimit>
+		<uiIconScale>0.5</uiIconScale>
 		<statBases>
 			<WorkToMake>500</WorkToMake>
 			<MarketValue>600</MarketValue>
@@ -23,11 +25,6 @@
 			<foodType>Processed</foodType>
 			<ingestSound>Ingest_Inject</ingestSound>
 			<ingestEffectEat>EatVegetarian</ingestEffectEat>
-			<ingestHoldOffsetStanding>
-				<northDefault>
-					<offset>(-0.18,0,0)</offset>
-				</northDefault>
-			</ingestHoldOffsetStanding>
 			<ingestHoldUsesTable>false</ingestHoldUsesTable>
 			<ingestCommandString>Insert {0}</ingestCommandString>
 			<ingestReportString>Inserting {0}.</ingestReportString>

@@ -1,12 +1,8 @@
 <Defs>
 
-	<HediffDef>
-		<defName>MatronEggIncubationFailure</defName>
+	<HediffDef Name="EggIncubationFailureBase" Abstract="True">
 		<hediffClass>HediffWithComps</hediffClass>
-		<label>Host Rejection</label>
-		<labelNoun>rejection</labelNoun>
-		<description>The Amor Matron egg is rejecting this host body. It will result in a slow and painful death...</description>
-		<defaultLabelColor>(2,2,2)</defaultLabelColor>
+		<defaultLabelColor>(170,20,20)</defaultLabelColor>
 		<minSeverity>0</minSeverity>
 		<initialSeverity>0</initialSeverity>
 		<maxSeverity>1</maxSeverity>
@@ -40,38 +36,47 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-0.1</severityPerDay>
 			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef Name="MatronEggIncubationFailure" ParentName="EggIncubationFailureBase">
+		<defName>MatronEggIncubationFailure</defName>
+		<label>Matron Egg Rejection</label>
+		<labelNoun>rejection</labelNoun>
+		<description>The Amor Matron egg is rejecting this host body. It will result in a slow and painful death...</description>
+		<comps>
 			<li Class="EBSGFramework.HediffCompProperties_SeverityByGender">
 				<genders>
 					<Male>1</Male>
 					<Female>0</Female>
 				</genders>
 			</li>
-			<li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
-				<hediff>queenimplant</hediff>
-				<severity>-2</severity>
-				<interval>20</interval>
-				<bodyParts>
-					<li>Anus</li>
-				</bodyParts>
-				<validSeverities>0.1~0.9</validSeverities>
-			</li>
 		</comps>
 	</HediffDef>
 
-	<HediffDef>
-		<defName>MatronEggIncubationSuccess</defName>
+	<HediffDef Name="EggIncubationSuccessBase" Abstract="True">
 		<hediffClass>HediffWithComps</hediffClass>
-		<label>Amor Matron Pregnancy</label>
-		<labelNoun>Pregnancy</labelNoun>
-		<description>An Amor Matron egg is growing within the host. Unlike a normal pregnancy, this will not result in birth, but will gradually transform the host into an Amor Matron.</description>
 		<defaultLabelColor>(203,120,227)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<maxSeverity>1.5</maxSeverity>
 		<isBad>false</isBad>
 		<tendable>false</tendable>
+	</HediffDef>
+		
+	<HediffDef Name="MatronEggIncubationSuccess" ParentName="EggIncubationSuccessBase">
+		<defName>MatronEggIncubationSuccess</defName>
+		<label>Matron Egg Incubation</label>
+		<labelNoun>incubation</labelNoun>
+		<description>An Amor Matron egg is growing within the host. Unlike a normal pregnancy, this will not result in birth, but will gradually transform the host into an Amor Matron.</description>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>0.07</severityPerDay>
+			</li>
+			<li Class="EBSGFramework.HediffCompProperties_SeverityByGender">
+				<genders>
+					<Male>0</Male>
+					<Female>0.01</Female>
+				</genders>
 			</li>
 			<li Class="EBSGFramework.HediffCompProperties_CreateOtherHediffs">
 				<hediffSets>
