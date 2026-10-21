@@ -1,5 +1,75 @@
-<?xml version="1.0" encoding="utf-8"?>
 <Defs>
+
+	<ThingDef ParentName="MakeableDrugPillBase">
+		<defName>AmorMatronEgg</defName>
+		<label>Amor Matron Egg</label>
+		<description>An Amor Matron Egg. Can be inserted into a pawn, where it will hatch and progressively take over the body, transforming them into an Amor Matron host.\n\nNOTE: This transformation will only work on female pawns. It will cause lethal organ instability in males.</description>
+		<possessionCount>10</possessionCount>
+		<graphicData>
+			<texPath>Things/Items/StartEgg</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<color>(256,256,256)</color>
+		</graphicData>
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<rotatable>false</rotatable>
+		<stackLimit>10</stackLimit>
+		<statBases>
+			<WorkToMake>500</WorkToMake>
+			<MarketValue>600</MarketValue>
+			<Mass>0.04</Mass>
+		</statBases>
+		<ingestible>
+			<drugCategory>Medical</drugCategory>
+			<foodType>Processed</foodType>
+			<ingestSound>Ingest_Inject</ingestSound>
+			<ingestEffectEat>EatVegetarian</ingestEffectEat>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(-0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Insert {0}</ingestCommandString>
+			<ingestReportString>Inserting {0}.</ingestReportString>
+			<ingestReportStringEat>Inserting {0}.</ingestReportStringEat>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>MatronEggIncubationSuccess</hediffDef>
+					<severity>0.1</severity>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>MatronEggIncubationFailure</hediffDef>
+					<severity>0.1</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+			<researchPrerequisite>AmorTentaculumCultavation</researchPrerequisite>
+			<recipeUsers>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<soundWorking>Recipe_Drug</soundWorking>
+		</recipeMaker>
+		<techHediffsTags>
+			<li>Industrial</li>
+		</techHediffsTags>
+		<costList>
+			<HumpShroom>5</HumpShroom>
+			<Neutroamine>1</Neutroamine>
+			<MedicineHerbal>25</MedicineHerbal>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<listOrder>1000</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	
+	
+	
     <ThingDef ParentName="BodyPartProstheticBase">
         <defName>QueenEgg</defName>
         <label>Amor Queen Egg</label>
