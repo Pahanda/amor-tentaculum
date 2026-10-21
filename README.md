@@ -36,7 +36,7 @@ A captured pawn, converted entirely into Amor Internum storage.  Immobile and no
 
 A combat-focused mass of tentacles, designed to latch on to and capture hostile enemies.
 
-## Amor Sheathe
+### Amor Sheath
 
 A non-combat mass of tentacles that can grows hard and soft flesh resources (harvestable per normal mechanics) used to build other things.
 
