@@ -134,7 +134,8 @@
                 <appendString></appendString>
                 <roundDigits>0</roundDigits>
       </li>
-            <li Class="EBSGFramework.HediffCompProperties_GiveAbilityAtSeverity">
+            <!--
+			      <li Class="EBSGFramework.HediffCompProperties_GiveAbilityAtSeverity">
                 <abilitiesAtSeverities>
                           <li>
                         <abilityDef>BirthA</abilityDef>
@@ -142,6 +143,7 @@
                     </li>
                 </abilitiesAtSeverities>
             </li>
+						-->
     </comps>
   </HediffDef>
 

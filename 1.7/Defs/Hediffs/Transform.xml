@@ -40,7 +40,7 @@
                   <bodyPart>Anus</bodyPart>
                 </li>
                 <li>
-                  <hediffDef>queenimplant</hediffDef>
+                  <hediffDef>MatronEggIncubationSuccess</hediffDef>
                   <validSeverity>0~0.2</validSeverity>
                   <severityPerDay>-200</severityPerDay>
                   <initialSeverity>-1</initialSeverity>
@@ -56,6 +56,8 @@
             </li>
         </comps>
   </HediffDef>
+	
+<!--
 
     <HediffDef>
     <defName>transformMale</defName>
@@ -155,5 +157,7 @@
             </li>
         </comps>
   </HediffDef>
+
+-->
 
   </Defs>

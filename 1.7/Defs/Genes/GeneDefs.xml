@@ -6,34 +6,140 @@
     <displayPriorityInXenotype>-2102</displayPriorityInXenotype>
   </GeneCategoryDef>
 
+  <GeneDef ParentName="GeneGenitalTypeBase">
+		<defName>RJWGenes_AmorTentacleInfestedFemaleGenitalia</defName>
+		<label>tentacle inhabited genitalia (female)</label>
+		<displayCategory>tent_genes_hider</displayCategory>
+		<description>Carriers of this gene have female genitalia permantly inhabited by tentacles.</description>
+		<iconPath>Genes/Tentacle_Vagina</iconPath>
+		<modExtensions>
+			<li Class="RJW_Genes.GenitaliaTypeExtension">
+				<penis>Penis</penis>
+				<vagina>TVagina</vagina>
+				<anus>TAnus</anus>
+				<breasts>TBreasts</breasts>
+			</li>
+		</modExtensions>
+		<displayOrderInCategory>802</displayOrderInCategory>
+	</GeneDef>
 
-    <GeneDef>
-        <defName>THostBody</defName>
-        <label>Amor brood mother body</label>
-        <description>Carriers of this gene have a body that has been turned into a breeding nest for Amor tentacles and their eggs.</description>
-        <iconPath>Genes/Tentacle_Body</iconPath>
-        <displayCategory>tent_genes_hider</displayCategory>
-        <displayOrderInCategory>89</displayOrderInCategory>
-        <geneClass>EBSGFramework.HediffAdder</geneClass>
-        <abilities>
-            <li>TentacleIngestAnus</li>
-            <li>TentacleIngestVagina</li>
-            <li>TentacleIngestStomach</li>
-            <li>AttackTent</li>
-        </abilities>
-        <modExtensions>
-            <li Class="EBSGFramework.EBSGBodyExtension">
-                <ageGraphics>
-                    <li>
-                        <ageRange>13~9000</ageRange>
-                        <body>Things/Pawns/Parts/Bodies/Tentbody</body>
-                    </li>
-                </ageGraphics>
-            </li>
-            
-        </modExtensions>
-    </GeneDef>
+	<GeneDef ParentName="GeneGenitalTypeBase">
+		<defName>RJWGenes_AmorTentacleInfestedMaleGenitalia</defName>
+		<label>tentacle inhabited genitalia (male)</label>
+		<displayCategory>tent_genes_hider</displayCategory>
+		<description>Carriers of this gene have male genitalia permantly inhabited by Malum tentacles.</description>
+		<iconPath>Genes/Tentacle_Vagina</iconPath>
+		<modExtensions>
+			<li Class="RJW_Genes.GenitaliaTypeExtension">
+				<penis>TPenis</penis>
+				<vagina>Vagina</vagina>
+				<anus>TAnus</anus>
+				<breasts>TBreasts</breasts>
+			</li>
+		</modExtensions>
+		<displayOrderInCategory>803</displayOrderInCategory>
+	</GeneDef>
 
+	<GeneDef>
+		<defName>AmorMatronHostBody</defName>
+		<label>Brood Mother</label>
+		<displayCategory>tent_genes_hider</displayCategory>
+		<geneClass>EBSGFramework.HediffAdder</geneClass>
+		<description>Carriers of this gene have a body that has been turned into a holding vessel for Amor Internum tentacles and a breeding nest for Amor Queen eggs.</description>
+		<displayOrderInCategory>0.1</displayOrderInCategory>
+		<abilities>
+			<li>TentacleIngestAnus</li>
+			<li>TentacleIngestVagina</li>
+			<li>TentacleIngestStomach</li>
+		</abilities>
+		<modExtensions>
+			<li Class="EBSGFramework.EBSGBodyExtension">
+				<ageGraphics>
+					<li>
+						<ageRange>13~9000</ageRange>
+						<body>Things/Pawns/Parts/Bodies/Tentbody</body>
+					</li>
+				</ageGraphics>
+			</li>
+			<li Class="EBSGFramework.EBSGExtension">
+				<hediffsToApply>
+					<li>
+						<hediff>queenadult</hediff>
+						<onlyIfNew>true</onlyIfNew>
+						<severity>0.01</severity>
+					</li>
+					<li>
+						<hediff>tentaclegrowthV</hediff>
+						<onlyIfNew>true</onlyIfNew>
+						<severity>1</severity>
+						<bodyParts>
+							<li>Genitals</li>
+						</bodyParts>
+					</li>
+					<li>
+						<hediff>VStorage</hediff>
+						<onlyIfNew>true</onlyIfNew>
+						<severity>3</severity>
+						<bodyParts>
+							<li>Genitals</li>
+						</bodyParts>
+					</li>
+					<li>
+						<hediff>tentaclegrowthS</hediff>
+						<onlyIfNew>true</onlyIfNew>
+						<severity>1</severity>
+						<bodyParts>
+							<li>Stomach</li>
+						</bodyParts>
+					</li>
+					<li>
+						<hediff>SStorage</hediff>
+						<onlyIfNew>true</onlyIfNew>
+						<severity>2</severity>
+						<bodyParts>
+							<li>Stomach</li>
+						</bodyParts>
+					</li>
+					<li>
+						<hediff>tentaclegrowthA</hediff>
+						<onlyIfNew>true</onlyIfNew>
+						<severity>1</severity>
+						<bodyParts>
+							<li>Anus</li>
+						</bodyParts>
+					</li>
+					<li>
+						<hediff>AStorage</hediff>
+						<onlyIfNew>true</onlyIfNew>
+						<severity>2</severity>
+						<bodyParts>
+							<li>Anus</li>
+						</bodyParts>
+					</li>
+					<li>
+						<hediff>AMtentacle</hediff>
+						<onlyIfNew>true</onlyIfNew>
+						<severity>1</severity>
+						<bodyParts>
+							<li>Anus</li>
+						</bodyParts>
+					</li>
+					<li>
+						<hediff>VMtentacle</hediff>
+						<onlyIfNew>true</onlyIfNew>
+						<severity>1</severity>
+						<bodyParts>
+							<li>Genitals</li>
+						</bodyParts>
+					</li>
+				</hediffsToApply>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+
+	<!-- 
+	
     <GeneDef>
         <defName>THostBodyB</defName>
         <label>baroness body</label>
@@ -80,123 +186,7 @@
         </modExtensions>
     </GeneDef>
 
-      <GeneDef ParentName="GeneGenitalTypeBase">
-    <defName>rjw_genes_tentinfest_genitalia</defName>
-    <label>tentacle inhabited genitalia</label>
-    <displayCategory>tent_genes_hider</displayCategory>
-    <description>Carriers of this gene have genitalia permantly inhabited by tentacles.</description>
-    <iconPath>Genes/Tentacle_Vagina</iconPath>
-    <modExtensions>
-      <li Class="RJW_Genes.GenitaliaTypeExtension">
-        <penis>Penis</penis>
-        <vagina>TVagina</vagina>
-        <anus>TAnus</anus>
-        <breasts>TBreasts</breasts>
-      </li>
-    </modExtensions>
-    <displayOrderInCategory>802</displayOrderInCategory>
-  </GeneDef>
-  
-  <GeneDef ParentName="GeneGenitalTypeBase">
-    <defName>rjw_genes_tentinfest_Malegenitalia</defName>
-    <label>tentacle inhabited genitalia</label>
-    <displayCategory>tent_genes_hider</displayCategory>
-    <description>Carriers of this gene have genitalia permantly inhabited by Malum tentacles.</description>
-    <iconPath>Genes/Tentacle_Vagina</iconPath>
-    <modExtensions>
-      <li Class="RJW_Genes.GenitaliaTypeExtension">
-        <penis>TPenis</penis>
-		<vagina>Vagina</vagina>
-        <anus>TAnus</anus>
-        <breasts>TBreasts</breasts>
-      </li>
-    </modExtensions>
-    <displayOrderInCategory>803</displayOrderInCategory>
-  </GeneDef>
 
-    <GeneDef>
-        <defName>ThostAdult</defName>
-        <label>Brood Mother</label>
-        <displayCategory>tent_genes_hider</displayCategory>
-        <geneClass>EBSGFramework.HediffAdder</geneClass>
-        <description>This pawn has become a brood mother and will forever be filled with tentacles.</description>
-        <displayOrderInCategory>0.1</displayOrderInCategory>
-        <modExtensions>
-	    <li Class="EBSGFramework.EBSGExtension">
-                <hediffsToApply>
-                    <li>
-                        <hediff>queenadult</hediff>
-                        <onlyIfNew>true</onlyIfNew>
-                        <severity>0.01</severity>
-                    </li>
-                    <li>
-                        <hediff>tentaclegrowthV</hediff>
-                        <onlyIfNew>true</onlyIfNew>
-                        <severity>1</severity>
-                        <bodyParts>
-                            <li>Genitals</li>
-                        </bodyParts>
-                    </li>
-                    <li>
-                        <hediff>VStorage</hediff>
-                        <onlyIfNew>true</onlyIfNew>
-                        <severity>3</severity>
-                        <bodyParts>
-                            <li>Genitals</li>
-                        </bodyParts>
-                    </li>
-                    <li>
-                        <hediff>tentaclegrowthS</hediff>
-                        <onlyIfNew>true</onlyIfNew>
-                        <severity>1</severity>
-                        <bodyParts>
-                            <li>Stomach</li>
-                        </bodyParts>
-                    </li>
-                    <li>
-                        <hediff>SStorage</hediff>
-                        <onlyIfNew>true</onlyIfNew>
-                        <severity>2</severity>
-                        <bodyParts>
-                            <li>Stomach</li>
-                        </bodyParts>
-                    </li>
-                    <li>
-                        <hediff>tentaclegrowthA</hediff>
-                        <onlyIfNew>true</onlyIfNew>
-                        <severity>1</severity>
-                        <bodyParts>
-                            <li>Anus</li>
-                        </bodyParts>
-                    </li>
-                    <li>
-                        <hediff>AStorage</hediff>
-                        <onlyIfNew>true</onlyIfNew>
-                        <severity>2</severity>
-                        <bodyParts>
-                            <li>Anus</li>
-                        </bodyParts>
-                    </li>
-                    <li>
-                        <hediff>AMtentacle</hediff>
-                        <onlyIfNew>true</onlyIfNew>
-                        <severity>1</severity>
-                        <bodyParts>
-                            <li>Anus</li>
-                        </bodyParts>
-                    </li>
-                    <li>
-                        <hediff>VMtentacle</hediff>
-                        <onlyIfNew>true</onlyIfNew>
-                        <severity>1</severity>
-                        <bodyParts>
-                            <li>Genitals</li>
-                        </bodyParts>
-                    </li>
-                </hediffsToApply>
-            </li>
-	</modExtensions>
-    </GeneDef>
 	
 	<GeneDef>
         <defName>MalumHost</defName>
@@ -266,7 +256,7 @@
 	</modExtensions>
     </GeneDef>
 
-    <GeneDef>
+	    <GeneDef>
         <defName>ThostBrooder</defName>
         <label>Baroness</label>
         <displayCategory>tent_genes_hider</displayCategory>
@@ -309,5 +299,7 @@
             </li>
 	</modExtensions>
     </GeneDef>
+
+-->
 
 </Defs>

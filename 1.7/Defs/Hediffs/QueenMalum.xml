@@ -1,5 +1,7 @@
 <Defs>
 
+	<!--
+	
 <HediffDef>
     <defName>queenimplantM</defName>
     <hediffClass>HediffWithComps</hediffClass>
@@ -476,5 +478,7 @@
       </li>
     </stages>
   </HediffDef>
+
+-->
 
 </Defs>

@@ -689,6 +689,7 @@
     </comps>
   </HediffDef>
 
+	<!--
     <HediffDef>
     <hediffClass>HediffWithComps</hediffClass>
     <defName>TNymphAss</defName>
@@ -753,4 +754,7 @@
             </li>
       </comps>
   </HediffDef>
+	
+	-->
+	
 </Defs>

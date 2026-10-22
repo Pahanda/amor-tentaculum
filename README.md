@@ -5,6 +5,8 @@ This mod was originally created by MrCastle69 (who is MIA) and was maintained by
 
 At the moment, this mod is EXTREMELY a Work In Progress.  The original mod was unfinished and had quite a few bugs.  I'm going to work on fixing those bugs and then start to add additional features.  Please make use of the Github Issues feature to report any problems you have or suggest things you'd like to see.  I can't promise that I'll be able to implement all of them (I'm still fairly new to RimWorld modding), but I'll do my best.
 
+The tentacle assets were originally created by MrCastle69 and ScorchedRose9, and are used with permission.
+
 # Mod Dependencies
 
 Hard Requirements (this mod will not work without them):
@@ -17,76 +19,168 @@ Hard Requirements (this mod will not work without them):
 Soft Requirements (this mod provides additional features if you have these installed):
 * Ideology
 
-# Tentacle Types
+# Tentacle Bestiary
 
 ## Neutral Tentacles
 
 ### Amor Internum
-The most basic type of tentacle. Mindless, writing, and not able to survive outside of a host body.
+The most basic type of tentacle. Mindless, writing, and not able to survive outside of a host body.  Primarily used as a resource for pawn and animal abilities.
 
 ### Amor Larva
 A newly-born tentacle that can be triggered to grow into one of several different types of mature tentacles once it has reached sufficient age.
 
 ### Amor Womb
-A captured pawn, converted entirely into Amor Internum storage.  Immobile and no longer useful as a pawn.
+A captured pawn, converted entirely into Amor Internum storage.  Immobile and no longer useful as a pawn, but provides extra Amor Internum storage for the colony.
 
 ## Male Tentacles
 
 ### Amor Striker
-
-A combat-focused mass of tentacles, designed to latch on to and capture hostile enemies.
+A combat-focused mass of tentacles, designed to latch on to and capture hostile enemies with attacks to their genitalia.
 
 ### Amor Sheath
-
-A non-combat mass of tentacles that can grows hard and soft flesh resources (harvestable per normal mechanics) used to build other things.
+A non-combat mass of tentacles that can be butchered for tentacle meat (food) and the soft flesh leather substitute.  Essentially livestock.
 
 ### Amor Drone
-
 A combat-focused mass of tentacles, designed to protect the hive from external threats with powerful melee attacks.  Can also be trained to perform hauling tasks.
 
 ## Female Tentacles
 
 ### Amor Warrior
-
 A combat-focused mass of tentacles, designed to protect the hive from external threats with debilitating ranged attacks.
 
 ### Amor Constructor
+A non-combat mass of tentacles that can be harvested for hard and soft resin resources (per normal animal mechanics) used to build other things.
 
-A non-combat mass of tentacles that produces hard and soft resin resources (harvestable per normal mechanics) used to build other things.
+### Amor Brewer
+A non-combat mass of tentacles that produces drugs and chemicals regularly.  Can be switched between various production targets.
 
-### Amor Matron
+### Amor Brood Mother
+A non-combat mass of tentacles that focuses entirely on incubating and laying Amor Larva eggs, which will eventually grow into other types of tentacles.
 
-A powerful mass of tentacles, designed to help grow Amor Internum tentacles to empower Amor hosts.  Grows and lays Amor Internum eggs, but can be switched to Amornuum production if desired.
+### Amor Queen
+A powerful mass of tentacles, designed to help grow Amor Internum tentacles to empower Amor hosts' abilities.  Grows and lays Amor Internum eggs.  Has combat abilities, but due to its essential nature to the brood, should not engage in combat unless necessary.
 
 # Host Types
 
 ## Male Hosts
 
-### Amor Knight
+### Amor Servant
+A male host specialized for labor and crafting.  Minimal combat potential, but can be used to store Amor Internum for use by other host pawns.
 
+### Amor Knight
 A male host specialized for melee combat, at the cost of intelligence and work proficiency.  Uses stored Amor Internum to power its abilities.
 
 ### Amor Rogue
-
 A male host specialized for stealth and reconnaissance.  Minimal combat potential, but naturally difficult to see and can become mostly invisible for a short time.  Uses stored Amor Internum to power its abilities.
 
 ### Amor Baron
-
-A male host specialized for defense, providing buffs to other host and tentacle pawns.  Uses stored Amor Internum to power its abilities.
+A male host specialized for defense, providing buffs to other host and tentacle pawns.  Can act as supplementary storage for Amor Internum.  Uses stored Amor Internum to power its abilities.
 
 ## Female Hosts
 
 ### Amor Nymph
-
 A female host specialized for seducing and placating other pawns.  Can convert infected pawns into immobile Amor Wombs.
 
 ### Amor Baroness
-
 A female host specialized to carry Amor Internum for use by other host pawns.
 
-### Amor Queen
+### Amor Matron
+The strongest of the female host types.  Grows and lays Amor Larva eggs to help the hive reproduce and produces Tentacle Slime, which is a key crafting material.  She provides the foundational materials for growing your colony - protect her at all costs!
 
-The strongest of the female host types.  Grows and lays Amor Larva eggs to help the hive reproduce.
+# Resources
+
+## Animal-Harvestable Resources
+
+### Hard Resin
+Hard tentacle resin.  Immune to fire and its jagged edges make excellent cutting tools.
+
+### Soft Resin
+Soft tentacle resin.  Pretty and immune to fire, but structurally weak.
+
+### Soft Flesh
+A leather substitute that can be used for crafting.  Incredibly soft and feels like genital skin.  (because it is...)
+
+## Animal-Produced Drugs
+
+### Amornuum
+A fermented drink that relaxes the pawn, but makes them horny and more likely to engage in sexual activity.  They may also be taken advantage of while in this state, depending on the whims of your pawns...
+
+## Host-Produced Resources
+
+### Tentacle Slime
+A sticky, viscous substance produced by Amor Matrons.  Used for crafting more advanced eggs and implants.
+
+# Buildings
+
+## Combat and Defense
+
+### Tentacle Turret
+A portable turrent that grows just about anywhere.  Fires low-damage spikes at long range.
+
+### Paralysis Trap
+A buildable trap that releases a swarm of hostile tentacles when triggered.  Tentacles will attack any nearby pawns (including your own!), so build with care.  They are extremely fragile, but have a powerful paralytic poison.
+
+# Equipment
+
+## Weapons
+
+### Tentacle Whip
+A whip crafted from tentacle resin and soft flesh.  Not particularly strong for raw damage output, but will inflict paralytic poison that builds up after repeated strikes.  Definitely Less-Than-Lethal, but can still kill.
+
+### Resin Sword
+A sword forged from hard tentacle resin.  Due to the sharp nature of the material, it has high armor penetration.
+
+## Armor
+Note that most tentacle armor can only be worn by pawns that have been converted into tentacle hosts, as it interfaces neurally with the tentacles they carry within them for maximum effectiveness.
+
+### Tentacle Bodysuit
+A bodysuit crafted from soft flesh and plasteel.  Provides good protection against all types of damage as well as fire and vaccuum resistance.
+
+### Resin Cuirass
+A chestpiece forged from hard tentacle resin.  Provides excellent protection against blunt and sharp damage, but is heavy and will slow down the wearer.
+
+### Resin Helmet
+A helmet forged from hard tentacle resin.  Provides excellent protection against blunt and sharp damage.
+
+### Powered Tentacle Armor
+A full-body suit of powered armor with a full neural interface connecting to the tentacles within the host.  Provides superior protection against all damage types.  Sealed against vaccuum and toxic environments and heavily resistant to fire.  Has auxillary storage for Amor Internum that can be transferred to the host should they run low.
+
+### Powered Tentacle Helmet
+A full-head helmet with a neural interface connecting to the tentacles within the host.  Provides superior protection against all damage types.  Sealed against vaccuum and toxic environments and heavily resistant to fire.  Has auxillary storage for Amor Internum that can be transferred to the host should they run low.
+
+# Implants
+
+## Amor Internum Host Implants
+
+### Uterine Growth Implant (Larva)
+Increases the incubation rate of Amor Larva eggs.  Only works on Amor Brood Mothers.
+
+### Uterine Growh Implant (Internum)
+Increases the incubation rate of Amor Internum eggs.  Only works on Amor Queens.
+
+## Amor Tentacle Incubation Implants
+
+## Amor Host Incubation Implants
+
+### Anal Speculum Implant
+A plasteel implant that stretches the host's anus, allowing more capacity for Amor Internum storage.
+
+### Stomach Storage Implant
+An advanced implant that replaces the host's stomach completely. The Amor Internum tentacles that live there will handle the host's digestive processes, which frees up room for additional Amor Internum storage capacity.
+
+### Uterine Growth Implant (Queen)
+Increases the incubation rate of Amor Queen eggs.  Only works on Amor Matrons.
+
+## Misc Implants
+
+### Tentacle Esophagus Replacement
+An advanced implant that replaces the host's esophagus with a tentacle-based tube, which will pre-process swallowed food.  This makes the pawn immune to Gut Worms and Food Poisoning.
+
+### Indoctrination Implant
+An implant that grafts a small tentacle onto the brainstem.  The tentacle will suppress the pawn's free will to the point where they do not suffer from mental breaks (but cannot receive inspirations).  They need less food and rest, feel less pain, and will basically always be obedient.  This comes with a cost, though, as they suffer a significant penalty to consciousness - and should the tentacle ever be removed, they will die.
+
+### Rut Implant
+An implant that grafts a small tentacle onto the brainstem.  The tentacle will kick the user's sexual urges into overdrive as well as providing a significant boost to their work and movement speeds.  While it does make for a hard-working pawn, they will often stop working to engage in lovin'.
 
 # Original Mod Description:
 Rimworld Tentacle Mod

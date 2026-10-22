@@ -172,7 +172,7 @@
     </HediffDef>
 
 
-
+	<!--
   
     <AbilityDef>
         <defName>BirthA</defName>
@@ -229,6 +229,8 @@
             </li>
         </comps>
     </AbilityDef>
+
+-->
 
         <AbilityDef>
         <defName>BirthV</defName>

@@ -1,5 +1,9 @@
 <Defs>
   
+	<!--
+	
+	Disabled while this is being worked on.
+	
   <ScenarioDef ParentName="ScenarioBase">
     <defName>TentSlut</defName>
     <label>The Amor Cultivator</label>
@@ -12,7 +16,7 @@
       </playerFaction>
       <parts>
 
-        <!-- Game start dialog -->
+        - Game start dialog -
         <li Class="ScenPart_GameStartDialog">
           <def>GameStartDialog</def>
           <text>You knew you wanted to breed the Amor Tentaculum species ever since you saw that glitterworld film. You and a friend bought a one-way trip to a rimworld, an Amor queen egg, and some specimens.</text>
@@ -25,7 +29,8 @@
           <pawnChoiceCount>8</pawnChoiceCount>
         </li>
 
-        <!-- Player starting stuff spawn method-->
+        - Player starting stuff spawn method-
+				
         <li Class="ScenPart_PlayerPawnsArriveMethod">
           <def>PlayerPawnsArriveMethod</def>
           <visible>false</visible>
@@ -49,7 +54,7 @@
 				<trait>TentacleSlut</trait>
 			</li>
 
-        <!-- Player starting things -->
+        - Player starting things -
         <li Class="ScenPart_StartingThing_Defined">
           <def>StartingThing_Defined</def>
           <thingDef>softresin</thingDef>
@@ -102,5 +107,7 @@
       </parts>
     </scenario>
   </ScenarioDef>
+
+-->
 
 </Defs>
