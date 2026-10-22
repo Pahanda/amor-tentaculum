@@ -35,7 +35,10 @@ A captured pawn, converted entirely into Amor Internum storage.  Immobile and no
 ## Male Tentacles
 
 ### Amor Striker
-A combat-focused mass of tentacles, designed to latch on to and capture hostile enemies with attacks to their genitalia.
+A combat-focused mass of tentacles, designed to latch on to and incapacitate hostile enemies with attacks to their genitalia.
+
+### Amor Assimilator
+A non-combat mass of tentacles, designed to target downed enemies and transport them to the hive as prisoners.  Can perform general hauling tasks as well.
 
 ### Amor Sheath
 A non-combat mass of tentacles that can be butchered for tentacle meat (food) and the soft flesh leather substitute.  Essentially livestock.
@@ -115,10 +118,18 @@ A sticky, viscous substance produced by Amor Matrons.  Used for crafting more ad
 ## Combat and Defense
 
 ### Tentacle Turret
-A portable turrent that grows just about anywhere.  Fires low-damage spikes at long range.
+A portable turret that grows just about anywhere.  Fires low-damage spikes at long range.
 
 ### Paralysis Trap
 A buildable trap that releases a swarm of hostile tentacles when triggered.  Tentacles will attack any nearby pawns (including your own!), so build with care.  They are extremely fragile, but have a powerful paralytic poison.
+
+## Utility
+
+### Amor Calor
+A tentacle structure that generates heat. Requires no fuel or power, but generates less heat than industrial counterparts. The smell is some what suspicious.
+
+### Amor Frigis
+A tentacle structure that generates cold. Requires no fuel or power, but generates less cold than industrial counterparts. The smell is some what suspicious.
 
 # Equipment
 
