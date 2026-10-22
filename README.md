@@ -182,6 +182,33 @@ An implant that grafts a small tentacle onto the brainstem.  The tentacle will s
 ### Rut Implant
 An implant that grafts a small tentacle onto the brainstem.  The tentacle will kick the user's sexual urges into overdrive as well as providing a significant boost to their work and movement speeds.  While it does make for a hard-working pawn, they will often stop working to engage in lovin'.
 
+# Animal Abilities
+
+## Genital Latch
+Usable by Amor Strikers.
+
+Attacks a pawn by leaping onto them and latching onto their genitals.  This will immobilize the pawn by causing massive amounts of pain.  The attacker may choose to let go after a time - or implant things in their victim.
+
+## Larval Transformation
+Usable by Amor Larvae.  Allows the player to choose what type of tentacle the Amor Larva will become.  It will enter a metamorphosis cacooon for a time, and then emerge as the chosen type.
+
+# Host Abilities
+
+## Slime Spray
+Usable by most Host pawn types.
+
+Ejects a conical spray of Tentacle Slime from the host's mouth, which covers a large area.  It does some damage to what it strikes, but also puts out fires.  It may also trigger uncontrolled sexual urges.
+
+## Seduction Kiss
+Usable by Amor Nymphs.
+
+Approaches the target pawn and attempts to seduce them.  If successful, the target will be temporarily non-hostile (if it was hostile) and its Resistance and Willpower values will be significantly reduced.  Can be used to cancel mental breaks, make prisoners more recruitable, or more nefarious deeds.
+
+## Create Amor Womb
+Usable by Amor Nymphs.  Only works on pawns that are affected by a Seduction Kiss.
+
+Injects the target pawn with a resinous toxin, which will convert them into an immobile Amor Womb.  The Amor Womb will then be able to store Amor Internum for use by other pawns.
+
 # Original Mod Description:
 Rimworld Tentacle Mod
 
