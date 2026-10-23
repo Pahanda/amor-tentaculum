@@ -40,6 +40,10 @@
 					<hediffDef>MatronEggIncubationFailure</hediffDef>
 					<severity>0.1</severity>
 				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>MatronEggOverrideFailure</hediffDef>
+					<severity>0.1</severity>
+				</li>
 			</outcomeDoers>
 		</ingestible>
 		<recipeMaker>

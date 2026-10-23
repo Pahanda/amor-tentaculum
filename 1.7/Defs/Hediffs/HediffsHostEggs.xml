@@ -60,6 +60,49 @@
 		</comps>
 	</HediffDef>
 
+	<HediffDef Name="HostTypeOverrideFailureBase" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(170,20,20)</defaultLabelColor>
+		<minSeverity>0</minSeverity>
+		<initialSeverity>0</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<stages>
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<painOffset>0.25</painOffset>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0.333</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_MessageAfterTicks">
+				<ticks>120</ticks>
+				<letterLabel>{0_labelShort} incubation failure</letterLabel>
+				<letterText>{0_labelShort} was unable to incubate a second Amor Host egg type. They will be in pain for a while, but will recover.</letterText>
+				<letterType>HostRejection</letterType>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef Name="MatronEggOverrideFailure" ParentName="HostTypeOverrideFailureBase">
+		<defName>MatronEggOverrideFailure</defName>
+		<label>Matron incubation failure</label>
+		<labelNoun>failure</labelNoun>
+		<description>The attempt to implant an Amor Matron egg failed, as this pawn already is an Amor Host.  This will cause them pain for a few days, but they will recover.</description>
+		<comps>
+			<li Class="EBSGFramework.HediffCompProperties_SeverityByGenes">
+				<baseSeverity>0</baseSeverity>
+				<geneEffects>
+					<li>
+						<gene>AmorMatronHostBody</gene>
+						<effect>0.001</effect>
+					</li>
+				</geneEffects>
+			</li>
+		</comps>
+	</HediffDef>
+
 	<HediffDef Name="EggIncubationSuccessBase" Abstract="True">
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(203,120,227)</defaultLabelColor>
@@ -85,6 +128,15 @@
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>0.07</severityPerDay>
+			</li>
+			<li Class="EBSGFramework.HediffCompProperties_SeverityByGenes">
+				<baseSeverity>0.001</baseSeverity>
+				<geneEffects>
+					<li>
+						<gene>AmorMatronHostBody</gene>
+						<effect>-1</effect>
+					</li>
+				</geneEffects>
 			</li>
 			<li Class="EBSGFramework.HediffCompProperties_SeverityByGender">
 				<genders>
