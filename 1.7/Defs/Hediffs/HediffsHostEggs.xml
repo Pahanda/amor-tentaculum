@@ -36,6 +36,12 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-0.1</severityPerDay>
 			</li>
+			<li Class="HediffCompProperties_MessageAfterTicks">
+				<ticks>60</ticks>
+				<letterLabel>{0_labelShort} rejecting host</letterLabel>
+				<letterText>{0_labelShort} is rejecting their implanted Amor Host egg!</letterText>
+				<letterType>HostRejection</letterType>
+			</li>
 		</comps>
 	</HediffDef>
 	
@@ -61,6 +67,14 @@
 		<maxSeverity>1.5</maxSeverity>
 		<isBad>false</isBad>
 		<tendable>false</tendable>
+		<comps>
+			<li Class="HediffCompProperties_MessageAfterTicks">
+				<ticks>60</ticks>
+				<letterLabel>{0_labelShort} impregnated</letterLabel>
+				<letterText>{0_labelShort} has been impregnated with an Amor Host egg!</letterText>
+				<letterType>HostPregnancy</letterType>
+			</li>
+		</comps>
 	</HediffDef>
 		
 	<HediffDef Name="MatronEggIncubationSuccess" ParentName="EggIncubationSuccessBase">
@@ -415,7 +429,7 @@
 				<severityPerDay>0.25</severityPerDay>
 			</li>
 			<li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
-				<hediff>VStorage</hediff>
+				<hediff>TentacleStorageVagina</hediff>
 				<severity>3</severity>
 				<interval>5000</interval>
 				<bodyParts>

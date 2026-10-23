@@ -49,6 +49,7 @@
         <severityPerDay>100</severityPerDay>
       </li>
       <li Class="EBSGFramework.HediffCompProperties_DestroyOnDeath" />
+			<li Class="EBSGFramework.HediffCompProperties_PreventDeathNotifications" />
     </comps>
   </HediffDef>
 

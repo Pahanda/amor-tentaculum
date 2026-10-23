@@ -1,15 +1,15 @@
 <Defs>
 
   <GeneCategoryDef>
-    <defName>tent_genes_hider</defName>
-    <label>don't pick these</label>
+    <defName>HiddenTentacleGenes</defName>
+    <label>Hidden Tentacle-Specific Genes - Don't Use These</label>
     <displayPriorityInXenotype>-2102</displayPriorityInXenotype>
   </GeneCategoryDef>
 
   <GeneDef ParentName="GeneGenitalTypeBase">
 		<defName>RJWGenes_AmorTentacleInfestedFemaleGenitalia</defName>
 		<label>tentacle inhabited genitalia (female)</label>
-		<displayCategory>tent_genes_hider</displayCategory>
+		<displayCategory>HiddenTentacleGenes</displayCategory>
 		<description>Carriers of this gene have female genitalia permantly inhabited by tentacles.</description>
 		<iconPath>Genes/Tentacle_Vagina</iconPath>
 		<modExtensions>
@@ -26,8 +26,8 @@
 	<GeneDef ParentName="GeneGenitalTypeBase">
 		<defName>RJWGenes_AmorTentacleInfestedMaleGenitalia</defName>
 		<label>tentacle inhabited genitalia (male)</label>
-		<displayCategory>tent_genes_hider</displayCategory>
-		<description>Carriers of this gene have male genitalia permantly inhabited by Malum tentacles.</description>
+		<displayCategory>HiddenTentacleGenes</displayCategory>
+		<description>Carriers of this gene have male genitalia permantly inhabited by tentacles.</description>
 		<iconPath>Genes/Tentacle_Vagina</iconPath>
 		<modExtensions>
 			<li Class="RJW_Genes.GenitaliaTypeExtension">
@@ -43,7 +43,7 @@
 	<GeneDef>
 		<defName>AmorMatronHostBody</defName>
 		<label>Brood Mother</label>
-		<displayCategory>tent_genes_hider</displayCategory>
+		<displayCategory>HiddenTentacleGenes</displayCategory>
 		<geneClass>EBSGFramework.HediffAdder</geneClass>
 		<description>Carriers of this gene have a body that has been turned into a holding vessel for Amor Internum tentacles and a breeding nest for Amor Queen eggs.</description>
 		<displayOrderInCategory>0.1</displayOrderInCategory>
@@ -51,16 +51,9 @@
 			<li>TentacleIngestAnus</li>
 			<li>TentacleIngestVagina</li>
 			<li>TentacleIngestStomach</li>
+			<li>TentacleExpelVagina</li>
 		</abilities>
 		<modExtensions>
-			<li Class="EBSGFramework.EBSGBodyExtension">
-				<ageGraphics>
-					<li>
-						<ageRange>13~9000</ageRange>
-						<body>Things/Pawns/Parts/Bodies/Tentbody</body>
-					</li>
-				</ageGraphics>
-			</li>
 			<li Class="EBSGFramework.EBSGExtension">
 				<hediffsToApply>
 					<li>
@@ -77,7 +70,7 @@
 						</bodyParts>
 					</li>
 					<li>
-						<hediff>VStorage</hediff>
+						<hediff>TentacleStorageVagina</hediff>
 						<onlyIfNew>true</onlyIfNew>
 						<severity>3</severity>
 						<bodyParts>
@@ -137,6 +130,101 @@
 		</modExtensions>
 	</GeneDef>
 
+	<HediffDef>
+		<defName>OrganElasticity</defName>
+		<label>Organ Elasticity</label>
+		<description>The elasticity of the host's body is the main factor in determing how many tentacles they can hold. Can be increased by filling the body to the brim with tentacles, at which point the tentacles will further modify the body and stretch it further. Can also be increased with certain implants.\n\nNote that increasing the capacity beyond a certain point will make the host essentially immune to pain, which may not always be a good thing.  And there's no going back...</description>
+		<isBad>False</isBad>
+		<defaultLabelColor>(255,182,193)</defaultLabelColor>
+		<everCurableByItem>False</everCurableByItem>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>False</scenarioCanAdd>
+		<minSeverity>1</minSeverity>
+		<maxSeverity>10</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>Slightly Stretchy</label>
+				<painOffset>-0.05</painOffset>
+				<statOffsets>
+					<TStorage>0.02</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>2</minSeverity>
+				<label>A Little Stretchy</label>
+				<painOffset>-0.1</painOffset>
+				<statOffsets>
+					<TStorage>0.06</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>3</minSeverity>
+				<label>Stretchy</label>
+				<painOffset>-0.2</painOffset>
+				<statOffsets>
+					<TStorage>0.14</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>4</minSeverity>
+				<label>Very Stretchy</label>
+				<painOffset>-0.4</painOffset>
+				<statOffsets>
+					<TStorage>0.30</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>5</minSeverity>
+				<label>Elastic</label>
+				<painOffset>-0.5</painOffset>
+				<statOffsets>
+					<TStorage>0.62</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>6</minSeverity>
+				<label>Very Elastic</label>
+				<painOffset>-0.75</painOffset>
+				<statOffsets>
+					<TStorage>1.26</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>7</minSeverity>
+				<label>Voracious Tentacle Gobbler</label>
+				<painOffset>-0.9</painOffset>
+				<statOffsets>
+					<TStorage>2.3</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>8</minSeverity>
+				<label>Bottomless Tentacle Pit</label>
+				<painOffset>-1.1</painOffset>
+				<statOffsets>
+					<TStorage>2.3</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>9</minSeverity>
+				<label>Tentacle Black Hole</label>
+				<painOffset>-1.6</painOffset>
+				<statOffsets>
+					<TStorage>2.3</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>10</minSeverity>
+				<label>Ludicrous</label>
+				<painOffset>-2.5</painOffset>
+				<statOffsets>
+					<TStorage>2.3</TStorage>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
 
 	<!-- 
 	
@@ -145,7 +233,7 @@
         <label>baroness body</label>
         <description>Carriers of this gene have a body that has been turned into a breeding nest for Amor tentacles and their eggs.</description>
         <iconPath>Genes/Tentacle_Body</iconPath>
-        <displayCategory>tent_genes_hider</displayCategory>
+        <displayCategory>HiddenTentacleGenes</displayCategory>
         <displayOrderInCategory>89</displayOrderInCategory>
         <geneClass>EBSGFramework.HediffAdder</geneClass>
         <modExtensions>
@@ -164,7 +252,7 @@
     <GeneDef>
         <defName>THostBodyM</defName>
         <label>Malum Brood mother body</label>
-        <displayCategory>tent_genes_hider</displayCategory>
+        <displayCategory>HiddenTentacleGenes</displayCategory>
         <description>Carriers of this gene have a body that has been turned into a breeding nest for Malum tentacles and their eggs.</description>
         <iconPath>Genes/Tentacle_Body</iconPath>
         <displayOrderInCategory>89</displayOrderInCategory>
@@ -191,7 +279,7 @@
 	<GeneDef>
         <defName>MalumHost</defName>
         <label>Malum Brood Mother</label>
-        <displayCategory>tent_genes_hider</displayCategory>
+        <displayCategory>HiddenTentacleGenes</displayCategory>
         <geneClass>EBSGFramework.HediffAdder</geneClass>
         <description>This pawn has become a Malum brood mother and will forever be filled with tentacles.</description>
         <displayOrderInCategory>0.1</displayOrderInCategory>
@@ -259,7 +347,7 @@
 	    <GeneDef>
         <defName>ThostBrooder</defName>
         <label>Baroness</label>
-        <displayCategory>tent_genes_hider</displayCategory>
+        <displayCategory>HiddenTentacleGenes</displayCategory>
         <geneClass>EBSGFramework.HediffAdder</geneClass>
         <description>This pawn has become a baroness and will forever be a womb for incubating tentacles.</description>
         <displayOrderInCategory>0.1</displayOrderInCategory>

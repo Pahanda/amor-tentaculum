@@ -1,7 +1,7 @@
 <Defs>      
 
     <GeneDef>
-        <defName>tentaclebabyneedM</defName>
+        <defName>HostTentacleNeedM</defName>
         <label>Tentacle Dependance</label>
         <description>Hosts who have been fully modified to become hives can no longer move around on their own, or support their own digestive system and body weight without the aid of the tentacles.</description>
         <displayCategory>Miscellaneous</displayCategory>
@@ -103,7 +103,7 @@
             <li Class="EBSGFramework.HediffCompProperties_SeverityFromResource">
                 <severityPerHourEmpty>0.05</severityPerHourEmpty>
                 <severityPerHourResource>-0.1</severityPerHourResource>
-                <mainResourceGene>tentaclebabyneedM</mainResourceGene>
+                <mainResourceGene>HostTentacleNeedM</mainResourceGene>
             </li>
         </comps>
     </HediffDef>
@@ -155,12 +155,12 @@
             <li Class="EBSGFramework.HediffCompProperties_SeverityFromResource">
                 <severityPerHourFull>0.05</severityPerHourFull>
                 <severityPerHourResource>-1</severityPerHourResource>
-                <mainResourceGene>tentaclebabyneedM</mainResourceGene>
+                <mainResourceGene>HostTentacleNeedM</mainResourceGene>
             </li>
             <li Class="EBSGFramework.HediffCompProperties_CreateOtherHediffs">
                 <hediffSets>
                     <li>
-                        <hediffDef>Organelasticity</hediffDef>
+                        <hediffDef>OrganElasticity</hediffDef>
                         <validSeverity>1</validSeverity>
                         <severityPerDay>0.5</severityPerDay>
                         <initialSeverity>1</initialSeverity>
@@ -203,7 +203,7 @@
             </li>
             <li Class="EBSGFramework.CompProperties_AbilityResourceCost">
                 <resourceCost>-0.01</resourceCost>
-                <mainResourceGene>tentaclebabyneedM</mainResourceGene>
+                <mainResourceGene>HostTentacleNeedM</mainResourceGene>
             </li>
              <li Class="EBSGFramework.CompProperties_InstantKill">
              <filthReplacement>FilthSlime</filthReplacement>
@@ -255,7 +255,7 @@
             </li>
             <li Class="EBSGFramework.CompProperties_AbilityResourceCost">
                 <resourceCost>0.01</resourceCost>
-                <mainResourceGene>tentaclebabyneedM</mainResourceGene>
+                <mainResourceGene>HostTentacleNeedM</mainResourceGene>
             </li>
             <li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
                 <hediffsToGive>
@@ -306,7 +306,7 @@
             </li>
             <li Class="EBSGFramework.CompProperties_AbilityResourceCost">
                 <resourceCost>0.01</resourceCost>
-                <mainResourceGene>tentaclebabyneedM</mainResourceGene>
+                <mainResourceGene>HostTentacleNeedM</mainResourceGene>
             </li>
             <li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
                 <hediffsToGive>

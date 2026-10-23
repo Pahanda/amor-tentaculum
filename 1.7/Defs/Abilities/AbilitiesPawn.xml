@@ -7,7 +7,7 @@
 	<!-- Anal Insertion -->
 	<AbilityDef ParentName="AbilityTouchBase">
 		<defName>TentacleIngestAnus</defName>
-		<label>insert in anus</label>
+		<label>Insert tentacle into anus</label>
 		<description>Inserts the selected Amor Internum into the host's anal cavity.</description>
 		<iconPath>Abilities/ButtVore</iconPath>
 		<category>Tentacle</category>
@@ -32,12 +32,12 @@
 					<li>vagrancy</li>
 				</targetHasAnyOfHediffs>
 				<casterHasNoneOfHediffs>
-					<li>FullofTentacles</li>
+					<li>FullOfTentacles</li>
 				</casterHasNoneOfHediffs>
 			</li>
 			<li Class="EBSGFramework.CompProperties_AbilityResourceCost">
 				<resourceCost>-0.01</resourceCost>
-				<mainResourceGene>tentaclebabyneed</mainResourceGene>
+				<mainResourceGene>HostTentacleNeed</mainResourceGene>
 			</li>
 			<li Class="EBSGFramework.CompProperties_InstantKill">
 				<filthReplacement>FilthSlime</filthReplacement>
@@ -63,7 +63,7 @@
 	<!-- Oral Insertion -->
 	<AbilityDef ParentName="AbilityTouchBase">
 		<defName>TentacleIngestStomach</defName>
-		<label>swallow</label>
+		<label>Insert tentacle into stomach</label>
 		<description>Swallows the selected Amor Internum, where it will live in the stomach.</description>
 		<iconPath>Abilities/MouthVore</iconPath>
 		<category>Tentacle</category>
@@ -88,12 +88,12 @@
 					<li>vagrancy</li>
 				</targetHasAnyOfHediffs>
 				<casterHasNoneOfHediffs>
-					<li>FullofTentacles</li>
+					<li>FullOfTentacles</li>
 				</casterHasNoneOfHediffs>
 			</li>
 			<li Class="EBSGFramework.CompProperties_AbilityResourceCost">
 				<resourceCost>-0.01</resourceCost>
-				<mainResourceGene>tentaclebabyneed</mainResourceGene>
+				<mainResourceGene>HostTentacleNeed</mainResourceGene>
 			</li>
 			<li Class="EBSGFramework.CompProperties_InstantKill">
 				<filthReplacement>FilthSlime</filthReplacement>
@@ -118,7 +118,7 @@
 	<!-- Vaginal Insertion -->
 	<AbilityDef ParentName="AbilityTouchBase">
 		<defName>TentacleIngestVagina</defName>
-		<label>insert in vagina</label>
+		<label>Insert tentacle into vagina</label>
 		<description>Inserts the selected Amor Internum into the host's vagina, where it will live in the womb.</description>
 		<iconPath>Abilities/VagUnbirth</iconPath>
 		<category>Tentacle</category>
@@ -143,12 +143,12 @@
 					<li>vagrancy</li>
 				</targetHasAnyOfHediffs>
 				<casterHasNoneOfHediffs>
-					<li>FullofTentacles</li>
+					<li>FullOfTentacles</li>
 				</casterHasNoneOfHediffs>
 			</li>
 			<li Class="EBSGFramework.CompProperties_AbilityResourceCost">
 				<resourceCost>-0.01</resourceCost>
-				<mainResourceGene>tentaclebabyneed</mainResourceGene>
+				<mainResourceGene>HostTentacleNeed</mainResourceGene>
 			</li>
 			<li Class="EBSGFramework.CompProperties_InstantKill">
 				<filthReplacement>FilthSlime</filthReplacement>
@@ -156,7 +156,15 @@
 			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
 				<hediffsToGive>
 					<li>
-						<hediffDef>VStorage</hediffDef>
+						<hediffDef>TentacleSacrifice</hediffDef>
+						<applyToTarget>true</applyToTarget>
+						<replaceExisting>false</replaceExisting>
+						<bodyParts>
+							<li>Brain</li>
+						</bodyParts>
+					</li>
+					<li>
+						<hediffDef>TentacleStorageVagina</hediffDef>
 						<onlyApplyToSelf>true</onlyApplyToSelf>
 						<severity>1</severity>
 						<bodyParts>
@@ -167,6 +175,59 @@
 			</li>
 			<li Class="CompProperties_AbilityFleckOnTarget">
 				<fleckDef>Heart</fleckDef>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- Vaginal Expel -->
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>TentacleExpelVagina</defName>
+		<label>Expel tentacle from vagina</label>
+		<description>Expels an Amor Internum tentacle from the host's vagina.\n\nWARNING: This is dangerous if the pawn runs out of stored tentacles!</description>
+		<iconPath>Abilities/VagUnbirth</iconPath>
+		<category>Tentacle</category>
+		<cooldownTicksRange>5</cooldownTicksRange>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<range>5</range>
+			<warmupTime>2</warmupTime>
+			<requireLineOfSight>True</requireLineOfSight>
+			<targetParams>
+				<canTargetLocations>True</canTargetLocations>
+			</targetParams>
+			<soundCast>PiercingSpine_Launch</soundCast>
+		</verbProperties>
+		<comps>
+			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+				<casterHasAnyOfHediffs>
+					<li>TentacleStorageVagina</li>
+				</casterHasAnyOfHediffs>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityResourceCost">
+				<resourceCost>0.01</resourceCost>
+				<mainResourceGene>HostTentacleNeed</mainResourceGene>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
+				<hediffsToGive>
+					<li>
+						<hediffDef>TentacleStorageVagina</hediffDef>
+						<onlyApplyToSelf>true</onlyApplyToSelf>
+						<severity>-1</severity>
+						<bodyParts>
+							<li>Genitals</li>
+						</bodyParts>
+					</li>
+				</hediffsToGive>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>Mote_NoHeart</fleckDef>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilitySpawnPawnKind">
+				<pawnKind>TInternal</pawnKind>
+				<count>1</count>
+				<inCreatorFaction>True</inCreatorFaction>
 			</li>
 		</comps>
 	</AbilityDef>

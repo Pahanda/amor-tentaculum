@@ -75,6 +75,42 @@
     </stages>
   </HediffDef>
 
+	<!-- An hediff that can be applied to a tentacle (usually an Amor Internum) that will make its death silent (no letters) and not generate a corpse. -->
+	<HediffDef>
+		<defName>TentacleSacrifice</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>sacrificing</label>
+		<labelNoun>sacrificing</labelNoun>
+		<description>This tentacle is being consumed as a resource by a pawn.</description>
+		<defaultLabelColor>(1,1,1)</defaultLabelColor>
+		<minSeverity>0</minSeverity>
+		<initialSeverity>0</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<stages>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<setMax>0.1</setMax>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>You shouldn't be seeing this...</label>
+				<partEfficiencyOffset>-200</partEfficiencyOffset>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>100</severityPerDay>
+			</li>
+			<li Class="EBSGFramework.HediffCompProperties_DestroyOnDeath" />
+			<li Class="EBSGFramework.HediffCompProperties_PreventDeathNotifications" />
+		</comps>
+	</HediffDef>
+	
   <HediffDef>
     <defName>AStorage</defName>
     <hediffClass>HediffWithComps</hediffClass>
@@ -148,7 +184,7 @@
   </HediffDef>
 
     <HediffDef>
-    <defName>VStorage</defName>
+    <defName>TentacleStorageVagina</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>Tentacles in Womb</label>
     <labelNoun>Amor Internum</labelNoun>
@@ -270,11 +306,13 @@
       </li>
       <li Class="EBSGFramework.HediffCompProperties_GiveAbilityAtSeverity">
                 <abilitiesAtSeverities>
-                    <li>
+                  <!--
+									<li>
                         <abilityDef>AttackTent</abilityDef>
                         <validSeverity>2.0~999</validSeverity>
                     </li>
-                    <li>
+										-->
+												<li>
                         <abilityDef>TCumSpray</abilityDef>
                         <validSeverity>2.0~999</validSeverity>
                     </li>

@@ -1,0 +1,20 @@
+<Defs>
+	
+	<LetterDef ParentName="PositiveEvent">
+		<defName>HostPregnancy</defName>
+		<color>(203,120,227)</color>
+		<flashColor>(203,120,227)</flashColor>
+		<flashInterval>90</flashInterval>
+	</LetterDef>
+
+	<LetterDef>
+		<defName>HostRejection</defName>
+		<color>(170,20,20)</color>
+		<flashColor>(170,20,20)</flashColor>
+		<flashInterval>16</flashInterval>
+		<bounce>true</bounce>
+		<arriveSound>LetterArrive_BadUrgent</arriveSound>
+		<pauseMode>AnyThreat</pauseMode>
+	</LetterDef>
+	
+</Defs>

@@ -272,77 +272,7 @@
     </comps>
     </HediffDef>
 
-    <HediffDef>
-        <defName>Organelasticity</defName>
-        <label>organ elasticity</label>
-        <description>The elasticity of the host body is the main factor determing how many tentacles they can hold. Can be increased by filling the body to the brim with tentacles to stretch it.</description>
-        <isBad>False</isBad>
-        <defaultLabelColor>(255,182,193)</defaultLabelColor>
-        <everCurableByItem>False</everCurableByItem>
-        <hediffClass>HediffWithComps</hediffClass>
-        <scenarioCanAdd>False</scenarioCanAdd>
-        <minSeverity>1</minSeverity>
-        <maxSeverity>7</maxSeverity>
-        <initialSeverity>1</initialSeverity>
-        <stages>
-      <li>
-        <minSeverity>1</minSeverity>
-        <label>slightly stretchy</label>
-        <painOffset>-0.05</painOffset>
-        <statOffsets>
-          <TStorage>0.02</TStorage>
-        </statOffsets>
-      </li>
-      <li>
-        <minSeverity>2</minSeverity>
-        <label>a little stretchy</label>
-        <painOffset>-0.1</painOffset>
-        <statOffsets>
-          <TStorage>0.06</TStorage>
-        </statOffsets>
-      </li>
-      <li>
-        <minSeverity>3</minSeverity>
-        <label>stretchy</label>
-        <painOffset>-0.2</painOffset>
-        <statOffsets>
-          <TStorage>0.14</TStorage>
-        </statOffsets>
-      </li>
-      <li>
-        <minSeverity>4</minSeverity>
-        <label>very stretchy</label>
-        <painOffset>-0.5</painOffset>
-        <statOffsets>
-          <TStorage>0.30</TStorage>
-        </statOffsets>
-      </li>
-      <li>
-        <minSeverity>5</minSeverity>
-        <label>elastic</label>
-        <painOffset>-0.7</painOffset>
-        <statOffsets>
-          <TStorage>0.62</TStorage>
-        </statOffsets>
-      </li>
-      <li>
-        <minSeverity>6</minSeverity>
-        <label>human cock sleeve</label>
-        <painOffset>-0.8</painOffset>
-        <statOffsets>
-          <TStorage>1.26</TStorage>
-        </statOffsets>
-      </li>
-      <li>
-        <minSeverity>7</minSeverity>
-        <label>superhuman cock sleeve</label>
-        <painOffset>-1.5</painOffset>
-        <statOffsets>
-          <TStorage>2.3</TStorage>
-        </statOffsets>
-      </li>
-    </stages>
-    </HediffDef>
+    
 
       <ThingDef ParentName="BodyPartBionicBase">
     <defName>TWombItem</defName>

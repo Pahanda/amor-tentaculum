@@ -31,14 +31,14 @@
 		<comps>
 			<li Class="EBSGFramework.CompProperties_AbilityGiveResource">
 				<amount>0.01</amount>
-				<mainResourceGene>tentaclebabyneed</mainResourceGene>
+				<mainResourceGene>HostTentacleNeed</mainResourceGene>
 			</li>
 			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
 				<targetHasAnyOfHediffs>
 					<li>tentaclegrowthA</li>
 				</targetHasAnyOfHediffs>
 				<casterHasNoneOfHediffs>
-					<li>FullofTentacles</li>
+					<li>FullOfTentacles</li>
 				</casterHasNoneOfHediffs>
 			</li>
 			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
@@ -99,20 +99,20 @@
 		<comps>
 			<li Class="EBSGFramework.CompProperties_AbilityGiveResource">
 				<amount>0.01</amount>
-				<mainResourceGene>tentaclebabyneed</mainResourceGene>
+				<mainResourceGene>HostTentacleNeed</mainResourceGene>
 			</li>
 			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
 				<targetHasAnyOfHediffs>
 					<li>tentaclegrowthV</li>
 				</targetHasAnyOfHediffs>
 				<casterHasNoneOfHediffs>
-					<li>FullofTentacles</li>
+					<li>FullOfTentacles</li>
 				</casterHasNoneOfHediffs>
 			</li>
 			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
 				<hediffsToGive>
 					<li>
-						<hediffDef>VStorage</hediffDef>
+						<hediffDef>TentacleStorageVagina</hediffDef>
 						<onlyApplyToSelf>false</onlyApplyToSelf>
 						<severity>1</severity>
 						<bodyParts>
@@ -120,7 +120,7 @@
 						</bodyParts>
 					</li>
 					<li>
-						<hediffDef>BodyCleaner</hediffDef>
+						<hediffDef>TentacleSacrifice</hediffDef>
 						<onlyApplyToSelf>true</onlyApplyToSelf>
 						<replaceExisting>false</replaceExisting>
 						<bodyParts>
@@ -167,14 +167,14 @@
 		<comps>
 			<li Class="EBSGFramework.CompProperties_AbilityGiveResource">
 				<amount>0.01</amount>
-				<mainResourceGene>tentaclebabyneed</mainResourceGene>
+				<mainResourceGene>HostTentacleNeed</mainResourceGene>
 			</li>
 			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
 				<targetHasAnyOfHediffs>
 					<li>tentaclegrowthS</li>
 				</targetHasAnyOfHediffs>
 				<casterHasNoneOfHediffs>
-					<li>FullofTentacles</li>
+					<li>FullOfTentacles</li>
 				</casterHasNoneOfHediffs>
 			</li>
 			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
