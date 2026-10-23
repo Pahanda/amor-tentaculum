@@ -3,7 +3,7 @@
 	<!-- A Gene-Based NEED for tentacles.  Provided by Dynamic Resource Genes from the EBSG Framework. -->
 	<GeneDef>
 		<defName>HostTentacleNeed</defName>
-		<label>Tentacle Dependance</label>
+		<label>Tentacle dependance</label>
 		<description>Individuals who have been fully converted into tentacle hosts can no longer survive without a pool of tentacles in their body.  Those tentacles manage the host's basic body functions and provide physical structure, in addition to a physical and psychological dependence on the presence of the tentacles. They can use their stored pool of tentacles as a resource for abilities, but should that be depleted, they will die unless their stock is replenished.</description>
 		<displayCategory>Miscellaneous</displayCategory>
 		<iconPath>Things/Items/BrainLarve/WLarvae</iconPath>
@@ -20,7 +20,7 @@
 		<showGizmoOnWorldView>false</showGizmoOnWorldView>
 		<showGizmoWhenDrafted>true</showGizmoWhenDrafted>
 		<resourceDescription>The amount of Amor Internum tentacles currently stored inside the host's body.</resourceDescription>
-		<resourceLabel>Tentacles</resourceLabel>
+		<resourceLabel>tentacles</resourceLabel>
 		<modExtensions>
 			<li Class="EBSGFramework.DRGExtension">
 				<!--Basics-->
@@ -49,7 +49,7 @@
 	<!-- This is the CRAVING hediff, applied when the resource runs out.  In our case, this is fatal - but can be corrected, in time. -->
 	<HediffDef>
 		<defName>NoTentacles</defName>
-		<label>Body Collapse</label>
+		<label>body collapse</label>
 		<description>Due to the lack of tentacles in this host's body, they are collapsing in on themselves.  Replenish their Amor Internum capacity as soon as possible!</description>
 		<hediffClass>EBSGFramework.Hediff_ResourceCraving</hediffClass>
 		<defaultLabelColor>(0.6, 0.6, 0.6)</defaultLabelColor>

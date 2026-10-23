@@ -1,0 +1,21 @@
+<Defs>
+
+	<ThingCategoryDef>
+		<defName>TentacleProducts</defName>
+		<label>tentacle products</label>
+		<parent>ResourcesRaw</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>TentacleProducedProducts</defName>
+		<label>tentacle-produced products</label>
+		<parent>TentacleProducts</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>HostProducedProducts</defName>
+		<label>host-produced products</label>
+		<parent>TentacleProducts</parent>
+	</ThingCategoryDef>
+	
+</Defs>

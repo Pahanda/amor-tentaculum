@@ -1,0 +1,66 @@
+<Defs>
+
+	<HediffDef>
+		<defName>AmorMatronSlimeProduction</defName>
+		<label>producing slime</label>
+		<description>The Amor Matron is producing slime from her vagina. And by "producing", it means "slowly leaking out of". However disgusting that may seem, the tentacle slime that she is producing is an extremely valuable resource. Make sure your pawns collect it!</description>
+		<defaultLabelColor>(203,120,227)</defaultLabelColor>
+		<everCurableByItem>false</everCurableByItem>
+		<initialSeverity>0.001</initialSeverity>
+		<stages />
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<comps>
+			<li Class="EBSGFramework.HediffCompProperties_CreateItems">
+				<intervalTicks>10000</intervalTicks> <!-- Every 4 in-game hours. -->
+				<intervalThings>
+					<!-- 
+					This may look a little strange, but EBSG doesn't support a "range" for the count - so we add three weighted options for the 
+					spawn to pick from with different counts, but set a chance value so they won't fire every time.  It's not very random, but we want it 
+					to *appear* random to the player.  
+					
+					The math works out to 
+						6 (attempts per game day) * 
+						1/3 (chance for each potential spawn to fire) *
+						2 ( expected value per fire sequence - ( 1 chances for 1 + 2 chances for 2 + 1 chance for 3) / 4 (total chances) )
+						= 4 ( expected resource total per day )
+					
+					So your colony can expect roughly 4 slime resources per Matron per day.  This is not sustainable as a food source, but can be used
+					in a pinch.  The primary use for slime is egg manufacturing, so your pawns should save it for that.
+						
+					Yes, I made you do math in the comment of a porn mod.  Deal with it.
+					-->
+					<li>
+						<li>
+							<thing>TentacleSlime</thing>
+							<count>1</count>
+							<weight>1</weight>
+							<chance>0.333</chance>
+						</li>
+						<li>
+							<thing>TentacleSlime</thing>
+							<count>2</count>
+							<weight>2</weight>
+							<chance>0.333</chance>
+						</li>
+						<li>
+							<thing>TentacleSlime</thing>
+							<count>3</count>
+							<weight>1</weight>
+							<chance>0.333</chance>
+						</li>
+					</li>
+				</intervalThings>
+				<onDeathOrRemovalThings>
+					<li>
+						<li>
+							<thing>TentacleSlime</thing>
+							<count>25</count>
+						</li>
+					</li>
+				</onDeathOrRemovalThings>
+			</li>
+		</comps>
+	</HediffDef>
+	
+</Defs>

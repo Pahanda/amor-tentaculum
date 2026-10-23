@@ -2,7 +2,7 @@
 
 	<ThingDef ParentName="MakeableDrugPillBase">
 		<defName>AmorMatronEgg</defName>
-		<label>Amor Matron Egg</label>
+		<label>Amor Matron egg</label>
 		<description>An Amor Matron Egg. Can be inserted into a pawn, where it will hatch and progressively take over the body, transforming them into an Amor Matron host.\n\nNOTE: This transformation will only work on female pawns. It will cause lethal organ instability in males.</description>
 		<possessionCount>10</possessionCount>
 		<graphicData>

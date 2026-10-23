@@ -42,7 +42,7 @@
 
 	<GeneDef>
 		<defName>AmorMatronHostBody</defName>
-		<label>Brood Mother</label>
+		<label>Amor Matron</label>
 		<displayCategory>HiddenTentacleGenes</displayCategory>
 		<geneClass>EBSGFramework.HediffAdder</geneClass>
 		<description>Carriers of this gene have a body that has been turned into a holding vessel for Amor Internum tentacles and a breeding nest for Amor Queen eggs.</description>
@@ -56,6 +56,14 @@
 		<modExtensions>
 			<li Class="EBSGFramework.EBSGExtension">
 				<hediffsToApply>
+					<li>
+						<hediff>AmorMatronSlimeProduction</hediff>
+						<onlyIfNew>true</onlyIfNew>
+						<severity>1</severity>
+						<bodyParts>
+							<li>Genitals</li>
+						</bodyParts>
+					</li>
 					<li>
 						<hediff>queenadult</hediff>
 						<onlyIfNew>true</onlyIfNew>
@@ -132,7 +140,7 @@
 
 	<HediffDef>
 		<defName>OrganElasticity</defName>
-		<label>Organ Elasticity</label>
+		<label>organ elasticity</label>
 		<description>The elasticity of the host's body is the main factor in determing how many tentacles they can hold. Can be increased by filling the body to the brim with tentacles, at which point the tentacles will further modify the body and stretch it further. Can also be increased with certain implants.\n\nNote that increasing the capacity beyond a certain point will make the host essentially immune to pain, which may not always be a good thing.  And there's no going back...</description>
 		<isBad>False</isBad>
 		<defaultLabelColor>(255,182,193)</defaultLabelColor>
@@ -145,7 +153,7 @@
 		<stages>
 			<li>
 				<minSeverity>1</minSeverity>
-				<label>Slightly Stretchy</label>
+				<label>slightly stretchy</label>
 				<painOffset>-0.05</painOffset>
 				<statOffsets>
 					<TStorage>0.02</TStorage>
@@ -153,7 +161,7 @@
 			</li>
 			<li>
 				<minSeverity>2</minSeverity>
-				<label>A Little Stretchy</label>
+				<label>a little stretchy</label>
 				<painOffset>-0.1</painOffset>
 				<statOffsets>
 					<TStorage>0.06</TStorage>
@@ -161,7 +169,7 @@
 			</li>
 			<li>
 				<minSeverity>3</minSeverity>
-				<label>Stretchy</label>
+				<label>stretchy</label>
 				<painOffset>-0.2</painOffset>
 				<statOffsets>
 					<TStorage>0.14</TStorage>
@@ -169,7 +177,7 @@
 			</li>
 			<li>
 				<minSeverity>4</minSeverity>
-				<label>Very Stretchy</label>
+				<label>very stretchy</label>
 				<painOffset>-0.4</painOffset>
 				<statOffsets>
 					<TStorage>0.30</TStorage>
@@ -177,7 +185,7 @@
 			</li>
 			<li>
 				<minSeverity>5</minSeverity>
-				<label>Elastic</label>
+				<label>elastic</label>
 				<painOffset>-0.5</painOffset>
 				<statOffsets>
 					<TStorage>0.62</TStorage>
@@ -185,7 +193,7 @@
 			</li>
 			<li>
 				<minSeverity>6</minSeverity>
-				<label>Very Elastic</label>
+				<label>very elastic</label>
 				<painOffset>-0.75</painOffset>
 				<statOffsets>
 					<TStorage>1.26</TStorage>
@@ -193,7 +201,7 @@
 			</li>
 			<li>
 				<minSeverity>7</minSeverity>
-				<label>Voracious Tentacle Gobbler</label>
+				<label>voracious tentacle gobbler</label>
 				<painOffset>-0.9</painOffset>
 				<statOffsets>
 					<TStorage>2.3</TStorage>
@@ -201,7 +209,7 @@
 			</li>
 			<li>
 				<minSeverity>8</minSeverity>
-				<label>Bottomless Tentacle Pit</label>
+				<label>bottomless tentacle pit</label>
 				<painOffset>-1.1</painOffset>
 				<statOffsets>
 					<TStorage>2.3</TStorage>
@@ -209,7 +217,7 @@
 			</li>
 			<li>
 				<minSeverity>9</minSeverity>
-				<label>Tentacle Black Hole</label>
+				<label>tentacle black hole</label>
 				<painOffset>-1.6</painOffset>
 				<statOffsets>
 					<TStorage>2.3</TStorage>
@@ -217,7 +225,7 @@
 			</li>
 			<li>
 				<minSeverity>10</minSeverity>
-				<label>Ludicrous</label>
+				<label>ludicrous</label>
 				<painOffset>-2.5</painOffset>
 				<statOffsets>
 					<TStorage>2.3</TStorage>

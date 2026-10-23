@@ -47,7 +47,7 @@
 	
 	<HediffDef Name="MatronEggIncubationFailure" ParentName="EggIncubationFailureBase">
 		<defName>MatronEggIncubationFailure</defName>
-		<label>Matron Egg Rejection</label>
+		<label>Matron egg rejection</label>
 		<labelNoun>rejection</labelNoun>
 		<description>The Amor Matron egg is rejecting this host body. It will result in a slow and painful death...</description>
 		<comps>
@@ -79,7 +79,7 @@
 		
 	<HediffDef Name="MatronEggIncubationSuccess" ParentName="EggIncubationSuccessBase">
 		<defName>MatronEggIncubationSuccess</defName>
-		<label>Matron Egg Incubation</label>
+		<label>Matron egg incubation</label>
 		<labelNoun>incubation</labelNoun>
 		<description>An Amor Matron egg is growing within the host. Unlike a normal pregnancy, this will not result in birth, but will gradually transform the host into an Amor Matron.</description>
 		<comps>

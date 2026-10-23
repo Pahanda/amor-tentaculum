@@ -1,7 +1,7 @@
 <Defs>
 <ThingDef ParentName="BuildingBase">
     <defName>Turret_Tentacle</defName>
-    <label>Amor Defender</label>
+    <label>amor defender</label>
     <description>A portable tentacle that grows more like a plant. Fires low damage spikes at long range.</description>
     <thingClass>Building_TurretGun</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
@@ -112,7 +112,7 @@
 
    <ThingDef ParentName="BuildingBase">
     <defName>THeater</defName>
-    <label>Amor Calor</label>
+    <label>amor calor</label>
     <description>A stationary Amor tentacle that generates heat. Requires no fuel or power, but generates less heat than industrial counterparts. The smell is some what suspicious.</description>
     <category>Building</category>
     <graphicData>
@@ -185,7 +185,7 @@
 
    <ThingDef ParentName="BuildingBase">
     <defName>TCooler</defName>
-    <label>Amor Frigus</label>
+    <label>amor frigus</label>
     <description>A stationary Amor tentacle that sucks in heat. Requires no fuel or power, but chills the air far below safe limits.</description>
     <category>Building</category>
     <graphicData>
@@ -249,7 +249,7 @@
 
   <ThingDef ParentName="DoorBase">
     <defName>sphincterdoor</defName>
-    <label>sphincterdoor</label>
+    <label>sphincter door</label>
     <description>Divides rooms. Organic tentacle sphincter allows people to move through the door without slowing down.</description>
     <statBases>
       <WorkToBuild>1100</WorkToBuild>
@@ -280,7 +280,7 @@
 
     <TerrainDef ParentName="FloorBase">
     <defName>TentFloor</defName>
-    <label>Tentacle floor</label>
+    <label>tentacle floor</label>
     <description>A warm, wriggling floor. Enhances cleanliness as the tentacles eat dust and bactiria. Might suck your toes.</description>
     <texturePath>Things/Buildings/Floor/TentFloor</texturePath>
     <edgeType>Hard</edgeType>
