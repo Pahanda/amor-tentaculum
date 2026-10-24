@@ -1,0 +1,224 @@
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>ATCore</defName>
+		<label>Core Amor Tentaculum Cultivation</label>
+		<description>Reveals the basic methods for cultivating your own tentacle creatures. This will allow you to craft an Amor Matron egg, which will allow you to begin converting your pawns into tentacle Hosts.</description>
+		<tab>AmorTentaculum</tab>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>0.50</researchViewX>
+		<researchViewY>0.50</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ATHostBasic</defName>
+		<label>Basic Host Egg Production</label>
+		<description>Unlocks basic Host types and the eggs used to transform your pawns into them.</description>
+		<tab>AmorTentaculum</tab>
+		<prerequisites>
+			<li>ATCore</li>
+		</prerequisites>
+		<baseCost>600</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>1.50</researchViewX>
+		<researchViewY>0.50</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ATHostIntermediate</defName>
+		<label>Intermediate Host Egg Produiction</label>
+		<description>Unlocks intermediate Host types and the eggs used to transform your pawns into them.</description>
+		<tab>AmorTentaculum</tab>
+		<prerequisites>
+			<li>ATHostBasic</li>
+		</prerequisites>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2.50</researchViewX>
+		<researchViewY>0.50</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ATHostAdvanced</defName>
+		<label>Advanced Host Egg Production</label>
+		<description>Unlocks advanced Host types and the eggs used to transform your pawns into them.</description>
+		<tab>AmorTentaculum</tab>
+		<prerequisites>
+			<li>ATHostIntermediate</li>
+		</prerequisites>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>3.50</researchViewX>
+		<researchViewY>0.50</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ATLarvaBasic</defName>
+		<label>Basic Tentacle Larva Evolutions</label>
+		<description>Unlocks basic Tentacle types and the knowledge to trigger larvae to transform into them.</description>
+		<tab>AmorTentaculum</tab>
+		<prerequisites>
+			<li>ATCore</li>
+		</prerequisites>
+		<baseCost>600</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>1.50</researchViewX>
+		<researchViewY>1.50</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ATLarvaIntermediate</defName>
+		<label>Intermediate Tentacle Larva Evolutions</label>
+		<description>Unlocks intermediate Tentacle types and the knowledge to trigger larvae to transform into them.</description>
+		<tab>AmorTentaculum</tab>
+		<prerequisites>
+			<li>ATLarvaBasic</li>
+		</prerequisites>
+		<baseCost>700</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2.50</researchViewX>
+		<researchViewY>1.50</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ATLarvaAdvanced</defName>
+		<label>Advanced Tentacle Larva Evolutions</label>
+		<description>Unlocks advanced Tentacle types and the knowledge to trigger larvae to transform into them.</description>
+		<tab>AmorTentaculum</tab>
+		<prerequisites>
+			<li>ATLarvaIntermediate</li>
+		</prerequisites>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>3.50</researchViewX>
+		<researchViewY>1.50</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ATStructBasic</defName>
+		<label>Basic Tentacle Structures</label>
+		<description>Unlocks the ability to construct basic tentacle structures, using resources produced by your tentacluar colony.</description>
+		<tab>AmorTentaculum</tab>
+		<prerequisites>
+			<li>ATCore</li>
+		</prerequisites>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>1.5</researchViewX>
+		<researchViewY>2.5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ATStructUtility</defName>
+		<label>Utility Tentacle Structures</label>
+		<description>Unlocks the ability to construct utility tentacle structures, using resources produced by your tentacluar colony.</description>
+		<tab>AmorTentaculum</tab>
+		<prerequisites>
+			<li>ATStructBasic</li>
+		</prerequisites>
+		<baseCost>900</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2.5</researchViewX>
+		<researchViewY>2.25</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ATStructDefense</defName>
+		<label>Defensive Tentacle Structures</label>
+		<description>Unlocks the ability to construct defensive tentacle structures, using resources produced by your tentacluar colony.</description>
+		<tab>AmorTentaculum</tab>
+		<prerequisites>
+			<li>ATStructBasic</li>
+		</prerequisites>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2.5</researchViewX>
+		<researchViewY>2.75</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ATImplantBasic</defName>
+		<label>Basic Tentacle Implantation</label>
+		<description>Unlocks the technology for implanting tentacles in (mostly) willing pawns.</description>
+		<tab>AmorTentaculum</tab>
+		<prerequisites>
+			<li>ATCore</li>
+		</prerequisites>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>1.5</researchViewX>
+		<researchViewY>3.5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ATImplantControl</defName>
+		<label>Controlling Tentacle Implantation</label>
+		<description>Unlocks the technology for implanting tentacles in less-willing pawns, with the intent of controlling them or modifying their behavior.</description>
+		<tab>AmorTentaculum</tab>
+		<prerequisites>
+			<li>ATImplantBasic</li>
+		</prerequisites>
+		<baseCost>750</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2.5</researchViewX>
+		<researchViewY>3.25</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ATImplantHost</defName>
+		<label>Host Tentacle Implantation</label>
+		<description>Unlocks the technology for implanting tentacles in Amor Hosts, to further increase their power and abilities.</description>
+		<tab>AmorTentaculum</tab>
+		<prerequisites>
+			<li>ATImplantBasic</li>
+		</prerequisites>
+		<baseCost>750</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2.5</researchViewX>
+		<researchViewY>3.75</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ATGearBasic</defName>
+		<label>Basic Tentacle Gear</label>
+		<description>Unlocks the technology for crafting basic tentacle-specific gear, such as clothes.</description>
+		<tab>AmorTentaculum</tab>
+		<prerequisites>
+			<li>ATCore</li>
+		</prerequisites>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>1.5</researchViewX>
+		<researchViewY>4.5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ATGearArmor</defName>
+		<label>Tentacle Armor</label>
+		<description>Unlocks the technology for crafting tentacle-specific armor for pawn protection. Note that these can be worn by Host types.</description>
+		<tab>AmorTentaculum</tab>
+		<prerequisites>
+			<li>ATGearBasic</li>
+		</prerequisites>
+		<baseCost>1250</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2.5</researchViewX>
+		<researchViewY>4.25</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ATGearWeapon</defName>
+		<label>Tentacle Weaponry</label>
+		<description>Unlocks the technology for crafting tentacle-specific weapons. Note that these can be wielded by Host types.</description>
+		<tab>AmorTentaculum</tab>
+		<prerequisites>
+			<li>ATGearBasic</li>
+		</prerequisites>
+		<baseCost>1500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2.5</researchViewX>
+		<researchViewY>4.75</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>

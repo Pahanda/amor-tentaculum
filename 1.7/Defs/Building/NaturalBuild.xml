@@ -57,7 +57,7 @@
       <li>PlaceWorker_ShowTurretRadius</li>
     </placeWorkers>
       <researchPrerequisites>
-          <li>ATStrut</li>
+          <li>ATStructDefense</li>
       </researchPrerequisites>
     <designationHotKey>Misc2</designationHotKey>
   </ThingDef>
@@ -179,7 +179,7 @@
     <designationCategory>Temperature</designationCategory>
     <designationHotKey>Misc4</designationHotKey>
     <researchPrerequisites>
-      <li>ATStrut</li>
+      <li>ATStructUtility</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -243,7 +243,7 @@
     <designationCategory>Temperature</designationCategory>
     <designationHotKey>Misc4</designationHotKey>
     <researchPrerequisites>
-      <li>ATStrut</li>
+      <li>ATStructUtility</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -273,7 +273,7 @@
     <designationHotKey>Misc2</designationHotKey>
     <researchPrerequisites>
       <li>Autodoors</li>
-      <li>ATStrut</li>
+      <li>ATStructUtility</li>
     </researchPrerequisites>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
   </ThingDef>
@@ -296,7 +296,7 @@
       <softresin>5</softresin>
     </costList>
         <researchPrerequisites>
-      <li>ATStrut</li>
+      <li>ATStructUtility</li>
     </researchPrerequisites>
   </TerrainDef>
 

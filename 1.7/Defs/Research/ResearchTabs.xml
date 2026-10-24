@@ -1,8 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
+﻿<Defs>
 
   <ResearchTabDef>
-    <defName>ATentacle</defName>
+    <defName>AmorTentaculum</defName>
     <label>Amor Tentaculum</label>
     <generalTitle>Amor Tentaculum research projects</generalTitle>
     <generalDescription>Unlock new technologies by researching at a research bench. You can only have one active project at a time.</generalDescription>

@@ -47,7 +47,7 @@
 			</outcomeDoers>
 		</ingestible>
 		<recipeMaker>
-			<researchPrerequisite>AmorTentaculumCultavation</researchPrerequisite>
+			<researchPrerequisite>ATCore</researchPrerequisite>
 			<recipeUsers>
 				<li>DrugLab</li>
 			</recipeUsers>

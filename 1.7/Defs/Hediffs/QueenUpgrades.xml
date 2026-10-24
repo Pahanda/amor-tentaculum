@@ -294,7 +294,7 @@
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
-      <researchPrerequisite>ATQueen</researchPrerequisite>
+      <researchPrerequisite>ATImplantHost</researchPrerequisite>
       <recipeUsers>
         <li>FabricationBench</li>
       </recipeUsers>
@@ -378,7 +378,7 @@
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
-      <researchPrerequisite>ATQueen</researchPrerequisite>
+      <researchPrerequisite>ATImplantHost</researchPrerequisite>
       <recipeUsers>
         <li>FabricationBench</li>
       </recipeUsers>
@@ -458,7 +458,7 @@
       <skillRequirements>
         <Crafting>8</Crafting>
       </skillRequirements>
-      <researchPrerequisite>ATQueen</researchPrerequisite>
+      <researchPrerequisite>ATImplantHost</researchPrerequisite>
       <recipeUsers>
         <li>FabricationBench</li>
       </recipeUsers>
