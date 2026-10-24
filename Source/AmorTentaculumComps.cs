@@ -23,6 +23,7 @@ namespace AmorTentaculum
             compClass = typeof(HediffComp_MultipliedSeverityByDay);
         }
 
+        // I'm sure there's a better way to do this, but since this is specifically for our mod, we'll just leave it for now.
         public new float CalculateSeverityPerDay()
         {
             switch (modSettingMultiplier)
@@ -93,13 +94,6 @@ namespace AmorTentaculum
 
         public override float SeverityChangePerDay()
         {
-            /*
-            if (base.Pawn.ageTracker.AgeBiologicalYearsFloat < Props.minAge)
-            {
-                return 0f;
-            }
-            */
-
             Log.Message("[<color='#CB78E3'>Amor Tentaculum</color>] Calculating hediff severity...");
 
             float num = severityPerDay * (parent.CurStage?.severityGainFactor ?? 1f);

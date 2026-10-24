@@ -162,36 +162,4 @@ namespace AmorTentaculum
             base.ExposeData();
         }
     }
-
-    /*
-    [StaticConstructorOnStartup] // this makes the static constructor get called AFTER defs are loaded
-    public class OnDefsLoaded
-    {
-        static OnDefsLoaded()
-        {
-            // apply settings to defs now that defs are loaded:
-            ApplySettingsToDefs();
-        }
-        public static void ApplySettingsToDefs()
-        {  // a public static method that can be called from anywhere
-
-            HediffDef MatronIncubationDef = DefDatabase<HediffDef>.GetNamed("MatronEggIncubationSuccess");
-            HediffCompProperties MatronSeverityCompDef = MatronIncubationDef.CompPropsFor(HediffCompProperties_SeverityPerDay);
-
-
-            // HediffCompProperties MatronIncubationSpeed = MatronIncubationDef.comps.Find(HediffCompProperties => HediffCompProperties.compClass == HediffCompProperties_SeverityPerDay);
-
-               // .CompPropsFor(HediffCompProperties_SeverityPerDay);
-                
-            
-
-                // .CompProps<HediffComp_SeverityPerDay>;
-
-
-            // DefDatabase<ThingDef>.GetNamed("Bed").label = EGB_Settings.Settings.BedLabel;
-        }
-    }
-
-    */
-
 }
