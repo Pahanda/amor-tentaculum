@@ -126,8 +126,9 @@
 		<labelNoun>incubation</labelNoun>
 		<description>An Amor Matron egg is growing within the host. Unlike a normal pregnancy, this will not result in birth, but will gradually transform the host into an Amor Matron.</description>
 		<comps>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>0.07</severityPerDay>
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>hostIncubationSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.07</baseSeverityPerDay>
 			</li>
 			<li Class="EBSGFramework.HediffCompProperties_SeverityByGenes">
 				<baseSeverity>0.001</baseSeverity>
