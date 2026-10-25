@@ -1,6 +1,102 @@
 <Defs>
 
 	<HediffDef>
+		<defName>OrganElasticity</defName>
+		<label>organ elasticity</label>
+		<description>The elasticity of the host's body is the main factor in determing how many tentacles they can hold. Can be increased by filling the body to the brim with tentacles, at which point the tentacles will further modify the body and stretch it further. Can also be increased with certain implants.\n\nNote that increasing the capacity beyond a certain point will make the host essentially immune to pain, which may not always be a good thing.  And there's no going back...</description>
+		<isBad>False</isBad>
+		<defaultLabelColor>(255,182,193)</defaultLabelColor>
+		<everCurableByItem>False</everCurableByItem>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>False</scenarioCanAdd>
+		<minSeverity>1</minSeverity>
+		<maxSeverity>10</maxSeverity>
+		<initialSeverity>1</initialSeverity>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>slightly stretchy</label>
+				<painOffset>-0.05</painOffset>
+				<statOffsets>
+					<TStorage>0.02</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>2</minSeverity>
+				<label>a little stretchy</label>
+				<painOffset>-0.1</painOffset>
+				<statOffsets>
+					<TStorage>0.06</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>3</minSeverity>
+				<label>stretchy</label>
+				<painOffset>-0.2</painOffset>
+				<statOffsets>
+					<TStorage>0.14</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>4</minSeverity>
+				<label>very stretchy</label>
+				<painOffset>-0.4</painOffset>
+				<statOffsets>
+					<TStorage>0.30</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>5</minSeverity>
+				<label>elastic</label>
+				<painOffset>-0.5</painOffset>
+				<statOffsets>
+					<TStorage>0.62</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>6</minSeverity>
+				<label>very elastic</label>
+				<painOffset>-0.75</painOffset>
+				<statOffsets>
+					<TStorage>1.26</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>7</minSeverity>
+				<label>voracious tentacle gobbler</label>
+				<painOffset>-0.9</painOffset>
+				<statOffsets>
+					<TStorage>2.3</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>8</minSeverity>
+				<label>bottomless tentacle pit</label>
+				<painOffset>-1.1</painOffset>
+				<statOffsets>
+					<TStorage>3.6</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>9</minSeverity>
+				<label>tentacle black hole</label>
+				<painOffset>-1.6</painOffset>
+				<statOffsets>
+					<TStorage>4.2</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>10</minSeverity>
+				<label>ludicrous</label>
+				<painOffset>-2.5</painOffset>
+				<statOffsets>
+					<TStorage>5.0</TStorage>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
 		<defName>AmorMatronPregnancy</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>Amor Matron</label>
@@ -337,7 +433,7 @@
 	<HediffDef>
 		<defName>AmorMatronSlimeProduction</defName>
 		<label>producing slime</label>
-		<description>The Amor Matron is producing slime from her vagina. And by "producing", it means "slowly leaking out of". However disgusting that may seem, the tentacle slime that she is producing is an extremely valuable resource. Make sure your pawns collect it!</description>
+		<description>The Amor Matron is producing slime from her vagina. And by "producing", we mean "slowly leaking out of". However disgusting that may seem, the tentacle slime that she is producing is an extremely valuable resource. Make sure your pawns collect it!</description>
 		<defaultLabelColor>(203,120,227)</defaultLabelColor>
 		<everCurableByItem>false</everCurableByItem>
 		<initialSeverity>0.001</initialSeverity>

@@ -1,0 +1,143 @@
+<Defs>
+
+	<HediffDef>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defName>AmorQueenIncubation</defName>
+		<label>Queen egg</label>
+		<labelNoun>an amor queen egg</labelNoun>
+		<description>An Amor Queen egg is being incubated by the Matron, and is growing inside her body. This process takes a long time, and she will not enjoy the process.</description>
+		<stages>
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<label>tiny</label>
+				<statOffsets>
+					<MoveSpeed>-0.01</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.1</minSeverity>
+				<label>small</label>
+				<painOffset>0.1</painOffset>
+				<statOffsets>
+					<MoveSpeed>-0.05</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.3</minSeverity>
+				<label>large</label>
+				<painOffset>0.1</painOffset>
+				<statOffsets>
+					<MoveSpeed>-0.05</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<label>huge</label>
+				<painOffset>0.2</painOffset>
+				<statOffsets>
+					<MoveSpeed>-0.2</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.7</minSeverity>
+				<label>watermelon sized</label>
+				<partEfficiencyOffset>-0.20</partEfficiencyOffset>
+				<painOffset>0.40</painOffset>
+				<statOffsets>
+					<MoveSpeed>-0.4</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.98</minSeverity>
+				<label>ready to deliver</label>
+				<partEfficiencyOffset>-0.25</partEfficiencyOffset>
+				<painOffset>0.50</painOffset>
+				<statOffsets>
+					<MoveSpeed>-0.5</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="EBSGFramework.HediffCompProperties_GiveAbilityAtSeverity">
+				<abilitiesAtSeverities>
+					<li>
+						<abilityDef>BirthV</abilityDef>
+						<validSeverity>0.98~999</validSeverity>
+					</li>
+				</abilitiesAtSeverities>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>EggLabor</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Laying Egg</label>
+		<labelNoun>laying egg</labelNoun>
+		<description>Due too the size of the egg the labor processes is quite intensive.</description>
+		<defaultLabelColor>(255,20,147)</defaultLabelColor>
+		<minSeverity>0</minSeverity>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<stages>
+			<li>
+				<minSeverity>0.1</minSeverity>
+				<label>recovering</label>
+				<painOffset>0.7</painOffset>
+				<statOffsets>
+					<MoveSpeed>-0.9</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.15</minSeverity>
+				<label>egg crowning</label>
+				<painOffset>0.95</painOffset>
+				<statOffsets>
+					<MoveSpeed>-0.9</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<label>pushing</label>
+				<painOffset>0.9</painOffset>
+				<statOffsets>
+					<MoveSpeed>-1</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<label>resting</label>
+				<painOffset>0.3</painOffset>
+				<statOffsets>
+					<MoveSpeed>-0.9</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<label>pushing</label>
+				<painOffset>0.9</painOffset>
+				<statOffsets>
+					<MoveSpeed>-1</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-2</severityPerDay>
+			</li>
+			<li Class="EBSGFramework.HediffCompProperties_CreateItems">
+				<intervalTicks>25400</intervalTicks>
+				<intervalThings>
+					<li>
+						<li>
+							<thing>BigTEgg</thing>
+							<count>1</count>
+							<weight>1</weight>
+						</li>
+					</li>
+				</intervalThings>
+			</li>
+		</comps>
+	</HediffDef>
+	
+</Defs>

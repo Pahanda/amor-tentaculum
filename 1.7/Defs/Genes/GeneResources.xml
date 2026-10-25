@@ -115,6 +115,12 @@
 				<severityPerHourResource>-0.1</severityPerHourResource>
 				<mainResourceGene>HostTentacleNeed</mainResourceGene>
 			</li>
+			<li Class="HediffCompProperties_MessageAfterTicks">
+				<ticks>60</ticks>
+				<letterLabel>{0_labelShort} ran out of tentacles</letterLabel>
+				<letterText>{0_labelShort} has run out of stored tentacles! They will collapse and die unless their capcity is replenished.</letterText>
+				<letterType>HostRejection</letterType>
+			</li>
 		</comps>
 	</HediffDef>
 
@@ -130,7 +136,7 @@
 		<everCurableByItem>false</everCurableByItem>
 		<stages>
 			<li>
-				<label>impossibly tight</label>
+				<label>overstuffed</label>
 				<capMods>
 					<li>
 						<capacity>Moving</capacity>
@@ -177,6 +183,18 @@
 						<initialSeverity>1</initialSeverity>
 					</li>
 				</hediffSets>
+			</li>
+			<li Class="HediffCompProperties_MessageAfterTicks">
+				<ticks>60</ticks>
+				<letterLabel>{0_labelShort} overstuffed!</letterLabel>
+				<letterText>{0_labelShort} has been overstuffed with tentacles. They will be in some pain while their body grows used to the sheer number swarming around inside them.  However, once the process completes, their storage capacity will permanently increase.  They will also be unable to use tentacle-powered abilities until this is done.</letterText>
+				<letterType>HostPregnancy</letterType>
+			</li>
+			<li Class="HediffCompProperties_MessageOnRemoval">
+				<messageOnNonZeroSeverity>true</messageOnNonZeroSeverity>
+				<message>{0} has grown accustomed to their new capacity for tentacles.</message>
+				<messageType>SilentInput</messageType>
+				<onlyMessageForColonistsOrPrisoners>true</onlyMessageForColonistsOrPrisoners>
 			</li>
 		</comps>
 	</HediffDef>
