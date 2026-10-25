@@ -65,7 +65,7 @@
 						</bodyParts>
 					</li>
 					<li>
-						<hediff>queenadult</hediff>
+						<hediff>AmorMatronPregnancy</hediff>
 						<onlyIfNew>true</onlyIfNew>
 						<severity>0.01</severity>
 					</li>
@@ -94,7 +94,7 @@
 						</bodyParts>
 					</li>
 					<li>
-						<hediff>SStorage</hediff>
+						<hediff>TentacleStorageStomach</hediff>
 						<onlyIfNew>true</onlyIfNew>
 						<severity>2</severity>
 						<bodyParts>
@@ -110,7 +110,7 @@
 						</bodyParts>
 					</li>
 					<li>
-						<hediff>AStorage</hediff>
+						<hediff>TentacleStorageAnus</hediff>
 						<onlyIfNew>true</onlyIfNew>
 						<severity>2</severity>
 						<bodyParts>
@@ -212,7 +212,7 @@
 				<label>bottomless tentacle pit</label>
 				<painOffset>-1.1</painOffset>
 				<statOffsets>
-					<TStorage>2.3</TStorage>
+					<TStorage>3.6</TStorage>
 				</statOffsets>
 			</li>
 			<li>
@@ -220,7 +220,7 @@
 				<label>tentacle black hole</label>
 				<painOffset>-1.6</painOffset>
 				<statOffsets>
-					<TStorage>2.3</TStorage>
+					<TStorage>4.2</TStorage>
 				</statOffsets>
 			</li>
 			<li>
@@ -228,7 +228,7 @@
 				<label>ludicrous</label>
 				<painOffset>-2.5</painOffset>
 				<statOffsets>
-					<TStorage>2.3</TStorage>
+					<TStorage>5.0</TStorage>
 				</statOffsets>
 			</li>
 		</stages>
@@ -316,7 +316,7 @@
                         </bodyParts>
                     </li>
                     <li>
-                        <hediff>SStorage</hediff>
+                        <hediff>TentacleStorageStomach</hediff>
                         <onlyIfNew>true</onlyIfNew>
                         <severity>2</severity>
                         <bodyParts>
@@ -332,7 +332,7 @@
                         </bodyParts>
                     </li>
                     <li>
-                        <hediff>AStorage</hediff>
+                        <hediff>TentacleStorageAnus</hediff>
                         <onlyIfNew>true</onlyIfNew>
                         <severity>2</severity>
                         <bodyParts>

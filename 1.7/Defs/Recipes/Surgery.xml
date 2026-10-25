@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   
+	<!--
   <RecipeDef>
     <defName>milktentacle</defName>
     <label>extract egg</label>
@@ -10,7 +11,7 @@
     <workAmount>1000</workAmount>
     <hideBodyPartNames>false</hideBodyPartNames>
     <targetsBodyPart>true</targetsBodyPart>
-    <removesHediff>tentacleegg</removesHediff>
+    <removesHediff>AmorQueenEgg</removesHediff>
     <surgerySuccessChanceFactor>100</surgerySuccessChanceFactor>
     <anesthetize>false</anesthetize>
     <successfullyRemovedHediffMessage>{0} has successfully extracted the egg from {1}</successfullyRemovedHediffMessage>
@@ -21,4 +22,6 @@
       <BigTEgg>1</BigTEgg>
     </products>
   </RecipeDef>
+	-->
+	
 </Defs>

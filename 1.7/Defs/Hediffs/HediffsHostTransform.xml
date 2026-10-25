@@ -52,7 +52,7 @@
       </li>
       <li Class="EBSGFramework.HediffCompProperties_AlterXenotype">
         <xenotypes>
-			    <AmorMatron>1</AmorMatron>
+			    <AmorMatronXenotype>1</AmorMatronXenotype>
         </xenotypes>
         <severities>1</severities>
         <setXenotype>False</setXenotype>

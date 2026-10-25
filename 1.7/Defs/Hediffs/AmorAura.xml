@@ -2,13 +2,13 @@
 
    <HediffDef>
     <hediffClass>HediffWithComps</hediffClass>
-    <defName>painsooth</defName>
+    <defName>AmorSoothe</defName>
     <label>soothing pheromones</label>
-    <description>This pawn is being affected by amor queen pheromones. Increasing sex drive and lowering pain response.</description>
+    <description>This pawn is being affected by soothing phermones, emitted by a nearby Amor Tentculum creature. This increases the pawn's sex drive and psychic sensitivity.  It also lowers its receptiveness to pain.  All at a small penalty to consciousness.</description>
     <initialSeverity>0.001</initialSeverity>
     <maxSeverity>1</maxSeverity>
     <comps>
-          <li Class="HediffCompProperties_Disappears">
+      <li Class="HediffCompProperties_Disappears">
         <showRemainingTime>false</showRemainingTime>
       </li>
     </comps>
@@ -22,10 +22,10 @@
           <SexFrequency>0.1</SexFrequency>
         </statOffsets>
         <capMods>
-            <li>
-              <capacity>Consciousness</capacity>
-              <offset>-0.05</offset>
-            </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.05</offset>
+          </li>
         </capMods>
       </li>
     </stages>

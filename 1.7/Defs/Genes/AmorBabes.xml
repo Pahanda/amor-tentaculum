@@ -208,7 +208,7 @@
         <comps>
                     <li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
             <casterHasAnyOfHediffs>
-                <li>AStorage</li>
+                <li>TentacleStorageAnus</li>
             </casterHasAnyOfHediffs>
             </li>
             <li Class="EBSGFramework.CompProperties_AbilityResourceCost">
@@ -218,7 +218,7 @@
             <li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
                 <hediffsToGive>
                     <li>
-                        <hediffDef>AStorage</hediffDef>
+                        <hediffDef>TentacleStorageAnus</hediffDef>
                         <onlyApplyToSelf>true</onlyApplyToSelf>
                         <replaceExisting>false</replaceExisting>
                         <bodyParts>
@@ -267,7 +267,7 @@
             <li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
                 <hediffsToGive>
                     <li>
-                        <hediffDef>tentacleegg</hediffDef>
+                        <hediffDef>AmorQueenIncubation</hediffDef>
                         <onlyApplyToSelf>true</onlyApplyToSelf>
                         <replaceExisting>true</replaceExisting>
                         <severity>0</severity>
@@ -308,7 +308,7 @@
         <comps>
                     <li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
             <casterHasAnyOfHediffs>
-                <li>SStorage</li>
+                <li>TentacleStorageStomach</li>
             </casterHasAnyOfHediffs>
             </li>
             <li Class="EBSGFramework.CompProperties_AbilityResourceCost">
@@ -318,7 +318,7 @@
             <li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
                 <hediffsToGive>
                     <li>
-                        <hediffDef>SStorage</hediffDef>
+                        <hediffDef>TentacleStorageStomach</hediffDef>
                         <onlyApplyToSelf>true</onlyApplyToSelf>
                         <replaceExisting>false</replaceExisting>
                         <bodyParts>

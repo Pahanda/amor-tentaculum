@@ -469,7 +469,7 @@
 
     <HediffDef>
     <hediffClass>HediffWithComps</hediffClass>
-    <defName>tentacleegg</defName>
+    <defName>AmorQueenEgg</defName>
     <label>Matron Egg</label>
     <labelNoun>an amor matron egg</labelNoun>
     <description>A huge tentacle egg has been produced by the amor queen and swollen inside the hosts body.</description>

@@ -194,7 +194,7 @@
         <severityPerDay>0.25</severityPerDay>
       </li>
 	  <li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
-                <hediff>AStorage</hediff>
+                <hediff>TentacleStorageAnus</hediff>
                 <severity>2</severity>
                 <interval>5000</interval>
                 <bodyParts>
@@ -274,7 +274,7 @@
         <severityPerDay>0.25</severityPerDay>
       </li>
 	  <li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
-                <hediff>SStorage</hediff>
+                <hediff>TentacleStorageStomach</hediff>
                 <severity>2</severity>
                 <interval>5000</interval>
                 <bodyParts>

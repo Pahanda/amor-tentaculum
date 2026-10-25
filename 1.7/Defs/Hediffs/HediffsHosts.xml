@@ -1,6 +1,340 @@
 <Defs>
 
 	<HediffDef>
+		<defName>AmorMatronPregnancy</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Amor Matron</label>
+		<labelNoun>Mother</labelNoun>
+		<description>The Amor Matron is permanently pregnant. The Host will gestate massive Amor Queen eggs over time.  Additionally, as they become accustomed to the permanent pregnancy, their bodies will be adapted to protect the growing eggs.</description>
+		<defaultLabelColor>(203,120,227)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1.5</maxSeverity>
+		<isBad>false</isBad>
+		<tendable>false</tendable>
+		<comps>
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>hostIncubationSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.01</baseSeverityPerDay>
+			</li>
+			<li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
+				<hediff>AmorQueenIncubation</hediff>
+				<severity>0.05</severity>
+				<interval>96000</interval>
+				<bodyParts>
+					<li>Genitals</li>
+				</bodyParts>
+				<validSeverities>0.1</validSeverities>
+				<multiplySeverityByParentSeverity>True</multiplySeverityByParentSeverity>
+			</li>
+			<!-- 
+			<li Class="HediffCompProperties_GiveHediffsInRange">
+				<range>25</range>
+				<hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>true</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetColonists>true</onlyTargetColonists>
+				</targetingParameters>
+				<hediff>painsooth</hediff>
+			</li>
+			-->
+		</comps>
+		<stages>
+			<li>
+				<label>fresh</label>
+				<minSeverity>0.01</minSeverity>
+				<restFallFactor>1.2</restFallFactor>
+				<hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+				<regeneration>1</regeneration>
+				<statOffsets>
+					<PsychicSensitivity>0.4</PsychicSensitivity>
+					<SexFrequency>1</SexFrequency>
+					<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.7</ArmorRating_Heat>
+					<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+					<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.01</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>recent</label>
+				<minSeverity>0.2</minSeverity>
+				<restFallFactor>1.2</restFallFactor>
+				<hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+				<regeneration>5</regeneration>
+				<statOffsets>
+					<PsychicSensitivity>0.5</PsychicSensitivity>
+					<SexFrequency>1.2</SexFrequency>
+					<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.8</ArmorRating_Heat>
+					<ComfyTemperatureMin>-24</ComfyTemperatureMin>
+					<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.6</VacuumResistance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.03</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>accustomed</label>
+				<minSeverity>0.6</minSeverity>
+				<restFallFactor>1.2</restFallFactor>
+				<hungerRateFactorOffset>1</hungerRateFactorOffset>
+				<regeneration>10</regeneration>
+				<statOffsets>
+					<PsychicSensitivity>1</PsychicSensitivity>
+					<SexFrequency>2</SexFrequency>
+					<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
+					<ArmorRating_Heat>1</ArmorRating_Heat>
+					<ComfyTemperatureMin>-30</ComfyTemperatureMin>
+					<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<label>adapted</label>
+				<minSeverity>0.9</minSeverity>
+				<restFallFactor>1.4</restFallFactor>
+				<hungerRateFactorOffset>2</hungerRateFactorOffset>
+				<regeneration>20</regeneration>
+				<statOffsets>
+					<PsychicSensitivity>2</PsychicSensitivity>
+					<SexFrequency>3</SexFrequency>
+					<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
+					<ArmorRating_Blunt>1.6</ArmorRating_Blunt>
+					<ArmorRating_Heat>2</ArmorRating_Heat>
+					<ComfyTemperatureMin>-35</ComfyTemperatureMin>
+					<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.1</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>TentacleStorageAnus</defName>
+		<description>Amor Internum tentacles are living inside the Host's anal cavity. They work to increase movement speed and can be used for other tentacle-powered abilities.</description>
+		<label>Tentacles in Anus</label>
+		<labelNoun>Amor Internum</labelNoun>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(216,191,216)</defaultLabelColor>
+		<minSeverity>1</minSeverity>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>100</maxSeverity>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>Few</label>
+				<painOffset>-0.01</painOffset>
+				<statOffsets>
+					<MoveSpeed>0.01</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>10</minSeverity>
+				<label>Many</label>
+				<painOffset>-0.05</painOffset>
+				<statOffsets>
+					<MoveSpeed>0.05</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>40</minSeverity>
+				<label>A lot</label>
+				<painOffset>-0.1</painOffset>
+				<statOffsets>
+					<MoveSpeed>0.1</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>80</minSeverity>
+				<label>A ton</label>
+				<painOffset>-0.2</painOffset>
+				<statOffsets>
+					<MoveSpeed>0.2</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>100</minSeverity>
+				<label>A silly amount</label>
+				<painOffset>-0.3</painOffset>
+				<statOffsets>
+					<MoveSpeed>0.3</MoveSpeed>
+				</statOffsets>
+			</li>
+
+		</stages>
+		<comps>
+			<li Class="EBSGFramework.HediffCompProperties_DisplaySeverity">
+				<prependString>Number of occupants: </prependString>
+				<appendString></appendString>
+				<roundDigits>0</roundDigits>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>TentacleStorageVagina</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Tentacles in Womb</label>
+		<labelNoun>Amor Internum</labelNoun>
+		<description>Amor Internum tentacles are living inside the Host's womb. They work to increase psychic sensitivity and can be used for other tentacle-powered abilities.</description>
+		<defaultLabelColor>(216,191,216)</defaultLabelColor>
+		<minSeverity>0</minSeverity>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>100</maxSeverity>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>Few</label>
+				<painOffset>0.01</painOffset>
+				<statOffsets>
+					<PsychicSensitivity>0.05</PsychicSensitivity>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>10</minSeverity>
+				<label>Many</label>
+				<painOffset>0.05</painOffset>
+				<statOffsets>
+					<PsychicSensitivity>0.1</PsychicSensitivity>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>40</minSeverity>
+				<label>A lot</label>
+				<painOffset>0.1</painOffset>
+				<statOffsets>
+					<PsychicSensitivity>0.25</PsychicSensitivity>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>80</minSeverity>
+				<label>A ton</label>
+				<painOffset>0.2</painOffset>
+				<statOffsets>
+					<PsychicSensitivity>0.5</PsychicSensitivity>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>100</minSeverity>
+				<label>A silly amount</label>
+				<painOffset>0.3</painOffset>
+				<statOffsets>
+					<PsychicSensitivity>1</PsychicSensitivity>
+				</statOffsets>
+			</li>
+
+		</stages>
+		<comps>
+			<!--
+			<li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
+				<hediff>AmorQueenIncubation</hediff>
+				<severity>0.005</severity>
+				<interval>96000</interval>
+				<bodyParts>
+					<li>Genitals</li>
+				</bodyParts>
+				<validSeverities>0.1</validSeverities>
+				<multiplySeverityByParentSeverity>True</multiplySeverityByParentSeverity>
+			</li>
+			-->
+			<li Class="EBSGFramework.HediffCompProperties_DisplaySeverity">
+				<prependString>Number of occupants: </prependString>
+				<appendString></appendString>
+				<roundDigits>0</roundDigits>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>TentacleStorageStomach</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Tentacles in Stomach</label>
+		<labelNoun>Amor Internum</labelNoun>
+		<description>Amor Internum are living within the hosts stomach. Tentacles in the stomach can be vomitted up as an attack, and increase host regeneration.</description>
+		<defaultLabelColor>(216,191,216)</defaultLabelColor>
+		<minSeverity>0</minSeverity>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>100</maxSeverity>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>Few</label>
+				<painOffset>0.01</painOffset>
+				<regeneration>5</regeneration>
+			</li>
+			<li>
+				<minSeverity>10</minSeverity>
+				<label>Many</label>
+				<painOffset>0.05</painOffset>
+				<regeneration>10</regeneration>
+			</li>
+			<li>
+				<minSeverity>40</minSeverity>
+				<label>A lot</label>
+				<painOffset>0.1</painOffset>
+				<regeneration>20</regeneration>
+			</li>
+			<li>
+				<minSeverity>80</minSeverity>
+				<label>A ton</label>
+				<painOffset>0.2</painOffset>
+				<regeneration>40</regeneration>
+			</li>
+			<li>
+				<minSeverity>100</minSeverity>
+				<label>A silly amount</label>
+				<painOffset>0.3</painOffset>
+				<regeneration>80</regeneration>
+			</li>
+
+		</stages>
+		<comps>
+			<li Class="EBSGFramework.HediffCompProperties_DisplaySeverity">
+				<prependString>Number of occupants: </prependString>
+				<appendString></appendString>
+				<roundDigits>0</roundDigits>
+			</li>
+			<li Class="EBSGFramework.HediffCompProperties_GiveAbilityAtSeverity">
+				<abilitiesAtSeverities>
+					<!--
+									<li>
+                        <abilityDef>AttackTent</abilityDef>
+                        <validSeverity>2.0~999</validSeverity>
+                    </li>
+										-->
+					<li>
+						<abilityDef>TCumSpray</abilityDef>
+						<validSeverity>2.0~999</validSeverity>
+					</li>
+				</abilitiesAtSeverities>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
 		<defName>AmorMatronSlimeProduction</defName>
 		<label>producing slime</label>
 		<description>The Amor Matron is producing slime from her vagina. And by "producing", it means "slowly leaking out of". However disgusting that may seem, the tentacle slime that she is producing is an extremely valuable resource. Make sure your pawns collect it!</description>

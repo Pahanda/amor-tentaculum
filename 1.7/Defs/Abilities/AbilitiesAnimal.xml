@@ -44,7 +44,7 @@
 			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
 				<hediffsToGive>
 					<li>
-						<hediffDef>AStorage</hediffDef>
+						<hediffDef>TentacleStorageAnus</hediffDef>
 						<onlyApplyToSelf>false</onlyApplyToSelf>
 						<severity>1</severity>
 						<bodyParts>
@@ -180,7 +180,7 @@
 			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
 				<hediffsToGive>
 					<li>
-						<hediffDef>SStorage</hediffDef>
+						<hediffDef>TentacleStorageStomach</hediffDef>
 						<onlyApplyToSelf>false</onlyApplyToSelf>
 						<severity>1</severity>
 						<bodyParts>
