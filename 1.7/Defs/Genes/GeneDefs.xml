@@ -51,7 +51,10 @@
 			<li>TentacleIngestAnus</li>
 			<li>TentacleIngestVagina</li>
 			<li>TentacleIngestStomach</li>
+			<li>TentacleExpelAnus</li>
 			<li>TentacleExpelVagina</li>
+			<li>TentacleExpelStomach</li>
+			<li>TCumSpray</li>
 		</abilities>
 		<modExtensions>
 			<li Class="EBSGFramework.EBSGExtension">
@@ -118,7 +121,7 @@
 						</bodyParts>
 					</li>
 					<li>
-						<hediff>AMtentacle</hediff>
+						<hediff>TentacleLimbAnus</hediff>
 						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 						<bodyParts>
@@ -126,7 +129,7 @@
 						</bodyParts>
 					</li>
 					<li>
-						<hediff>VMtentacle</hediff>
+						<hediff>TentacleLimbVagina</hediff>
 						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 						<bodyParts>
@@ -244,7 +247,7 @@
                         </bodyParts>
                     </li>
                     <li>
-                        <hediff>AMtentacle</hediff>
+                        <hediff>TentacleLimbAnus</hediff>
                         <onlyIfNew>true</onlyIfNew>
                         <severity>1</severity>
                         <bodyParts>

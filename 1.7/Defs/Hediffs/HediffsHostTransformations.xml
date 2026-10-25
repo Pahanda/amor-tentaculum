@@ -29,14 +29,14 @@
       <li Class="EBSGFramework.HediffCompProperties_CreateOtherHediffs">
         <hediffSets>
           <li>
-            <hediffDef>VMtentacle</hediffDef>
+            <hediffDef>TentacleLimbVagina</hediffDef>
             <validSeverity>0.99</validSeverity>
             <severityPerDay>0</severityPerDay>
             <initialSeverity>1</initialSeverity>
             <bodyPart>Genitals</bodyPart>
           </li>
           <li>
-            <hediffDef>AMtentacle</hediffDef>
+            <hediffDef>TentacleLimbAnus</hediffDef>
             <validSeverity>0.99</validSeverity>
             <severityPerDay>0</severityPerDay>
             <initialSeverity>1</initialSeverity>
@@ -94,7 +94,7 @@
       <li Class="EBSGFramework.HediffCompProperties_CreateOtherHediffs">
           <hediffSets>
                 <li>
-                  <hediffDef>AMtentacle</hediffDef>
+                  <hediffDef>TentacleLimbAnus</hediffDef>
                   <validSeverity>0.99</validSeverity>
                   <severityPerDay>0</severityPerDay>
                   <initialSeverity>1</initialSeverity>

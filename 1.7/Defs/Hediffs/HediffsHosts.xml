@@ -369,7 +369,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>Tentacles in Stomach</label>
 		<labelNoun>Amor Internum</labelNoun>
-		<description>Amor Internum are living within the hosts stomach. Tentacles in the stomach can be vomitted up as an attack, and increase host regeneration.</description>
+		<description>Amor Internum tentacles are living inside the Host's stomach. They work to increase psychic sensitivity and can be used for other tentacle-powered abilities.</description>
 		<defaultLabelColor>(216,191,216)</defaultLabelColor>
 		<minSeverity>0</minSeverity>
 		<initialSeverity>1</initialSeverity>
@@ -412,20 +412,6 @@
 				<prependString>Number of occupants: </prependString>
 				<appendString></appendString>
 				<roundDigits>0</roundDigits>
-			</li>
-			<li Class="EBSGFramework.HediffCompProperties_GiveAbilityAtSeverity">
-				<abilitiesAtSeverities>
-					<!--
-									<li>
-                        <abilityDef>AttackTent</abilityDef>
-                        <validSeverity>2.0~999</validSeverity>
-                    </li>
-										-->
-					<li>
-						<abilityDef>TCumSpray</abilityDef>
-						<validSeverity>2.0~999</validSeverity>
-					</li>
-				</abilitiesAtSeverities>
 			</li>
 		</comps>
 	</HediffDef>
@@ -492,5 +478,277 @@
 			</li>
 		</comps>
 	</HediffDef>
-	
+
+	<HediffDef>
+		<defName>TentacleLimbVagina</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>vaginal mobility tentacle</label>
+		<labelNoun>tentacle</labelNoun>
+		<description>A tentacle emerging from the Host's vagina, aiding in movement and defense.</description>
+		<defaultLabelColor>(255,182,193)</defaultLabelColor>
+		<minSeverity>1</minSeverity>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>5</maxSeverity>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>thin</label>
+				<statOffsets>
+					<MoveSpeed>0.2</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>2</minSeverity>
+				<label>average</label>
+				<statOffsets>
+					<MoveSpeed>0.3</MoveSpeed>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>1.01</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>3</minSeverity>
+				<label>muscular</label>
+				<statOffsets>
+					<MoveSpeed>0.45</MoveSpeed>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>1.05</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>4</minSeverity>
+				<label>robust</label>
+				<statOffsets>
+					<MoveSpeed>0.55</MoveSpeed>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>1.1</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>5</minSeverity>
+				<label>powerful</label>
+				<statOffsets>
+					<MoveSpeed>0.65</MoveSpeed>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>1.15</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Spastic">
+				<texPaths>
+					<li>Things/Pawns/Parts/Addons/TentacleA</li>
+				</texPaths>
+				<parentTagDef>Body</parentTagDef>
+				<overrideMeshSize>1</overrideMeshSize>
+				<drawSize>2</drawSize>
+				<colorType>Skin</colorType>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<useSkinShader>true</useSkinShader>
+				<useRottenColor>true</useRottenColor>
+				<rotationRange>-8~8</rotationRange>
+				<durationTicksRange>10~35</durationTicksRange>
+				<nextSpasmTicksRange>5~25</nextSpasmTicksRange>
+				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>49</layer>
+					</defaultData>
+					<dataNorth>
+						<rotationOffset>0</rotationOffset>
+						<flip>true</flip>
+						<layer>0</layer>
+						<offset>(0, 0, -0.5)</offset>
+					</dataNorth>
+					<dataEast>
+						<flip>true</flip>
+						<layer>0</layer>
+						<rotationOffset>50</rotationOffset>
+						<offset>(0.12, 0, -0.37)</offset>
+					</dataEast>
+					<dataSouth>
+						<rotationOffset>180</rotationOffset>
+						<offset>(0, 0, -0.5)</offset>
+					</dataSouth>
+					<dataWest>
+						<rotationOffset>50</rotationOffset>
+						<offset>(-0.12, 0, -0.37)</offset>
+						<layer>0</layer>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>tentacle spike</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<armorPenetration>0.6</armorPenetration>
+						<power>32.5</power>
+						<cooldownTime>2</cooldownTime>
+					</li>
+				</tools>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0.05</severityPerDay>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>TentacleLimbAnus</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>anal mobility tentacle</label>
+		<labelNoun>tentacle</labelNoun>
+		<description>A tentacle emerging from the Host's anus, aiding in movement and defense.</description>
+		<defaultLabelColor>(255,182,193)</defaultLabelColor>
+		<minSeverity>1</minSeverity>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>5</maxSeverity>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>thin</label>
+				<statOffsets>
+					<MoveSpeed>0.15</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>2</minSeverity>
+				<label>average</label>
+				<statOffsets>
+					<MoveSpeed>0.25</MoveSpeed>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>1.1</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>3</minSeverity>
+				<label>muscular</label>
+				<statOffsets>
+					<MoveSpeed>0.35</MoveSpeed>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>1.25</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>4</minSeverity>
+				<label>robust</label>
+				<statOffsets>
+					<MoveSpeed>0.45</MoveSpeed>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>1.5</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>5</minSeverity>
+				<label>powerful</label>
+				<statOffsets>
+					<MoveSpeed>0.65</MoveSpeed>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>2</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<renderNodeProperties>
+			<li Class="PawnRenderNodeProperties_Spastic">
+				<texPaths>
+					<li>Things/Pawns/Parts/Addons/TentacleB</li>
+				</texPaths>
+				<parentTagDef>Body</parentTagDef>
+				<overrideMeshSize>1</overrideMeshSize>
+				<drawSize>2</drawSize>
+				<colorType>Skin</colorType>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<useSkinShader>true</useSkinShader>
+				<useRottenColor>true</useRottenColor>
+				<rotationRange>-8~8</rotationRange>
+				<durationTicksRange>5~20</durationTicksRange>
+				<nextSpasmTicksRange>5~25</nextSpasmTicksRange>
+				<drawData>
+					<scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+					<defaultData>
+						<layer>49</layer>
+					</defaultData>
+					<dataNorth>
+						<rotationOffset>310</rotationOffset>
+						<flip>true</flip>
+						<layer>90</layer>
+						<offset>(0, 0, -0.5)</offset>
+					</dataNorth>
+					<dataEast>
+						<rotationOffset>190</rotationOffset>
+						<flip>true</flip>
+						<offset>(-0.25, 0, -0.3)</offset>
+						<layer>0</layer>
+					</dataEast>
+					<dataSouth>
+						<rotationOffset>270</rotationOffset>
+						<offset>(-0.2, 0, -0.5)</offset>
+						<layer>0</layer>
+					</dataSouth>
+					<dataWest>
+						<rotationOffset>190</rotationOffset>
+						<flip>false</flip>
+						<offset>(0.25, 0, -0.3)</offset>
+						<layer>0</layer>
+					</dataWest>
+				</drawData>
+			</li>
+		</renderNodeProperties>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>tentacle spike</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<armorPenetration>0.6</armorPenetration>
+						<power>34.5</power>
+						<cooldownTime>2</cooldownTime>
+					</li>
+				</tools>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0.05</severityPerDay>
+			</li>
+		</comps>
+	</HediffDef>
+
 </Defs>

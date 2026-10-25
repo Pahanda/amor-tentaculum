@@ -40,7 +40,7 @@
 			</li>
 			<li>
 				<minSeverity>0.7</minSeverity>
-				<label>watermelon sized</label>
+				<label>enormous</label>
 				<partEfficiencyOffset>-0.20</partEfficiencyOffset>
 				<painOffset>0.40</painOffset>
 				<statOffsets>
@@ -61,7 +61,7 @@
 			<li Class="EBSGFramework.HediffCompProperties_GiveAbilityAtSeverity">
 				<abilitiesAtSeverities>
 					<li>
-						<abilityDef>BirthV</abilityDef>
+						<abilityDef>BirthMatronEgg</abilityDef>
 						<validSeverity>0.98~999</validSeverity>
 					</li>
 				</abilitiesAtSeverities>
