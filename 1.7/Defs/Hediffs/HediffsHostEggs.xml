@@ -124,11 +124,11 @@
 		<defName>MatronEggIncubationSuccess</defName>
 		<label>Matron egg incubation</label>
 		<labelNoun>incubation</labelNoun>
-		<description>An Amor Matron egg is growing within the host. Unlike a normal pregnancy, this will not result in birth, but will gradually transform the host into an Amor Matron.</description>
+		<description>An Amor Matron egg is growing within the host. Unlike a normal pregnancy, this will not result in birth, but will gradually transform the host into an Amor Matron. The incubation process takes approximately 15 days (with default multipliers).</description>
 		<comps>
 			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
 				<modSettingMultiplier>hostIncubationSpeedFactor</modSettingMultiplier>
-				<baseSeverityPerDay>0.07</baseSeverityPerDay>
+				<baseSeverityPerDay>0.15</baseSeverityPerDay>
 			</li>
 			<li Class="EBSGFramework.HediffCompProperties_SeverityByGenes">
 				<baseSeverity>0.001</baseSeverity>
@@ -148,7 +148,7 @@
 			<li Class="EBSGFramework.HediffCompProperties_CreateOtherHediffs">
 				<hediffSets>
 					<li>
-						<hediffDef>transform</hediffDef>
+						<hediffDef>MatronTransform</hediffDef>
 						<validSeverity>1.48~1.51</validSeverity>
 						<severityPerDay>0</severityPerDay>
 						<initialSeverity>0.1</initialSeverity>

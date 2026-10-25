@@ -1,11 +1,11 @@
 <Defs>
 
     <HediffDef>
-    <defName>transform</defName>
+    <defName>MatronTransform</defName>
     <hediffClass>HediffWithComps</hediffClass>
-    <label>genetic body shaping</label>
-    <labelNoun>genetic shaping</labelNoun>
-    <description>The Amor queen has grown to adulthood and is now rewriting the hosts genetic code completely to suit the needs of her hive.</description>
+    <label>genetic transformation</label>
+    <labelNoun>genetic transformation</labelNoun>
+    <description>The Amor Matron egg has finished growing and is now rewriting the Host's genetic code to suit the needs of the hive. This is a delicate process, and the Host will be in a state similar to a Xenogermination Coma for approximatly two days (with default multipliers) while the process finishes.</description>
     <defaultLabelColor>(255,20,147)</defaultLabelColor>
     <minSeverity>0.001</minSeverity>
     <initialSeverity>0.001</initialSeverity>
@@ -13,48 +13,57 @@
     <stages>
       <li>
         <minSeverity>0.001</minSeverity>
-        <painOffset>0.85</painOffset>
-        <statOffsets>
-          <MoveSpeed>-0.7</MoveSpeed>
-        </statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+				</capMods>
       </li>
     </stages>
     <comps>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>1.5</severityPerDay>
-      </li>
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>geneticRewriteSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.5</baseSeverityPerDay>
+			</li>
       <li Class="EBSGFramework.HediffCompProperties_CreateOtherHediffs">
-          <hediffSets>
-                <li>
-                  <hediffDef>VMtentacle</hediffDef>
-                  <validSeverity>0.99</validSeverity>
-                  <severityPerDay>0</severityPerDay>
-                  <initialSeverity>1</initialSeverity>
-                  <bodyPart>Genitals</bodyPart>
-                </li>
-                <li>
-                  <hediffDef>AMtentacle</hediffDef>
-                  <validSeverity>0.99</validSeverity>
-                  <severityPerDay>0</severityPerDay>
-                  <initialSeverity>1</initialSeverity>
-                  <bodyPart>Anus</bodyPart>
-                </li>
-                <li>
-                  <hediffDef>MatronEggIncubationSuccess</hediffDef>
-                  <validSeverity>0~0.2</validSeverity>
-                  <severityPerDay>-200</severityPerDay>
-                  <initialSeverity>-1</initialSeverity>
-                </li>
-          </hediffSets>
+        <hediffSets>
+          <li>
+            <hediffDef>VMtentacle</hediffDef>
+            <validSeverity>0.99</validSeverity>
+            <severityPerDay>0</severityPerDay>
+            <initialSeverity>1</initialSeverity>
+            <bodyPart>Genitals</bodyPart>
+          </li>
+          <li>
+            <hediffDef>AMtentacle</hediffDef>
+            <validSeverity>0.99</validSeverity>
+            <severityPerDay>0</severityPerDay>
+            <initialSeverity>1</initialSeverity>
+            <bodyPart>Anus</bodyPart>
+          </li>
+          <li>
+            <hediffDef>MatronEggIncubationSuccess</hediffDef>
+            <validSeverity>0~0.2</validSeverity>
+            <severityPerDay>-200</severityPerDay>
+            <initialSeverity>-1</initialSeverity>
+          </li>
+        </hediffSets>
       </li>
-            <li Class="EBSGFramework.HediffCompProperties_AlterXenotype">
-                <xenotypes>
-									<AmorMatron>1</AmorMatron>
-                </xenotypes>
-                <severities>1</severities>
-                <setXenotype>False</setXenotype>
-            </li>
-        </comps>
+      <li Class="EBSGFramework.HediffCompProperties_AlterXenotype">
+        <xenotypes>
+			    <AmorMatron>1</AmorMatron>
+        </xenotypes>
+        <severities>1</severities>
+        <setXenotype>False</setXenotype>
+      </li>
+			<li Class="HediffCompProperties_MessageAfterTicks">
+				<ticks>60</ticks>
+				<letterLabel>{0_labelShort} is in a coma</letterLabel>
+				<letterText>{0_labelShort} has entered a coma while their genetics are rewritten to become an Amor Host. They will be inacapacitated, so get them to safety!</letterText>
+				<letterType>HostPregnancy</letterType>
+			</li>
+    </comps>
   </HediffDef>
 	
 <!--
