@@ -94,6 +94,18 @@
 				</statOffsets>
 			</li>
 		</stages>
+		<comps>
+			<li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
+				<hediff>TentacleStorage</hediff>
+				<severity>0.01</severity>
+				<interval>6000</interval>
+				<bodyParts>
+					<li>Genitals</li>
+				</bodyParts>
+				<validSeverities>0.1</validSeverities>
+			</li>
+		</comps>
+		
 	</HediffDef>
 
 	<HediffDef>
@@ -113,14 +125,13 @@
 				<baseSeverityPerDay>0.01</baseSeverityPerDay>
 			</li>
 			<li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
-				<hediff>AmorQueenIncubation</hediff>
-				<severity>0.05</severity>
-				<interval>96000</interval>
+				<hediff>TentacleStorage</hediff>
+				<severity>0.01</severity>
+				<interval>6000</interval>
 				<bodyParts>
 					<li>Genitals</li>
 				</bodyParts>
 				<validSeverities>0.1</validSeverities>
-				<multiplySeverityByParentSeverity>True</multiplySeverityByParentSeverity>
 			</li>
 			<!-- 
 			<li Class="HediffCompProperties_GiveHediffsInRange">
@@ -229,12 +240,12 @@
 	</HediffDef>
 
 	<HediffDef>
-		<defName>TentacleStorageAnus</defName>
-		<description>Amor Internum tentacles are living inside the Host's anal cavity. They work to increase movement speed and can be used for other tentacle-powered abilities.</description>
-		<label>Tentacles in Anus</label>
+		<defName>TentacleStorage</defName>
+		<description>Amor Internum tentacles are living inside the Host's body. Over time, they will increase the movement, regeneration, and psychic sensitivity of the Host.</description>
+		<label>Tentacle storage</label>
 		<labelNoun>Amor Internum</labelNoun>
 		<hediffClass>HediffWithComps</hediffClass>
-		<defaultLabelColor>(216,191,216)</defaultLabelColor>
+		<defaultLabelColor>(203,120,227)</defaultLabelColor>
 		<minSeverity>1</minSeverity>
 		<initialSeverity>1</initialSeverity>
 		<maxSeverity>100</maxSeverity>
@@ -245,7 +256,9 @@
 				<painOffset>-0.01</painOffset>
 				<statOffsets>
 					<MoveSpeed>0.01</MoveSpeed>
+					<PsychicSensitivity>0.05</PsychicSensitivity>
 				</statOffsets>
+				<regeneration>5</regeneration>
 			</li>
 			<li>
 				<minSeverity>10</minSeverity>
@@ -253,7 +266,9 @@
 				<painOffset>-0.05</painOffset>
 				<statOffsets>
 					<MoveSpeed>0.05</MoveSpeed>
+					<PsychicSensitivity>0.1</PsychicSensitivity>
 				</statOffsets>
+				<regeneration>10</regeneration>
 			</li>
 			<li>
 				<minSeverity>40</minSeverity>
@@ -261,7 +276,9 @@
 				<painOffset>-0.1</painOffset>
 				<statOffsets>
 					<MoveSpeed>0.1</MoveSpeed>
+					<PsychicSensitivity>0.25</PsychicSensitivity>
 				</statOffsets>
+				<regeneration>20</regeneration>
 			</li>
 			<li>
 				<minSeverity>80</minSeverity>
@@ -269,7 +286,9 @@
 				<painOffset>-0.2</painOffset>
 				<statOffsets>
 					<MoveSpeed>0.2</MoveSpeed>
+					<PsychicSensitivity>0.5</PsychicSensitivity>
 				</statOffsets>
+				<regeneration>40</regeneration>
 			</li>
 			<li>
 				<minSeverity>100</minSeverity>
@@ -277,141 +296,15 @@
 				<painOffset>-0.3</painOffset>
 				<statOffsets>
 					<MoveSpeed>0.3</MoveSpeed>
-				</statOffsets>
-			</li>
-
-		</stages>
-		<comps>
-			<li Class="EBSGFramework.HediffCompProperties_DisplaySeverity">
-				<prependString>Number of occupants: </prependString>
-				<appendString></appendString>
-				<roundDigits>0</roundDigits>
-			</li>
-		</comps>
-	</HediffDef>
-
-	<HediffDef>
-		<defName>TentacleStorageVagina</defName>
-		<hediffClass>HediffWithComps</hediffClass>
-		<label>Tentacles in Womb</label>
-		<labelNoun>Amor Internum</labelNoun>
-		<description>Amor Internum tentacles are living inside the Host's womb. They work to increase psychic sensitivity and can be used for other tentacle-powered abilities.</description>
-		<defaultLabelColor>(216,191,216)</defaultLabelColor>
-		<minSeverity>0</minSeverity>
-		<initialSeverity>1</initialSeverity>
-		<maxSeverity>100</maxSeverity>
-		<stages>
-			<li>
-				<minSeverity>1</minSeverity>
-				<label>Few</label>
-				<painOffset>0.01</painOffset>
-				<statOffsets>
-					<PsychicSensitivity>0.05</PsychicSensitivity>
-				</statOffsets>
-			</li>
-			<li>
-				<minSeverity>10</minSeverity>
-				<label>Many</label>
-				<painOffset>0.05</painOffset>
-				<statOffsets>
-					<PsychicSensitivity>0.1</PsychicSensitivity>
-				</statOffsets>
-			</li>
-			<li>
-				<minSeverity>40</minSeverity>
-				<label>A lot</label>
-				<painOffset>0.1</painOffset>
-				<statOffsets>
-					<PsychicSensitivity>0.25</PsychicSensitivity>
-				</statOffsets>
-			</li>
-			<li>
-				<minSeverity>80</minSeverity>
-				<label>A ton</label>
-				<painOffset>0.2</painOffset>
-				<statOffsets>
-					<PsychicSensitivity>0.5</PsychicSensitivity>
-				</statOffsets>
-			</li>
-			<li>
-				<minSeverity>100</minSeverity>
-				<label>A silly amount</label>
-				<painOffset>0.3</painOffset>
-				<statOffsets>
 					<PsychicSensitivity>1</PsychicSensitivity>
 				</statOffsets>
-			</li>
-
-		</stages>
-		<comps>
-			<!--
-			<li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
-				<hediff>AmorQueenIncubation</hediff>
-				<severity>0.005</severity>
-				<interval>96000</interval>
-				<bodyParts>
-					<li>Genitals</li>
-				</bodyParts>
-				<validSeverities>0.1</validSeverities>
-				<multiplySeverityByParentSeverity>True</multiplySeverityByParentSeverity>
-			</li>
-			-->
-			<li Class="EBSGFramework.HediffCompProperties_DisplaySeverity">
-				<prependString>Number of occupants: </prependString>
-				<appendString></appendString>
-				<roundDigits>0</roundDigits>
-			</li>
-		</comps>
-	</HediffDef>
-
-	<HediffDef>
-		<defName>TentacleStorageStomach</defName>
-		<hediffClass>HediffWithComps</hediffClass>
-		<label>Tentacles in Stomach</label>
-		<labelNoun>Amor Internum</labelNoun>
-		<description>Amor Internum tentacles are living inside the Host's stomach. They work to increase psychic sensitivity and can be used for other tentacle-powered abilities.</description>
-		<defaultLabelColor>(216,191,216)</defaultLabelColor>
-		<minSeverity>0</minSeverity>
-		<initialSeverity>1</initialSeverity>
-		<maxSeverity>100</maxSeverity>
-		<stages>
-			<li>
-				<minSeverity>1</minSeverity>
-				<label>Few</label>
-				<painOffset>0.01</painOffset>
-				<regeneration>5</regeneration>
-			</li>
-			<li>
-				<minSeverity>10</minSeverity>
-				<label>Many</label>
-				<painOffset>0.05</painOffset>
-				<regeneration>10</regeneration>
-			</li>
-			<li>
-				<minSeverity>40</minSeverity>
-				<label>A lot</label>
-				<painOffset>0.1</painOffset>
-				<regeneration>20</regeneration>
-			</li>
-			<li>
-				<minSeverity>80</minSeverity>
-				<label>A ton</label>
-				<painOffset>0.2</painOffset>
-				<regeneration>40</regeneration>
-			</li>
-			<li>
-				<minSeverity>100</minSeverity>
-				<label>A silly amount</label>
-				<painOffset>0.3</painOffset>
 				<regeneration>80</regeneration>
 			</li>
 
 		</stages>
 		<comps>
-			<li Class="EBSGFramework.HediffCompProperties_DisplaySeverity">
-				<prependString>Number of occupants: </prependString>
-				<appendString></appendString>
-				<roundDigits>0</roundDigits>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0.01</severityPerDay>
 			</li>
 		</comps>
 	</HediffDef>

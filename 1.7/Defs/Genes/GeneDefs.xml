@@ -48,12 +48,8 @@
 		<description>Carriers of this gene have a body that has been turned into a holding vessel for Amor Internum tentacles and a breeding nest for Amor Queen eggs.</description>
 		<displayOrderInCategory>0.1</displayOrderInCategory>
 		<abilities>
-			<li>TentacleIngestAnus</li>
-			<li>TentacleIngestVagina</li>
-			<li>TentacleIngestStomach</li>
-			<li>TentacleExpelAnus</li>
-			<li>TentacleExpelVagina</li>
-			<li>TentacleExpelStomach</li>
+			<li>TentacleIngest</li>
+			<li>TentacleExpel</li>
 			<li>TCumSpray</li>
 		</abilities>
 		<modExtensions>
@@ -81,9 +77,9 @@
 						</bodyParts>
 					</li>
 					<li>
-						<hediff>TentacleStorageVagina</hediff>
+						<hediff>TentacleStorage</hediff>
 						<onlyIfNew>true</onlyIfNew>
-						<severity>3</severity>
+						<severity>1</severity>
 						<bodyParts>
 							<li>Genitals</li>
 						</bodyParts>
@@ -97,25 +93,9 @@
 						</bodyParts>
 					</li>
 					<li>
-						<hediff>TentacleStorageStomach</hediff>
-						<onlyIfNew>true</onlyIfNew>
-						<severity>2</severity>
-						<bodyParts>
-							<li>Stomach</li>
-						</bodyParts>
-					</li>
-					<li>
 						<hediff>tentaclegrowthA</hediff>
 						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
-						<bodyParts>
-							<li>Anus</li>
-						</bodyParts>
-					</li>
-					<li>
-						<hediff>TentacleStorageAnus</hediff>
-						<onlyIfNew>true</onlyIfNew>
-						<severity>2</severity>
 						<bodyParts>
 							<li>Anus</li>
 						</bodyParts>
@@ -140,169 +120,5 @@
 			</li>
 		</modExtensions>
 	</GeneDef>
-
-	<!-- 
-	
-    <GeneDef>
-        <defName>THostBodyB</defName>
-        <label>baroness body</label>
-        <description>Carriers of this gene have a body that has been turned into a breeding nest for Amor tentacles and their eggs.</description>
-        <iconPath>Genes/Tentacle_Body</iconPath>
-        <displayCategory>HiddenTentacleGenes</displayCategory>
-        <displayOrderInCategory>89</displayOrderInCategory>
-        <geneClass>EBSGFramework.HediffAdder</geneClass>
-        <modExtensions>
-            <li Class="EBSGFramework.EBSGBodyExtension">
-                <ageGraphics>
-                    <li>
-                        <ageRange>13~9000</ageRange>
-                        <body>Things/Pawns/Parts/Bodies/Tentbody</body>
-                    </li>
-                </ageGraphics>
-            </li>
-            
-        </modExtensions>
-    </GeneDef>
-
-    <GeneDef>
-        <defName>THostBodyM</defName>
-        <label>Malum Brood mother body</label>
-        <displayCategory>HiddenTentacleGenes</displayCategory>
-        <description>Carriers of this gene have a body that has been turned into a breeding nest for Malum tentacles and their eggs.</description>
-        <iconPath>Genes/Tentacle_Body</iconPath>
-        <displayOrderInCategory>89</displayOrderInCategory>
-        <geneClass>EBSGFramework.HediffAdder</geneClass>
-        <abilities>
-            <li>TentacleIngestAnus</li>
-            <li>TentacleIngestStomach</li>
-        </abilities>
-        <modExtensions>
-            <li Class="EBSGFramework.EBSGBodyExtension">
-                <ageGraphics>
-                    <li>
-                        <ageRange>13~9000</ageRange>
-                        <body>Things/Pawns/Parts/Bodies/Tentbody</body>
-                    </li>
-                </ageGraphics>
-            </li>
-            
-        </modExtensions>
-    </GeneDef>
-
-
-	
-	<GeneDef>
-        <defName>MalumHost</defName>
-        <label>Malum Brood Mother</label>
-        <displayCategory>HiddenTentacleGenes</displayCategory>
-        <geneClass>EBSGFramework.HediffAdder</geneClass>
-        <description>This pawn has become a Malum brood mother and will forever be filled with tentacles.</description>
-        <displayOrderInCategory>0.1</displayOrderInCategory>
-        <modExtensions>
-	    <li Class="EBSGFramework.EBSGExtension">
-                <hediffsToApply>
-                    <li>
-                        <hediff>queenadultM</hediff>
-                        <onlyIfNew>true</onlyIfNew>
-                        <severity>0.01</severity>
-                    </li>
-                    <li>
-                        <hediff>tentaclegrowthVM</hediff>
-                        <onlyIfNew>true</onlyIfNew>
-                        <severity>1</severity>
-                        <bodyParts>
-                            <li>Genitals</li>
-                        </bodyParts>
-                    </li>
-                    <li>
-                        <hediff>tentaclegrowthSM</hediff>
-                        <onlyIfNew>true</onlyIfNew>
-                        <severity>1</severity>
-                        <bodyParts>
-                            <li>Stomach</li>
-                        </bodyParts>
-                    </li>
-                    <li>
-                        <hediff>TentacleStorageStomach</hediff>
-                        <onlyIfNew>true</onlyIfNew>
-                        <severity>2</severity>
-                        <bodyParts>
-                            <li>Stomach</li>
-                        </bodyParts>
-                    </li>
-                    <li>
-                        <hediff>tentaclegrowthAM</hediff>
-                        <onlyIfNew>true</onlyIfNew>
-                        <severity>1</severity>
-                        <bodyParts>
-                            <li>Anus</li>
-                        </bodyParts>
-                    </li>
-                    <li>
-                        <hediff>TentacleStorageAnus</hediff>
-                        <onlyIfNew>true</onlyIfNew>
-                        <severity>2</severity>
-                        <bodyParts>
-                            <li>Anus</li>
-                        </bodyParts>
-                    </li>
-                    <li>
-                        <hediff>TentacleLimbAnus</hediff>
-                        <onlyIfNew>true</onlyIfNew>
-                        <severity>1</severity>
-                        <bodyParts>
-                            <li>Anus</li>
-                        </bodyParts>
-                    </li>
-                </hediffsToApply>
-            </li>
-	</modExtensions>
-    </GeneDef>
-
-	    <GeneDef>
-        <defName>ThostBrooder</defName>
-        <label>Baroness</label>
-        <displayCategory>HiddenTentacleGenes</displayCategory>
-        <geneClass>EBSGFramework.HediffAdder</geneClass>
-        <description>This pawn has become a baroness and will forever be a womb for incubating tentacles.</description>
-        <displayOrderInCategory>0.1</displayOrderInCategory>
-        <modExtensions>
-	    <li Class="EBSGFramework.EBSGExtension">
-                <hediffsToApply>
-                    <li>
-                        <hediff>tentaclegrowthAB</hediff>
-                        <onlyIfNew>true</onlyIfNew>
-                        <severity>0.01</severity>
-                    </li>
-                    <li>
-                        <hediff>tentaclegrowthSB</hediff>
-                        <onlyIfNew>true</onlyIfNew>
-                        <severity>1</severity>
-                        <bodyParts>
-                            <li>Genitals</li>
-                        </bodyParts>
-                    </li>
-                    <li>
-                        <hediff>tentaclegrowthVB</hediff>
-                        <onlyIfNew>true</onlyIfNew>
-                        <severity>3</severity>
-                        <bodyParts>
-                            <li>Genitals</li>
-                        </bodyParts>
-                    </li>
-                    <li>
-                        <hediff>amorbroodW</hediff>
-                        <onlyIfNew>true</onlyIfNew>
-                        <severity>1</severity>
-                        <bodyParts>
-                            <li>Stomach</li>
-                        </bodyParts>
-                    </li>
-                </hediffsToApply>
-            </li>
-	</modExtensions>
-    </GeneDef>
-
--->
 
 </Defs>
