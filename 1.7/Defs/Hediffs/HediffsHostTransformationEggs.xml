@@ -327,15 +327,6 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>0.25</severityPerDay>
 			</li>
-			<li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
-				<hediff>TentacleStorage</hediff>
-				<severity>0.5</severity>
-				<interval>5000</interval>
-				<bodyParts>
-					<li>Anus</li>
-				</bodyParts>
-				<validSeverities>0.7~0.72</validSeverities>
-			</li>
 		</comps>
 	</HediffDef>
 
@@ -407,15 +398,6 @@
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>0.25</severityPerDay>
 			</li>
-			<li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
-				<hediff>TentacleStorage</hediff>
-				<severity>0.5</severity>
-				<interval>5000</interval>
-				<bodyParts>
-					<li>Genitals</li>
-				</bodyParts>
-				<validSeverities>0.7~0.72</validSeverities>
-			</li>
 		</comps>
 	</HediffDef>
 
@@ -483,7 +465,7 @@
 			</li>
 			<li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
 				<hediff>TentacleStorage</hediff>
-				<severity>0.5</severity>
+				<severity>0.05</severity>
 				<interval>5000</interval>
 				<bodyParts>
 					<li>Genitals</li>

@@ -81,7 +81,7 @@
 			<targetParams>
 				<canTargetLocations>True</canTargetLocations>
 			</targetParams>
-			<soundCast>PiercingSpine_Launch</soundCast>
+			<soundCast>FireSpew_Warmup</soundCast>
 		</verbProperties>
 		<comps>
 			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
@@ -93,18 +93,6 @@
 				<resourceCost>0.01</resourceCost>
 				<mainResourceGene>HostTentacleNeed</mainResourceGene>
 			</li>
-			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
-				<hediffsToGive>
-					<li>
-						<hediffDef>TentacleSacrifice</hediffDef>
-						<applyToTarget>true</applyToTarget>
-						<replaceExisting>false</replaceExisting>
-						<bodyParts>
-							<li>Brain</li>
-						</bodyParts>
-					</li>
-				</hediffsToGive>
-			</li>
 			<li Class="CompProperties_AbilityFleckOnTarget">
 				<fleckDef>Mote_NoHeart</fleckDef>
 			</li>
@@ -112,6 +100,49 @@
 				<pawnKind>TInternal</pawnKind>
 				<count>1</count>
 				<inCreatorFaction>True</inCreatorFaction>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<!-- Tentacle Transfer -->
+	<AbilityDef ParentName="AbilityTouchBase">
+		<defName>TentacleTransfer</defName>
+		<label>Transfer tentacle</label>
+		<description>Transfer an Amor Internum tentacle from one Host to another.  With a sloppy kiss.\n\nWARNING: This is dangerous if the pawn runs out of stored tentacles!</description>
+		<iconPath>Abilities/MouthVore</iconPath>
+		<category>Tentacle</category>
+		<cooldownTicksRange>5</cooldownTicksRange>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityTouch</verbClass>
+			<range>5</range>
+			<warmupTime>2</warmupTime>
+			<requireLineOfSight>True</requireLineOfSight>
+			<targetParams>
+				<canTargetLocations>True</canTargetLocations>
+			</targetParams>
+			<soundCast>FireSpew_Warmup</soundCast>
+		</verbProperties>
+		<comps>
+			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+				<casterHasAnyOfHediffs>
+					<li>TentacleStorage</li>
+				</casterHasAnyOfHediffs>
+				<targetHasAnyOfHediffs>
+					<li>TentacleStorage</li>
+				</targetHasAnyOfHediffs>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityResourceCost">
+				<resourceCost>0.01</resourceCost>
+				<mainResourceGene>HostTentacleNeed</mainResourceGene>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityGiveResource">
+				<amount>0.01</amount>
+				<mainResourceGene>HostTentacleNeed</mainResourceGene>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>Heart</fleckDef>
 			</li>
 		</comps>
 	</AbilityDef>

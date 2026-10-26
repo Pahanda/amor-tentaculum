@@ -192,13 +192,21 @@
 			</li>
 			<li Class="HediffCompProperties_MessageOnRemoval">
 				<messageOnNonZeroSeverity>true</messageOnNonZeroSeverity>
+				<messageType>TaskCompletion</messageType>
 				<message>{0} has grown accustomed to their new capacity for tentacles.</message>
-				<messageType>SilentInput</messageType>
 				<onlyMessageForColonistsOrPrisoners>true</onlyMessageForColonistsOrPrisoners>
+			</li>
+			<li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
+				<hediff>TentacleStorage</hediff>
+				<severity>0.02</severity>
+				<interval>15000</interval>
+				<bodyParts>
+					<li>Genitals</li>
+				</bodyParts>
+				<validSeverities>0.1</validSeverities>
 			</li>
 		</comps>
 	</HediffDef>
-
 
 	<!--
   

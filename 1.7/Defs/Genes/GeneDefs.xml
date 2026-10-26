@@ -50,6 +50,7 @@
 		<abilities>
 			<li>TentacleIngest</li>
 			<li>TentacleExpel</li>
+			<li>TentacleTransfer</li>
 			<li>TCumSpray</li>
 		</abilities>
 		<modExtensions>

@@ -98,7 +98,7 @@
 			<li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
 				<hediff>TentacleStorage</hediff>
 				<severity>0.01</severity>
-				<interval>6000</interval>
+				<interval>15000</interval>
 				<bodyParts>
 					<li>Genitals</li>
 				</bodyParts>
@@ -127,7 +127,7 @@
 			<li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
 				<hediff>TentacleStorage</hediff>
 				<severity>0.01</severity>
-				<interval>6000</interval>
+				<interval>15000</interval>
 				<bodyParts>
 					<li>Genitals</li>
 				</bodyParts>
@@ -300,7 +300,6 @@
 				</statOffsets>
 				<regeneration>80</regeneration>
 			</li>
-
 		</stages>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
