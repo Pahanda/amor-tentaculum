@@ -3,7 +3,7 @@
 	<HediffDef>
 		<defName>OrganElasticity</defName>
 		<label>organ elasticity</label>
-		<description>The elasticity of the host's body is the main factor in determing how many tentacles they can hold. Can be increased by filling the body to the brim with tentacles, at which point the tentacles will further modify the body and stretch it further. Can also be increased with certain implants.\n\nNote that increasing the capacity beyond a certain point will make the host essentially immune to pain, which may not always be a good thing.  And there's no going back...</description>
+		<description>The elasticity of the Host's body is the main factor in determing how many tentacles they can hold. Can be increased by filling the body to the brim with tentacles, at which point the tentacles will further modify the body and stretch it further. Can also be increased with certain implants.\n\nNote that increasing the capacity beyond a certain point will make the host essentially immune to pain, which may not always be a good thing. And there's no going back...</description>
 		<isBad>False</isBad>
 		<defaultLabelColor>(255,182,193)</defaultLabelColor>
 		<everCurableByItem>False</everCurableByItem>
@@ -105,7 +105,6 @@
 				<validSeverities>0.1</validSeverities>
 			</li>
 		</comps>
-		
 	</HediffDef>
 
 	<HediffDef>
@@ -124,15 +123,19 @@
 				<modSettingMultiplier>hostIncubationSpeedFactor</modSettingMultiplier>
 				<baseSeverityPerDay>0.01</baseSeverityPerDay>
 			</li>
-			<li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
-				<hediff>TentacleStorage</hediff>
-				<severity>0.01</severity>
-				<interval>15000</interval>
-				<bodyParts>
-					<li>Genitals</li>
-				</bodyParts>
-				<validSeverities>0.1</validSeverities>
+			<li Class="EBSGFramework.HediffCompProperties_CreateOtherHediffs">
+				<hediffSets>
+					<li>
+						<hediffDef>AmorQueenIncubation</hediffDef>
+						<initialSeverity>0.001</initialSeverity>
+						<bodyPart>
+							<li>Genitals</li>
+						</bodyPart>
+						<validSeverity>0~0.001</validSeverity>
+					</li>
+				</hediffSets>
 			</li>
+
 			<!-- 
 			<li Class="HediffCompProperties_GiveHediffsInRange">
 				<range>25</range>

@@ -128,7 +128,7 @@
 	<HediffDef>
 		<defName>FullOfTentacles</defName>
 		<label>tentacle stuffed</label>
-		<description>This host has been pushed to their limit and is full to the brim with squirming tentacles. If they stay full long enough they may permanently stretched.</description>
+		<description>This Host has been pushed to their limit and is full to the brim with squirming tentacles. If they stay full, their body will eventually adapt - permanently increasing their storage capacity.</description>
 		<hediffClass>EBSGFramework.Hediff_ResourceCraving</hediffClass>
 		<defaultLabelColor>(0.6, 0.6, 0.6)</defaultLabelColor>
 		<initialSeverity>0.01</initialSeverity>
@@ -187,7 +187,7 @@
 			<li Class="HediffCompProperties_MessageAfterTicks">
 				<ticks>60</ticks>
 				<letterLabel>{0_labelShort} overstuffed!</letterLabel>
-				<letterText>{0_labelShort} has been overstuffed with tentacles. They will be in some pain while their body grows used to the sheer number swarming around inside them.  However, once the process completes, their storage capacity will permanently increase.  They will also be unable to use tentacle-powered abilities until this is done.</letterText>
+				<letterText>{0_labelShort} has been overstuffed with tentacles. They will be in some pain while their body grows used to the sheer number swarming around inside them.  However, once the process completes, their storage capacity will permanently increase.</letterText>
 				<letterType>HostPregnancy</letterType>
 			</li>
 			<li Class="HediffCompProperties_MessageOnRemoval">

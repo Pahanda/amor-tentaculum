@@ -5,7 +5,10 @@
 		<defName>AmorQueenIncubation</defName>
 		<label>Queen egg</label>
 		<labelNoun>an amor queen egg</labelNoun>
-		<description>An Amor Queen egg is being incubated by the Matron, and is growing inside her body. This process takes a long time, and she will not enjoy the process.</description>
+		<minSeverity>0</minSeverity>
+		<initialSeverity>0.001</initialSeverity>
+		<maxSeverity>1.5</maxSeverity>
+		<description>An Amor Queen egg is being incubated by the Matron, and is growing inside her body. This process takes around 20 days (with default multipliers), and she will not enjoy it (although her Host body will adapt to suppress the pain over time).</description>
 		<stages>
 			<li>
 				<minSeverity>0.001</minSeverity>
@@ -17,15 +20,15 @@
 			<li>
 				<minSeverity>0.1</minSeverity>
 				<label>small</label>
-				<painOffset>0.1</painOffset>
+				<painOffset>0.05</painOffset>
 				<statOffsets>
-					<MoveSpeed>-0.05</MoveSpeed>
+					<MoveSpeed>-0.025</MoveSpeed>
 				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>0.3</minSeverity>
 				<label>large</label>
-				<painOffset>0.1</painOffset>
+				<painOffset>0.075</painOffset>
 				<statOffsets>
 					<MoveSpeed>-0.05</MoveSpeed>
 				</statOffsets>
@@ -33,27 +36,27 @@
 			<li>
 				<minSeverity>0.5</minSeverity>
 				<label>huge</label>
-				<painOffset>0.2</painOffset>
+				<painOffset>0.1</painOffset>
 				<statOffsets>
-					<MoveSpeed>-0.2</MoveSpeed>
+					<MoveSpeed>-0.075</MoveSpeed>
 				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>0.7</minSeverity>
 				<label>enormous</label>
 				<partEfficiencyOffset>-0.20</partEfficiencyOffset>
-				<painOffset>0.40</painOffset>
+				<painOffset>0.125</painOffset>
 				<statOffsets>
-					<MoveSpeed>-0.4</MoveSpeed>
+					<MoveSpeed>-0.01</MoveSpeed>
 				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>0.98</minSeverity>
 				<label>ready to deliver</label>
 				<partEfficiencyOffset>-0.25</partEfficiencyOffset>
-				<painOffset>0.50</painOffset>
+				<painOffset>0.15</painOffset>
 				<statOffsets>
-					<MoveSpeed>-0.5</MoveSpeed>
+					<MoveSpeed>-0.15</MoveSpeed>
 				</statOffsets>
 			</li>
 		</stages>
@@ -65,6 +68,10 @@
 						<validSeverity>0.98~999</validSeverity>
 					</li>
 				</abilitiesAtSeverities>
+			</li>
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>hostEggProductionSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.05</baseSeverityPerDay>
 			</li>
 		</comps>
 	</HediffDef>

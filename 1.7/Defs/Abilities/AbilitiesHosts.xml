@@ -149,23 +149,43 @@
 
 	<AbilityDef>
 		<defName>BirthMatronEgg</defName>
-		<label>begin laying egg</label>
-		<description>Attempt to birth a massive Amor Matron egg.</description>
+		<label>Lay Amor Queen egg</label>
+		<description>Attempt to birth a massive Amor Queen egg.</description>
 		<iconPath>Abilities/OviVag</iconPath>
-		<category>Sanguophage</category>
+		<jobDef>CastAbilityOnThing</jobDef>
 		<targetRequired>False</targetRequired>
+		<canUseAoeToGetTargets>False</canUseAoeToGetTargets>
+		<category>Tentacle</category>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<showPsycastEffects>False</showPsycastEffects>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<cooldownTicksRange>60</cooldownTicksRange>
 		<hostile>false</hostile>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<targetRequired>False</targetRequired>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
 		<verbProperties>
 			<verbClass>Verb_CastAbility</verbClass>
-			<range>10</range>
+			<range>999</range>
 			<warmupTime>2.5</warmupTime>
-			<soundCast>PiercingSpine_Launch</soundCast>
+			<drawAimPie>False</drawAimPie>
+			<soundCast>AcidSpray_Resolve</soundCast>
 			<requireLineOfSight>False</requireLineOfSight>
 			<targetParams>
+				<canTargetLocations>false</canTargetLocations>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetEntities>false</canTargetEntities>
+				<canTargetSubhumans>false</canTargetSubhumans>
+				<canTargetMechs>false</canTargetMechs>
 				<canTargetSelf>true</canTargetSelf>
-				<canTargetLocations>true</canTargetLocations>
 			</targetParams>
 		</verbProperties>
 		<comps>
