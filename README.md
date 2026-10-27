@@ -17,7 +17,11 @@ Hard Requirements (this mod will not work without them):
 * Vanilla Expanded Framework
 
 Soft Requirements (this mod provides additional features if you have these installed):
-* Ideology
+* Royalty (some pawns get buffs to psychic sensitivity)
+* Ideology (provides memes and other Ideology components for your tentacle colony)
+
+Recommended Mods (never required, but provide useful things to suppliment a tentacle colony):
+* Alpha Memes (provides a Flesh Cult structure style for your Ideology that fits this mod well; note that Anomaly is required for this style)
 
 # Tentacle Bestiary
 
