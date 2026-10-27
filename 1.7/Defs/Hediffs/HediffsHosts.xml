@@ -112,7 +112,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>Amor Matron</label>
 		<labelNoun>Mother</labelNoun>
-		<description>The Amor Matron is permanently pregnant. The Host will gestate massive Amor Queen eggs over time.  Additionally, as they become accustomed to the permanent pregnancy, their bodies will be adapted to protect the growing eggs.</description>
+		<description>The Amor Matron is permanently pregnant. The Host can gestate massive Amor Queen eggs over time, whenever they choose, once they have reached the "fertile" stage. Additionally, as they become accustomed to the permanent pregnancy, their bodies will be adapted to protect the growing eggs.</description>
 		<defaultLabelColor>(203,120,227)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<maxSeverity>1.5</maxSeverity>
@@ -123,32 +123,14 @@
 				<modSettingMultiplier>hostIncubationSpeedFactor</modSettingMultiplier>
 				<baseSeverityPerDay>0.01</baseSeverityPerDay>
 			</li>
-			<li Class="EBSGFramework.HediffCompProperties_CreateOtherHediffs">
-				<hediffSets>
+			<li Class="EBSGFramework.HediffCompProperties_GiveAbilityAtSeverity">
+				<abilitiesAtSeverities>
 					<li>
-						<hediffDef>AmorQueenIncubation</hediffDef>
-						<initialSeverity>0.001</initialSeverity>
-						<bodyPart>
-							<li>Genitals</li>
-						</bodyPart>
-						<validSeverity>0~0.001</validSeverity>
+						<abilityDef>IncubateMatronEgg</abilityDef>
+						<validSeverity>0.6~999</validSeverity>
 					</li>
-				</hediffSets>
+				</abilitiesAtSeverities>
 			</li>
-
-			<!-- 
-			<li Class="HediffCompProperties_GiveHediffsInRange">
-				<range>25</range>
-				<hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
-				<targetingParameters>
-					<canTargetBuildings>false</canTargetBuildings>
-					<canTargetAnimals>true</canTargetAnimals>
-					<canTargetMechs>false</canTargetMechs>
-					<onlyTargetColonists>true</onlyTargetColonists>
-				</targetingParameters>
-				<hediff>painsooth</hediff>
-			</li>
-			-->
 		</comps>
 		<stages>
 			<li>
@@ -174,7 +156,7 @@
 				</capMods>
 			</li>
 			<li>
-				<label>recent</label>
+				<label>adapting</label>
 				<minSeverity>0.2</minSeverity>
 				<restFallFactor>1.2</restFallFactor>
 				<hungerRateFactorOffset>0.5</hungerRateFactorOffset>
@@ -196,7 +178,7 @@
 				</capMods>
 			</li>
 			<li>
-				<label>accustomed</label>
+				<label>fertile</label>
 				<minSeverity>0.6</minSeverity>
 				<restFallFactor>1.2</restFallFactor>
 				<hungerRateFactorOffset>1</hungerRateFactorOffset>
@@ -218,7 +200,7 @@
 				</capMods>
 			</li>
 			<li>
-				<label>adapted</label>
+				<label>matriarch</label>
 				<minSeverity>0.9</minSeverity>
 				<restFallFactor>1.4</restFallFactor>
 				<hungerRateFactorOffset>2</hungerRateFactorOffset>

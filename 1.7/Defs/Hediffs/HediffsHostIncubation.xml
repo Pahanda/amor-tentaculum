@@ -77,7 +77,7 @@
 	</HediffDef>
 
 	<HediffDef>
-		<defName>EggLabor</defName>
+		<defName>QueenEggLabor</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>Laying Egg</label>
 		<labelNoun>laying egg</labelNoun>
