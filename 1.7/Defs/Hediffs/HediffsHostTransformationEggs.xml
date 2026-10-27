@@ -10,9 +10,12 @@
 			<li>
 				<minSeverity>0.001</minSeverity>
 				<painOffset>2</painOffset>
-				<statOffsets>
-					<MoveSpeed>-0.5</MoveSpeed>
-				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.1</setMax>
+					</li>
+				</capMods>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>OrganDecay</hediff>
@@ -53,8 +56,8 @@
 		<comps>
 			<li Class="EBSGFramework.HediffCompProperties_SeverityByGender">
 				<genders>
-					<Male>1</Male>
 					<Female>0</Female>
+					<Male>1</Male>
 				</genders>
 			</li>
 		</comps>
@@ -107,17 +110,11 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(203,120,227)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
-		<maxSeverity>1.5</maxSeverity>
+		<minSeverity>0</minSeverity>
+		<initialSeverity>0.001</initialSeverity>
+		<maxSeverity>1.5</maxSeverity>		
 		<isBad>false</isBad>
 		<tendable>false</tendable>
-		<comps>
-			<li Class="HediffCompProperties_MessageAfterTicks">
-				<ticks>60</ticks>
-				<letterLabel>{0_labelShort} impregnated</letterLabel>
-				<letterText>{0_labelShort} has been impregnated with an Amor Host egg!</letterText>
-				<letterType>HostPregnancy</letterType>
-			</li>
-		</comps>
 	</HediffDef>
 		
 	<HediffDef Name="MatronEggIncubationSuccess" ParentName="EggIncubationSuccessBase">
@@ -126,9 +123,9 @@
 		<labelNoun>incubation</labelNoun>
 		<description>An Amor Matron egg is growing within the host. Unlike a normal pregnancy, this will not result in birth, but will gradually transform the host into an Amor Matron. The incubation process takes approximately 15 days (with default multipliers).</description>
 		<comps>
-			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
-				<modSettingMultiplier>hostIncubationSpeedFactor</modSettingMultiplier>
-				<baseSeverityPerDay>0.15</baseSeverityPerDay>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>9</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
 			</li>
 			<li Class="EBSGFramework.HediffCompProperties_SeverityByGenes">
 				<baseSeverity>0.001</baseSeverity>
@@ -142,8 +139,58 @@
 			<li Class="EBSGFramework.HediffCompProperties_SeverityByGender">
 				<genders>
 					<Male>0</Male>
-					<Female>0.01</Female>
+					<Female>1.48</Female>
 				</genders>
+			</li>
+			<li Class="EBSGFramework.HediffCompProperties_CreateOtherHediffs">
+				<hediffSets>
+					<li>
+						<hediffDef>MatronEggIncubation</hediffDef>
+						<validSeverity>1.48~1.51</validSeverity>
+						<severityPerDay>0</severityPerDay>
+						<initialSeverity>0.001</initialSeverity>
+					</li>
+				</hediffSets>
+			</li>
+			<li Class="EBSGFramework.HediffCompProperties_RemoveAtSeverities">
+				<severity>1.5</severity>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>incubating egg</label>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef Name="EggIncubationBase" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(203,120,227)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<minSeverity>0</minSeverity>
+		<initialSeverity>0.001</initialSeverity>
+		<maxSeverity>1.5</maxSeverity>
+		<isBad>false</isBad>
+		<tendable>false</tendable>
+		<comps>
+			<li Class="HediffCompProperties_MessageAfterTicks">
+				<ticks>60</ticks>
+				<letterLabel>{0_labelShort} impregnated</letterLabel>
+				<letterText>{0_labelShort} has been impregnated with an Amor Host egg!</letterText>
+				<letterType>HostPregnancy</letterType>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef Name="MatronEggIncubation" ParentName="EggIncubationBase">
+		<defName>MatronEggIncubation</defName>
+		<label>Matron egg incubation</label>
+		<labelNoun>incubation</labelNoun>
+		<description>An Amor Matron egg is growing within the host. Unlike a normal pregnancy, this will not result in birth, but will gradually transform the host into an Amor Matron. The incubation process takes approximately 15 days (with default multipliers).</description>
+		<comps>
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>hostIncubationSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.15</baseSeverityPerDay>
 			</li>
 			<li Class="EBSGFramework.HediffCompProperties_CreateOtherHediffs">
 				<hediffSets>

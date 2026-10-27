@@ -150,7 +150,7 @@
 	<AbilityDef>
 		<defName>BirthMatronEgg</defName>
 		<label>Lay Amor Queen egg</label>
-		<description>Attempt to birth a massive Amor Queen egg.</description>
+		<description>Begin laying a massive Amor Queen egg.</description>
 		<iconPath>Abilities/OviVag</iconPath>
 		<jobDef>CastAbilityOnThing</jobDef>
 		<targetRequired>False</targetRequired>
@@ -211,7 +211,7 @@
 	<AbilityDef>
 		<defName>IncubateMatronEgg</defName>
 		<label>Incubate Amor Queen egg</label>
-		<description>Begin the process of incbating a massive Amor Queen egg.</description>
+		<description>Begin the process of incubating a massive Amor Queen egg.\n\nWARNING: This process is very debilitating for the Host. Make sure she gets somewhere safe, quickly!</description>
 		<iconPath>Abilities/OviVag</iconPath>
 		<jobDef>CastAbilityOnThing</jobDef>
 		<targetRequired>False</targetRequired>

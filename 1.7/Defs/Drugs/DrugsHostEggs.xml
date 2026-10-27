@@ -34,7 +34,7 @@
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>MatronEggIncubationSuccess</hediffDef>
-					<severity>0.1</severity>
+					<severity>1.45</severity>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>MatronEggIncubationFailure</hediffDef>
