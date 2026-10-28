@@ -29,7 +29,14 @@
 	<ThingDef ParentName="OrganicProductBase">
 		<defName>TentacleSlime</defName>
 		<label>tentacle slime</label>
+		<description>A sticky, viscous substance "produced" by Amor Matrons. Used for crafting more advanced eggs and implants. It last indefinitely, so long as it is stored safely. An extremely valuable resource!</description>
+
+		<!--
+		Temporarily converted to non-food so pawns won't just gobble it all up immediately.
+		
 		<description>A sticky, viscous substance "produced" by Amor Matrons. Used for crafting more advanced eggs and implants, but also provides a reasonable amount of nutrition when eaten.  It last indefinitely, so long as it is stored safely.  An extremely valuable resource!</description>
+		-->
+
 		<graphicData>
 			<!-- TODO: This is a placeholder graphic. -->
 			<texPath>Things/Items/Food/Slime</texPath>
@@ -40,8 +47,10 @@
 		<statBases>
 			<MarketValue>5.0</MarketValue>
 			<Mass>0.025</Mass>
-			<Nutrition>0.05</Nutrition>
+			<!-- <Nutrition>0.05</Nutrition> -->
 		</statBases>
+
+		<!--
 		<ingestible>
 			<foodType>AnimalProduct</foodType>
 			<preferability>MealFine</preferability>
@@ -52,6 +61,8 @@
 			<lowPriorityCaravanFood>true</lowPriorityCaravanFood>
 			<babiesCanIngest>true</babiesCanIngest>
 		</ingestible>
+		-->
+		
 		<thingCategories>
 			<li>HostProducedProducts</li>
 		</thingCategories>

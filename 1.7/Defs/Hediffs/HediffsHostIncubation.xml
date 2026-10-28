@@ -60,6 +60,24 @@
 					<MoveSpeed>-0.15</MoveSpeed>
 				</statOffsets>
 			</li>
+			<li>
+				<minSeverity>1.2</minSeverity>
+				<label>overdue, painful</label>
+				<partEfficiencyOffset>-0.5</partEfficiencyOffset>
+				<painOffset>0.33</painOffset>
+				<statOffsets>
+					<MoveSpeed>-0.25</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>1.4</minSeverity>
+				<label>overdue, debilitating</label>
+				<partEfficiencyOffset>-0.5</partEfficiencyOffset>
+				<painOffset>0.66</painOffset>
+				<statOffsets>
+					<MoveSpeed>-0.5</MoveSpeed>
+				</statOffsets>
+			</li>
 		</stages>
 		<comps>
 			<li Class="EBSGFramework.HediffCompProperties_GiveAbilityAtSeverity">
