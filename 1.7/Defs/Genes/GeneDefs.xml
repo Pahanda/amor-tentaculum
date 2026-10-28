@@ -70,7 +70,7 @@
 						<severity>0.01</severity>
 					</li>
 					<li>
-						<hediff>tentaclegrowthV</hediff>
+						<hediff>TentacleInfestedVagina</hediff>
 						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 						<bodyParts>
@@ -86,7 +86,7 @@
 						</bodyParts>
 					</li>
 					<li>
-						<hediff>tentaclegrowthS</hediff>
+						<hediff>TentacleInfestedStomach</hediff>
 						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 						<bodyParts>
@@ -94,7 +94,7 @@
 						</bodyParts>
 					</li>
 					<li>
-						<hediff>tentaclegrowthA</hediff>
+						<hediff>TentacleInfestedAnus</hediff>
 						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 						<bodyParts>

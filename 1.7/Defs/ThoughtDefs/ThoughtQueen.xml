@@ -149,7 +149,7 @@
  <ThoughtDef>
     <defName>StrechS</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>tentaclegrowthS</hediff>
+    <hediff>TentacleInfestedStomach</hediff>
     <stackLimit>1</stackLimit>
     <validWhileDespawned>true</validWhileDespawned>
     <nullifyingTraits>
@@ -189,7 +189,7 @@
  <ThoughtDef>
     <defName>StrechSFun</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>tentaclegrowthS</hediff>
+    <hediff>TentacleInfestedStomach</hediff>
     <stackLimit>1</stackLimit>
     <validWhileDespawned>true</validWhileDespawned>
 	<requiredTraits>
@@ -229,7 +229,7 @@
  <ThoughtDef>
     <defName>StrechA</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>tentaclegrowthA</hediff>
+    <hediff>TentacleInfestedAnus</hediff>
     <stackLimit>1</stackLimit>
     <validWhileDespawned>true</validWhileDespawned>
     <nullifyingTraits>
@@ -269,7 +269,7 @@
  <ThoughtDef>
     <defName>StrechAFun</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>tentaclegrowthA</hediff>
+    <hediff>TentacleInfestedAnus</hediff>
     <stackLimit>1</stackLimit>
     <validWhileDespawned>true</validWhileDespawned>
 	<requiredTraits>
@@ -309,7 +309,7 @@
  <ThoughtDef>
     <defName>StrechV</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>tentaclegrowthV</hediff>
+    <hediff>TentacleInfestedVagina</hediff>
     <stackLimit>1</stackLimit>
     <validWhileDespawned>true</validWhileDespawned>
     <nullifyingTraits>
@@ -349,7 +349,7 @@
  <ThoughtDef>
     <defName>StrechVFun</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>tentaclegrowthV</hediff>
+    <hediff>TentacleInfestedVagina</hediff>
     <stackLimit>1</stackLimit>
     <validWhileDespawned>true</validWhileDespawned>
 	<requiredTraits>

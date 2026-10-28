@@ -52,7 +52,12 @@ namespace AmorTentaculum
         /// Modifier to Host Genetic Rewrite Speed
         /// </summary>
         public static float geneticRewriteSpeedFactor = 1.0f;
-        
+
+        /// <summary>
+        /// Modifier to Host Genetic Rewrite Speed
+        /// </summary>
+        public static float hostAcclimationSpeedFactor = 1.0f;
+
         /// <summary>
         /// Modifier to Host Egg Production Speed
         /// </summary>
@@ -94,15 +99,22 @@ namespace AmorTentaculum
             hostIncubationSpeedFactor = listingStandard.SliderLabeled(
                 "Host Incubation Speed Factor: {0}x".Translate(hostIncubationSpeedFactor.ToString("0.00")),
                 hostIncubationSpeedFactor, 0.25f, 4f, 0.35f,
-                "The speed that the Host egg incubation hediff progresses.  This is the first stage in Host transformation.");
+                "The speed that the Host egg incubation hediff progresses.  This is the initial stage of Host transformation.");
 
             listingStandard.GapLine(16f);
 
             geneticRewriteSpeedFactor = listingStandard.SliderLabeled(
                 "Genetic Rewrite Speed Factor: {0}x".Translate(geneticRewriteSpeedFactor.ToString("0.00")),
                 geneticRewriteSpeedFactor, 0.25f, 4f, 0.35f,
-                "The speed that the Host henetic rewriting hediff progresses.  This is the second stage in Host transformation.");
+                "The speed that the Host genetic rewriting hediff progresses.  This is the intermediate stage of Host transformation.");
             
+            listingStandard.GapLine(16f);
+
+            hostAcclimationSpeedFactor = listingStandard.SliderLabeled(
+                "Host Acclimation Speed Factor: {0}x".Translate(hostAcclimationSpeedFactor.ToString("0.00")),
+                hostAcclimationSpeedFactor, 0.25f, 4f, 0.35f,
+                "The speed that the Host acclimation hediffs progress.  This is the final stage of Host transformation.");
+
             listingStandard.GapLine(16f);
 
             hostEggProductionSpeedFactor = listingStandard.SliderLabeled(
@@ -136,6 +148,7 @@ namespace AmorTentaculum
             {
                 hostIncubationSpeedFactor = 1f;
                 geneticRewriteSpeedFactor = 1f;
+                hostAcclimationSpeedFactor = 1f;
                 hostEggProductionSpeedFactor = 1f;
                 hostResourceProductionSpeedFactor = 1f;
                 tentacleEggProductionSpeedFactor = 1f;
@@ -154,6 +167,7 @@ namespace AmorTentaculum
         {
             Scribe_Values.Look(ref hostIncubationSpeedFactor, "hostIncubationSpeedFactor", 1f);
             Scribe_Values.Look(ref geneticRewriteSpeedFactor, "geneticRewriteSpeedFactor", 1f);
+            Scribe_Values.Look(ref hostAcclimationSpeedFactor, "hostAcclimationSpeedFactor", 1f);
             Scribe_Values.Look(ref hostEggProductionSpeedFactor, "hostEggProductionSpeedFactor", 1f);
             Scribe_Values.Look(ref hostResourceProductionSpeedFactor, "hostResourceProductionSpeedFactor", 1f);
             Scribe_Values.Look(ref tentacleEggProductionSpeedFactor, "tentacleEggProductionSpeedFactor", 1f);

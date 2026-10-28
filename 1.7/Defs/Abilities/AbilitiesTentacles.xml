@@ -35,7 +35,7 @@
 			</li>
 			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
 				<targetHasAnyOfHediffs>
-					<li>tentaclegrowthA</li>
+					<li>TentacleInfestedAnus</li>
 				</targetHasAnyOfHediffs>
 				<casterHasNoneOfHediffs>
 					<li>FullOfTentacles</li>
@@ -60,7 +60,7 @@
 						</bodyParts>
 					</li>
 					<li>
-						<hediffDef>tentaclegrowthA</hediffDef>
+						<hediffDef>TentacleInfestedAnus</hediffDef>
 						<replaceExisting>false</replaceExisting>
 						<bodyParts>
 							<li>Anus</li>

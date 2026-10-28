@@ -57,7 +57,7 @@
         </statOffsets>
                 <hediffGivers>
           <li Class="HediffGiver_Random">
-            <hediff>tentaclegrowthSM</hediff>
+            <hediff>TentacleInfestedStomachM</hediff>
             <mtbDays>4</mtbDays>
             <partsToAffect>
               <li>Stomach</li>
@@ -78,7 +78,7 @@
         </statOffsets>
         <hediffGivers>
           <li Class="HediffGiver_Random">
-            <hediff>tentaclegrowthSM</hediff>
+            <hediff>TentacleInfestedStomachM</hediff>
             <mtbDays>3</mtbDays>
             <partsToAffect>
               <li>Stomach</li>
@@ -86,7 +86,7 @@
             <countToAffect>1</countToAffect>
           </li>
           <li Class="HediffGiver_Random">
-            <hediff>tentaclegrowthAM</hediff>
+            <hediff>TentacleInfestedAnusM</hediff>
             <mtbDays>2</mtbDays>
             <partsToAffect>
               <li>Anus</li>
@@ -107,7 +107,7 @@
         </statOffsets>
                 <hediffGivers>
           <li Class="HediffGiver_Random">
-            <hediff>tentaclegrowthSM</hediff>
+            <hediff>TentacleInfestedStomachM</hediff>
             <mtbDays>0.1</mtbDays>
             <partsToAffect>
               <li>Stomach</li>
@@ -115,7 +115,7 @@
             <countToAffect>1</countToAffect>
           </li>
           <li Class="HediffGiver_Random">
-            <hediff>tentaclegrowthVM</hediff>
+            <hediff>TentacleInfestedVaginaM</hediff>
             <mtbDays>0.1</mtbDays>
             <partsToAffect>
               <li>Genitals</li>
@@ -123,7 +123,7 @@
             <countToAffect>1</countToAffect>
           </li>
           <li Class="HediffGiver_Random">
-            <hediff>tentaclegrowthAM</hediff>
+            <hediff>TentacleInfestedAnusM</hediff>
             <mtbDays>0.1</mtbDays>
             <partsToAffect>
               <li>Anus</li>
@@ -137,7 +137,7 @@
   </HediffDef>
 
   <HediffDef>
-    <defName>tentaclegrowthAM</defName>
+    <defName>TentacleInfestedAnusM</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>infested rectum</label>
     <labelNoun>rectum</labelNoun>
@@ -206,7 +206,7 @@
   </HediffDef>
 
 <HediffDef>
-    <defName>tentaclegrowthSM</defName>
+    <defName>TentacleInfestedStomachM</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>infested stomach</label>
     <labelNoun>stomach</labelNoun>
@@ -287,7 +287,7 @@
 
 
   <HediffDef>
-    <defName>tentaclegrowthVM</defName>
+    <defName>TentacleInfestedVaginaM</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <label>infested genitals</label>
     <labelNoun>genitals</labelNoun>

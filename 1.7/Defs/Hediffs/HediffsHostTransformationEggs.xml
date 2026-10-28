@@ -234,7 +234,7 @@
 				</statOffsets>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
-						<hediff>tentaclegrowthS</hediff>
+						<hediff>TentacleInfestedStomach</hediff>
 						<mtbDays>4</mtbDays>
 						<partsToAffect>
 							<li>Stomach</li>
@@ -257,7 +257,7 @@
 				</statOffsets>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
-						<hediff>tentaclegrowthS</hediff>
+						<hediff>TentacleInfestedStomach</hediff>
 						<mtbDays>3</mtbDays>
 						<partsToAffect>
 							<li>Stomach</li>
@@ -265,7 +265,7 @@
 						<countToAffect>1</countToAffect>
 					</li>
 					<li Class="HediffGiver_Random">
-						<hediff>tentaclegrowthA</hediff>
+						<hediff>TentacleInfestedAnus</hediff>
 						<mtbDays>2</mtbDays>
 						<partsToAffect>
 							<li>Anus</li>
@@ -288,7 +288,7 @@
 				</statOffsets>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
-						<hediff>tentaclegrowthS</hediff>
+						<hediff>TentacleInfestedStomach</hediff>
 						<mtbDays>0.1</mtbDays>
 						<partsToAffect>
 							<li>Stomach</li>
@@ -296,7 +296,7 @@
 						<countToAffect>1</countToAffect>
 					</li>
 					<li Class="HediffGiver_Random">
-						<hediff>tentaclegrowthV</hediff>
+						<hediff>TentacleInfestedVagina</hediff>
 						<mtbDays>0.1</mtbDays>
 						<partsToAffect>
 							<li>Genitals</li>
@@ -304,7 +304,7 @@
 						<countToAffect>1</countToAffect>
 					</li>
 					<li Class="HediffGiver_Random">
-						<hediff>tentaclegrowthA</hediff>
+						<hediff>TentacleInfestedAnus</hediff>
 						<mtbDays>0.1</mtbDays>
 						<partsToAffect>
 							<li>Anus</li>
@@ -318,7 +318,7 @@
 	</HediffDef>
 
 	<HediffDef>
-		<defName>tentaclegrowthA</defName>
+		<defName>TentacleInfestedAnus</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>stretched rectum</label>
 		<labelNoun>rectum</labelNoun>
@@ -346,7 +346,7 @@
 			</li>
 			<li>
 				<minSeverity>0.5</minSeverity>
-				<label>gaping:painfull</label>
+				<label>gaping:painful</label>
 				<painOffset>0.3</painOffset>
 				<statOffsets>
 					<MoveSpeed>-0.03</MoveSpeed>
@@ -371,14 +371,15 @@
 			</li>
 		</stages>
 		<comps>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>0.25</severityPerDay>
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>hostAcclimationSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.05</baseSeverityPerDay>
 			</li>
 		</comps>
 	</HediffDef>
 
 	<HediffDef>
-		<defName>tentaclegrowthS</defName>
+		<defName>TentacleInfestedStomach</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>stretched stomach</label>
 		<labelNoun>stomach</labelNoun>
@@ -442,15 +443,16 @@
 			</li>
 		</stages>
 		<comps>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>0.25</severityPerDay>
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>hostAcclimationSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.05</baseSeverityPerDay>
 			</li>
 		</comps>
 	</HediffDef>
 
 
 	<HediffDef>
-		<defName>tentaclegrowthV</defName>
+		<defName>TentacleInfestedVagina</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>stretched womb</label>
 		<labelNoun>womb</labelNoun>
@@ -507,8 +509,9 @@
 			</li>
 		</stages>
 		<comps>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>0.25</severityPerDay>
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>hostAcclimationSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.05</baseSeverityPerDay>
 			</li>
 			<li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
 				<hediff>TentacleStorage</hediff>

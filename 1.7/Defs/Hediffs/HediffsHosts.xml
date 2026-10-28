@@ -287,8 +287,9 @@
 			</li>
 		</stages>
 		<comps>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>0.01</severityPerDay>
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>hostAcclimationSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.01</baseSeverityPerDay>
 			</li>
 		</comps>
 	</HediffDef>
@@ -485,8 +486,9 @@
 					</li>
 				</tools>
 			</li>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>0.05</severityPerDay>
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>hostAcclimationSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.025</baseSeverityPerDay>
 			</li>
 		</comps>
 	</HediffDef>
@@ -622,8 +624,9 @@
 					</li>
 				</tools>
 			</li>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>0.05</severityPerDay>
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>hostAcclimationSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.025</baseSeverityPerDay>
 			</li>
 		</comps>
 	</HediffDef>
