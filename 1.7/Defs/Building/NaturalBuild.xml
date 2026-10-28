@@ -278,6 +278,7 @@
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
   </ThingDef>
 
+	<!--
     <TerrainDef ParentName="FloorBase">
     <defName>TentFloor</defName>
     <label>tentacle floor</label>
@@ -299,5 +300,6 @@
       <li>ATStructUtility</li>
     </researchPrerequisites>
   </TerrainDef>
+ -->
 
 </Defs>
