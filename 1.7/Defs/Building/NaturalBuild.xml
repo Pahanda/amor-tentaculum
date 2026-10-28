@@ -237,7 +237,7 @@
       </li>
       <li Class="CompProperties_Glower">
         <glowRadius>2</glowRadius>
-        <glowColor>(173, 216, 230, 0.2)</glowColor>
+        <glowColor>(173, 216, 230, 2)</glowColor>
       </li>
     </comps>
     <designationCategory>Temperature</designationCategory>
