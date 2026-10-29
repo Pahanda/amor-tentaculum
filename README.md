@@ -62,10 +62,10 @@ A non-combat mass of tentacles that can be harvested for hard and soft resin res
 A non-combat mass of tentacles that produces drugs and chemicals regularly.  Can be switched between various production targets.
 
 ### Amor Brood Mother
-A non-combat mass of tentacles that focuses entirely on incubating and laying Amor Larva eggs, which will eventually grow into other types of tentacles.
+A non-combat mass of tentacles, designed to help grow Amor Internum tentacles to empower Amor hosts' abilities.  Grows and lays Amor Internum eggs.
 
 ### Amor Queen
-A powerful mass of tentacles, designed to help grow Amor Internum tentacles to empower Amor hosts' abilities.  Grows and lays Amor Internum eggs.  Has combat abilities, but due to its essential nature to the brood, should not engage in combat unless necessary.
+A non-combat mass of tentacles that focuses entirely on incubating and laying Amor Larva eggs, which will eventually grow into other types of tentacles.  Has combat abilities, but due to its essential nature to the hive, should not engage in combat unless necessary.
 
 # Host Types
 
