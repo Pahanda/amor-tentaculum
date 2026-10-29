@@ -322,7 +322,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>stretched rectum</label>
 		<labelNoun>rectum</labelNoun>
-		<description>The Amor queen has grown and invaded this part of the body. The hosts rectum, and large intestine are being stretched to accommodate larger and more plentaful tentacle insertions. These processes are uncomfortable.</description>
+		<description>The growing Amor Tentaculum has invaded this part of the Host's body. Their rectum and large intestine are being stretched to accommodate larger and more plentiful tentacle insertions. These processes are uncomfortable.</description>
 		<defaultLabelColor>(255,20,147)</defaultLabelColor>
 		<minSeverity>0.001</minSeverity>
 		<initialSeverity>0.001</initialSeverity>
@@ -346,7 +346,7 @@
 			</li>
 			<li>
 				<minSeverity>0.5</minSeverity>
-				<label>gaping:painful</label>
+				<label>gaping, painful</label>
 				<painOffset>0.3</painOffset>
 				<statOffsets>
 					<MoveSpeed>-0.03</MoveSpeed>
@@ -354,7 +354,7 @@
 			</li>
 			<li>
 				<minSeverity>0.75</minSeverity>
-				<label>gaping:acclimating</label>
+				<label>gaping, acclimating</label>
 				<painOffset>0.2</painOffset>
 				<statOffsets>
 					<MoveSpeed>-0.02</MoveSpeed>
@@ -362,7 +362,7 @@
 			</li>
 			<li>
 				<minSeverity>1</minSeverity>
-				<label>gaping:accustomed</label>
+				<label>gaping, accustomed</label>
 				<painOffset>0.01</painOffset>
 				<statOffsets>
 					<TStorage>0.02</TStorage>
@@ -383,7 +383,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>stretched stomach</label>
 		<labelNoun>stomach</labelNoun>
-		<description>The Amor queen has grown and invaded this part of the body. The hosts stomach, and throat are being stretched and cleared of acid to cultivate a better enviroment for tentacle offspring. These processes are uncomfortable.</description>
+		<description>The growing Amor Tentaculum has invaded this part of the Host's body. Their stomach and throat are being stretched and cleared of acid to provide a better environment for tentacle storage. These processes are uncomfortable.</description>
 		<defaultLabelColor>(255,20,147)</defaultLabelColor>
 		<minSeverity>0.001</minSeverity>
 		<initialSeverity>0.001</initialSeverity>
@@ -421,8 +421,8 @@
 				</statOffsets>
 			</li>
 			<li>
-				<minSeverity>0.6</minSeverity>
-				<label>spacious:acclimating</label>
+				<minSeverity>0.75</minSeverity>
+				<label>spacious, acclimating</label>
 				<painOffset>0.2</painOffset>
 				<partEfficiencyOffset>-0.8</partEfficiencyOffset>
 				<statOffsets>
@@ -432,7 +432,7 @@
 			</li>
 			<li>
 				<minSeverity>1</minSeverity>
-				<label>spacious:accustomed</label>
+				<label>spacious, accustomed</label>
 				<painOffset>0.01</painOffset>
 				<partEfficiencyOffset>-0.7</partEfficiencyOffset>
 				<statOffsets>
@@ -450,13 +450,12 @@
 		</comps>
 	</HediffDef>
 
-
 	<HediffDef>
 		<defName>TentacleInfestedVagina</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<label>stretched womb</label>
 		<labelNoun>womb</labelNoun>
-		<description>The Amor queen has grown and invaded this part of the body. The hosts womb, and cervix are being stretched open to support longterm tentacle pregnacny. These processes are uncomfortable.</description>
+		<description>The growing Amor Tentaculum has invaded this part of the Host's body. Their cervix is being stretched to provide better access to their womb, which is also being expanded. These processes are uncomfortable.</description>
 		<defaultLabelColor>(255,20,147)</defaultLabelColor>
 		<minSeverity>0.001</minSeverity>
 		<initialSeverity>0.001</initialSeverity>
@@ -490,7 +489,7 @@
 			</li>
 			<li>
 				<minSeverity>0.75</minSeverity>
-				<label>spacious:acclimating</label>
+				<label>spacious, acclimating</label>
 				<painOffset>0.2</painOffset>
 				<partEfficiencyOffset>0.5</partEfficiencyOffset>
 				<statOffsets>
@@ -499,7 +498,7 @@
 			</li>
 			<li>
 				<minSeverity>1</minSeverity>
-				<label>spacious:accustomed</label>
+				<label>spacious, accustomed</label>
 				<painOffset>0.01</painOffset>
 				<partEfficiencyOffset>0.5</partEfficiencyOffset>
 				<statOffsets>
