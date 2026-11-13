@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Tentaculum pawn kind: TentacleDefender -->
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>TentacleDefender</defName>
+    <race>TentacleDefender</race>
+    <combatPower>500</combatPower>
+    <ecoSystemWeight>0.15</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawns/Defender/Defender</texPath>
+          <drawSize>3.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
+          <drawSize>3.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawns/Defender/Defender</texPath>
+          <drawSize>3.8</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
+          <drawSize>3.8</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+</Defs>

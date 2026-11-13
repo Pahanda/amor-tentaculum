@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Tentaculum body: ProducerBody -->
+  <BodyDef>
+    <defName>ProducerBody</defName>
+    <corePart>
+      <def>SnakeBody</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+        <li>
+          <def>Stomach</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>InsectHeart</def>
+          <coverage>0.03</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>TentacleBeastHead</def>
+          <coverage>0.18</coverage>
+          <groups>
+            <li>HeadAttackTool</li>
+          </groups>
+          <parts>
+            <li>
+              <def>Brain</def>
+              <coverage>0.15</coverage>
+              <depth>Inside</depth>
+            </li>
+            <li>
+              <def>SensoryTentacle</def>
+              <customLabel>left sensory tentacle</customLabel>
+              <coverage>0.05</coverage>
+              <height>Top</height>
+              <depth>Outside</depth>
+              <groups>
+                <li>FullHead</li>
+              </groups>
+            </li>
+            <li>
+              <def>SensoryTentacle</def>
+              <customLabel>right sensory tentacle</customLabel>
+              <coverage>0.05</coverage>
+              <height>Top</height>
+              <depth>Outside</depth>
+              <groups>
+                <li>FullHead</li>
+              </groups>
+            </li>
+            <li>
+              <def>SensoryTentacle</def>
+              <customLabel>central sensory tentacle</customLabel>
+              <coverage>0.05</coverage>
+              <height>Top</height>
+              <depth>Outside</depth>
+              <groups>
+                <li>FullHead</li>
+              </groups>
+            </li>
+            <li>
+              <def>TentacleBeastMouth</def>
+              <customLabel>left tentacle mouth</customLabel>
+              <coverage>0.05</coverage>
+              <groups>
+                <li>Mouth</li>
+              </groups>
+            </li>
+            <li>
+              <def>TentacleBeastMouth</def>
+              <customLabel>middle tentacle mouth</customLabel>
+              <coverage>0.05</coverage>
+              <groups>
+                <li>Mouth</li>
+              </groups>
+            </li>
+            <li>
+              <def>TentacleBeastMouth</def>
+              <customLabel>right tentacle mouth</customLabel>
+              <coverage>0.05</coverage>
+              <groups>
+                <li>Mouth</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+        <li>
+          <def>Tentacle</def>
+          <customLabel>front left tentacle</customLabel>
+          <coverage>0.08</coverage>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>Tentacle</def>
+          <customLabel>front right tentacle</customLabel>
+          <coverage>0.08</coverage>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>Tentacle</def>
+          <customLabel>central tentacle</customLabel>
+          <coverage>0.08</coverage>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>TentacleLeg</def>
+          <customLabel>central ventral tentacle</customLabel>
+          <coverage>0.03</coverage>
+          <height>Bottom</height>
+          <depth>Outside</depth>
+          <groups>
+            <li>Legs</li>
+          </groups>
+        </li>
+        <li>
+          <def>TentacleLeg</def>
+          <customLabel>left ventral tentacle</customLabel>
+          <coverage>0.03</coverage>
+          <height>Bottom</height>
+          <depth>Outside</depth>
+          <groups>
+            <li>Legs</li>
+          </groups>
+        </li>
+        <li>
+          <def>TentacleLeg</def>
+          <customLabel>right ventral tentacle</customLabel>
+          <coverage>0.03</coverage>
+          <height>Bottom</height>
+          <depth>Outside</depth>
+          <groups>
+            <li>Legs</li>
+          </groups>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+</Defs>

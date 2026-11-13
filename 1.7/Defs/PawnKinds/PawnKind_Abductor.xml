@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Tentaculum pawn kind: TentacleAbductor -->
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>TentacleAbductor</defName>
+    <race>TentacleAbductor</race>
+    <combatPower>50</combatPower>
+    <ecoSystemWeight>0.5</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawns/Abductor/Abductor</texPath>
+          <drawSize>2.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
+          <drawSize>2.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawns/Abductor/Abductor</texPath>
+          <drawSize>2.6</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
+          <drawSize>2.6</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+</Defs>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Tentaculum body: BrewerBody -->
+  <BodyDef>
+    <defName>BrewerBody</defName>
+    <corePart>
+      <def>Body</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <groups>
+        <li>Torso</li>
+      </groups>
+      <parts>
+        <li>
+          <def>Brain</def>
+          <customLabel>brain</customLabel>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>Spine</def>
+          <coverage>0.04</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>Stomach</def>
+          <coverage>0.06</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>InsectHeart</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>TentacleBeastMouth</def>
+          <customLabel>mouth</customLabel>
+          <coverage>0.04</coverage>
+          <height>Middle</height>
+          <depth>Outside</depth>
+          <groups>
+            <li>Mouth</li>
+          </groups>
+        </li>
+        <li>
+          <def>SensoryTentacle</def>
+          <customLabel>left sensory tentacle</customLabel>
+          <coverage>0.02</coverage>
+          <height>Top</height>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>SensoryTentacle</def>
+          <customLabel>right sensory tentacle</customLabel>
+          <coverage>0.02</coverage>
+          <height>Top</height>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>SensoryTentacle</def>
+          <customLabel>upper left sensory tentacle</customLabel>
+          <coverage>0.02</coverage>
+          <height>Top</height>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>SensoryTentacle</def>
+          <customLabel>upper right sensory tentacle</customLabel>
+          <coverage>0.02</coverage>
+          <height>Top</height>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>BrewerChemicalOrgan</def>
+          <customLabel>large chemical organ</customLabel>
+          <coverage>0.20</coverage>
+          <height>Middle</height>
+          <depth>Outside</depth>
+        </li>
+        <li>
+          <def>TentacleLeg</def>
+          <customLabel>front left tentacle leg</customLabel>
+          <coverage>0.09</coverage>
+          <height>Bottom</height>
+          <depth>Outside</depth>
+          <groups>
+            <li>Legs</li>
+          </groups>
+        </li>
+        <li>
+          <def>TentacleLeg</def>
+          <customLabel>front right tentacle leg</customLabel>
+          <coverage>0.09</coverage>
+          <height>Bottom</height>
+          <depth>Outside</depth>
+          <groups>
+            <li>Legs</li>
+          </groups>
+        </li>
+        <li>
+          <def>TentacleLeg</def>
+          <customLabel>rear left tentacle leg</customLabel>
+          <coverage>0.09</coverage>
+          <height>Bottom</height>
+          <depth>Outside</depth>
+          <groups>
+            <li>Legs</li>
+          </groups>
+        </li>
+        <li>
+          <def>TentacleLeg</def>
+          <customLabel>rear right tentacle leg</customLabel>
+          <coverage>0.09</coverage>
+          <height>Bottom</height>
+          <depth>Outside</depth>
+          <groups>
+            <li>Legs</li>
+          </groups>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+</Defs>

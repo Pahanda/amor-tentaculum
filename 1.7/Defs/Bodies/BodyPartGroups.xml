@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Tentaculum body part groups -->
+  <BodyPartGroupDef>
+    <defName>UpperLeftClaw</defName>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>UpperRightClaw</defName>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>Stinger</defName>
+    <listOrder>79</listOrder>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>SpawnerLeftTentacles</defName>
+    <listOrder>80</listOrder>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>SpawnerRightTentacles</defName>
+    <listOrder>80</listOrder>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>DefenderBackTentacles</defName>
+    <listOrder>81</listOrder>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>BroodMotherFrontTentacle1</defName>
+    <listOrder>82</listOrder>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>BroodMotherFrontTentacle2</defName>
+    <listOrder>83</listOrder>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>BroodMotherFrontTentacle3</defName>
+    <listOrder>84</listOrder>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>BroodMotherFrontTentacle4</defName>
+    <listOrder>85</listOrder>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>WarWombFrontTentacles</defName>
+    <listOrder>90</listOrder>
+  </BodyPartGroupDef>
+  <BodyPartGroupDef>
+    <defName>StrikerMouthTentacle</defName>
+    <listOrder>91</listOrder>
+  </BodyPartGroupDef>
+</Defs>

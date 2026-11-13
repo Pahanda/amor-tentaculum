@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Tentaculum race: TentacleBroodMother -->
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>TentacleBroodMother</defName>
+    <devNote>misc</devNote>
+    <tradeability>None</tradeability>
+    <statBases>
+      <MoveSpeed>6</MoveSpeed>
+      <MarketValue>950</MarketValue>
+      <ArmorRating_Blunt>0.2</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.35</ArmorRating_Sharp>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <ComfyTemperatureMax>90</ComfyTemperatureMax>
+      <Wildness>0</Wildness>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">2</VacuumResistance>
+    </statBases>
+    <uiIconScale>1.1</uiIconScale>
+    <tools>
+      <li>
+        <capacities>
+          <li>Blunt</li>
+          <li>Scratch</li>
+        </capacities>
+        <power>24</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>BroodMotherFrontTentacle1</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Blunt</li>
+          <li>Scratch</li>
+        </capacities>
+        <power>24</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>BroodMotherFrontTentacle2</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Blunt</li>
+          <li>Scratch</li>
+        </capacities>
+        <power>24</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>BroodMotherFrontTentacle3</linkedBodyPartsGroup>
+      </li>
+      <li>
+        <capacities>
+          <li>Blunt</li>
+          <li>Scratch</li>
+        </capacities>
+        <power>24</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>BroodMotherFrontTentacle4</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <!--
+			<li Class="VEF.AnimalBehaviours.CompProperties_InitialHediff">
+				<applyToAGivenBodypart>True</applyToAGivenBodypart>
+				<part>Genitals</part>
+				<hediffname>TentacleBroodMotherVagina</hediffname>
+				<hediffseverity>1</hediffseverity>
+			</li>
+			-->
+      <li Class="VEF.AnimalBehaviours.CompProperties_Draftable" />
+      <li Class="VEF.AnimalBehaviours.CompProperties_FixedGender">
+        <gender>Female</gender>
+      </li>
+      <!--
+			<li Class="VEF.AnimalBehaviours.CompProperties_AnimalProduct">
+				<resourceDef>HardResin</resourceDef>
+				<gatheringIntervalDays>4</gatheringIntervalDays>
+				<resourceAmount>25</resourceAmount>
+				<customResourceString>Resin</customResourceString>
+				<isRandom>true</isRandom>
+				<randomItems>
+					<li>HardResin</li>
+					<li>HardResin</li>
+					<li>HardResin</li>
+					<li>SoftResin</li>
+				</randomItems>
+			</li>
+			-->
+    </comps>
+    <race>
+      <body>BroodMotherBody</body>
+      <predator>true</predator>
+      <maxPreyBodySize>2</maxPreyBodySize>
+      <baseBodySize>3.25</baseBodySize>
+      <baseHungerRate>2</baseHungerRate>
+      <baseHealthScale>6</baseHealthScale>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+      <leatherDef>TentacleLeather</leatherDef>
+      <meatLabel>tentacle meat</meatLabel>
+      <trainability>Advanced</trainability>
+      <petness>0.05</petness>
+      <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+      <nameOnTameChance>1</nameOnTameChance>
+      <lifeExpectancy>4</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.4</minAge>
+          <soundWounded>Pawn_Cobra_Wounded</soundWounded>
+          <soundDeath>Pawn_Cobra_Death</soundDeath>
+          <soundCall>Pawn_Cobra_Call</soundCall>
+          <soundAngry>Pawn_Cobra_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <soundEating>Reptile_Eat</soundEating>
+      <headPosPerRotation>
+        <li>(-0.03, 0, 0.35)</li>
+        <li>(0.03, 0, 0.36)</li>
+        <li>(-0.05, 0, 0.28)</li>
+        <li>(-0.03, 0, 0.36)</li>
+      </headPosPerRotation>
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+  </ThingDef>
+  <rjw.RaceGroupDef>
+    <defName>BroodMothers</defName>
+    <raceNames>
+      <li>TentacleBroodMother</li>
+    </raceNames>
+    <anuses>
+      <li>TentacleAnus</li>
+    </anuses>
+    <femaleBreasts />
+    <femaleGenitals>
+      <li>TentacleVaginaBroodMother</li>
+    </femaleGenitals>
+    <maleBreasts />
+    <maleGenitals />
+    <hasSingleGender>true</hasSingleGender>
+    <hasSexNeed>true</hasSexNeed>
+    <raceSexDrive>3</raceSexDrive>
+    <hasFertility>true</hasFertility>
+    <hasPregnancy>false</hasPregnancy>
+    <oviPregnancy>true</oviPregnancy>
+    <ImplantEggs>true</ImplantEggs>
+  </rjw.RaceGroupDef>
+</Defs>

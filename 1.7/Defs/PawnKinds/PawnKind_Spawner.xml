@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Tentaculum pawn kind: TentacleSpawner -->
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>TentacleSpawner</defName>
+    <race>TentacleSpawner</race>
+    <combatPower>100</combatPower>
+    <ecoSystemWeight>0.25</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawns/Matron/Matron</texPath>
+          <drawSize>2.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
+          <drawSize>2.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawns/Matron/Matron</texPath>
+          <drawSize>2.6</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
+          <drawSize>2.6</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+  </PawnKindDef>
+</Defs>

@@ -140,6 +140,62 @@
 		</stages>
 	</rjw.HediffDef_SexPart>
 
+	<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartTent" Name="NaturalPrivatePartTentWomb" Abstract="True">
+		<fluid>GirlCum</fluid>
+		<produceFluidOnOrgasm>true</produceFluidOnOrgasm>
+		<fluidMultiplier>0.5</fluidMultiplier>
+		<defaultBodyPart>Genitals</defaultBodyPart>
+		<sizeProfile>DefaultVaginaSizes</sizeProfile>
+		<descriptionHyperlinks>
+			<ThingDef>OvipositorF</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>OvipositorF</spawnThingOnRemoved>
+		<genitalFamily>FemaleOvipositor</genitalFamily>
+		<genitalTags>
+			<li>CanBeFertilized</li>
+			<li>CanEgg</li>
+		</genitalTags>
+		<partTags>
+			<li>Tapered</li>
+			<li>Internal</li>
+			<li>Prehensile</li>
+			<li>Rigid</li>
+		</partTags>
+
+		<stages>
+			<li>
+				<minSeverity>0.01</minSeverity>
+			</li>
+			<li>
+				<minSeverity>0.20</minSeverity>
+			</li>
+			<li>
+				<minSeverity>0.40</minSeverity>
+			</li>
+			<li>
+				<minSeverity>0.60</minSeverity>
+			</li>
+			<li>
+				<minSeverity>0.80</minSeverity>
+			</li>
+			<li>
+				<minSeverity>1.01</minSeverity>
+			</li>
+			<li>
+				<minSeverity>1.5</minSeverity>
+				<statOffsets>
+     			<TStorage>0.1</TStorage>
+     		</statOffsets>
+			</li>
+			<li>
+				<minSeverity>2</minSeverity>
+				<statOffsets>
+     			<TStorage>0.2</TStorage>
+     		</statOffsets>
+			</li>
+		</stages>
+	</rjw.HediffDef_SexPart>
+
 	<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartTent" Name="NaturalPrivatePartTentBreast" Abstract="True">
 		<fluid>Milk</fluid>
 		<defaultBodyPart>Chest</defaultBodyPart>
@@ -347,6 +403,18 @@
 		</comps>
 	</rjw.HediffDef_SexPart>
 
+	<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartTentWomb">
+		<defName>TentacleWombBroodMother</defName>
+		<comps>
+			<li Class="rjw.HediffCompProperties_Ovipositor">
+				<eggCount>1~2</eggCount>
+				<!-- How many eggs to produce at once. This is a FloatRange, so you can also have e.g. 2~5 -->
+				<!-- Time to produce new eggs -->
+				<eggIntervalTicks>150000~280000</eggIntervalTicks>
+			</li>
+		</comps>
+	</rjw.HediffDef_SexPart>
+
 	<rjw.RacePartDef>
 		<defName>TentacleVaginaSpawner</defName>
 		<hediffName>TentacleVaginaSpawner</hediffName>
@@ -367,6 +435,11 @@
 	<rjw.RacePartDef>
 		<defName>TentacleVaginaBroodMother</defName>
 		<hediffName>TentacleVaginaBroodMother</hediffName>
+	</rjw.RacePartDef>
+
+	<rjw.RacePartDef>
+		<defName>TentacleWombBroodMother</defName>
+		<hediffName>TentacleWombBroodMother</hediffName>
 	</rjw.RacePartDef>
 
 	<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartTentVagina">

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Tentaculum race: TentacleStinger -->
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>TentacleStinger</defName>
+    <tradeability>None</tradeability>
+    <statBases>
+      <MoveSpeed>4.5</MoveSpeed>
+      <MarketValue>120</MarketValue>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <ComfyTemperatureMax>90</ComfyTemperatureMax>
+      <Wildness>0.45</Wildness>
+    </statBases>
+    <uiIconScale>0.8</uiIconScale>
+    <tools>
+      <li>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>2</cooldownTime>
+        <linkedBodyPartsGroup>Stinger</linkedBodyPartsGroup>
+      </li>
+    </tools>
+    <comps>
+      <li Class="VEF.AnimalBehaviours.CompProperties_FixedGender">
+        <gender>Male</gender>
+      </li>
+    </comps>
+    <race>
+      <body>StingerBody</body>
+      <predator>true</predator>
+      <maxPreyBodySize>0.35</maxPreyBodySize>
+      <baseBodySize>0.35</baseBodySize>
+      <baseHungerRate>0.045</baseHungerRate>
+      <baseHealthScale>0.5</baseHealthScale>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+      <leatherDef>TentacleLeather</leatherDef>
+      <meatLabel>tentacle meat</meatLabel>
+      <trainability>Intermediate</trainability>
+      <petness>0.05</petness>
+      <manhunterOnTameFailChance>0.1</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.5</manhunterOnDamageChance>
+      <nameOnTameChance>1</nameOnTameChance>
+      <lifeExpectancy>3</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.2</minAge>
+          <soundWounded>Pawn_Cobra_Wounded</soundWounded>
+          <soundDeath>Pawn_Cobra_Death</soundDeath>
+          <soundCall>Pawn_Cobra_Call</soundCall>
+          <soundAngry>Pawn_Cobra_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <soundEating>Reptile_Eat</soundEating>
+      <headPosPerRotation>
+        <li>(-0.03, 0, 0.35)</li>
+        <li>(0.03, 0, 0.36)</li>
+        <li>(-0.05, 0, 0.28)</li>
+        <li>(-0.03, 0, 0.36)</li>
+      </headPosPerRotation>
+    </race>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+  </ThingDef>
+  <rjw.RaceGroupDef>
+    <defName>TentacleStingerRJW</defName>
+    <raceNames>
+      <li>TentacleStinger</li>
+    </raceNames>
+    <anuses>
+      <li>TentacleAnus</li>
+    </anuses>
+    <femaleBreasts />
+    <femaleGenitals />
+    <maleBreasts />
+    <maleGenitals>
+      <li>TentaclePenis</li>
+    </maleGenitals>
+    <hasSingleGender>true</hasSingleGender>
+    <hasSexNeed>true</hasSexNeed>
+    <hasFertility>false</hasFertility>
+    <hasPregnancy>false</hasPregnancy>
+  </rjw.RaceGroupDef>
+</Defs>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Tentaculum body: SmallTentacleSnake -->
+  <BodyDef>
+    <defName>SmallTentacleSnake</defName>
+    <corePart>
+      <def>SnakeBody</def>
+      <height>Middle</height>
+      <depth>Outside</depth>
+      <parts>
+        <li>
+          <def>Stomach</def>
+          <coverage>0.05</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>InsectHeart</def>
+          <coverage>0.03</coverage>
+          <depth>Inside</depth>
+        </li>
+        <li>
+          <def>TentacleBeastHead</def>
+          <coverage>0.20</coverage>
+          <groups>
+            <li>HeadAttackTool</li>
+          </groups>
+          <parts>
+            <li>
+              <def>Brain</def>
+              <coverage>0.15</coverage>
+              <depth>Inside</depth>
+            </li>
+            <li>
+              <def>SensoryTentacle</def>
+              <customLabel>left sensory tentacle</customLabel>
+              <coverage>0.05</coverage>
+              <height>Top</height>
+              <depth>Outside</depth>
+              <groups>
+                <li>FullHead</li>
+              </groups>
+              <flipGraphic>true</flipGraphic>
+            </li>
+            <li>
+              <def>SensoryTentacle</def>
+              <customLabel>right sensory tentacle</customLabel>
+              <coverage>0.05</coverage>
+              <height>Top</height>
+              <depth>Outside</depth>
+              <groups>
+                <li>FullHead</li>
+              </groups>
+            </li>
+            <li>
+              <def>TentacleBeastMouth</def>
+              <coverage>0.15</coverage>
+              <groups>
+                <li>Mouth</li>
+              </groups>
+            </li>
+          </parts>
+        </li>
+      </parts>
+    </corePart>
+  </BodyDef>
+</Defs>
