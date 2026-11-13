@@ -134,7 +134,7 @@
 	<TentacleCatalyst.description>The condensed genetic essence of a human being, ripped out of their flesh by a Recycling Pod. Used to craft other Tentacle and Host forms, as well as advanced equipment and implants.</TentacleCatalyst.description>
 	
 	<!-- Filth and Fluids -->
-	<FilthSlime.label>tentacle slime filth</FilthSlime.label>
+	<Filth_Slime.label>tentacle slime filth</Filth_Slime.label>
 	
 	<!-- Weapons -->
 	

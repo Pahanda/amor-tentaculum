@@ -74,13 +74,14 @@
 
 	<!-- Amor Borer -->
 	<TentacleSnake.label>tentacle snake body</TentacleSnake.label>
-	<TentacleSnake.corePart.parts.upper_left_claw.customLabel>left mass of clawed tentacles</TentacleSnake.corePart.parts.upper_left_claw.customLabel>
-	<TentacleSnake.corePart.parts.upper_right_claw.customLabel>right mass of clawed tentacles</TentacleSnake.corePart.parts.upper_right_claw.customLabel>
+	<TentacleSnake.corePart.parts.left_mass_of_clawed_tentacles.customLabel>left mass of clawed tentacles</TentacleSnake.corePart.parts.left_mass_of_clawed_tentacles.customLabel>
+	<TentacleSnake.corePart.parts.right_mass_of_clawed_tentacles.customLabel>right mass of clawed tentacles</TentacleSnake.corePart.parts.right_mass_of_clawed_tentacles.customLabel>
 	
 	<!-- Amor Producer -->
 	<ProducerBody.label>Producer body</ProducerBody.label>
 	<ProducerBody.corePart.parts.front_left_tentacle.customLabel>front left tentacle</ProducerBody.corePart.parts.front_left_tentacle.customLabel>
 	<ProducerBody.corePart.parts.front_right_tentacle.customLabel>front right tentacle</ProducerBody.corePart.parts.front_right_tentacle.customLabel>
+	
 	<!-- Amor Hunter -->
 	<HunterBody.label>Hunter body</HunterBody.label>
 	<HunterBody.corePart.parts.Neck.parts.TentacleBeastHead.parts.mouth.customLabel>mouth</HunterBody.corePart.parts.Neck.parts.TentacleBeastHead.parts.mouth.customLabel>
@@ -93,6 +94,7 @@
 	<HunterBody.corePart.parts.lower_right_shoulder.customLabel>lower right shoulder</HunterBody.corePart.parts.lower_right_shoulder.customLabel>
 	<HunterBody.corePart.parts.lower_right_shoulder.parts.lower_right_arm.customLabel>lower right arm</HunterBody.corePart.parts.lower_right_shoulder.parts.lower_right_arm.customLabel>
 	<HunterBody.corePart.parts.locomotion_tentacle.customLabel>locomotion tentacle</HunterBody.corePart.parts.locomotion_tentacle.customLabel>
+	
 	<!-- Amor Abductor -->
 	<AbductorBody.label>Abductor body</AbductorBody.label>
 	<AbductorBody.corePart.parts.Neck.parts.TentacleBeastHead.parts.mouth.customLabel>mouth</AbductorBody.corePart.parts.Neck.parts.TentacleBeastHead.parts.mouth.customLabel>
@@ -104,6 +106,7 @@
 	<AbductorBody.corePart.parts.upper_right_grappling_tentacle.customLabel>upper right grappling tentacle</AbductorBody.corePart.parts.upper_right_grappling_tentacle.customLabel>
 	<AbductorBody.corePart.parts.lower_left_grappling_tentacle.customLabel>lower left grappling tentacle</AbductorBody.corePart.parts.lower_left_grappling_tentacle.customLabel>
 	<AbductorBody.corePart.parts.lower_right_grappling_tentacle.customLabel>lower right grappling tentacle</AbductorBody.corePart.parts.lower_right_grappling_tentacle.customLabel>
+	
 	<!-- Amor Defender -->
 	<DefenderBody.label>Defender body</DefenderBody.label>
 	<DefenderBody.corePart.parts.Neck.parts.Head.parts.mouth.customLabel>mouth</DefenderBody.corePart.parts.Neck.parts.Head.parts.mouth.customLabel>
@@ -117,6 +120,7 @@
 	<DefenderBody.corePart.parts.upper_right_back_tentacle.customLabel>upper right back tentacle</DefenderBody.corePart.parts.upper_right_back_tentacle.customLabel>
 	<DefenderBody.corePart.parts.lower_left_back_tentacle.customLabel>lower left back tentacle</DefenderBody.corePart.parts.lower_left_back_tentacle.customLabel>
 	<DefenderBody.corePart.parts.lower_right_back_tentacle.customLabel>lower right back tentacle</DefenderBody.corePart.parts.lower_right_back_tentacle.customLabel>
+	
 	<!-- Amor Valkyrie -->
 	<ValkyrieBody.label>Valkyrie body</ValkyrieBody.label>
 	<ValkyrieBody.corePart.parts.Neck.parts.Head.parts.mouth.customLabel>mouth</ValkyrieBody.corePart.parts.Neck.parts.Head.parts.mouth.customLabel>
@@ -130,4 +134,5 @@
 	<ValkyrieBody.corePart.parts.upper_right_back_tentacle.customLabel>upper right back tentacle</ValkyrieBody.corePart.parts.upper_right_back_tentacle.customLabel>
 	<ValkyrieBody.corePart.parts.lower_left_back_tentacle.customLabel>lower left back tentacle</ValkyrieBody.corePart.parts.lower_left_back_tentacle.customLabel>
 	<ValkyrieBody.corePart.parts.lower_right_back_tentacle.customLabel>lower right back tentacle</ValkyrieBody.corePart.parts.lower_right_back_tentacle.customLabel>
+	
 </languageData>
