@@ -327,7 +327,7 @@
 					</groups>
 				</li>
 				<li>
-					<def>Stomach</def>
+					<def>Stomach</def> 
 					<coverage>0.025</coverage>
 					<depth>Inside</depth>
 					<groups>

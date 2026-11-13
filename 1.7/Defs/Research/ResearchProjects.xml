@@ -82,6 +82,54 @@
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
+		<defName>ATBossBrewer</defName>
+		<tab>AmorTentaculum</tab>
+		<prerequisites>
+			<li>ATLarvaAdvanced</li>
+		</prerequisites>
+		<baseCost>1500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<researchViewX>4.50</researchViewX>
+		<researchViewY>1.50</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ATBossValkyrieDefender</defName>
+		<tab>AmorTentaculum</tab>
+		<prerequisites>
+			<li>ATBossBrewer</li>
+		</prerequisites>
+		<baseCost>1750</baseCost>
+		<techLevel>Spacer</techLevel>
+		<researchViewX>5.50</researchViewX>
+		<researchViewY>1.50</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ATBossWarWomb</defName>
+		<tab>AmorTentaculum</tab>
+		<prerequisites>
+			<li>ATBossValkyrieDefender</li>
+		</prerequisites>
+		<baseCost>2000</baseCost>
+		<techLevel>Spacer</techLevel>
+		<researchViewX>6.50</researchViewX>
+		<researchViewY>1.50</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>ATOvermind</defName>
+		<tab>AmorTentaculum</tab>
+		<prerequisites>
+			<li>ATBossWarWomb</li>
+		</prerequisites>
+		<baseCost>9999999</baseCost>
+		<techLevel>Spacer</techLevel>
+		<researchViewX>7.50</researchViewX>
+		<researchViewY>1.50</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
 		<defName>ATStructBasic</defName>
 		<tab>AmorTentaculum</tab>
 		<prerequisites>
