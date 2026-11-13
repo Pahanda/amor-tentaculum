@@ -103,7 +103,7 @@
                 </li>
                 <li>
                   <def>Tentacle</def>
-                  <customLabel>Upper right mass of tentacles</customLabel>
+                  <customLabel>upper right mass of tentacles</customLabel>
                   <coverage>0.09</coverage>
                   <height>Top</height>
                   <groups>
@@ -112,7 +112,7 @@
                 </li>
                 <li>
                   <def>Tentacle</def>
-                  <customLabel>Upper left mass of tentacles</customLabel>
+                  <customLabel>upper left mass of tentacles</customLabel>
                   <coverage>0.09</coverage>
                   <height>Top</height>
                   <flipGraphic>true</flipGraphic>
@@ -122,7 +122,7 @@
                 </li>
                 <li>
                   <def>Tentacle</def>
-                  <customLabel>Bottom right mass of tentacles</customLabel>
+                  <customLabel>bottom right mass of tentacles</customLabel>
                   <coverage>0.09</coverage>
                   <height>Bottom</height>
                   <groups>
@@ -131,7 +131,7 @@
                 </li>
                 <li>
                   <def>Tentacle</def>
-                  <customLabel>Bottom left mass of tentacles</customLabel>
+                  <customLabel>bottom left mass of tentacles</customLabel>
                   <coverage>0.09</coverage>
                   <height>Bottom</height>
                   <flipGraphic>true</flipGraphic>

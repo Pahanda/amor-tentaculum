@@ -9,7 +9,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawns/Brewer/BrewerBody</texPath>
+          <texPath>Things/Pawns/Brewer/Brewer</texPath>
           <drawSize>1.5</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -19,7 +19,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawns/Brewer/BrewerBody</texPath>
+          <texPath>Things/Pawns/Brewer/Brewer</texPath>
           <drawSize>2</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
