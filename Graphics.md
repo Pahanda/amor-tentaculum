@@ -34,7 +34,8 @@
 | Buildings | Utility | Transformation Pod | NYI | NYI | More of a womb-like structure here. What comes out will be nothing like what goes in. |
 | Buildings | Utility | Tentacle Trophy | ![](./Textures/Things/Buildings/Trophy/TentacleTrophyFemale.png) (female) ![](./Textures/Things/Buildings/Trophy/TentacleTrophyMale.png) (male) | `Textures/Things/Buildings/Trophy` | |
 | Buildings | Defensive | Turret | ![](./Textures/Things/Buildings/Turret/TurretBase.png) ![](./Textures/Things/Buildings/Turret/TurretHead.png) | `Textures/Things/Buildings/Turret` | |
-| Buildings | Defensive | Paralysis Trap | NYI | NYI | |
+| Buildings | Defensive | Paralysis Trap | ![](./Textures/Things/Buildings/Traps/ParalysisTrap.png) | `Textures/Things/Buildings/Traps` | |
+| Buildings | Defensive | Paralysis Worms | ![](./Textures/Things/Pawns/ParalysisWorm/PWorm_east.png) | `Textures/Things/Pawns/ParalysisWorm` | |
 | Equipment | Weapons | Tentacle Whip | ![](./Textures/Things/Items/MeleeWeapons/TentacleWhip.png) | `Textures/Things/Items/MeleeWeapons` | |
 | Equipment | Weapons | Resin Sword | ![](./Textures/Things/Items/MeleeWeapons/ResinSword.png) ![](./Textures/Things/Items/MeleeWeapons/ResinScimitar.png) | `Textures/Things/Items/MeleeWeapons` | Scimitar is a more high-tech version with higher armor penetration. |
 | Equipment | Armor | Tentacle Slave Collar | ![](./Textures/Things/Items/Equipment/TentacleCollar_east.png) | `Textures/Things/Items/Equipment` | |
