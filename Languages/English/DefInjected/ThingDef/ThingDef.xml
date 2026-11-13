@@ -45,12 +45,63 @@
 	<!-- Note that these should be capitalized! -->
 	<TentacleBroodMother.label>Amor Brood Mother</TentacleBroodMother.label>
 	<TentacleBroodMother.description>A beetle-like Tentacle, dedicated to breeding more creatures for the hive. It has a protective carapace on its thorax as well as several external womb-like body parts for additional egg production. The Amor Brood Mother is the largest of the Tentacle types, and continuously produces Amor Larvae eggs. Those Larvae can then be evolved into other Tentacle types.</TentacleBroodMother.description>
+	<TentacleStinger.label>Amor Stinger</TentacleStinger.label>
+	<TentacleStinger.description>A small flying tentacle creature shaped like a ray. It's actually a sleeve of skin, constantly generating and expelling internally generated gases to keep itself afloat. The flexible tail sports a small stinger, capable of injecting a light paralytic venom through even the smallest gaps. Once a target is sufficietly weakened, the tentacle may wrap itself around the head turning them into nothing but a walking flesh puppet. The mind control persists for several hours, after which the victim's head is consumed.</TentacleStinger.description>
+	<TentacleWarWomb.label>Amor War Womb</TentacleWarWomb.label>
+	<TentacleWarWomb.description>A walking siege engine tentacle. Has a vaguely humanoid base, but spawns smaller combat larva while bombarding hostile targets at range with sticky semen-based artillery. When constructed for your own colony, will act as a powerful offensive fighter - but can be utilized for defense and area denial, as well.</TentacleWarWomb.description>
 	<TentacleSpawner.label>Amor Spawner</TentacleSpawner.label>
 	<TentacleSpawner.description>A huge mass of tentacles with a smaller, central female body. The Amor Spawner is entirely dedicated to breeding Squirmers, which Hosts use to fuel their abilities.</TentacleSpawner.description>
 	<TentacleSquirmer.label>Amor Squirmer</TentacleSquirmer.label>
 	<TentacleSquirmer.description>A long, snake-like tentacle meant to live inside Host bodies. Freezes to death quickly when not inside its native habitat.</TentacleSquirmer.description>
 	<TentacleLarva.label>Amor Larva</TentacleLarva.label>
 	<TentacleLarva.description>A small Tentacle in larval form. Doesn't serve any purpose besides evolving into more-advanced Tentacle forms. Research will unlock more advanced forms to choose from.</TentacleLarva.description>
+	<TentacleBorer.label>Amor Borer</TentacleBorer.label>
+	<TentacleBorer.description>A mass of tentacles that is designed for mining stone and ore. Although since that requires sharp and strong claws, this Tentacle is also effective in combat.</TentacleBorer.description>
+	<TentacleGrazer.label>Amor Grazer</TentacleGrazer.label>
+	<TentacleGrazer.description>A non-combat mass of tentacles that can be butchered for tentacle meat (food) and the soft flesh leather substitute. Essentially livestock.</TentacleGrazer.description>
+	<TentacleProducer.label>Amor Producer</TentacleProducer.label>
+	<TentacleProducer.description>A non-combat mass of tentacles that can be harvested for hard and soft resin resources (per normal animal mechanics) used to build other things.</TentacleProducer.description>
+	<TentacleHunter.label>Amor Hunter</TentacleHunter.label>
+	<TentacleHunter.description>A combat-focused mass of tentacles, designed to protect the hive from external threats with debilitating ranged attacks.</TentacleHunter.description>
+	<TentacleAbductor.label>Amor Abductor</TentacleAbductor.label>
+	<TentacleAbductor.description>A non-combat mass of tentacles, designed to target downed enemies and transport them to the hive as prisoners. Can perform general hauling tasks as well.</TentacleAbductor.description>
+	<TentacleDefender.label>Amor Defender</TentacleDefender.label>
+	<TentacleDefender.description>A combat-focused, male humanoid tentacle, designed to protect the hive from external threats with powerful melee attacks and the ability to absorb high amounts of damage.</TentacleDefender.description>
+	<TentacleValkyrie.label>Amor Valkyrie</TentacleValkyrie.label>
+	<TentacleValkyrie.description>A combat-focused, female humanoid tentacle, intended as a vanguard striker for the hive. Has powerful attacks, some psychic abilities, and can spawn minion tentacles to swarm enemies. When constructed for your own colony, will emit one of several psychic auras that will buff nearby friendly pawns or debuff nearby hostiles.</TentacleValkyrie.description>
+	<TentacleBrewer.label>Amor Brewer</TentacleBrewer.label>
+	<TentacleBrewer.description>A mass of tentacles that produces drugs and chemicals regularly. Will attack with tox gas and cum sprays.When constructed for your own colony, can be switched between several products to brew</TentacleBrewer.description>
+	<TentacleStriker.label>Amor Striker</TentacleStriker.label>
+	<TentacleStriker.description>A combat-focused mass of tentacles, designed to latch on to and incapacitate hostile enemies with attacks to their genitalia.</TentacleStriker.description>
+
+	<!-- Creature combat tool labels -->
+	<TentacleBorer.tools.0.label>left mass of clawed tentacles</TentacleBorer.tools.0.label>
+	<TentacleBorer.tools.1.label>right mass of clawed tentacles</TentacleBorer.tools.1.label>
+	<TentacleBrewer.tools.0.label>tentacle leg strike</TentacleBrewer.tools.0.label>
+	<TentacleBroodMother.tools.0.label>front tentacle 1</TentacleBroodMother.tools.0.label>
+	<TentacleBroodMother.tools.1.label>front tentacle 2</TentacleBroodMother.tools.1.label>
+	<TentacleBroodMother.tools.2.label>front tentacle 3</TentacleBroodMother.tools.2.label>
+	<TentacleBroodMother.tools.3.label>front tentacle 4</TentacleBroodMother.tools.3.label>
+	<TentacleDefender.tools.0.label>heavy fist</TentacleDefender.tools.0.label>
+	<TentacleDefender.tools.1.label>back tentacle slam</TentacleDefender.tools.1.label>
+	<TentacleHunter.tools.0.label>tentacle lash</TentacleHunter.tools.0.label>
+	<TentacleLarva.tools.0.label>head</TentacleLarva.tools.0.label>
+	<TentacleSpawner.tools.0.label>tentacle</TentacleSpawner.tools.0.label>
+	<TentacleSquirmer.tools.0.label>head</TentacleSquirmer.tools.0.label>
+	<TentacleStinger.tools.0.label>venom stinger</TentacleStinger.tools.0.label>
+	<TentacleStriker.tools.0.label>mouth tentacle</TentacleStriker.tools.0.label>
+	<TentacleValkyrie.tools.0.label>back tentacle strike</TentacleValkyrie.tools.0.label>
+	<TentacleWarWomb.tools.0.label>front tentacles</TentacleWarWomb.tools.0.label>
+	<TentacleBorer.tools.0.labelNoLocation>clawed tentacle</TentacleBorer.tools.0.labelNoLocation>
+	<TentacleBorer.tools.1.labelNoLocation>clawed tentacle</TentacleBorer.tools.1.labelNoLocation>
+	<TentacleBrewer.tools.0.labelNoLocation>tentacle leg</TentacleBrewer.tools.0.labelNoLocation>
+	<TentacleBroodMother.tools.0.labelNoLocation>front tentacle</TentacleBroodMother.tools.0.labelNoLocation>
+	<TentacleBroodMother.tools.1.labelNoLocation>front tentacle</TentacleBroodMother.tools.1.labelNoLocation>
+	<TentacleBroodMother.tools.2.labelNoLocation>front tentacle</TentacleBroodMother.tools.2.labelNoLocation>
+	<TentacleBroodMother.tools.3.labelNoLocation>front tentacle</TentacleBroodMother.tools.3.labelNoLocation>
+	<TentacleHunter.tools.0.labelNoLocation>tentacle</TentacleHunter.tools.0.labelNoLocation>
+	<TentacleStriker.tools.0.labelNoLocation>tentacle</TentacleStriker.tools.0.labelNoLocation>
+	<TentacleWarWomb.tools.0.labelNoLocation>tentacle</TentacleWarWomb.tools.0.labelNoLocation>
 	
 	<!-- Host transformation eggs -->
 	<AmorQueenEgg.label>Amor Queen egg</AmorQueenEgg.label>

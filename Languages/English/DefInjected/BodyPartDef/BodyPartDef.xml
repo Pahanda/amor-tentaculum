@@ -1,10 +1,16 @@
 <languageData>
 
+	<TentacleBeastMouth.label>mouth</TentacleBeastMouth.label>
 	<MovingBodyTentacleBeast.label>body</MovingBodyTentacleBeast.label>
+	<SensoryTentacle.label>sensory tentacle</SensoryTentacle.label>
 	<TentacleBeastHead.label>head</TentacleBeastHead.label>
 	<Tentacle.label>tentacle</Tentacle.label>
+	<SmallTentacle.label>small tentacle</SmallTentacle.label>
 	<TentacleSpike.label>spike</TentacleSpike.label>
 	<TentacleLeg.label>tentacle</TentacleLeg.label>
+	<LargeTentacle.label>large tentacle</LargeTentacle.label>
+	<TentacleStinger.label>stinger</TentacleStinger.label>
+	<BrewerChemicalOrgan.label>chemical organ</BrewerChemicalOrgan.label>
 	
 	
 </languageData>

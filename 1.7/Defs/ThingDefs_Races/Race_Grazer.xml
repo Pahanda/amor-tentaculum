@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Tentaculum race: TentacleGrazer -->
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>TentacleGrazer</defName>
+    <statBases>
+      <MoveSpeed>2</MoveSpeed>
+      <MarketValue>300</MarketValue>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <ComfyTemperatureMax>90</ComfyTemperatureMax>
+      <Wildness>0</Wildness>
+    </statBases>
+    <comps>
+      <li Class="VEF.AnimalBehaviours.CompProperties_FixedGender">
+        <gender>Male</gender>
+      </li>
+    </comps>
+    <uiIconScale>1.1</uiIconScale>
+    <race>
+      <body>ProducerBody</body>
+      <predator>false</predator>
+      <herdAnimal>true</herdAnimal>
+      <baseBodySize>2.4</baseBodySize>
+      <baseHungerRate>0.535</baseHungerRate>
+      <baseHealthScale>1.5</baseHealthScale>
+      <foodType>VegetarianRoughAnimal</foodType>
+      <leatherDef>TentacleLeather</leatherDef>
+      <meatLabel>tentacle meat</meatLabel>
+      <trainability>None</trainability>
+      <petness>0.15</petness>
+      <manhunterOnTameFailChance>0</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0</manhunterOnDamageChance>
+      <nameOnTameChance>1</nameOnTameChance>
+      <gestationPeriodDays>6.66</gestationPeriodDays>
+      <lifeExpectancy>22</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalJuvenile</def>
+          <minAge>0</minAge>
+        </li>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0.3333</minAge>
+          <soundWounded>Pawn_Cobra_Wounded</soundWounded>
+          <soundDeath>Pawn_Cobra_Death</soundDeath>
+          <soundCall>Pawn_Cobra_Call</soundCall>
+          <soundAngry>Pawn_Cobra_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundEating>Herbivore_Eat</soundEating>
+      <headPosPerRotation>
+        <li>(-0.03, 0, 0.35)</li>
+        <li>(0.03, 0, 0.36)</li>
+        <li>(-0.05, 0, 0.28)</li>
+        <li>(-0.03, 0, 0.36)</li>
+      </headPosPerRotation>
+    </race>
+    <tradeTags>
+      <li>AnimalCommon</li>
+      <li>AnimalFarm</li>
+    </tradeTags>
+  </ThingDef>
+  <rjw.RaceGroupDef>
+    <defName>TentacleGrazerRJW</defName>
+    <raceNames>
+      <li>TentacleGrazer</li>
+    </raceNames>
+    <anuses>
+      <li>TentacleAnus</li>
+    </anuses>
+    <femaleBreasts />
+    <femaleGenitals />
+    <maleBreasts />
+    <maleGenitals>
+      <li>TentaclePenis</li>
+    </maleGenitals>
+    <hasSingleGender>true</hasSingleGender>
+    <hasSexNeed>true</hasSexNeed>
+    <hasFertility>false</hasFertility>
+    <hasPregnancy>false</hasPregnancy>
+  </rjw.RaceGroupDef>
+</Defs>

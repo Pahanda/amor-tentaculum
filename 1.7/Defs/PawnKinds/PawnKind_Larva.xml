@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Tentaculum pawn kind: TentacleLarva -->
+  <PawnKindDef ParentName="AnimalKindBase">
+    <defName>TentacleLarva</defName>
+    <race>TentacleLarva</race>
+    <forceNoDeathNotification>true</forceNoDeathNotification>
+    <combatPower>5</combatPower>
+    <ecoSystemWeight>0.75</ecoSystemWeight>
+    <lifeStages>
+      <li>
+        <bodyGraphicData>
+          <texPath>Things/Pawns/Larva/Larva</texPath>
+          <drawSize>1.0</drawSize>
+        </bodyGraphicData>
+        <dessicatedBodyGraphicData>
+          <texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
+          <drawSize>1.0</drawSize>
+        </dessicatedBodyGraphicData>
+      </li>
+    </lifeStages>
+    <abilities>
+      <li>AbilityLarvaEvolveSquirmer</li>
+      <li>AbilityLarvaEvolveSpawner</li>
+    </abilities>
+  </PawnKindDef>
+</Defs>

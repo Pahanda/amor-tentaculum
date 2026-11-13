@@ -37,8 +37,8 @@
 	<TentacleBreasts.stages.10.label>titanic</TentacleBreasts.stages.10.label>
 	<TentacleBreasts.stages.11.label>astronomical</TentacleBreasts.stages.11.label>
 	
-	<TentacleVaginaBroodMother.label>tentacle vagina</TentacleVaginaBroodMother.label>
-	<TentacleVaginaBroodMother.description>A tentacle-infested vagina. This one belongs to a Brood Mother, and produces Amor Larva eggs.</TentacleVaginaBroodMother.description>
+	<TentacleVaginaBroodMother.label> Broodmother tentacle vagina</TentacleVaginaBroodMother.label>
+	<TentacleVaginaBroodMother.description>A tentacle vagina. This one belongs to a Brood Mother, and produces Amor Larva eggs.</TentacleVaginaBroodMother.description>
 	<TentacleVaginaBroodMother.stages.0.label>micro</TentacleVaginaBroodMother.stages.0.label>
 	<TentacleVaginaBroodMother.stages.1.label>tight</TentacleVaginaBroodMother.stages.1.label>
 	<TentacleVaginaBroodMother.stages.2.label>average</TentacleVaginaBroodMother.stages.2.label>
@@ -48,8 +48,19 @@
 	<TentacleVaginaBroodMother.stages.6.label>gaping</TentacleVaginaBroodMother.stages.6.label>
 	<TentacleVaginaBroodMother.stages.7.label>bottomless</TentacleVaginaBroodMother.stages.7.label>
 
-	<TentacleVaginaSpawner.label>tentacle vagina</TentacleVaginaSpawner.label>
-	<TentacleVaginaSpawner.description>A tentacle-infested vagina. This one belongs to a Spawner, and produces Amor Squirmer eggs.</TentacleVaginaSpawner.description>
+	<TentacleWombBroodMother.label>tentacle auxiliary womb</TentacleWombBroodMother.label>
+	<TentacleWombBroodMother.description>A tentacle womb, with the vague shape of the human. This one belongs to a Brood Mother, and produces Amor Larva eggs.</TentacleWombBroodMother.description>
+	<TentacleWombBroodMother.stages.0.label>micro</TentacleWombBroodMother.stages.0.label>
+	<TentacleWombBroodMother.stages.1.label>tight</TentacleWombBroodMother.stages.1.label>
+	<TentacleWombBroodMother.stages.2.label>average</TentacleWombBroodMother.stages.2.label>
+	<TentacleWombBroodMother.stages.3.label>accommodating</TentacleWombBroodMother.stages.3.label>
+	<TentacleWombBroodMother.stages.4.label>cavernous</TentacleWombBroodMother.stages.4.label>
+	<TentacleWombBroodMother.stages.5.label>abyssal</TentacleWombBroodMother.stages.5.label>
+	<TentacleWombBroodMother.stages.6.label>gaping</TentacleWombBroodMother.stages.6.label>
+	<TentacleWombBroodMother.stages.7.label>bottomless</TentacleWombBroodMother.stages.7.label>
+
+	<TentacleVaginaSpawner.label>Spawner Tentacle vagina</TentacleVaginaSpawner.label>
+	<TentacleVaginaSpawner.description>A tentacle vagina. This one belongs to a Spawner, and produces Amor Squirmer eggs.</TentacleVaginaSpawner.description>
 	<TentacleVaginaSpawner.stages.0.label>micro</TentacleVaginaSpawner.stages.0.label>
 	<TentacleVaginaSpawner.stages.1.label>tight</TentacleVaginaSpawner.stages.1.label>
 	<TentacleVaginaSpawner.stages.2.label>average</TentacleVaginaSpawner.stages.2.label>
@@ -60,7 +71,7 @@
 	<TentacleVaginaSpawner.stages.7.label>bottomless</TentacleVaginaSpawner.stages.7.label>
 
 	<TentacleVagina.label>tentacle vagina</TentacleVagina.label>
-	<TentacleVagina.description>A tentacle-infested vagina.</TentacleVagina.description>
+	<TentacleVagina.description>A tentacle vagina.</TentacleVagina.description>
 	<TentacleVagina.stages.0.label>micro</TentacleVagina.stages.0.label>
 	<TentacleVagina.stages.1.label>tight</TentacleVagina.stages.1.label>
 	<TentacleVagina.stages.2.label>average</TentacleVagina.stages.2.label>
