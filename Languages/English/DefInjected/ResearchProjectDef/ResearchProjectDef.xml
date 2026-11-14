@@ -21,14 +21,17 @@
 	<ATLarvaAdvanced.label>Advanced Tentacle Larva Evolutions</ATLarvaAdvanced.label>
 	<ATLarvaAdvanced.description>Unlocks advanced Tentacle types and the knowledge to trigger larvae to transform into them.</ATLarvaAdvanced.description>
 
-	<ATBossBrewer.label>Feral Tentacle Lure - Brewer</ATBossBrewer.label>
-	<ATBossBrewer.description>Learn how to lure advanced feral tentacles to your colony. If you defeat them, you will be able to evolve and build additional advanced things using their genetic material. This research will allow you to construct a lure that will summon an Amor Brewer.</ATBossBrewer.description>
+	<ATSummonFeral.label>Summon Feral Tentacles</ATSummonFeral.label>
+	<ATSummonFeral.description>Learn how to lure feral tentacles to your colony. They will be hostile, so you will have to fight them off - but you can process their bodies into leather, meat, and other resources. This will also unlock the ability to summon advanced hybrid creatures, who will be a much more difficult threat, but can be analyzed to further your research.</ATSummonFeral.description>
+	
+	<ATBossBrewer.label>Brewer Research</ATBossBrewer.label>
+	<ATBossBrewer.description>Analyze the genetic makeup of the Brewer to learn how to utilize its abilities, as well as create your own.</ATBossBrewer.description>
 
-	<ATBossValkyrieDefender.label>Feral Tentacle Lure - Valkyrie/Defender</ATBossValkyrieDefender.label>
-	<ATBossValkyrieDefender.description>Learn how to lure advanced feral tentacles to your colony. If you defeat them, you will be able to evolve and build additional advanced things using their genetic material. This research will allow you to construct a lure that will summon an Amor Valkyrie and an Amor Defender.</ATBossValkyrieDefender.description>
+	<ATBossValkyrieDefender.label>Valkyrie/Defender Research</ATBossValkyrieDefender.label>
+	<ATBossValkyrieDefender.description>Analyze the genetic makeup of the Valkyrie and Defender to learn how to utilize their abilities, as well as create your own.</ATBossValkyrieDefender.description>
 
-	<ATBossWarWomb.label>Feral Tentacle Lure - War Womb</ATBossWarWomb.label>
-	<ATBossWarWomb.description>Learn how to lure advanced feral tentacles to your colony. If you defeat them, you will be able to evolve and build additional advanced things using their genetic material. This research will allow you to construct a lure that will summon an Amor War Womb.</ATBossWarWomb.description>
+	<ATBossWarWomb.label>War Womb Research</ATBossWarWomb.label>
+	<ATBossWarWomb.description>Analyze the genetic makeup of the War Womb to learn how to utilize its abilities, as well as create your own.</ATBossWarWomb.description>
 
 	<ATOvermind.label>Tentacle Overmind</ATOvermind.label>
 	<ATOvermind.description>Unlocks the ability to transform your Amor Queen into an Overmind - an incredibly powerful psychic entity that will guarantee tentacular dominance over this RimWorld. (NOTE: Does not do anything yet, but will eventually unlock a victory challenge.)</ATOvermind.description>
