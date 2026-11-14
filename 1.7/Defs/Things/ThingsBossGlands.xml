@@ -1,0 +1,103 @@
+<Defs>
+
+	<ThingDef Name="TentacleBossGlandBase" ParentName="ResourceBase" Abstract="True">
+		<soundInteract>Standard_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<stackLimit>10</stackLimit>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>500</MarketValue>
+			<Mass>1</Mass>
+			<Flammability>0.25</Flammability>
+			<DeteriorationRate>2.0</DeteriorationRate>
+		</statBases>
+		<intricate>true</intricate>
+		<thingCategories>
+			<li>CraftedTentacleProducts</li>
+		</thingCategories>
+		<isTechHediff>true</isTechHediff>
+	</ThingDef>
+
+	<ThingDef ParentName="TentacleBossGlandBase">
+		<defName>BossGlandBrewer</defName>
+		<graphicData>
+			<texPath>Things/Item/Resource/PowerfocusChip</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_CompAnalyzableUnlockResearch">
+				<analysisID>0015318008</analysisID>
+				<requiresMechanitor>false</requiresMechanitor>
+				<analysisDurationHours>1.0</analysisDurationHours>
+				<destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+				<activateTexPath>UI/Icons/Study</activateTexPath>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="TentacleBossGlandBase">
+		<defName>BossGlandValkyrieDefender</defName>
+		<graphicData>
+			<texPath>Things/Item/Resource/PowerfocusChip</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_CompAnalyzableUnlockResearch">
+				<analysisID>0025318008</analysisID>
+				<requiresMechanitor>false</requiresMechanitor>
+				<analysisDurationHours>1.0</analysisDurationHours>
+				<destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+				<activateTexPath>UI/Icons/Study</activateTexPath>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="TentacleBossGlandBase">
+		<defName>BossGlandWarWomb</defName>
+		<graphicData>
+			<texPath>Things/Item/Resource/PowerfocusChip</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_CompAnalyzableUnlockResearch">
+				<analysisID>0035318008</analysisID>
+				<requiresMechanitor>false</requiresMechanitor>
+				<analysisDurationHours>1.0</analysisDurationHours>
+				<destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+				<completedLetterDef>PositiveEvent</completedLetterDef>
+				<activateTexPath>UI/Icons/Study</activateTexPath>
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>false</canTargetMechs>
+					<onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+				</targetingParameters>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

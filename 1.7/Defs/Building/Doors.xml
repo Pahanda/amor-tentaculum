@@ -1,0 +1,81 @@
+<Defs>
+
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>TendrilDoor</defName>
+		<thingClass>Building_Door</thingClass>
+		<category>Building</category>
+		<altitudeLayer>DoorMoveable</altitudeLayer>
+		<fillPercent>1</fillPercent>
+		<useHitPoints>true</useHitPoints>
+		<stuffCategories>
+			<li>Resinous</li>
+		</stuffCategories>
+		<statBases>
+			<WorkToBuild>1100</WorkToBuild>
+			<MaxHitPoints>160</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<selectable>true</selectable>
+		<tickerType>Normal</tickerType>
+		<rotatable>false</rotatable>
+		<soundImpactDefault>BulletImpact_Flesh</soundImpactDefault>
+		<useStuffTerrainAffordance>true</useStuffTerrainAffordance>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Structure</designationCategory>
+		<blockWind>true</blockWind>
+		<uiOrder>2010</uiOrder>
+		<holdsRoof>true</holdsRoof>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<drawerType>RealtimeOnly</drawerType>
+		<forceMoveItemsBeforeConstruction>true</forceMoveItemsBeforeConstruction>
+		<building>
+			<isInert>true</isInert>
+			<canPlaceOverWall>true</canPlaceOverWall>
+			<soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered>
+			<soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered>
+			<soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+			<soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+			<blueprintClass>Blueprint_Door</blueprintClass>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Door/Door_Blueprint</texPath>
+			</blueprintGraphicData>
+			<ai_chillDestination>false</ai_chillDestination>
+			<paintable>true</paintable>
+			<canExchangeVacuum>true</canExchangeVacuum>
+		</building>
+		<comps>
+			<li Class="CompProperties_Forbiddable">
+				<allowNonPlayer>true</allowNonPlayer>
+			</li>
+		</comps>
+		<replaceTags>
+			<li>Door</li>
+		</replaceTags>
+		<placeWorkers>
+			<li>PlaceWorker_DoorLearnOpeningSpeed</li>
+		</placeWorkers>
+		<graphicData>
+			<texPath>Things/Buildings/Door/CircleTendrilDoor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<damageData>
+				<enabled>false</enabled>
+			</damageData>
+		</graphicData>
+		<uiIconPath>Things/Buildings/Door/CircleTendrilDoorUI</uiIconPath>
+		<costList>
+			<HardResin>40</HardResin>
+			<TentacleSlime>1</TentacleSlime>
+		</costList>
+		<costStuffCount>25</costStuffCount>
+		<designationHotKey>Misc2</designationHotKey>
+		<researchPrerequisites>
+			<li>Autodoors</li>
+			<li>ATStructUtility</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	</ThingDef>
+	
+</Defs>

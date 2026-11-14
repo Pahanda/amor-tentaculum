@@ -20,6 +20,9 @@
 	<TentacleWorkbench.description>A workbench equipped with all of the equipment required to craft basic tentacle-related things.</TentacleWorkbench.description>
 	<WombWorker.label>womb worker</WombWorker.label>
 	<WombWorker.description>Increases work speed when placed near a Tentacle Workbench. One Workbench can utilize up to four Workers. The Worker used to be human, but now they simply act as immobile assistants - storing tools, dispensing liquids, holding products, and softly moaning in pleasure with whatever is left of their brain.</WombWorker.description>
+	<TendrilDoor.label>tendril door</TendrilDoor.label>
+	<TendrilDoor.description>Divides rooms. This organic structure allows people to move through the door without slowing down. It might brush them with a tentacle while they pass.</TendrilDoor.description>
+	
 	
 	<!-- Drugs, food, and other consumables -->
 	<TentBeer.label>amornuum</TentBeer.label>
@@ -132,7 +135,38 @@
 	<TentacleSlime.description>A sticky, viscous substance "produced" primarily by Amor Queens. Used for crafting more advanced eggs and implants. It lasts indefinitely, so long as it is stored safely. An extremely valuable resource!</TentacleSlime.description>
 	<TentacleCatalyst.label>tentacle catalyst</TentacleCatalyst.label>
 	<TentacleCatalyst.description>The condensed genetic essence of a human being, ripped out of their flesh by a Recycling Pod. Used to craft other Tentacle and Host forms, as well as advanced equipment and implants.</TentacleCatalyst.description>
-	
+
+	<!-- Boss Drops -->
+	<BossGlandBrewer.label>Brewer gland</BossGlandBrewer.label>
+	<BossGlandBrewer.description>A gland, extracted from Amor Brewer hybrids. It's squishy and slimy, and feels still alive.\n\nThis can be analyzed to unlock additional research, which will allow you to use the gland to craft advanced things, as well as your own Brewers.</BossGlandBrewer.description>
+	<BossGlandBrewer.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the Brewer gland.</BossGlandBrewer.comps.CompAnalyzableUnlockResearch.activateDescString>
+	<BossGlandBrewer.comps.CompAnalyzableUnlockResearch.activateLabelString>Analyze...</BossGlandBrewer.comps.CompAnalyzableUnlockResearch.activateLabelString>
+	<BossGlandBrewer.comps.CompAnalyzableUnlockResearch.completedLetter>By studying the Brewer gland, {PAWN_labelShort} has acquired the insight needed for the research project(s) : {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</BossGlandBrewer.comps.CompAnalyzableUnlockResearch.completedLetter>
+	<BossGlandBrewer.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Brewer gland studied : {RESEARCH} unlocked</BossGlandBrewer.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+	<BossGlandBrewer.comps.CompAnalyzableUnlockResearch.guiLabelString>Choose who should analyze this...</BossGlandBrewer.comps.CompAnalyzableUnlockResearch.guiLabelString>
+	<BossGlandBrewer.comps.CompAnalyzableUnlockResearch.inspectString>Can be analyzed by a colonist.</BossGlandBrewer.comps.CompAnalyzableUnlockResearch.inspectString>
+	<BossGlandBrewer.comps.CompAnalyzableUnlockResearch.jobString>analyze Brewer gland</BossGlandBrewer.comps.CompAnalyzableUnlockResearch.jobString>
+
+	<BossGlandValkyrieDefender.label>twinned gland</BossGlandValkyrieDefender.label>
+	<BossGlandValkyrieDefender.description>A twinned gland, extracted from Amor Defender and Amor Valkyrie hybrids. It's squishy and slimy, and feels still alive.\n\nThis can be analyzed to unlock additional research, which will allow you to use the gland to craft advanced things, as well as your own Valkyries and Defenders.</BossGlandValkyrieDefender.description>
+	<BossGlandValkyrieDefender.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the twinned gland.</BossGlandValkyrieDefender.comps.CompAnalyzableUnlockResearch.activateDescString>
+	<BossGlandValkyrieDefender.comps.CompAnalyzableUnlockResearch.activateLabelString>Analyze...</BossGlandValkyrieDefender.comps.CompAnalyzableUnlockResearch.activateLabelString>
+	<BossGlandValkyrieDefender.comps.CompAnalyzableUnlockResearch.completedLetter>By studying the twinned gland, {PAWN_labelShort} has acquired the insight needed for the research project(s) : {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</BossGlandValkyrieDefender.comps.CompAnalyzableUnlockResearch.completedLetter>
+	<BossGlandValkyrieDefender.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Twinned gland studied : {RESEARCH} unlocked</BossGlandValkyrieDefender.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+	<BossGlandValkyrieDefender.comps.CompAnalyzableUnlockResearch.guiLabelString>Choose who should analyze this...</BossGlandValkyrieDefender.comps.CompAnalyzableUnlockResearch.guiLabelString>
+	<BossGlandValkyrieDefender.comps.CompAnalyzableUnlockResearch.inspectString>Can be analyzed by a colonist.</BossGlandValkyrieDefender.comps.CompAnalyzableUnlockResearch.inspectString>
+	<BossGlandValkyrieDefender.comps.CompAnalyzableUnlockResearch.jobString>analyze twinned gland</BossGlandValkyrieDefender.comps.CompAnalyzableUnlockResearch.jobString>
+
+	<BossGlandWarWomb.label>War Womb gland</BossGlandWarWomb.label>
+	<BossGlandWarWomb.description>A gland, extracted from Amor War Womb hybrids. It's squishy and slimy, and feels still alive.\n\nThis can be analyzed to unlock additional research, which will allow you to use the gland to craft advanced things, as well as your own War Wombs.</BossGlandWarWomb.description>
+	<BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the War Womb gland.</BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.activateDescString>
+	<BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.activateLabelString>Analyze...</BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.activateLabelString>
+	<BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.completedLetter>By studying the War Womb gland, {PAWN_labelShort} has acquired the insight needed for the research project(s) : {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.completedLetter>
+	<BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.completedLetterLabel>War Womb gland studied : {RESEARCH} unlocked</BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+	<BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.guiLabelString>Choose who should analyze this...</BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.guiLabelString>
+	<BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.inspectString>Can be analyzed by a colonist.</BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.inspectString>
+	<BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.jobString>analyze War Womb gland</BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.jobString>
+
 	<!-- Filth and Fluids -->
 	<Filth_Slime.label>tentacle slime filth</Filth_Slime.label>
 	
