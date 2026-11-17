@@ -41,7 +41,7 @@
 | Equipment | Armor | Tentacle Slave Collar | ![](../Textures/Things/Items/Equipment/TentacleCollar_east.png) | `Textures/Things/Items/Equipment` | |
 | Equipment | Armor | Bodysuit | NYI | NYI | |
 | Equipment | Armor | Cuirass | ![](../Textures/Things/Items/Equipment/ResinCuirassUI.png) | `Textures/Things/Items/Equipment` | |
-| Equipment | Armor | Helmet | NYI | NYI | |
+| Equipment | Armor | Helmet | ![](../Textures/Things/Items/Equipment/ResinHelmet_north.png) | `Textures/Things/Items/Equipment` | |
 | Equipment | Armor | Powered Armor | NYI | NYI | |
 | Equipment | Armor | Powered Helmet | NYI | NYI | |
 | Abilities | Animal | Genital Latch | ![](../Textures/Abilities/GenitalLatch.png) | `Textures/Abilities` | |
@@ -60,10 +60,10 @@
 | Items | Boss Drops | Valkyrie Gland | ![](../Textures/Things/Items/BossGlands/BossGlandValkyrie.png) | `Textures/Things/Items/BossGlands` | |
 | Items | Boss Drops | Defender Gland | ![](../Textures/Things/Items/BossGlands/BossGlandDefender.png) | `Textures/Things/Items/BossGlands` | |
 | Items | Boss Drops | War Womb Gland | ![](../Textures/Things/Items/BossGlands/BossGlandWarWomb.png) | `Textures/Things/Items/BossGlands` | |
-| Buildings | Encounter Summon | TBD (Feral Tentacle summon) | NYI | NYI | Some sort of organic structure that is "activated" to summon a swarm of feral Tentacles. |
-| Buildings | Encounter Summon | TBD (Brewer summon) | NYI | NYI | Some sort of organic structure that is "activated" to summon a Brewer Boss encounter. |
-| Buildings | Encounter Summon | TBD (Valkyrie/Defender summon) | NYI | NYI | Some sort of organic structure that is "activated" to summon a Valkyrie/Defender Boss encounter. |
-| Buildings | Encounter Summon | TBD (War Womb summon) | NYI | NYI | Some sort of organic structure that is "activated" to summon a War Womb Boss encounter. |
+| Buildings | Encounter Summon | Feral Tentacle Beacon | ![](../Textures/Things/Buildings/Summoners/TentacleSummoner.png) | `Textures/Things/Buildings/Summoners` | |
+| Buildings | Encounter Summon | Brewer Beacon | ![](../Textures/Things/Buildings/Summoners/BrewerSummoner.png) | `Textures/Things/Buildings/Summoners` | |
+| Buildings | Encounter Summon | Valkyrie Beacon | ![](../Textures/Things/Buildings/Summoners/TwinsSummoner.png) | `Textures/Things/Buildings/Summoners` | |
+| Buildings | Encounter Summon | War Womb Beacon | ![](../Textures/Things/Buildings/Summoners/WarWombSummoner.png) | `Textures/Things/Buildings/Summoners` | |
 | UI | Faction | Feral Tentacles | NYI | NYI | Simple silhouette for a faction icon. |
 
 NOTES:

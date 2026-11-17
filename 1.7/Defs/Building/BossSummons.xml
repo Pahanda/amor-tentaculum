@@ -52,13 +52,25 @@
 	<ThingDef ParentName="BossSummonBase">
 		<defName>BossSummonFeralSwarm</defName>
 		<graphicData>
-			<texPath>Things/Building/Misc/MechbandDish</texPath>
+			<texPath>Things/Buildings/Summoners/TentacleSummoner</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(2,2)</drawSize>
 			<shadowData>
 				<volume>(1.1, 0.75, 1.1</volume>
 			</shadowData>
 		</graphicData>
+		<costList>
+			<Steel>50</Steel>
+			<HardResin>25</HardResin>
+			<SoftResin>10</SoftResin>
+			<TentacleSlime>1</TentacleSlime>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<killedLeavings>
+			<HardResin>2</HardResin>
+			<SoftResin>1</SoftResin>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</killedLeavings>
 		<comps>
 			<li Class="AmorTentaculum.CompProperties_Useable_OrganicCallBossgroup">
 				<bossgroupDef>Apocriton</bossgroupDef>
@@ -94,6 +106,28 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BossSummonBase">
+		<defName>BossSummonTwins</defName>
+		<graphicData>
+			<texPath>Things/Buildings/Summoners/TwinsSummoner</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(1.1, 0.75, 1.1</volume>
+			</shadowData>
+		</graphicData>
+		<comps>
+			<li Class="AmorTentaculum.CompProperties_Useable_OrganicCallBossgroup">
+				<bossgroupDef>Apocriton</bossgroupDef>
+				<effecterDef>SanguophageMeeting</effecterDef>
+				<prepareEffecterDef>Surgery</prepareEffecterDef>
+				<unlockedLetterLabelKey>LetterLabelTentacleBossgroupCallerUnlocked</unlockedLetterLabelKey>
+				<unlockedLetterTextKey>LetterTentacleBossgroupCallerUnlocked</unlockedLetterTextKey>
+				<delayTicks>120</delayTicks>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<!--<ThingDef ParentName="BossSummonBase">
 		<defName>BossSummonValkyrie</defName>
 		<graphicData>
 			<texPath>Things/Building/Misc/MechbandDish</texPath>
@@ -135,7 +169,7 @@
 				<delayTicks>120</delayTicks>
 			</li>
 		</comps>
-	</ThingDef>
+	</ThingDef>-->
 
 	<ThingDef ParentName="BossSummonBase">
 		<defName>BossSummonWarWomb</defName>
