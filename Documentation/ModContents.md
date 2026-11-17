@@ -16,15 +16,14 @@ Research Tier: Basic
 A non-combat mass of tentacles that can be butchered for tentacle meat (food) and the soft flesh leather substitute.  Essentially livestock.
 
 ### Amor Stinger
-Research Tier: Basic
+Research Tier: Intermediate
 
-A small flying tentacle creature shaped like a ray. It's actually a sleeve of skin, constantly generating and expelling internally generated gases to keep itself afloat.
-The flexible tail sports a small stinger, capable of injecting a light paralytic venom through even the smallest gaps.
-Once a target is sufficietly weakened, the tentacle may wrap itself around the head turning them into nothing but a walking flesh puppet.
-The mind control persists for several hours, after which the victim's head is consumed. 
+A flying combat-focused mass of tentacles, designed to inject victims with paralytic poison and subsequently mind control them.
+
+A floating mass of tentacles
 
 ### Amor Borer
-Research Tier: Intermediate
+Research Tier: Advanced
 
 A mass of tentacles that is designed for mining store and ore.  Although since that requires sharp and strong claws, this Tentacle is also effective in combat.
 
@@ -46,12 +45,12 @@ Research Tier: Basic
 A non-combat mass of tentacles that focuses entirely on incubating and laying Amor Larva eggs, which will eventually grow into other types of tentacles.  Has combat abilities, but due to its essential nature to the hive, should not engage in combat unless necessary.
 
 ### Amor Spawner
-Research Tier: Basic
+Research Tier: Intermediate
 
 A non-combat mass of tentacles, designed to help grow Amor Squirmers to empower Amor Hosts' abilities.  Grows and lays Amor Squirmer eggs.
 
 ### Amor Producer
-Research Tier: Intermediate
+Research Tier: Basic
 
 A non-combat mass of tentacles that can be harvested for hard and soft resin resources (per normal animal mechanics) used to build other things.
 
