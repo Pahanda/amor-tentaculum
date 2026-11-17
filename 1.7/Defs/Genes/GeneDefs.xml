@@ -11,7 +11,7 @@
 	<GeneDef ParentName="GeneGenitalTypeBase">
 		<defName>RJWGenes_AmorTentacleInfestedFemaleGenitalia</defName>
 		<displayCategory>HiddenTentacleGenes</displayCategory>
-		<iconPath>Genes/Tentacle_Vagina</iconPath>
+		<iconPath>UI/Genes/Gene_InfestedVagina</iconPath>
 		<modExtensions>
 			<li Class="RJW_Genes.GenitaliaTypeExtension">
 				<penis>Penis</penis>
@@ -27,6 +27,7 @@
 		<defName>AmorQueenHostBody</defName>
 		<displayCategory>HiddenTentacleGenes</displayCategory>
 		<geneClass>EBSGFramework.HediffAdder</geneClass>
+		<iconPath>UI/Genes/Gene_Queen</iconPath>
 		<displayOrderInCategory>0.1</displayOrderInCategory>
 		<abilities>
 			<li>TentacleIngest</li>
@@ -107,6 +108,7 @@
 		<defName>AmorBaronessHostBody</defName>
 		<displayCategory>HiddenTentacleGenes</displayCategory>
 		<geneClass>EBSGFramework.HediffAdder</geneClass>
+		<iconPath>UI/Genes/Gene_Baroness</iconPath>
 		<displayOrderInCategory>0.1</displayOrderInCategory>
 		<abilities>
 			<li>TentacleIngest</li>
@@ -178,6 +180,7 @@
 		<defName>AmorNymphHostBody</defName>
 		<displayCategory>HiddenTentacleGenes</displayCategory>
 		<geneClass>EBSGFramework.HediffAdder</geneClass>
+		<iconPath>UI/Genes/Gene_Nymph</iconPath>
 		<displayOrderInCategory>0.1</displayOrderInCategory>
 		<abilities>
 			<li>TentacleIngest</li>
@@ -252,7 +255,7 @@
 	<GeneDef ParentName="GeneGenitalTypeBase">
 		<defName>RJWGenes_AmorTentacleInfestedMaleGenitalia</defName>
 		<displayCategory>HiddenTentacleGenes</displayCategory>
-		<iconPath>Genes/Tentacle_Vagina</iconPath>
+		<iconPath>UI/Genes/Gene_InfestedPenis</iconPath>
 		<modExtensions>
 			<li Class="RJW_Genes.GenitaliaTypeExtension">
 				<penis>TentaclePenis</penis>
@@ -268,6 +271,7 @@
 		<defName>AmorBaronHostBody</defName>
 		<displayCategory>HiddenTentacleGenes</displayCategory>
 		<geneClass>EBSGFramework.HediffAdder</geneClass>
+		<iconPath>UI/Genes/Gene_Baron</iconPath>
 		<displayOrderInCategory>0.1</displayOrderInCategory>
 		<abilities>
 			<li>TentacleIngest</li>
@@ -324,6 +328,7 @@
 		<defName>AmorRogueHostBody</defName>
 		<displayCategory>HiddenTentacleGenes</displayCategory>
 		<geneClass>EBSGFramework.HediffAdder</geneClass>
+		<iconPath>UI/Genes/Gene_Rogue</iconPath>
 		<displayOrderInCategory>0.1</displayOrderInCategory>
 		<abilities>
 			<li>TentacleIngest</li>
@@ -379,6 +384,7 @@
 		<defName>AmorKnightHostBody</defName>
 		<displayCategory>HiddenTentacleGenes</displayCategory>
 		<geneClass>EBSGFramework.HediffAdder</geneClass>
+		<iconPath>UI/Genes/Gene_Knight</iconPath>
 		<displayOrderInCategory>0.1</displayOrderInCategory>
 		<abilities>
 			<li>TentacleIngest</li>
@@ -434,6 +440,7 @@
 		<defName>AmorServantHostBody</defName>
 		<displayCategory>HiddenTentacleGenes</displayCategory>
 		<geneClass>EBSGFramework.HediffAdder</geneClass>
+		<iconPath>UI/Genes/Gene_Servant</iconPath>
 		<displayOrderInCategory>0.1</displayOrderInCategory>
 		<abilities>
 			<li>TentacleIngest</li>
