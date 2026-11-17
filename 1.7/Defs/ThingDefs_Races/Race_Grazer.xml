@@ -25,7 +25,7 @@
       <baseHealthScale>1.5</baseHealthScale>
       <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>TentacleLeather</leatherDef>
-      <meatLabel>tentacle meat</meatLabel>
+      <useMeatFrom>TentacleBroodMother</useMeatFrom>
       <trainability>None</trainability>
       <petness>0.15</petness>
       <manhunterOnTameFailChance>0</manhunterOnTameFailChance>

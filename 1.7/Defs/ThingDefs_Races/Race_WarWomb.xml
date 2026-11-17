@@ -41,7 +41,7 @@
       <baseHealthScale>6</baseHealthScale>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
       <leatherDef>TentacleLeather</leatherDef>
-      <meatLabel>tentacle meat</meatLabel>
+      <useMeatFrom>TentacleBroodMother</useMeatFrom>
       <trainability>Advanced</trainability>
       <petness>0.05</petness>
       <manhunterOnTameFailChance>0.2</manhunterOnTameFailChance>
