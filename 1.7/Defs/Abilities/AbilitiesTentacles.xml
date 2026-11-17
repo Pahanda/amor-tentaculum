@@ -126,7 +126,7 @@
 	<AbilityDef ParentName="AbilityLarvaEvolveBase">
 		<defName>AbilityLarvaEvolveSquirmer</defName>
 		<comps>
-			<li Class="AmorTentaculum.CompProperties_ExtendedAbilityValidator">
+			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
 				<requiredResearchProjects>
 					<li>ATCore</li>
 				</requiredResearchProjects>
@@ -151,7 +151,7 @@
 	<AbilityDef ParentName="AbilityLarvaEvolveBase">
 		<defName>AbilityLarvaEvolveSpawner</defName>
 		<comps>
-			<li Class="AmorTentaculum.CompProperties_ExtendedAbilityValidator">
+			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
 				<requiredResearchProjects>
 					<li>ATHostBasic</li>
 				</requiredResearchProjects>
