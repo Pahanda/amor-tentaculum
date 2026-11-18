@@ -4,7 +4,7 @@
 		<defName>AmorTentaculumSupremacy</defName>
 		<label>Amor Worship</label>
 		<description>The Amor Tentaculum are meant to live and die alongside us. Open your arms and legs in acceptance of their blessings.</description>
-		<iconPath>UI/Memes/AmorTentacle</iconPath>
+		<iconPath>Ideo/Memes/AmorTentacle_Meme</iconPath>
 		<groupDef>Misc</groupDef>
 		<impact>2</impact>
 		<generalRules>
@@ -18,7 +18,7 @@
 			<li>
 				<li>AmorTentaculum_Accepted</li>
 			</li>
-			<li>W
+			<li>
 				<li>AmorHostPresence_Honorable</li>
 			</li>
 		</requireOne>
@@ -35,13 +35,13 @@
 	<IssueDef MayRequire="Ludeon.RimWorld.Ideology">
 		<defName>AmorTentaculum</defName>
 		<label>Amor Tentaculum</label>
-		<iconPath>UI/Precept/AmorTentacle</iconPath>
+		<iconPath>Ideo/Precepts/AmorTentacle_Precept</iconPath>
 	</IssueDef>
 
 	<IssueDef MayRequire="Ludeon.RimWorld.Ideology">
 		<defName>AmorHostPresence</defName>
 		<label>Amor Host Presence</label>
-		<iconPath>UI/Precept/AmorHostPresence</iconPath>
+		<iconPath>Ideo/Precepts/AmorHostPresence_Precept</iconPath>
 	</IssueDef>
 
 	<HistoryEventDef MayRequire="Ludeon.RimWorld.Ideology">
