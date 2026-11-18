@@ -53,10 +53,10 @@
      </nullifyingTraits>
      <stages>
        <li><label>stretched organ (stomach)</label><description>I feel a little bloated.</description><baseMoodEffect>-3</baseMoodEffect></li>
-       <li><label>stretched organ (stomach)</label><description>It can't be right? they are not in my stomach RIGHT!'</description><baseMoodEffect>-6</baseMoodEffect></li>
+       <li><label>stretched organ (stomach)</label><description>It can't be right? they are not in my stomach RIGHT!?</description><baseMoodEffect>-6</baseMoodEffect></li>
        <li><label>endless vomiting</label><description>Oh gods please make it stop! these wreched creatures are ruining my stomach!</description><baseMoodEffect>-23</baseMoodEffect></li>
        <li><label>stretched organ (stomach)</label><description>It's stopping. but I know they are still there...</description><baseMoodEffect>-5</baseMoodEffect></li>
-       <li><label>stretched organ (stomach)</label><description>This empty feeling is a constant reminder of what's inside me.</description><baseMoodEffect>-3</baseMoodEffect></li>
+       <li><label>stretched organ (stomach)</label><description>This feeling is a constant reminder of what's inside me.</description><baseMoodEffect>-3</baseMoodEffect></li>
      </stages>
    </ThoughtDef>
 

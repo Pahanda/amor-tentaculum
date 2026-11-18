@@ -44,32 +44,6 @@
         <description>TAKE IT OUT! TAKE IT OUT! TAKE IT OUT!</description>
         <baseMoodEffect>-30</baseMoodEffect>
       </li>
-      <li>
-        <label>incubating egg</label>
-        <description>...</description>
-        <baseMoodEffect>0</baseMoodEffect>
-        <visible>false</visible>
-      </li>
-      <li>
-        <label>egg hatched</label>
-        <description>I felt something hatch inside me!</description>
-        <baseMoodEffect>-3</baseMoodEffect>
-      </li>
-      <li>
-        <label>it's getting bigger</label>
-        <description>I feel so bloated, and I can see something moving under my skin!</description>
-        <baseMoodEffect>-5</baseMoodEffect>
-      </li>
-      <li>
-        <label>what is happening to me!</label>
-        <description>It's moving my organs around! What is it doing? I want it out!</description>
-        <baseMoodEffect>-18</baseMoodEffect>
-      </li>
-      <li>
-        <label>TAKE IT OUT!</label>
-        <description>TAKE IT OUT! TAKE IT OUT! TAKE IT OUT!</description>
-        <baseMoodEffect>-30</baseMoodEffect>
-      </li>
     </stages>
   </ThoughtDef>
 
@@ -86,32 +60,6 @@
        <li>TentacleLover</li>
      </nullifyingTraits>
     <stages>
-      <li>
-        <label>incubating egg</label>
-        <description>...</description>
-        <baseMoodEffect>0</baseMoodEffect>
-        <visible>false</visible>
-      </li>
-      <li>
-        <label>egg hatched</label>
-        <description>It's beginning. how exciting!</description>
-        <baseMoodEffect>1</baseMoodEffect>
-      </li>
-      <li>
-        <label>it's moving</label>
-        <description>I feel them working my insides... soon I will be blessed.</description>
-        <baseMoodEffect>2</baseMoodEffect>
-      </li>
-      <li>
-        <label>it's getting bigger</label>
-        <description>Keep working at it! purify this body with your presence!</description>
-        <baseMoodEffect>3</baseMoodEffect>
-      </li>
-      <li>
-        <label>it's nearly grown</label>
-        <description>It's almost done. the wait is killing me!</description>
-        <baseMoodEffect>4</baseMoodEffect>
-      </li>
       <li>
         <label>incubating egg</label>
         <description>...</description>
@@ -180,32 +128,6 @@
         <description>KILL ME! I WOULD RATHER DIE THAN BECOME ONE OF THOSE THINGS! SOMEBODY KILL ME!</description>
         <baseMoodEffect>-40</baseMoodEffect>
       </li>
-      <li>
-        <label>incubating egg</label>
-        <description>...</description>
-        <baseMoodEffect>0</baseMoodEffect>
-        <visible>false</visible>
-      </li>
-      <li>
-        <label>egg hatched</label>
-        <description>no please, no!. It can't be.</description>
-        <baseMoodEffect>-4</baseMoodEffect>
-      </li>
-      <li>
-        <label>it's getting bigger</label>
-        <description>It's inside me... maybe it's not too late, maybe my body can reject it!</description>
-        <baseMoodEffect>-8</baseMoodEffect>
-      </li>
-      <li>
-        <label>what is happening to me!</label>
-        <description>Oh god make it stop! I can feel it defiling every part of my body! someone help me I can't take it!</description>
-        <baseMoodEffect>-21</baseMoodEffect>
-      </li>
-      <li>
-        <label>END MY SUFFERING!</label>
-        <description>KILL ME! I WOULD RATHER DIE THAN BECOME ONE OF THOSE THINGS! SOMEBODY KILL ME!</description>
-        <baseMoodEffect>-40</baseMoodEffect>
-      </li>
     </stages>
    </ThoughtDef>
 
@@ -222,32 +144,6 @@
       <li>TentacleLover</li>
     </requiredTraits>
     <stages>
-      <li>
-        <label>incubating egg</label>
-        <description>...</description>
-        <baseMoodEffect>0</baseMoodEffect>
-        <visible>false</visible>
-      </li>
-      <li>
-        <label>egg hatched</label>
-        <description>I felt something hatch inside me! It's working!</description>
-        <baseMoodEffect>2</baseMoodEffect>
-      </li>
-      <li>
-        <label>it's moving</label>
-        <description>I feel it streching it's tentacles through my body, crawling their way to my deepest places.</description>
-        <baseMoodEffect>4</baseMoodEffect>
-      </li>
-      <li>
-        <label>it's getting bigger</label>
-        <description>The tentacles are everywhere inside me know. I'm in heaven.</description>
-        <baseMoodEffect>5</baseMoodEffect>
-      </li>
-      <li>
-        <label>it's nearly grown</label>
-        <description>Ohhh my god. Yesss! I'm so glad I ate that egg.</description>
-        <baseMoodEffect>6</baseMoodEffect>
-      </li>
       <li>
         <label>incubating egg</label>
         <description>...</description>
