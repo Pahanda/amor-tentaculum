@@ -26,9 +26,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Reference Include="0MultiplayerAPI">
+      <HintPath>..\..\rjw\1.6\Assemblies\0MultiplayerAPI.dll</HintPath>
+			<Private>False</Private>
+    </Reference>
+    <Reference Include="0PrepatcherAPI">
+      <HintPath>..\..\rjw\1.6\Assemblies\0PrepatcherAPI.dll</HintPath>
+			<Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
+    </Reference>
+    <Reference Include="RJW">
+      <HintPath>..\..\rjw\1.6\Assemblies\RJW.dll</HintPath>
+			<Private>False</Private>
     </Reference>
     <Reference Include="UnityStubs">
       <HintPath>..\..\..\UnityStubs.dll</HintPath>
