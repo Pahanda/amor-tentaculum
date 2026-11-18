@@ -1,5 +1,4 @@
 ﻿using RimWorld;
-using rjw.MainTab.Icon;
 using Verse;
 
 namespace AmorTentaculum
