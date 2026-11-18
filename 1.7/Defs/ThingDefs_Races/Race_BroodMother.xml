@@ -128,6 +128,9 @@
       <li>AnimalUncommon</li>
       <li>AnimalFighter</li>
     </tradeTags>
+   <modExtensions>
+     <li Class="AmorTentaculum.AmorTentaculumRaceExtension" />
+   </modExtensions>
   </ThingDef>
   <rjw.RaceGroupDef>
     <defName>BroodMothers</defName>

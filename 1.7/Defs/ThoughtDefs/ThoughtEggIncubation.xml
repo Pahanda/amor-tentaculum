@@ -1,0 +1,442 @@
+<Defs>
+  <!-- Shared thought templates -->
+
+  <!-- Standard incubation mood thought -->
+
+  <ThoughtDef Abstract="True" Name="EggIncubationThoughtBase">
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <stackLimit>1</stackLimit>
+    <validWhileDespawned>true</validWhileDespawned>
+    <nullifyingTraits>
+      <li>Masochist</li>
+	    <li>Nymphomaniac</li>
+      <li>Zoophile</li>
+      <li>TentacleLover</li>
+    </nullifyingTraits>
+    <nullifyingPrecepts>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AmorHostPresence_Honorable</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">AmorHostPresence_Abhorrent</li>
+    </nullifyingPrecepts>
+    <stages>
+      <li>
+        <label>incubating egg</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>egg hatched</label>
+        <description>I felt something hatch inside me!</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+      <li>
+        <label>it's getting bigger</label>
+        <description>I feel so bloated, and I can see something moving under my skin!</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>what is happening to me!</label>
+        <description>It's moving my organs around! What is it doing? I want it out!</description>
+        <baseMoodEffect>-18</baseMoodEffect>
+      </li>
+      <li>
+        <label>TAKE IT OUT!</label>
+        <description>TAKE IT OUT! TAKE IT OUT! TAKE IT OUT!</description>
+        <baseMoodEffect>-30</baseMoodEffect>
+      </li>
+      <li>
+        <label>incubating egg</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>egg hatched</label>
+        <description>I felt something hatch inside me!</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+      <li>
+        <label>it's getting bigger</label>
+        <description>I feel so bloated, and I can see something moving under my skin!</description>
+        <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+      <li>
+        <label>what is happening to me!</label>
+        <description>It's moving my organs around! What is it doing? I want it out!</description>
+        <baseMoodEffect>-18</baseMoodEffect>
+      </li>
+      <li>
+        <label>TAKE IT OUT!</label>
+        <description>TAKE IT OUT! TAKE IT OUT! TAKE IT OUT!</description>
+        <baseMoodEffect>-30</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Honorable ideology variant -->
+
+  <ThoughtDef Abstract="True" Name="EggIncubationThoughtHonorableBase" MayRequire="Ludeon.RimWorld.Ideology">
+     <workerClass>AmorTentaculum.ThoughtWorker_Precept_AmorHostExperience</workerClass>
+     <stackLimit>1</stackLimit>
+     <validWhileDespawned>true</validWhileDespawned>
+     <nullifyingTraits>
+       <li>Masochist</li>
+       <li>Nymphomaniac</li>
+       <li>Zoophile</li>
+       <li>TentacleLover</li>
+     </nullifyingTraits>
+    <stages>
+      <li>
+        <label>incubating egg</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>egg hatched</label>
+        <description>It's beginning. how exciting!</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+      <li>
+        <label>it's moving</label>
+        <description>I feel them working my insides... soon I will be blessed.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>it's getting bigger</label>
+        <description>Keep working at it! purify this body with your presence!</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>it's nearly grown</label>
+        <description>It's almost done. the wait is killing me!</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>incubating egg</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>egg hatched</label>
+        <description>It's beginning. how exciting!</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+      <li>
+        <label>it's moving</label>
+        <description>I feel them working my insides... soon I will be blessed.</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>it's getting bigger</label>
+        <description>Keep working at it! purify this body with your presence!</description>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <label>it's nearly grown</label>
+        <description>It's almost done. the wait is killing me!</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+    </stages>
+   </ThoughtDef>
+
+  <!-- Abhorrent ideology variant -->
+
+  <ThoughtDef Abstract="True" Name="EggIncubationThoughtAbhorrentBase" MayRequire="Ludeon.RimWorld.Ideology">
+     <workerClass>AmorTentaculum.ThoughtWorker_Precept_AmorHostExperience</workerClass>
+     <stackLimit>1</stackLimit>
+     <validWhileDespawned>true</validWhileDespawned>
+     <nullifyingTraits>
+       <li>Masochist</li>
+       <li>Nymphomaniac</li>
+       <li>Zoophile</li>
+       <li>TentacleLover</li>
+     </nullifyingTraits>
+<stages>
+      <li>
+        <label>incubating egg</label>
+        <baseMoodEffect>-2</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>egg hatched</label>
+        <description>no please, no!. It can't be.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <li>
+        <label>it's getting bigger</label>
+        <description>It's inside me... maybe it's not too late, maybe my body can reject it!</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>what is happening to me!</label>
+        <description>Oh god make it stop! I can feel it defiling every part of my body! someone help me I can't take it!</description>
+        <baseMoodEffect>-21</baseMoodEffect>
+      </li>
+      <li>
+        <label>END MY SUFFERING!</label>
+        <description>KILL ME! I WOULD RATHER DIE THAN BECOME ONE OF THOSE THINGS! SOMEBODY KILL ME!</description>
+        <baseMoodEffect>-40</baseMoodEffect>
+      </li>
+      <li>
+        <label>incubating egg</label>
+        <baseMoodEffect>-2</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>egg hatched</label>
+        <description>no please, no!. It can't be.</description>
+        <baseMoodEffect>-4</baseMoodEffect>
+      </li>
+      <li>
+        <label>it's getting bigger</label>
+        <description>It's inside me... maybe it's not too late, maybe my body can reject it!</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+      <li>
+        <label>what is happening to me!</label>
+        <description>Oh god make it stop! I can feel it defiling every part of my body! someone help me I can't take it!</description>
+        <baseMoodEffect>-21</baseMoodEffect>
+      </li>
+      <li>
+        <label>END MY SUFFERING!</label>
+        <description>KILL ME! I WOULD RATHER DIE THAN BECOME ONE OF THOSE THINGS! SOMEBODY KILL ME!</description>
+        <baseMoodEffect>-40</baseMoodEffect>
+      </li>
+    </stages>
+   </ThoughtDef>
+
+  <!-- Favorable-trait variant -->
+
+  <ThoughtDef Abstract="True" Name="EggIncubationThoughtLikedBase">
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <stackLimit>1</stackLimit>
+    <validWhileDespawned>true</validWhileDespawned>
+	<requiredTraits>
+      <li>Masochist</li>
+	    <li>Nymphomaniac</li>
+      <li>Zoophile</li>
+      <li>TentacleLover</li>
+    </requiredTraits>
+    <stages>
+      <li>
+        <label>incubating egg</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>egg hatched</label>
+        <description>I felt something hatch inside me! It's working!</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>it's moving</label>
+        <description>I feel it streching it's tentacles through my body, crawling their way to my deepest places.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>it's getting bigger</label>
+        <description>The tentacles are everywhere inside me know. I'm in heaven.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>it's nearly grown</label>
+        <description>Ohhh my god. Yesss! I'm so glad I ate that egg.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+      <li>
+        <label>incubating egg</label>
+        <baseMoodEffect>0</baseMoodEffect>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>egg hatched</label>
+        <description>I felt something hatch inside me! It's working!</description>
+        <baseMoodEffect>2</baseMoodEffect>
+      </li>
+      <li>
+        <label>it's moving</label>
+        <description>I feel it streching it's tentacles through my body, crawling their way to my deepest places.</description>
+        <baseMoodEffect>4</baseMoodEffect>
+      </li>
+      <li>
+        <label>it's getting bigger</label>
+        <description>The tentacles are everywhere inside me know. I'm in heaven.</description>
+        <baseMoodEffect>5</baseMoodEffect>
+      </li>
+      <li>
+        <label>it's nearly grown</label>
+        <description>Ohhh my god. Yesss! I'm so glad I ate that egg.</description>
+        <baseMoodEffect>6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Queen egg incubation thoughts -->
+
+  <ThoughtDef ParentName="EggIncubationThoughtBase">
+    <defName>QueenEggIncubationThought</defName>
+    <hediff>QueenEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef MayRequire="Ludeon.RimWorld.Ideology" ParentName="EggIncubationThoughtHonorableBase">
+    <defName>QueenEggIncubationThought_Honorable</defName>
+    <hediff>QueenEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef MayRequire="Ludeon.RimWorld.Ideology" ParentName="EggIncubationThoughtAbhorrentBase">
+    <defName>QueenEggIncubationThought_Abhorrent</defName>
+    <hediff>QueenEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef ParentName="EggIncubationThoughtLikedBase">
+    <defName>QueenEggIncubationThoughtLiked</defName>
+    <hediff>QueenEggIncubation</hediff>
+  </ThoughtDef>
+
+  <!-- Baroness egg incubation thoughts -->
+
+  <ThoughtDef ParentName="EggIncubationThoughtBase">
+    <defName>BaronessEggIncubationThought</defName>
+    <hediff>BaronessEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef MayRequire="Ludeon.RimWorld.Ideology" ParentName="EggIncubationThoughtHonorableBase">
+    <defName>BaronessEggIncubationThought_Honorable</defName>
+    <hediff>BaronessEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef MayRequire="Ludeon.RimWorld.Ideology" ParentName="EggIncubationThoughtAbhorrentBase">
+    <defName>BaronessEggIncubationThought_Abhorrent</defName>
+    <hediff>BaronessEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef ParentName="EggIncubationThoughtLikedBase">
+    <defName>BaronessEggIncubationThoughtLiked</defName>
+    <hediff>BaronessEggIncubation</hediff>
+  </ThoughtDef>
+
+  <!-- Nymph egg incubation thoughts -->
+
+  <ThoughtDef ParentName="EggIncubationThoughtBase">
+    <defName>NymphEggIncubationThought</defName>
+    <hediff>NymphEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef MayRequire="Ludeon.RimWorld.Ideology" ParentName="EggIncubationThoughtHonorableBase">
+    <defName>NymphEggIncubationThought_Honorable</defName>
+    <hediff>NymphEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef MayRequire="Ludeon.RimWorld.Ideology" ParentName="EggIncubationThoughtAbhorrentBase">
+    <defName>NymphEggIncubationThought_Abhorrent</defName>
+    <hediff>NymphEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef ParentName="EggIncubationThoughtLikedBase">
+    <defName>NymphEggIncubationThoughtLiked</defName>
+    <hediff>NymphEggIncubation</hediff>
+  </ThoughtDef>
+
+  <!-- Baron egg incubation thoughts -->
+
+  <ThoughtDef ParentName="EggIncubationThoughtBase">
+    <defName>BaronEggIncubationThought</defName>
+    <hediff>BaronEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef MayRequire="Ludeon.RimWorld.Ideology" ParentName="EggIncubationThoughtHonorableBase">
+    <defName>BaronEggIncubationThought_Honorable</defName>
+    <hediff>BaronEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef MayRequire="Ludeon.RimWorld.Ideology" ParentName="EggIncubationThoughtAbhorrentBase">
+    <defName>BaronEggIncubationThought_Abhorrent</defName>
+    <hediff>BaronEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef ParentName="EggIncubationThoughtLikedBase">
+    <defName>BaronEggIncubationThoughtLiked</defName>
+    <hediff>BaronEggIncubation</hediff>
+  </ThoughtDef>
+
+  <!-- Rogue egg incubation thoughts -->
+
+  <ThoughtDef ParentName="EggIncubationThoughtBase">
+    <defName>RogueEggIncubationThought</defName>
+    <hediff>RogueEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef MayRequire="Ludeon.RimWorld.Ideology" ParentName="EggIncubationThoughtHonorableBase">
+    <defName>RogueEggIncubationThought_Honorable</defName>
+    <hediff>RogueEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef MayRequire="Ludeon.RimWorld.Ideology" ParentName="EggIncubationThoughtAbhorrentBase">
+    <defName>RogueEggIncubationThought_Abhorrent</defName>
+    <hediff>RogueEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef ParentName="EggIncubationThoughtLikedBase">
+    <defName>RogueEggIncubationThoughtLiked</defName>
+    <hediff>RogueEggIncubation</hediff>
+  </ThoughtDef>
+
+  <!-- Knight egg incubation thoughts -->
+
+  <ThoughtDef ParentName="EggIncubationThoughtBase">
+    <defName>KnightEggIncubationThought</defName>
+    <hediff>KnightEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef MayRequire="Ludeon.RimWorld.Ideology" ParentName="EggIncubationThoughtHonorableBase">
+    <defName>KnightEggIncubationThought_Honorable</defName>
+    <hediff>KnightEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef MayRequire="Ludeon.RimWorld.Ideology" ParentName="EggIncubationThoughtAbhorrentBase">
+    <defName>KnightEggIncubationThought_Abhorrent</defName>
+    <hediff>KnightEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef ParentName="EggIncubationThoughtLikedBase">
+    <defName>KnightEggIncubationThoughtLiked</defName>
+    <hediff>KnightEggIncubation</hediff>
+  </ThoughtDef>
+
+  <!-- Servant egg incubation thoughts -->
+
+  <ThoughtDef ParentName="EggIncubationThoughtBase">
+    <defName>ServantEggIncubationThought</defName>
+    <hediff>ServantEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef MayRequire="Ludeon.RimWorld.Ideology" ParentName="EggIncubationThoughtHonorableBase">
+    <defName>ServantEggIncubationThought_Honorable</defName>
+    <hediff>ServantEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef MayRequire="Ludeon.RimWorld.Ideology" ParentName="EggIncubationThoughtAbhorrentBase">
+    <defName>ServantEggIncubationThought_Abhorrent</defName>
+    <hediff>ServantEggIncubation</hediff>
+  </ThoughtDef>
+
+  <ThoughtDef ParentName="EggIncubationThoughtLikedBase">
+    <defName>ServantEggIncubationThoughtLiked</defName>
+    <hediff>ServantEggIncubation</hediff>
+  </ThoughtDef>
+
+  <!-- Queen pheromone thought -->
+
+  <ThoughtDef>
+    <defName>Queenpheromon</defName>
+    <thoughtClass>Thought_PsychicHarmonizer</thoughtClass>
+    <effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
+    <stackLimit>100</stackLimit>
+    <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+    <stages>
+      <li>
+        <label>queen pheromones: {HARMONIZER_labelShort}</label>
+        <description>She is so beautiful! I want what ever she wants.</description>
+        <baseMoodEffect>8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

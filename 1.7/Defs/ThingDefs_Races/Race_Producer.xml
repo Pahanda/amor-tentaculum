@@ -59,6 +59,9 @@
       <li>AnimalCommon</li>
       <li>AnimalFarm</li>
     </tradeTags>
+   <modExtensions>
+     <li Class="AmorTentaculum.AmorTentaculumRaceExtension" />
+   </modExtensions>
   </ThingDef>
   <rjw.RaceGroupDef>
     <defName>TentacleProducerRJW</defName>
