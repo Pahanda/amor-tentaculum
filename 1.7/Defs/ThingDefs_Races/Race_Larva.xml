@@ -71,5 +71,8 @@
       </headPosPerRotation>
     </race>
     <tradeTags />
+   <modExtensions>
+     <li Class="AmorTentaculum.AmorTentaculumRaceExtension" />
+   </modExtensions>
   </ThingDef>
 </Defs>

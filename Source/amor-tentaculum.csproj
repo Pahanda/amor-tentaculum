@@ -38,6 +38,10 @@
       <HintPath>..\..\..\Waylith.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <PackageReference Include="Lib.Harmony">
+      <Version>*</Version>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 </Project>
