@@ -85,7 +85,6 @@
 
 	<HediffDef Name="LarvaEvolveBase" Abstract="True">
 		<hediffClass>HediffWithComps</hediffClass>
-		<labelNoun>evolving</labelNoun>
 		<minSeverity>0</minSeverity>
 		<initialSeverity>0.001</initialSeverity>
 		<maxSeverity>1</maxSeverity>
@@ -100,10 +99,11 @@
 			<li Class="EBSGFramework.HediffCompProperties_PreventDeathNotifications" />
 		  <li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
   			<modSettingMultiplier>larvaEvolutionSpeedFactor</modSettingMultiplier>
-			  <baseSeverityPerDay>0.75</baseSeverityPerDay>
+			  <baseSeverityPerDay>1</baseSeverityPerDay>
 		  </li>
 			<li Class="AmorTentaculum.HediffCompProperties_SpawnFactionPawnOnMaxSeverity">
 				<pawnKindOptions>
+					<li>TentacleSquirmer</li>
 					<li>TentacleSquirmer</li>
 					<li>TentacleSquirmer</li>
 				</pawnKindOptions>
@@ -117,9 +117,32 @@
 	</HediffDef>
 
 	<HediffDef ParentName="LarvaEvolveBase">
-		<defName>LarvaEvolveSpawner</defName>
-		<label>evolving into spawner</label>
-		<description>This Amor Larva is evolving into an Amor Spawner.</description>
+		<defName>LarvaEvolveGrazer</defName>
+
+		<defaultLabelColor>(240,189,234)</defaultLabelColor>
+		<stages />
+		<comps>
+			<li Class="EBSGFramework.HediffCompProperties_DestroyOnDeath" />
+			<li Class="EBSGFramework.HediffCompProperties_PreventDeathNotifications" />
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>larvaEvolutionSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.5</baseSeverityPerDay>
+			</li>
+			<li Class="AmorTentaculum.HediffCompProperties_SpawnFactionPawnOnMaxSeverity">
+				<pawnKindOptions>
+					<li>TentacleGrazer</li>
+				</pawnKindOptions>
+				<filthCreated>Filth_BloodInsect</filthCreated>
+				<filthCountRange>2~5</filthCountRange>
+				<sound>Hive_Spawn</sound>
+				<damage>Cut</damage>
+				<damageAmount>999~999</damageAmount>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="LarvaEvolveBase">
+		<defName>LarvaEvolveProducer</defName>
 		<defaultLabelColor>(240,189,234)</defaultLabelColor>
 		<stages />
 		<comps>
@@ -128,6 +151,30 @@
 			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
 				<modSettingMultiplier>larvaEvolutionSpeedFactor</modSettingMultiplier>
 				<baseSeverityPerDay>0.33</baseSeverityPerDay>
+			</li>
+			<li Class="AmorTentaculum.HediffCompProperties_SpawnFactionPawnOnMaxSeverity">
+				<pawnKindOptions>
+					<li>TentacleProducer</li>
+				</pawnKindOptions>
+				<filthCreated>Filth_BloodInsect</filthCreated>
+				<filthCountRange>2~5</filthCountRange>
+				<sound>Hive_Spawn</sound>
+				<damage>Cut</damage>
+				<damageAmount>999~999</damageAmount>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="LarvaEvolveBase">
+		<defName>LarvaEvolveSpawner</defName>
+		<defaultLabelColor>(240,189,234)</defaultLabelColor>
+		<stages />
+		<comps>
+			<li Class="EBSGFramework.HediffCompProperties_DestroyOnDeath" />
+			<li Class="EBSGFramework.HediffCompProperties_PreventDeathNotifications" />
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>larvaEvolutionSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.15</baseSeverityPerDay>
 			</li>
 			<li Class="AmorTentaculum.HediffCompProperties_SpawnFactionPawnOnMaxSeverity">
 				<pawnKindOptions>
@@ -141,7 +188,127 @@
 			</li>
 		</comps>
 	</HediffDef>
-	
+
+	<HediffDef ParentName="LarvaEvolveBase">
+		<defName>LarvaEvolveStriker</defName>
+		<defaultLabelColor>(240,189,234)</defaultLabelColor>
+		<stages />
+		<comps>
+			<li Class="EBSGFramework.HediffCompProperties_DestroyOnDeath" />
+			<li Class="EBSGFramework.HediffCompProperties_PreventDeathNotifications" />
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>larvaEvolutionSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.33</baseSeverityPerDay>
+			</li>
+			<li Class="AmorTentaculum.HediffCompProperties_SpawnFactionPawnOnMaxSeverity">
+				<pawnKindOptions>
+					<li>TentacleStriker</li>
+				</pawnKindOptions>
+				<filthCreated>Filth_BloodInsect</filthCreated>
+				<filthCountRange>2~5</filthCountRange>
+				<sound>Hive_Spawn</sound>
+				<damage>Cut</damage>
+				<damageAmount>999~999</damageAmount>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="LarvaEvolveBase">
+		<defName>LarvaEvolveStinger</defName>
+		<defaultLabelColor>(240,189,234)</defaultLabelColor>
+		<stages />
+		<comps>
+			<li Class="EBSGFramework.HediffCompProperties_DestroyOnDeath" />
+			<li Class="EBSGFramework.HediffCompProperties_PreventDeathNotifications" />
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>larvaEvolutionSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.33</baseSeverityPerDay>
+			</li>
+			<li Class="AmorTentaculum.HediffCompProperties_SpawnFactionPawnOnMaxSeverity">
+				<pawnKindOptions>
+					<li>TentacleStinger</li>
+				</pawnKindOptions>
+				<filthCreated>Filth_BloodInsect</filthCreated>
+				<filthCountRange>2~5</filthCountRange>
+				<sound>Hive_Spawn</sound>
+				<damage>Cut</damage>
+				<damageAmount>999~999</damageAmount>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="LarvaEvolveBase">
+		<defName>LarvaEvolveBorer</defName>
+		<defaultLabelColor>(240,189,234)</defaultLabelColor>
+		<stages />
+		<comps>
+			<li Class="EBSGFramework.HediffCompProperties_DestroyOnDeath" />
+			<li Class="EBSGFramework.HediffCompProperties_PreventDeathNotifications" />
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>larvaEvolutionSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.25</baseSeverityPerDay>
+			</li>
+			<li Class="AmorTentaculum.HediffCompProperties_SpawnFactionPawnOnMaxSeverity">
+				<pawnKindOptions>
+					<li>TentacleBorer</li>
+				</pawnKindOptions>
+				<filthCreated>Filth_BloodInsect</filthCreated>
+				<filthCountRange>2~5</filthCountRange>
+				<sound>Hive_Spawn</sound>
+				<damage>Cut</damage>
+				<damageAmount>999~999</damageAmount>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="LarvaEvolveBase">
+		<defName>LarvaEvolveAbductor</defName>
+		<defaultLabelColor>(240,189,234)</defaultLabelColor>
+		<stages />
+		<comps>
+			<li Class="EBSGFramework.HediffCompProperties_DestroyOnDeath" />
+			<li Class="EBSGFramework.HediffCompProperties_PreventDeathNotifications" />
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>larvaEvolutionSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.2</baseSeverityPerDay>
+			</li>
+			<li Class="AmorTentaculum.HediffCompProperties_SpawnFactionPawnOnMaxSeverity">
+				<pawnKindOptions>
+					<li>TentacleAbductor</li>
+				</pawnKindOptions>
+				<filthCreated>Filth_BloodInsect</filthCreated>
+				<filthCountRange>2~5</filthCountRange>
+				<sound>Hive_Spawn</sound>
+				<damage>Cut</damage>
+				<damageAmount>999~999</damageAmount>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="LarvaEvolveBase">
+		<defName>LarvaEvolveHunter</defName>
+		<defaultLabelColor>(240,189,234)</defaultLabelColor>
+		<stages />
+		<comps>
+			<li Class="EBSGFramework.HediffCompProperties_DestroyOnDeath" />
+			<li Class="EBSGFramework.HediffCompProperties_PreventDeathNotifications" />
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>larvaEvolutionSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.2</baseSeverityPerDay>
+			</li>
+			<li Class="AmorTentaculum.HediffCompProperties_SpawnFactionPawnOnMaxSeverity">
+				<pawnKindOptions>
+					<li>TentacleHunter</li>
+				</pawnKindOptions>
+				<filthCreated>Filth_BloodInsect</filthCreated>
+				<filthCountRange>2~5</filthCountRange>
+				<sound>Hive_Spawn</sound>
+				<damage>Cut</damage>
+				<damageAmount>999~999</damageAmount>
+			</li>
+		</comps>
+	</HediffDef>
+
 	<!-- An hediff that can be applied to a tentacle (usually an Amor Squirmer) that will make its death silent (no letters) and not generate a corpse. -->
 	<HediffDef>
 		<defName>TentacleSacrifice</defName>

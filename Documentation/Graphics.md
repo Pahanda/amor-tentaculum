@@ -64,7 +64,10 @@
 | Buildings | Encounter Summon | Brewer Beacon | ![](../Textures/Things/Buildings/Summoners/BrewerSummoner.png) | `Textures/Things/Buildings/Summoners` | |
 | Buildings | Encounter Summon | Valkyrie Beacon | ![](../Textures/Things/Buildings/Summoners/TwinsSummoner.png) | `Textures/Things/Buildings/Summoners` | |
 | Buildings | Encounter Summon | War Womb Beacon | ![](../Textures/Things/Buildings/Summoners/WarWombSummoner.png) | `Textures/Things/Buildings/Summoners` | |
-| UI | Faction | Feral Tentacles | NYI | NYI | Simple silhouette for a faction icon. |
+| UI | Faction | Feral Tentacles | ![](../Textures/UI/Factions/TentacleFaction.png) | `Textures/UI/Factions` | NOTE: Colorized in-game with a gradient. |
+| Ideology | Precepts | Host Presence | ![](../Textures/Ideo/Precepts/AmorHostPresence_Precept.png) | `Textures/Ideo/Precepts` | |
+| Ideology | Precepts | Tentacles | ![](../Textures/Ideo/Precepts/AmorTentacle_Precept.png) | `Textures/Ideo/Precepts` | |
+| Ideology | Memes | Tentacles | ![](../Textures/Ideo/Memes/AmorTentacle_Meme.png) | `Textures/Ideo/Memes` | |
 
 NOTES:
 * For Host type pawns, some sort of partial graphic specific to the type might be appropriate.  For example, some sort of tentacle body growth overlay, and (for the Queen) a head crest?

@@ -448,13 +448,41 @@
 	<ReadyToEvolve.labelNoun>ready</ReadyToEvolve.labelNoun>
 	<ReadyToEvolve.description>This Amor Larva is ready to evolve. Use one of its Abilities to trigger the evolution.</ReadyToEvolve.description>
 
-	<LarvaEvolveSquirmer.label>evolving into squirmer</LarvaEvolveSquirmer.label>
+	<LarvaEvolveSquirmer.label>evolving into squirmers</LarvaEvolveSquirmer.label>
 	<LarvaEvolveSquirmer.labelNoun>evolving</LarvaEvolveSquirmer.labelNoun>
-	<LarvaEvolveSquirmer.description>This Amor Larva is evolving into an Amor Squirmer.</LarvaEvolveSquirmer.description>
+	<LarvaEvolveSquirmer.description>This Amor Larva is evolving into Amor Squirmers.</LarvaEvolveSquirmer.description>
 
-	<LarvaEvolveSpawner.label>evolving into squirmer</LarvaEvolveSpawner.label>
+	<LarvaEvolveGrazer.label>evolving into grazer</LarvaEvolveGrazer.label>
+	<LarvaEvolveGrazer.labelNoun>evolving</LarvaEvolveGrazer.labelNoun>
+	<LarvaEvolveGrazer.description>This Amor Larva is evolving into an Amor Grazer.</LarvaEvolveGrazer.description>
+
+	<LarvaEvolveProducer.label>evolving into producer</LarvaEvolveProducer.label>
+	<LarvaEvolveProducer.labelNoun>evolving</LarvaEvolveProducer.labelNoun>
+	<LarvaEvolveProducer.description>This Amor Larva is evolving into an Amor Producer.</LarvaEvolveProducer.description>
+
+	<LarvaEvolveSpawner.label>evolving into spawner</LarvaEvolveSpawner.label>
 	<LarvaEvolveSpawner.labelNoun>evolving</LarvaEvolveSpawner.labelNoun>
 	<LarvaEvolveSpawner.description>This Amor Larva is evolving into an Amor Spawner.</LarvaEvolveSpawner.description>
+
+	<LarvaEvolveStriker.label>evolving into Striker</LarvaEvolveStriker.label>
+	<LarvaEvolveStriker.labelNoun>evolving</LarvaEvolveStriker.labelNoun>
+	<LarvaEvolveStriker.description>This Amor Larva is evolving into an Amor Striker.</LarvaEvolveStriker.description>
+
+	<LarvaEvolveStinger.label>evolving into Stinger</LarvaEvolveStinger.label>
+	<LarvaEvolveStinger.labelNoun>evolving</LarvaEvolveStinger.labelNoun>
+	<LarvaEvolveStinger.description>This Amor Larva is evolving into an Amor Stinger.</LarvaEvolveStinger.description>
+
+	<LarvaEvolveBorer.label>evolving into Borer</LarvaEvolveBorer.label>
+	<LarvaEvolveBorer.labelNoun>evolving</LarvaEvolveBorer.labelNoun>
+	<LarvaEvolveBorer.description>This Amor Larva is evolving into an Amor Borer.</LarvaEvolveBorer.description>
+
+	<LarvaEvolveAbductor.label>evolving into Abductor</LarvaEvolveAbductor.label>
+	<LarvaEvolveAbductor.labelNoun>evolving</LarvaEvolveAbductor.labelNoun>
+	<LarvaEvolveAbductor.description>This Amor Larva is evolving into an Amor Abductor.</LarvaEvolveAbductor.description>
+
+	<LarvaEvolveHunter.label>evolving into Hunter</LarvaEvolveHunter.label>
+	<LarvaEvolveHunter.labelNoun>evolving</LarvaEvolveHunter.labelNoun>
+	<LarvaEvolveHunter.description>This Amor Larva is evolving into an Amor Hunter.</LarvaEvolveHunter.description>
 
 	<TentacleSacrifice.label>sacrificing</TentacleSacrifice.label>
 	<TentacleSacrifice.labelNoun>sacrificing</TentacleSacrifice.labelNoun>
