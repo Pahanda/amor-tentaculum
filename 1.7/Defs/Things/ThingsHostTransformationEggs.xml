@@ -33,18 +33,78 @@
 			<ingestReportStringEat>Inserting {0}.</ingestReportStringEat>
 			<useEatingSpeedStat>false</useEatingSpeedStat>
 			<outcomeDoers>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>QueenEggIncubationSuccess</hediffDef>
-					<severity>1.45</severity>
-				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>QueenEggIncubationFailure</hediffDef>
-					<severity>0.1</severity>
-				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>QueenEggOverrideFailure</hediffDef>
-					<severity>0.1</severity>
-				</li>
+				<li Class="AmorTentaculum.IngestionOutcomeDoer_ConditionalGiveHediff">
+					<conditionalSets>
+						<li>
+							<hediff>QueenEggIncubation</hediff>
+							<severity>0.001</severity>
+							<hediffConditionals>
+								<!--<li>QueenEggIncubation</li>-->
+								<li>BaronessEggIncubation</li>
+								<li>NymphEggIncubation</li>
+								<li>RogueEggIncubation</li>
+								<li>BaronEggIncubation</li>
+								<li>KnightEggIncubation</li>
+								<li>ServantEggIncubation</li>
+								<!--<li>QueenTransform</li>-->
+								<li>BaronessTransform</li>
+								<li>NymphTransform</li>
+								<li>RogueTransform</li>
+								<li>BaronTransform</li>
+								<li>KnightTransform</li>
+								<li>ServantTransform</li>
+								<li>TentacleStorage</li>
+							</hediffConditionals>
+							<hediffComparator>none</hediffComparator>
+							<genderConditionals>
+								<li>HasPenis</li>
+								<li>Male</li>
+								<li>Trap</li>
+							</genderConditionals>
+							<genderComparator>none</genderComparator>
+					  </li>
+						<li>
+							<hediff>QueenEggOverrideFailure</hediff>
+							<severity>0.01</severity>
+							<hediffConditionals>
+								<!--<li>QueenEggIncubation</li>-->
+								<li>BaronessEggIncubation</li>
+								<li>NymphEggIncubation</li>
+								<li>RogueEggIncubation</li>
+								<li>BaronEggIncubation</li>
+								<li>KnightEggIncubation</li>
+								<li>ServantEggIncubation</li>
+								<li>QueenTransform</li>
+								<li>BaronessTransform</li>
+								<li>NymphTransform</li>
+								<li>RogueTransform</li>
+								<li>BaronTransform</li>
+								<li>KnightTransform</li>
+								<li>ServantTransform</li>
+								<li>TentacleStorage</li>
+							</hediffConditionals>
+							<hediffComparator>atLeastOne</hediffComparator>
+							<genderConditionals>
+								<li>HasPenis</li>
+								<li>Male</li>
+								<li>Trap</li>
+							</genderConditionals>
+							<genderComparator>none</genderComparator>
+						</li>
+						<li>
+							<hediff>QueenEggIncubationFailure</hediff>
+							<severity>0.01</severity>
+							<hediffConditionals />
+							<hediffComparator>none</hediffComparator>
+							<genderConditionals>
+								<li>HasPenis</li>
+								<li>Male</li>
+								<li>Trap</li>
+							</genderConditionals>
+							<genderComparator>any</genderComparator>
+						</li>
+		  	  </conditionalSets>
+		    </li>
 			</outcomeDoers>
 		</ingestible>
 		<recipeMaker>
@@ -103,17 +163,77 @@
 			<ingestReportStringEat>Inserting {0}.</ingestReportStringEat>
 			<useEatingSpeedStat>false</useEatingSpeedStat>
 			<outcomeDoers>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>BaronessEggIncubationSuccess</hediffDef>
-					<severity>1.45</severity>
-				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>BaronessEggIncubationFailure</hediffDef>
-					<severity>0.1</severity>
-				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>BaronessEggOverrideFailure</hediffDef>
-					<severity>0.1</severity>
+				<li Class="AmorTentaculum.IngestionOutcomeDoer_ConditionalGiveHediff">
+					<conditionalSets>
+						<li>
+							<hediff>BaronessEggIncubation</hediff>
+							<severity>0.001</severity>
+							<hediffConditionals>
+								<li>QueenEggIncubation</li>
+								<!--<li>BaronessEggIncubation</li>-->
+								<li>NymphEggIncubation</li>
+								<li>RogueEggIncubation</li>
+								<li>BaronEggIncubation</li>
+								<li>KnightEggIncubation</li>
+								<li>ServantEggIncubation</li>
+								<li>QueenTransform</li>
+								<!--<li>BaronessTransform</li>-->
+								<li>NymphTransform</li>
+								<li>RogueTransform</li>
+								<li>BaronTransform</li>
+								<li>KnightTransform</li>
+								<li>ServantTransform</li>
+								<li>TentacleStorage</li>
+							</hediffConditionals>
+							<hediffComparator>none</hediffComparator>
+							<genderConditionals>
+								<li>HasPenis</li>
+								<li>Male</li>
+								<li>Trap</li>
+							</genderConditionals>
+							<genderComparator>none</genderComparator>
+						</li>
+						<li>
+							<hediff>BaronessEggOverrideFailure</hediff>
+							<severity>0.01</severity>
+							<hediffConditionals>
+								<li>QueenEggIncubation</li>
+								<!--<li>BaronessEggIncubation</li>-->
+								<li>NymphEggIncubation</li>
+								<li>RogueEggIncubation</li>
+								<li>BaronEggIncubation</li>
+								<li>KnightEggIncubation</li>
+								<li>ServantEggIncubation</li>
+								<li>QueenTransform</li>
+								<li>BaronessTransform</li>
+								<li>NymphTransform</li>
+								<li>RogueTransform</li>
+								<li>BaronTransform</li>
+								<li>KnightTransform</li>
+								<li>ServantTransform</li>
+								<li>TentacleStorage</li>
+							</hediffConditionals>
+							<hediffComparator>atLeastOne</hediffComparator>
+							<genderConditionals>
+								<li>HasPenis</li>
+								<li>Male</li>
+								<li>Trap</li>
+							</genderConditionals>
+							<genderComparator>none</genderComparator>
+						</li>
+						<li>
+							<hediff>BaronessEggIncubationFailure</hediff>
+							<severity>0.01</severity>
+							<hediffConditionals />
+							<hediffComparator>none</hediffComparator>
+							<genderConditionals>
+								<li>HasPenis</li>
+								<li>Male</li>
+								<li>Trap</li>
+							</genderConditionals>
+							<genderComparator>any</genderComparator>
+						</li>
+					</conditionalSets>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -172,17 +292,77 @@
 			<ingestReportStringEat>Inserting {0}.</ingestReportStringEat>
 			<useEatingSpeedStat>false</useEatingSpeedStat>
 			<outcomeDoers>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>NymphEggIncubationSuccess</hediffDef>
-					<severity>1.45</severity>
-				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>NymphEggIncubationFailure</hediffDef>
-					<severity>0.1</severity>
-				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>NymphEggOverrideFailure</hediffDef>
-					<severity>0.1</severity>
+				<li Class="AmorTentaculum.IngestionOutcomeDoer_ConditionalGiveHediff">
+					<conditionalSets>
+						<li>
+							<hediff>NymphEggIncubation</hediff>
+							<severity>0.001</severity>
+							<hediffConditionals>
+								<li>QueenEggIncubation</li>
+								<li>BaronessEggIncubation</li>
+								<!--<li>NymphEggIncubation</li>-->
+								<li>RogueEggIncubation</li>
+								<li>BaronEggIncubation</li>
+								<li>KnightEggIncubation</li>
+								<li>ServantEggIncubation</li>
+								<li>QueenTransform</li>
+								<li>BaronessTransform</li>
+								<!--<li>NymphTransform</li>-->
+								<li>RogueTransform</li>
+								<li>BaronTransform</li>
+								<li>KnightTransform</li>
+								<li>ServantTransform</li>
+								<li>TentacleStorage</li>
+							</hediffConditionals>
+							<hediffComparator>none</hediffComparator>
+							<genderConditionals>
+								<li>HasPenis</li>
+								<li>Male</li>
+								<li>Trap</li>
+							</genderConditionals>
+							<genderComparator>none</genderComparator>
+						</li>
+						<li>
+							<hediff>NymphEggOverrideFailure</hediff>
+							<severity>0.01</severity>
+							<hediffConditionals>
+								<li>QueenEggIncubation</li>
+								<li>BaronessEggIncubation</li>
+								<!--<li>NymphEggIncubation</li>-->
+								<li>RogueEggIncubation</li>
+								<li>BaronEggIncubation</li>
+								<li>KnightEggIncubation</li>
+								<li>ServantEggIncubation</li>
+								<li>QueenTransform</li>
+								<li>BaronessTransform</li>
+								<li>NymphTransform</li>
+								<li>RogueTransform</li>
+								<li>BaronTransform</li>
+								<li>KnightTransform</li>
+								<li>ServantTransform</li>
+								<li>TentacleStorage</li>
+							</hediffConditionals>
+							<hediffComparator>atLeastOne</hediffComparator>
+							<genderConditionals>
+								<li>HasPenis</li>
+								<li>Male</li>
+								<li>Trap</li>
+							</genderConditionals>
+							<genderComparator>none</genderComparator>
+						</li>
+						<li>
+							<hediff>NymphEggIncubationFailure</hediff>
+							<severity>0.01</severity>
+							<hediffConditionals />
+							<hediffComparator>none</hediffComparator>
+							<genderConditionals>
+								<li>HasPenis</li>
+								<li>Male</li>
+								<li>Trap</li>
+							</genderConditionals>
+							<genderComparator>any</genderComparator>
+						</li>
+					</conditionalSets>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -241,17 +421,77 @@
 			<ingestReportStringEat>Inserting {0}.</ingestReportStringEat>
 			<useEatingSpeedStat>false</useEatingSpeedStat>
 			<outcomeDoers>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>BaronEggIncubationSuccess</hediffDef>
-					<severity>1.45</severity>
-				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>BaronEggIncubationFailure</hediffDef>
-					<severity>0.1</severity>
-				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>BaronEggOverrideFailure</hediffDef>
-					<severity>0.1</severity>
+				<li Class="AmorTentaculum.IngestionOutcomeDoer_ConditionalGiveHediff">
+					<conditionalSets>
+						<li>
+							<hediff>BaronEggIncubation</hediff>
+							<severity>0.001</severity>
+							<hediffConditionals>
+								<li>QueenEggIncubation</li>
+								<li>BaronessEggIncubation</li>
+								<li>NymphEggIncubation</li>
+								<li>RogueEggIncubation</li>
+								<!--<li>BaronEggIncubation</li>-->
+								<li>KnightEggIncubation</li>
+								<li>ServantEggIncubation</li>
+								<li>QueenTransform</li>
+								<li>BaronessTransform</li>
+								<li>NymphTransform</li>
+								<li>RogueTransform</li>
+								<!--<li>BaronTransform</li>-->
+								<li>KnightTransform</li>
+								<li>ServantTransform</li>
+								<li>TentacleStorage</li>
+							</hediffConditionals>
+							<hediffComparator>none</hediffComparator>
+							<genderConditionals>
+								<li>HasVagina</li>
+								<li>Female</li>
+								<li>Futa</li>
+							</genderConditionals>
+							<genderComparator>none</genderComparator>
+						</li>
+						<li>
+							<hediff>BaronEggOverrideFailure</hediff>
+							<severity>0.01</severity>
+							<hediffConditionals>
+								<li>QueenEggIncubation</li>
+								<li>BaronessEggIncubation</li>
+								<li>NymphEggIncubation</li>
+								<li>RogueEggIncubation</li>
+								<!--<li>BaronEggIncubation</li>-->
+								<li>KnightEggIncubation</li>
+								<li>ServantEggIncubation</li>
+								<li>QueenTransform</li>
+								<li>BaronessTransform</li>
+								<li>NymphTransform</li>
+								<li>RogueTransform</li>
+								<li>BaronTransform</li>
+								<li>KnightTransform</li>
+								<li>ServantTransform</li>
+								<li>TentacleStorage</li>
+							</hediffConditionals>
+							<hediffComparator>atLeastOne</hediffComparator>
+							<genderConditionals>
+								<li>HasVagina</li>
+								<li>Female</li>
+								<li>Futa</li>
+							</genderConditionals>
+							<genderComparator>none</genderComparator>
+						</li>
+						<li>
+							<hediff>BaronEggIncubationFailure</hediff>
+							<severity>0.01</severity>
+							<hediffConditionals />
+							<hediffComparator>none</hediffComparator>
+							<genderConditionals>
+								<li>HasVagina</li>
+								<li>Female</li>
+								<li>Futa</li>
+							</genderConditionals>
+							<genderComparator>any</genderComparator>
+						</li>
+					</conditionalSets>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -310,17 +550,77 @@
 			<ingestReportStringEat>Inserting {0}.</ingestReportStringEat>
 			<useEatingSpeedStat>false</useEatingSpeedStat>
 			<outcomeDoers>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>RogueEggIncubationSuccess</hediffDef>
-					<severity>1.45</severity>
-				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>RogueEggIncubationFailure</hediffDef>
-					<severity>0.1</severity>
-				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>RogueEggOverrideFailure</hediffDef>
-					<severity>0.1</severity>
+				<li Class="AmorTentaculum.IngestionOutcomeDoer_ConditionalGiveHediff">
+					<conditionalSets>
+						<li>
+							<hediff>RogueEggIncubation</hediff>
+							<severity>0.001</severity>
+							<hediffConditionals>
+								<li>QueenEggIncubation</li>
+								<li>BaronessEggIncubation</li>
+								<li>NymphEggIncubation</li>
+								<!--<li>RogueEggIncubation</li>-->
+								<li>BaronEggIncubation</li>
+								<li>KnightEggIncubation</li>
+								<li>ServantEggIncubation</li>
+								<li>QueenTransform</li>
+								<li>BaronessTransform</li>
+								<li>NymphTransform</li>
+								<!--<li>RogueTransform</li>-->
+								<li>BaronTransform</li>
+								<li>KnightTransform</li>
+								<li>ServantTransform</li>
+								<li>TentacleStorage</li>
+							</hediffConditionals>
+							<hediffComparator>none</hediffComparator>
+							<genderConditionals>
+								<li>HasVagina</li>
+								<li>Female</li>
+								<li>Futa</li>
+							</genderConditionals>
+							<genderComparator>none</genderComparator>
+						</li>
+						<li>
+							<hediff>RogueEggOverrideFailure</hediff>
+							<severity>0.01</severity>
+							<hediffConditionals>
+								<li>QueenEggIncubation</li>
+								<li>BaronessEggIncubation</li>
+								<li>NymphEggIncubation</li>
+								<!--<li>RogueEggIncubation</li>-->
+								<li>BaronEggIncubation</li>
+								<li>KnightEggIncubation</li>
+								<li>ServantEggIncubation</li>
+								<li>QueenTransform</li>
+								<li>BaronessTransform</li>
+								<li>NymphTransform</li>
+								<li>RogueTransform</li>
+								<li>BaronTransform</li>
+								<li>KnightTransform</li>
+								<li>ServantTransform</li>
+								<li>TentacleStorage</li>
+							</hediffConditionals>
+							<hediffComparator>atLeastOne</hediffComparator>
+							<genderConditionals>
+								<li>HasVagina</li>
+								<li>Female</li>
+								<li>Futa</li>
+							</genderConditionals>
+							<genderComparator>none</genderComparator>
+						</li>
+						<li>
+							<hediff>RogueEggIncubationFailure</hediff>
+							<severity>0.01</severity>
+							<hediffConditionals />
+							<hediffComparator>none</hediffComparator>
+							<genderConditionals>
+								<li>HasVagina</li>
+								<li>Female</li>
+								<li>Futa</li>
+							</genderConditionals>
+							<genderComparator>any</genderComparator>
+						</li>
+					</conditionalSets>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -379,17 +679,77 @@
 			<ingestReportStringEat>Inserting {0}.</ingestReportStringEat>
 			<useEatingSpeedStat>false</useEatingSpeedStat>
 			<outcomeDoers>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>KnightEggIncubationSuccess</hediffDef>
-					<severity>1.45</severity>
-				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>KnightEggIncubationFailure</hediffDef>
-					<severity>0.1</severity>
-				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>KnightEggOverrideFailure</hediffDef>
-					<severity>0.1</severity>
+				<li Class="AmorTentaculum.IngestionOutcomeDoer_ConditionalGiveHediff">
+					<conditionalSets>
+						<li>
+							<hediff>KnightEggIncubation</hediff>
+							<severity>0.001</severity>
+							<hediffConditionals>
+								<li>QueenEggIncubation</li>
+								<li>BaronessEggIncubation</li>
+								<li>NymphEggIncubation</li>
+								<li>RogueEggIncubation</li>
+								<li>BaronEggIncubation</li>
+								<!--<li>KnightEggIncubation</li>-->
+								<li>ServantEggIncubation</li>
+								<li>QueenTransform</li>
+								<li>BaronessTransform</li>
+								<li>NymphTransform</li>
+								<li>RogueTransform</li>
+								<li>BaronTransform</li>
+								<!--<li>KnightTransform</li>-->
+								<li>ServantTransform</li>
+								<li>TentacleStorage</li>
+							</hediffConditionals>
+							<hediffComparator>none</hediffComparator>
+							<genderConditionals>
+								<li>HasVagina</li>
+								<li>Female</li>
+								<li>Futa</li>
+							</genderConditionals>
+							<genderComparator>none</genderComparator>
+						</li>
+						<li>
+							<hediff>KnightEggOverrideFailure</hediff>
+							<severity>0.01</severity>
+							<hediffConditionals>
+								<li>QueenEggIncubation</li>
+								<li>BaronessEggIncubation</li>
+								<li>NymphEggIncubation</li>
+								<li>RogueEggIncubation</li>
+								<li>BaronEggIncubation</li>
+								<!--<li>KnightEggIncubation</li>-->
+								<li>ServantEggIncubation</li>
+								<li>QueenTransform</li>
+								<li>BaronessTransform</li>
+								<li>NymphTransform</li>
+								<li>RogueTransform</li>
+								<li>BaronTransform</li>
+								<li>KnightTransform</li>
+								<li>ServantTransform</li>
+								<li>TentacleStorage</li>
+							</hediffConditionals>
+							<hediffComparator>atLeastOne</hediffComparator>
+							<genderConditionals>
+								<li>HasVagina</li>
+								<li>Female</li>
+								<li>Futa</li>
+							</genderConditionals>
+							<genderComparator>none</genderComparator>
+						</li>
+						<li>
+							<hediff>KnightEggIncubationFailure</hediff>
+							<severity>0.01</severity>
+							<hediffConditionals />
+							<hediffComparator>none</hediffComparator>
+							<genderConditionals>
+								<li>HasVagina</li>
+								<li>Female</li>
+								<li>Futa</li>
+							</genderConditionals>
+							<genderComparator>any</genderComparator>
+						</li>
+					</conditionalSets>
 				</li>
 			</outcomeDoers>
 		</ingestible>
@@ -448,17 +808,77 @@
 			<ingestReportStringEat>Inserting {0}.</ingestReportStringEat>
 			<useEatingSpeedStat>false</useEatingSpeedStat>
 			<outcomeDoers>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>ServantEggIncubationSuccess</hediffDef>
-					<severity>1.45</severity>
-				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>ServantEggIncubationFailure</hediffDef>
-					<severity>0.1</severity>
-				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>ServantEggOverrideFailure</hediffDef>
-					<severity>0.1</severity>
+				<li Class="AmorTentaculum.IngestionOutcomeDoer_ConditionalGiveHediff">
+					<conditionalSets>
+						<li>
+							<hediff>ServantEggIncubation</hediff>
+							<severity>0.001</severity>
+							<hediffConditionals>
+								<li>QueenEggIncubation</li>
+								<li>BaronessEggIncubation</li>
+								<li>NymphEggIncubation</li>
+								<li>RogueEggIncubation</li>
+								<li>BaronEggIncubation</li>
+								<li>KnightEggIncubation</li>
+								<!--<li>ServantEggIncubation</li>-->
+								<li>QueenTransform</li>
+								<li>BaronessTransform</li>
+								<li>NymphTransform</li>
+								<li>RogueTransform</li>
+								<li>BaronTransform</li>
+								<li>KnightTransform</li>
+								<!--<li>ServantTransform</li>-->
+								<li>TentacleStorage</li>
+							</hediffConditionals>
+							<hediffComparator>none</hediffComparator>
+							<genderConditionals>
+								<li>HasVagina</li>
+								<li>Female</li>
+								<li>Futa</li>
+							</genderConditionals>
+							<genderComparator>none</genderComparator>
+						</li>
+						<li>
+							<hediff>ServantEggOverrideFailure</hediff>
+							<severity>0.01</severity>
+							<hediffConditionals>
+								<li>QueenEggIncubation</li>
+								<li>BaronessEggIncubation</li>
+								<li>NymphEggIncubation</li>
+								<li>RogueEggIncubation</li>
+								<li>BaronEggIncubation</li>
+								<li>KnightEggIncubation</li>
+								<!--<li>ServantEggIncubation</li>-->
+								<li>QueenTransform</li>
+								<li>BaronessTransform</li>
+								<li>NymphTransform</li>
+								<li>RogueTransform</li>
+								<li>BaronTransform</li>
+								<li>KnightTransform</li>
+								<li>ServantTransform</li>
+								<li>TentacleStorage</li>
+							</hediffConditionals>
+							<hediffComparator>atLeastOne</hediffComparator>
+							<genderConditionals>
+								<li>HasVagina</li>
+								<li>Female</li>
+								<li>Futa</li>
+							</genderConditionals>
+							<genderComparator>none</genderComparator>
+						</li>
+						<li>
+							<hediff>ServantEggIncubationFailure</hediff>
+							<severity>0.01</severity>
+							<hediffConditionals />
+							<hediffComparator>none</hediffComparator>
+							<genderConditionals>
+								<li>HasVagina</li>
+								<li>Female</li>
+								<li>Futa</li>
+							</genderConditionals>
+							<genderComparator>any</genderComparator>
+						</li>
+					</conditionalSets>
 				</li>
 			</outcomeDoers>
 		</ingestible>
