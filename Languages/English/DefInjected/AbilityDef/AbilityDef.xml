@@ -25,7 +25,21 @@
 	<AbilityTentacleUnbirth.description>Commands the Amor Squirmer to crawl inside the targeted Host, adding tentacle resources.</AbilityTentacleUnbirth.description>
 	<AbilityLarvaEvolveSquirmer.label>evolve into squirmers</AbilityLarvaEvolveSquirmer.label>
 	<AbilityLarvaEvolveSquirmer.description>Evolve the Larva into a small handful of Squirmers. Inefficient, but if you need some and don't have Spawners available...</AbilityLarvaEvolveSquirmer.description>
+	<AbilityLarvaEvolveGrazer.label>evolve into grazer</AbilityLarvaEvolveGrazer.label>
+	<AbilityLarvaEvolveGrazer.description>Evolve the Larva into an Amor Grazer, which can be raised for tentacle leather.</AbilityLarvaEvolveGrazer.description>
+	<AbilityLarvaEvolveProducer.label>evolve into producer</AbilityLarvaEvolveProducer.label>
+	<AbilityLarvaEvolveProducer.description>Evolve the Larva into an Amor Producer, which can be milked for tentacle resin.</AbilityLarvaEvolveProducer.description>
 	<AbilityLarvaEvolveSpawner.label>evolve into spawner</AbilityLarvaEvolveSpawner.label>
 	<AbilityLarvaEvolveSpawner.description>Evolve the Larva into an Amor Spawner, which will in turn produce Amor Squirmers.</AbilityLarvaEvolveSpawner.description>
+	<AbilityLarvaEvolveStriker.label>evolve into striker</AbilityLarvaEvolveStriker.label>
+	<AbilityLarvaEvolveStriker.description>Evolve the Larva into an Amor Striker, which can assault enemies at close range.</AbilityLarvaEvolveStriker.description>
+	<AbilityLarvaEvolveStinger.label>evolve into stinger</AbilityLarvaEvolveStinger.label>
+	<AbilityLarvaEvolveStinger.description>Evolve the Larva into an Amor Stinger, which can weaken and mind control enemies.</AbilityLarvaEvolveStinger.description>
+	<AbilityLarvaEvolveBorer.label>evolve into borer</AbilityLarvaEvolveBorer.label>
+	<AbilityLarvaEvolveBorer.description>Evolve the Larva into an Amor Borer, which can penetrate solid rock.</AbilityLarvaEvolveBorer.description>
+	<AbilityLarvaEvolveAbductor.label>evolve into abductor</AbilityLarvaEvolveAbductor.label>
+	<AbilityLarvaEvolveAbductor.description>Evolve the Larva into an Amor Abductor, which can capture incapacitated victims.</AbilityLarvaEvolveAbductor.description>
+	<AbilityLarvaEvolveHunter.label>evolve into hunter</AbilityLarvaEvolveHunter.label>
+	<AbilityLarvaEvolveHunter.description>Evolve the Larva into an Amor Hunter, which can shower enemies with chemical secretions.</AbilityLarvaEvolveHunter.description>
 
 </languageData>

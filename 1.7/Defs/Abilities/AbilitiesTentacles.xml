@@ -72,6 +72,8 @@
 		</comps>
 	</AbilityDef>
 
+	<!-- Larva Transformation -->
+
 	<AbilityDef Name="AbilityLarvaEvolveBase" Abstract="True">
 		<iconPath>Abilities/LarvalTransformation</iconPath>
 		<jobDef>CastAbilityOnThing</jobDef>
@@ -128,7 +130,7 @@
 		<comps>
 			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
 				<requiredResearchProjects>
-					<li>ATCore</li>
+					<li>ATLarvaBasic</li>
 				</requiredResearchProjects>
 				<casterHasAnyOfHediffs>
 					<li>ReadyToEvolve</li>
@@ -149,11 +151,61 @@
 	</AbilityDef>
 
 	<AbilityDef ParentName="AbilityLarvaEvolveBase">
+		<defName>AbilityLarvaEvolveGrazer</defName>
+		<comps>
+			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+				<requiredResearchProjects>
+					<li>ATLarvaBasic</li>
+				</requiredResearchProjects>
+				<casterHasAnyOfHediffs>
+					<li>ReadyToEvolve</li>
+				</casterHasAnyOfHediffs>
+				<hideGizmo>false</hideGizmo>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
+				<hediffsToGive>
+					<li>
+						<hediffDef>LarvaEvolveGrazer</hediffDef>
+						<applyToSelf>true</applyToSelf>
+						<replaceExisting>false</replaceExisting>
+						<severity>0.001</severity>
+					</li>
+				</hediffsToGive>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef ParentName="AbilityLarvaEvolveBase">
+		<defName>AbilityLarvaEvolveProducer</defName>
+		<comps>
+			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+				<requiredResearchProjects>
+					<li>ATLarvaBasic</li>
+				</requiredResearchProjects>
+				<casterHasAnyOfHediffs>
+					<li>ReadyToEvolve</li>
+				</casterHasAnyOfHediffs>
+				<hideGizmo>false</hideGizmo>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
+				<hediffsToGive>
+					<li>
+						<hediffDef>LarvaEvolveProducer</hediffDef>
+						<applyToSelf>true</applyToSelf>
+						<replaceExisting>false</replaceExisting>
+						<severity>0.001</severity>
+					</li>
+				</hediffsToGive>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef ParentName="AbilityLarvaEvolveBase">
 		<defName>AbilityLarvaEvolveSpawner</defName>
 		<comps>
 			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
 				<requiredResearchProjects>
-					<li>ATHostBasic</li>
+					<li>ATLarvaIntermediate</li>
 				</requiredResearchProjects>
 				<casterHasAnyOfHediffs>
 					<li>ReadyToEvolve</li>
@@ -164,6 +216,131 @@
 				<hediffsToGive>
 					<li>
 						<hediffDef>LarvaEvolveSpawner</hediffDef>
+						<applyToSelf>true</applyToSelf>
+						<replaceExisting>false</replaceExisting>
+						<severity>0.001</severity>
+					</li>
+				</hediffsToGive>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef ParentName="AbilityLarvaEvolveBase">
+		<defName>AbilityLarvaEvolveStriker</defName>
+		<comps>
+			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+				<requiredResearchProjects>
+					<li>ATLarvaIntermediate</li>
+				</requiredResearchProjects>
+				<casterHasAnyOfHediffs>
+					<li>ReadyToEvolve</li>
+				</casterHasAnyOfHediffs>
+				<hideGizmo>false</hideGizmo>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
+				<hediffsToGive>
+					<li>
+						<hediffDef>LarvaEvolveStriker</hediffDef>
+						<applyToSelf>true</applyToSelf>
+						<replaceExisting>false</replaceExisting>
+						<severity>0.001</severity>
+					</li>
+				</hediffsToGive>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef ParentName="AbilityLarvaEvolveBase">
+		<defName>AbilityLarvaEvolveStinger</defName>
+		<comps>
+			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+				<requiredResearchProjects>
+					<li>ATLarvaIntermediate</li>
+				</requiredResearchProjects>
+				<casterHasAnyOfHediffs>
+					<li>ReadyToEvolve</li>
+				</casterHasAnyOfHediffs>
+				<hideGizmo>false</hideGizmo>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
+				<hediffsToGive>
+					<li>
+						<hediffDef>LarvaEvolveStinger</hediffDef>
+						<applyToSelf>true</applyToSelf>
+						<replaceExisting>false</replaceExisting>
+						<severity>0.001</severity>
+					</li>
+				</hediffsToGive>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef ParentName="AbilityLarvaEvolveBase">
+		<defName>AbilityLarvaEvolveBorer</defName>
+		<comps>
+			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+				<requiredResearchProjects>
+					<li>ATLarvaAdvanced</li>
+				</requiredResearchProjects>
+				<casterHasAnyOfHediffs>
+					<li>ReadyToEvolve</li>
+				</casterHasAnyOfHediffs>
+				<hideGizmo>false</hideGizmo>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
+				<hediffsToGive>
+					<li>
+						<hediffDef>LarvaEvolveBorer</hediffDef>
+						<applyToSelf>true</applyToSelf>
+						<replaceExisting>false</replaceExisting>
+						<severity>0.001</severity>
+					</li>
+				</hediffsToGive>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef ParentName="AbilityLarvaEvolveBase">
+		<defName>AbilityLarvaEvolveAbductor</defName>
+		<comps>
+			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+				<requiredResearchProjects>
+					<li>ATLarvaAdvanced</li>
+				</requiredResearchProjects>
+				<casterHasAnyOfHediffs>
+					<li>ReadyToEvolve</li>
+				</casterHasAnyOfHediffs>
+				<hideGizmo>false</hideGizmo>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
+				<hediffsToGive>
+					<li>
+						<hediffDef>LarvaEvolveAbductor</hediffDef>
+						<applyToSelf>true</applyToSelf>
+						<replaceExisting>false</replaceExisting>
+						<severity>0.001</severity>
+					</li>
+				</hediffsToGive>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef ParentName="AbilityLarvaEvolveBase">
+		<defName>AbilityLarvaEvolveHunter</defName>
+		<comps>
+			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+				<requiredResearchProjects>
+					<li>ATLarvaAdvanced</li>
+				</requiredResearchProjects>
+				<casterHasAnyOfHediffs>
+					<li>ReadyToEvolve</li>
+				</casterHasAnyOfHediffs>
+				<hideGizmo>false</hideGizmo>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
+				<hediffsToGive>
+					<li>
+						<hediffDef>LarvaEvolveHunter</hediffDef>
 						<applyToSelf>true</applyToSelf>
 						<replaceExisting>false</replaceExisting>
 						<severity>0.001</severity>

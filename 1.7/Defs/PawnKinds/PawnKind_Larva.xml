@@ -22,7 +22,14 @@
     </lifeStages>
     <abilities>
       <li>AbilityLarvaEvolveSquirmer</li>
+      <li>AbilityLarvaEvolveGrazer</li>
+      <li>AbilityLarvaEvolveProducer</li>
       <li>AbilityLarvaEvolveSpawner</li>
+      <li>AbilityLarvaEvolveStriker</li>
+      <li>AbilityLarvaEvolveStinger</li>
+      <li>AbilityLarvaEvolveBorer</li>
+      <li>AbilityLarvaEvolveAbductor</li>
+      <li>AbilityLarvaEvolveHunter</li>
     </abilities>
   </PawnKindDef>
 </Defs>
