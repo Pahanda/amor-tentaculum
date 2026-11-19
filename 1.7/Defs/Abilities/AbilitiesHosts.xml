@@ -106,7 +106,7 @@
 
 	<AbilityDef ParentName="AbilityTouchBase">
 		<defName>TentacleTransfer</defName>
-		<iconPath>Abilities/TentacleKiss</iconPath>
+		<iconPath>Abilities/TentacleTransfer</iconPath>
 		<category>Tentacle</category>
 		<cooldownTicksRange>5</cooldownTicksRange>
 		<hostile>false</hostile>
@@ -270,20 +270,20 @@
 		</comps>
 	</AbilityDef>
 
-	<!-- Seduction Kiss -->
+	<!-- Seducing Kiss -->
 
 	<AbilityDef ParentName="AbilityTouchBase">
-		<defName>SeductionKiss</defName>
+		<defName>SeducingKiss</defName>
 		<iconPath>Abilities/TentacleKiss</iconPath>
 		<category>Tentacle</category>
 		<targetRequired>true</targetRequired>
 		<stunTargetWhileCasting>true</stunTargetWhileCasting>
-		<cooldownTicksRange>6000</cooldownTicksRange>
+		<cooldownTicksRange>15000</cooldownTicksRange>
 		<hostile>false</hostile>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<verbProperties>
 			<verbClass>Verb_CastAbilityTouch</verbClass>
-			<range>1</range>
+			<range>0</range>
 			<warmupTime>1</warmupTime>
 			<requireLineOfSight>true</requireLineOfSight>
 			<soundCast>AcidSpray_Resolve</soundCast>
@@ -297,6 +297,9 @@
 				<casterHasAnyOfHediffs>
 					<li>TentacleStorage</li>
 				</casterHasAnyOfHediffs>
+				<targetStatLimiters>
+					<Vulnerability>1.5~999</Vulnerability>
+				</targetStatLimiters>
 			</li>
 			<li Class="EBSGFramework.CompProperties_AbilityResourceCost">
 				<resourceCost>0.01</resourceCost>
@@ -306,7 +309,6 @@
 				<hediffsToGive>
 					<li>
 						<hediffDef>NymphSeduction</hediffDef>
-						<onlyApplyToSelf>false</onlyApplyToSelf>
 						<replaceExisting>true</replaceExisting>
 						<severity>1</severity>
 					</li>
@@ -326,12 +328,12 @@
 		<iconPath>Abilities/TentacleKiss</iconPath>
 		<category>Tentacle</category>
 		<targetRequired>true</targetRequired>
-		<cooldownTicksRange>600</cooldownTicksRange>
+		<cooldownTicksRange>30000</cooldownTicksRange>
 		<hostile>false</hostile>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
 		<verbProperties>
 			<verbClass>Verb_CastAbilityTouch</verbClass>
-			<range>1</range>
+			<range>0</range>
 			<warmupTime>2</warmupTime>
 			<requireLineOfSight>true</requireLineOfSight>
 			<soundCast>AcidSpray_Resolve</soundCast>
@@ -355,6 +357,15 @@
 				<minorChance>1</minorChance>
 				<majorChance>1</majorChance>
 				<extremeChance>1</extremeChance>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
+				<hediffsToGive>
+					<li>
+						<hediffDef>NymphFilthyMind</hediffDef>
+						<onlyBrain>true</onlyBrain>
+						<severity>0.5</severity>
+					</li>
+				</hediffsToGive>
 			</li>
 		</comps>
 	</AbilityDef>

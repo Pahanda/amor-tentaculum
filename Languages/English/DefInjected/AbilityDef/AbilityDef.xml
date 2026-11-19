@@ -8,8 +8,8 @@
 	<TentacleExpel.description>Expels an Amor Squirmer tentacle from the Host.\n\nWARNING: This is dangerous if the pawn runs out of stored tentacles!</TentacleExpel.description>
 	<TentacleTransfer.label>transfer tentacle</TentacleTransfer.label>
 	<TentacleTransfer.description>Transfer an Amor Squirmer tentacle from one Host to another.  With a sloppy kiss.\n\nWARNING: This is dangerous if the pawn runs out of stored tentacles!</TentacleTransfer.description>
-	<SeductionKiss.label>seduction kiss</SeductionKiss.label>
-	<SeductionKiss.description>Plant an Amor Squirmer in the target, weakening and incapacitating them for a short time. Costs one stored tentacle.</SeductionKiss.description>
+	<SeducingKiss.label>seducing kiss</SeducingKiss.label>
+	<SeducingKiss.description>Plant an Amor Squirmer in the target, weakening and incapacitating them for a short time.</SeducingKiss.description>
 	<PlacatingKiss.label>placating kiss</PlacatingKiss.label>
 	<PlacatingKiss.description>Use the Amor Squirmers inside the Host to calm a pawn and end their mental break. Costs one stored tentacle.</PlacatingKiss.description>
 	<IncubateAmorBroodMotherEgg.label>Incubate Amor Brood Mother egg</IncubateAmorBroodMotherEgg.label>

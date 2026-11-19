@@ -31,12 +31,22 @@
 	<ImplantStorageStomach.labelNoun>a storage stomach</ImplantStorageStomach.labelNoun>
 	<ImplantStorageStomach.description>A stomach replacement that lets ingested tentacles handle digestive processes for the Host. This affords the Host with additional tentacle capacity.</ImplantStorageStomach.description>
 
-
-
 	<!-- Worn Equipment -->
 
 	<TentacleCollarNumb.label>numbed</TentacleCollarNumb.label>
 	<TentacleCollarNumb.description>The secretions from the Tentacle Collar are numbing the wearer's body, making them more pliant and susceptible to control.</TentacleCollarNumb.description>
+
+	<!-- Nymph hediffs -->
+
+	<NymphFilthyMind.label>salacious thoughts</NymphFilthyMind.label>
+	<NymphFilthyMind.description>The Nymph's tentacles have filled this persons mind with filthy imagery.</NymphFilthyMind.description>
+	<NymphFilthyMind.stages.0.label>distracting</NymphFilthyMind.stages.0.label>
+	<NymphFilthyMind.stages.1.label>intrusive</NymphFilthyMind.stages.1.label>
+	<NymphFilthyMind.stages.2.label>obsessive</NymphFilthyMind.stages.2.label>
+
+	<NymphSeduction.label>nymph's kiss</NymphSeduction.label>
+	<NymphSeduction.description>The Nymph's tentacles have put this persons body into a weakened state.</NymphSeduction.description>
+
 
 	<!-- Brood Egg incubation -->
 
