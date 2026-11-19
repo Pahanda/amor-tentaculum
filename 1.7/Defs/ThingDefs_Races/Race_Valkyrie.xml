@@ -70,6 +70,9 @@
         <li>(-0.03, 0, 0.36)</li>
       </headPosPerRotation>
     </race>
+		<killedLeavings>
+			<BossGlandValkyrie>1</BossGlandValkyrie>
+		</killedLeavings>
     <tradeTags>
       <li>AnimalUncommon</li>
       <li>AnimalFighter</li>
