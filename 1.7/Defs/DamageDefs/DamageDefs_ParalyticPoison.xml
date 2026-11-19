@@ -1,0 +1,16 @@
+<Defs>
+	<DamageDef>
+		<defName>ParalyticPoisonDamage</defName>
+		<label>paralytic poison</label>
+		<canInterruptJobs>false</canInterruptJobs>
+		<makesBlood>false</makesBlood>
+		<defaultDamage>0</defaultDamage>
+		<harmsHealth>false</harmsHealth>
+		<additionalHediffs>
+			<li>
+				<hediff>ParalyticPoison</hediff>
+				<severityFixed>0.1</severityFixed>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+</Defs>

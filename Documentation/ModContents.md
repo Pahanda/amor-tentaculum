@@ -227,7 +227,10 @@ A buildable trap that releases a swarm of hostile tentacles when triggered.  Ten
 A whip crafted from tentacle resin and soft flesh.  Not particularly strong for raw damage output, but will inflict paralytic poison that builds up after repeated strikes.  Definitely Less-Than-Lethal, but can still kill.
 
 ### Resin Sword
-A sword forged from hard tentacle resin.  Due to the sharp nature of the material, it has high armor penetration.
+A sword forged from hard tentacle resin. Its sharp edge and point have slightly more armor penetration than a conventional longsword.
+
+### Resin Scimitar
+A curved blade forged from hard tentacle resin. It is slower and more difficult to craft than the resin sword, but its edge and point penetrate armor more effectively.
 
 ## Armor
 Note that most tentacle armor can only be worn by pawns that have been converted into tentacle hosts, as it interfaces neurally with the tentacles they carry within them for maximum effectiveness.

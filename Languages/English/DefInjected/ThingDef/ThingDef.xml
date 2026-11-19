@@ -226,5 +226,10 @@
 	<!-- Equipment -->
 	<TentacleCollar.label>tentacle collar</TentacleCollar.label>
 	<TentacleCollar.description>A large tentacle, curled tightly around the wearer's neck, used in controlling slaves. The tip goes over the wearer's mouth, hindering their ability to eat. Once settled, a small tendril will be extended inside the mouth, and will secrete drugs that provide a mild euphoric effert, suppressing the slave's resistance, increasing their sex drive, and making them more docile. Not nearly as invasive as an Indoctrination Implant.</TentacleCollar.description>
-	
+	<TentacleWhip.label>tentacle whip</TentacleWhip.label>
+	<TentacleWhip.description>A whip crafted from tentacle resin and soft flesh.  Not particularly strong for raw damage output, but inflicts paralytic poison that builds up after repeated strikes.  Definitely Less-Than-Lethal, but can still kill.</TentacleWhip.description>
+	<ResinSword.label>resin sword</ResinSword.label>
+	<ResinSword.description>A sword forged from hard tentacle resin. Its sharp edge and point have a little more armor penetration than a conventional longsword.</ResinSword.description>
+	<ResinScimitar.label>resin scimitar</ResinScimitar.label>
+	<ResinScimitar.description>A curved blade forged from hard tentacle resin. It is slower and more difficult to craft than the resin sword, but its edge and point penetrate armor more effectively.</ResinScimitar.description>
 </languageData>
