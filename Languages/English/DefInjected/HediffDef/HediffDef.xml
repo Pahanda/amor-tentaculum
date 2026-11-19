@@ -436,7 +436,7 @@
 
 	<!-- Tentacle hediffs -->
 	<AmorDroneLimitedLifespan.label>Unstable Vitals</AmorDroneLimitedLifespan.label>
-	<AmorDroneLimitedLifespan.description>Drones are never meant to live long; they die 6 hours after crawling out of the War Womb.</AmorDroneLimitedLifespan.description>
+	<AmorDroneLimitedLifespan.description>Drones are never meant to live long; they die a few hours after crawling out of the War Womb.</AmorDroneLimitedLifespan.description>
 	
 	<BodyVagrancy.label>body vagrancy</BodyVagrancy.label>
 	<BodyVagrancy.labelNoun>vagrancy</BodyVagrancy.labelNoun>

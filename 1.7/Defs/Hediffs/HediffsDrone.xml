@@ -3,7 +3,7 @@
   <HediffDef>
     <defName>AmorDroneLimitedLifespan</defName>
     <label>Unstable Vitals</label>
-    <description>Drones are never meant to live long; they die 6 hours after crawling out of the War Womb.</description>
+    <description>Drones are never meant to live long; they die a few hours after crawling out of the War Womb.</description>
     <hediffClass>HediffWithComps</hediffClass>
     <isBad>true</isBad>
     <everCurableByItem>false</everCurableByItem>
