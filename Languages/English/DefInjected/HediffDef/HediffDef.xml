@@ -435,6 +435,9 @@
 	<AmorServantHost.stages.2.label>industrious</AmorServantHost.stages.2.label>
 
 	<!-- Tentacle hediffs -->
+	<AmorDroneLimitedLifespan.label>Unstable Vitals</AmorDroneLimitedLifespan.label>
+	<AmorDroneLimitedLifespan.description>Drones are never meant to live long; they die a few hours after crawling out of the War Womb.</AmorDroneLimitedLifespan.description>
+	
 	<BodyVagrancy.label>body vagrancy</BodyVagrancy.label>
 	<BodyVagrancy.labelNoun>vagrancy</BodyVagrancy.labelNoun>
 	<BodyVagrancy.description>This creature is suffering from not being within a Host body.</BodyVagrancy.description>
@@ -492,7 +495,11 @@
 	<PawnRecycled.labelNoun>recycled</PawnRecycled.labelNoun>
 	<PawnRecycled.description>This pawn was recycled into raw resources.</PawnRecycled.description>
 
+	
 	<!-- Other hediffs -->
+	<WarWombCumDazed.label>Covered in Cum and Tentacles</WarWombCumDazed.label>
+	<WarWombCumDazed.description>The War Womb's proyectiles detonate into a rain of small tentacles and cum, temporarily impairing movement and sight, and making the target horny.</WarWombCumDazed.description>
+
 	<ParalyticPoison.label>amor paralytic poison</ParalyticPoison.label>
 	<ParalyticPoison.labelNoun>amor paralytic poison</ParalyticPoison.labelNoun>
 	<ParalyticPoison.description>A venom in the bloodstream common in the amor species that progressively suppresses movement and consciousness while slowly increasing vulnerability and sex drive, preparing the victim for what's to come. Its severity fades over time.</ParalyticPoison.description>

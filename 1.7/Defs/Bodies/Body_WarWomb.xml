@@ -144,6 +144,26 @@
           </parts>
         </li>
         <li>
+          <def>Genitals</def>
+          <coverage>0.005</coverage>
+          <height>Bottom</height>
+          <depth>Outside</depth>
+          <groups>
+            <li>Torso</li>
+            <li>GenitalsBPG</li>
+          </groups>
+        </li>
+        <li>
+          <def>Anus</def>
+          <coverage>0.001</coverage>
+          <height>Bottom</height>
+          <depth>Outside</depth>
+          <groups>
+            <li>Torso</li>
+            <li>AnusBPG</li>
+          </groups>
+        </li>
+        <li>
           <def>LargeTentacleLeg</def>
           <customLabel>front left leg</customLabel>
           <coverage>0.03</coverage>

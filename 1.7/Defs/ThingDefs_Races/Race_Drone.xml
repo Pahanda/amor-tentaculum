@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="AnimalThingBase">
+    <defName>TentacleDrone</defName>
+    <tradeability>None</tradeability>
+    <statBases>
+      <MoveSpeed>3.5</MoveSpeed>
+      <MarketValue>180</MarketValue>
+      <ComfyTemperatureMin>0</ComfyTemperatureMin>
+      <ComfyTemperatureMax>90</ComfyTemperatureMax>
+      <Wildness>0</Wildness>
+    </statBases>
+    <uiIconScale>1.1</uiIconScale>
+    <tools>
+      <li>
+        <capacities>
+          <li>Bite</li>
+          <li>Blunt</li>
+        </capacities>
+        <power>6</power>
+        <cooldownTime>1.8</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+      </li>
+    </tools>
+    <comps>
+      <li Class="VEF.AnimalBehaviours.CompProperties_FixedGender">
+        <gender>Male</gender>
+      </li>
+      <li Class="VEF.AnimalBehaviours.CompProperties_InitialHediff">
+        <hediffname>AmorDroneLimitedLifespan</hediffname>
+        <hediffseverity>0.001</hediffseverity>
+      </li>
+      <li Class="VEF.AnimalBehaviours.CompProperties_Draftable" />
+    </comps>
+    <race>
+      <body>SmallTentacleSnake</body>
+      <thinkTreeConstant>AmorDroneConstant</thinkTreeConstant>
+      <predator>true</predator>
+      <maxPreyBodySize>1</maxPreyBodySize>
+      <baseBodySize>0.15</baseBodySize>
+      <baseHungerRate>0.035</baseHungerRate>
+      <baseHealthScale>0.7</baseHealthScale>
+      <hasCorpse>false</hasCorpse>
+      <hasMeat>false</hasMeat>
+      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+      <trainability>Intermediate</trainability>
+      <petness>0.05</petness>
+      <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+      <manhunterOnDamageChance>0.5</manhunterOnDamageChance>
+      <nameOnTameChance>1</nameOnTameChance>
+      <lifeExpectancy>5</lifeExpectancy>
+      <lifeStageAges>
+        <li>
+          <def>AnimalAdult</def>
+          <minAge>0</minAge>
+          <soundWounded>Pawn_Cobra_Wounded</soundWounded>
+          <soundDeath>Pawn_Rodent_Death</soundDeath>
+          <soundCall>Pawn_Cobra_Call</soundCall>
+          <soundAngry>Pawn_Cobra_Angry</soundAngry>
+        </li>
+      </lifeStageAges>
+      <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+      <soundEating>Reptile_Eat</soundEating>
+      <headPosPerRotation>
+        <li>(-0.03, 0, 0.35)</li>
+        <li>(0.03, 0, 0.36)</li>
+        <li>(-0.05, 0, 0.28)</li>
+        <li>(-0.03, 0, 0.36)</li>
+      </headPosPerRotation>
+    </race>
+    <filthLeaving>Filth_Blood</filthLeaving>
+    <killedLeavingsChance>1</killedLeavingsChance>
+    <killedLeavings>
+      <SoftResin>1</SoftResin>
+    </killedLeavings>
+    <tradeTags>
+      <li>AnimalUncommon</li>
+      <li>AnimalFighter</li>
+    </tradeTags>
+    <modExtensions>
+      <li Class="AmorTentaculum.AmorTentaculumRaceExtension" />
+    </modExtensions>
+  </ThingDef>
+  <rjw.RaceGroupDef>
+    <defName>TentacleDroneRJW</defName>
+    <raceNames>
+      <li>TentacleDrone</li>
+    </raceNames>
+    <anuses>
+      <li>TentacleAnus</li>
+    </anuses>
+    <femaleBreasts />
+    <femaleGenitals />
+    <maleBreasts />
+    <maleGenitals>
+      <li>TentaclePenis</li>
+    </maleGenitals>
+    <hasSingleGender>true</hasSingleGender>
+    <hasSexNeed>true</hasSexNeed>
+    <hasFertility>false</hasFertility>
+    <hasPregnancy>false</hasPregnancy>
+  </rjw.RaceGroupDef>
+</Defs>
