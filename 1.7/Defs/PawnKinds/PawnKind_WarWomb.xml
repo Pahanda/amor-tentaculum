@@ -31,5 +31,9 @@
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
+    <abilities>
+      <li>WarWombSpawnDrones</li>
+      <li>WarWombCumBombardment</li>
+    </abilities>
   </PawnKindDef>
 </Defs>

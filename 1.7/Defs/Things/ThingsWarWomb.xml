@@ -1,0 +1,42 @@
+<Defs>
+	<ThingDef ParentName="BaseBullet">
+		<defName>WarWombCumProjectile</defName>
+		<label>explosive cum</label>
+		<graphicData>
+			<texPath>Things/Items/TentacleSlime/TentacleSlimeA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.6</drawSize>
+			<color>(1,0.65,0.9)</color>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>WarWombCumExplosion</damageDef>
+			<damageAmountBase>36</damageAmountBase>
+			<speed>25</speed>
+			<explosionRadius>7.2</explosionRadius>
+			<soundExplode>Explosion_FirefoamPopper</soundExplode>
+			<postExplosionSpawnThingDef>Filth_WarWombCum</postExplosionSpawnThingDef>
+			<postExplosionSpawnChance>1</postExplosionSpawnChance>
+			<postExplosionSpawnThingCount>1</postExplosionSpawnThingCount>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseFilth">
+		<defName>Filth_WarWombCum</defName>
+		<label>slimy white liquid</label>
+		<statBases>
+			<Beauty>-25</Beauty>
+			<Cleanliness>-5</Cleanliness>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Filth/PoolSoft</texPath>
+			<color>(255,255,255,180)</color>
+		</graphicData>
+		<filth>
+			<disappearsInDays>35~40</disappearsInDays>
+			<rainWashes>true</rainWashes>
+			<cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+			<canFilthAttach>true</canFilthAttach>
+			<cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+		</filth>
+	</ThingDef>
+</Defs>

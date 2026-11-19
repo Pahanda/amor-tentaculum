@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef>
+    <defName>AmorDroneLimitedLifespan</defName>
+    <label>Unstable Vitals</label>
+    <description>Drones are never meant to live long; they die 6 hours after crawling out of the War Womb.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <isBad>true</isBad>
+    <everCurableByItem>false</everCurableByItem>
+    <initialSeverity>0.001</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <lethalSeverity>1</lethalSeverity>
+    <stages />
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>3.996</severityPerDay>
+      </li>
+    </comps>
+  </HediffDef>
+</Defs>

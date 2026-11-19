@@ -81,6 +81,8 @@
 	<TentacleSpawner.description>A huge mass of tentacles with a smaller, central female body. The Amor Spawner is entirely dedicated to breeding Squirmers, which Hosts use to fuel their abilities.</TentacleSpawner.description>
 	<TentacleSquirmer.label>Amor Squirmer</TentacleSquirmer.label>
 	<TentacleSquirmer.description>A long, snake-like tentacle meant to live inside Host bodies. Freezes to death quickly when not inside its native habitat.</TentacleSquirmer.description>
+	<TentacleDrone.label>Amor Drone</TentacleDrone.label>
+	<TentacleDrone.description>A snake-like tentacle that has crawled out of a War Womb's pussy, ready to attack. It has a limited lifespan, dying a few hours after being created.</TentacleDrone.description>
 	<TentacleLarva.label>Amor Larva</TentacleLarva.label>
 	<TentacleLarva.description>A small Tentacle in larval form. Doesn't serve any purpose besides evolving into more-advanced Tentacle forms. Research will unlock more advanced forms to choose from.</TentacleLarva.description>
 	<TentacleBorer.label>Amor Borer</TentacleBorer.label>
@@ -117,6 +119,7 @@
 	<TentacleLarva.tools.0.label>head</TentacleLarva.tools.0.label>
 	<TentacleSpawner.tools.0.label>tentacle</TentacleSpawner.tools.0.label>
 	<TentacleSquirmer.tools.0.label>head</TentacleSquirmer.tools.0.label>
+	<TentacleDrone.tools.0.label>head</TentacleDrone.tools.0.label>
 	<TentacleStinger.tools.0.label>venom stinger</TentacleStinger.tools.0.label>
 	<TentacleStriker.tools.0.label>mouth tentacle</TentacleStriker.tools.0.label>
 	<TentacleValkyrie.tools.0.label>back tentacle strike</TentacleValkyrie.tools.0.label>

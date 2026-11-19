@@ -435,6 +435,9 @@
 	<AmorServantHost.stages.2.label>industrious</AmorServantHost.stages.2.label>
 
 	<!-- Tentacle hediffs -->
+	<AmorDroneLimitedLifespan.label>Unstable Vitals</AmorDroneLimitedLifespan.label>
+	<AmorDroneLimitedLifespan.description>Drones are never meant to live long; they die 6 hours after crawling out of the War Womb.</AmorDroneLimitedLifespan.description>
+	
 	<BodyVagrancy.label>body vagrancy</BodyVagrancy.label>
 	<BodyVagrancy.labelNoun>vagrancy</BodyVagrancy.labelNoun>
 	<BodyVagrancy.description>This creature is suffering from not being within a Host body.</BodyVagrancy.description>
@@ -491,5 +494,8 @@
 	<PawnRecycled.label>recycled</PawnRecycled.label>
 	<PawnRecycled.labelNoun>recycled</PawnRecycled.labelNoun>
 	<PawnRecycled.description>This pawn was recycled into raw resources.</PawnRecycled.description>
+
+	<WarWombCumDazed.label>Covered in Cum and Tentacles</WarWombCumDazed.label>
+	<WarWombCumDazed.description>The War Womb's proyectiles detonate into a rain of small tentacles and cum, temporarily impairing movement and sight.</WarWombCumDazed.description>
 
 </languageData>
