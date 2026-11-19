@@ -37,7 +37,8 @@
 | Buildings | Defensive | Paralysis Trap | ![](../Textures/Things/Buildings/Traps/ParalysisTrap.png) | `Textures/Things/Buildings/Traps` | |
 | Buildings | Defensive | Paralysis Worms | ![](../Textures/Things/Pawns/ParalysisWorm/PWorm_east.png) | `Textures/Things/Pawns/ParalysisWorm` | |
 | Equipment | Weapons | Tentacle Whip | ![](../Textures/Things/Items/MeleeWeapons/TentacleWhip.png) | `Textures/Things/Items/MeleeWeapons` | |
-| Equipment | Weapons | Resin Sword | ![](../Textures/Things/Items/MeleeWeapons/ResinSword.png) ![](../Textures/Things/Items/MeleeWeapons/ResinScimitar.png) | `Textures/Things/Items/MeleeWeapons` | Scimitar is a more high-tech version with higher armor penetration. |
+| Equipment | Weapons | Resin Sword | ![](../Textures/Things/Items/MeleeWeapons/ResinSword.png) | `Textures/Things/Items/MeleeWeapons` | |
+| Equipment | Weapons | Resin Scimitar | ![](../Textures/Things/Items/MeleeWeapons/ResinScimitar.png) | `Textures/Things/Items/MeleeWeapons` | More high-tech, with higher armor penetration. |
 | Equipment | Armor | Tentacle Slave Collar | ![](../Textures/Things/Items/Equipment/TentacleCollar_east.png) | `Textures/Things/Items/Equipment` | |
 | Equipment | Armor | Bodysuit | NYI | NYI | |
 | Equipment | Armor | Cuirass | ![](../Textures/Things/Items/Equipment/ResinCuirassUI.png) | `Textures/Things/Items/Equipment` | |

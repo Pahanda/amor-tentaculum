@@ -495,7 +495,17 @@
 	<PawnRecycled.labelNoun>recycled</PawnRecycled.labelNoun>
 	<PawnRecycled.description>This pawn was recycled into raw resources.</PawnRecycled.description>
 
+	
+	<!-- Other hediffs -->
 	<WarWombCumDazed.label>Covered in Cum and Tentacles</WarWombCumDazed.label>
 	<WarWombCumDazed.description>The War Womb's proyectiles detonate into a rain of small tentacles and cum, temporarily impairing movement and sight.</WarWombCumDazed.description>
+
+	<ParalyticPoison.label>amor paralytic poison</ParalyticPoison.label>
+	<ParalyticPoison.labelNoun>amor paralytic poison</ParalyticPoison.labelNoun>
+	<ParalyticPoison.description>A venom in the bloodstream common in the amor species that progressively suppresses movement and consciousness while slowly increasing vulnerability and sex drive, preparing the victim for what's to come. Its severity fades over time.</ParalyticPoison.description>
+	<ParalyticPoison.stages.1.label>mild poisoning</ParalyticPoison.stages.1.label>
+	<ParalyticPoison.stages.2.label>weakened</ParalyticPoison.stages.2.label>
+	<ParalyticPoison.stages.3.label>severely weakened</ParalyticPoison.stages.3.label>
+	<ParalyticPoison.stages.4.label>paralyzed</ParalyticPoison.stages.4.label>
 
 </languageData>
