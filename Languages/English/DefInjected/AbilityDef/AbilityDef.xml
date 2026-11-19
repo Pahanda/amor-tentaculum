@@ -8,8 +8,8 @@
 	<TentacleExpel.description>Expels an Amor Squirmer tentacle from the Host.\n\nWARNING: This is dangerous if the pawn runs out of stored tentacles!</TentacleExpel.description>
 	<TentacleTransfer.label>transfer tentacle</TentacleTransfer.label>
 	<TentacleTransfer.description>Transfer an Amor Squirmer tentacle from one Host to another.  With a sloppy kiss.\n\nWARNING: This is dangerous if the pawn runs out of stored tentacles!</TentacleTransfer.description>
-	<SeductionKiss.label>seduction kiss</SeductionKiss.label>
-	<SeductionKiss.description>Plant an Amor Squirmer in the target, weakening and incapacitating them for a short time. Costs one stored tentacle.</SeductionKiss.description>
+	<SeducingKiss.label>seducing kiss</SeducingKiss.label>
+	<SeducingKiss.description>Plant an Amor Squirmer in the target, weakening and incapacitating them for a short time.</SeducingKiss.description>
 	<PlacatingKiss.label>placating kiss</PlacatingKiss.label>
 	<PlacatingKiss.description>Use the Amor Squirmers inside the Host to calm a pawn and end their mental break. Costs one stored tentacle.</PlacatingKiss.description>
 	<IncubateAmorBroodMotherEgg.label>Incubate Amor Brood Mother egg</IncubateAmorBroodMotherEgg.label>
@@ -18,6 +18,10 @@
 	<BirthAmorBroodMotherEgg.description>Begin laying a massive Amor Brood Mother egg.\n\nWARNING: This process is very debilitating for the Host. Make sure she gets somewhere safe, quickly!</BirthAmorBroodMotherEgg.description>
 	<TCumSpray.label>cum spray</TCumSpray.label>
 	<TCumSpray.description>Expel tentacle slime-cum from the Host's mouth in a long-range cone. Puts out fires - and sometimes pushes pawns into sexual overdrive, where they force themselves on anyone nearby.</TCumSpray.description>
+	<WarWombSpawnDrones.label>spawn Amor Drones</WarWombSpawnDrones.label>
+	<WarWombSpawnDrones.description>Birth three Amor Drones to fight for the War Womb. They automatically attack nearby enemies and shortly after being summoned.</WarWombSpawnDrones.description>
+	<WarWombCumBombardment.label>explosive cum bombardment</WarWombCumBombardment.label>
+	<WarWombCumBombardment.description>Fire a mass of cum and tentacles to an area, dealing area damage and briefly impairing movement and sight, and making the target horny.</WarWombCumBombardment.description>
 
 	<!-- Tentacle abilities -->
 

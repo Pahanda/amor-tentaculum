@@ -1,0 +1,19 @@
+<Defs>
+	<DamageDef ParentName="Bomb">
+		<defName>WarWombCumExplosion</defName>
+		<label>explosive cum blast</label>
+		<hediff>Crack</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<defaultDamage>12</defaultDamage>
+		<defaultStoppingPower>0.5</defaultStoppingPower>
+		<defaultArmorPenetration>0.05</defaultArmorPenetration>
+		<armorCategory>Blunt</armorCategory>
+		<impactSoundType>Blunt</impactSoundType>
+		<additionalHediffs>
+			<li>
+				<hediff>WarWombCumDazed</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+</Defs>

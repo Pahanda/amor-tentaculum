@@ -1,0 +1,34 @@
+<Defs>
+	<HediffDef>
+		<defName>WarWombCumDazed</defName>
+		<label>Covered in Cum and Tentacles</label>
+		<description>The War Womb's projectiles detonate into a rain of small tentacles and cum, temporarily impairing movement and sight, and making the target horny.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(1,0.65,0.9)</defaultLabelColor>
+		<isBad>true</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>900</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>Covered in Cum and Tentacles</label>
+				<statOffsets>
+					<Vulnerability>1</Vulnerability>
+					<SexFrequency>1</SexFrequency>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.3</offset>
+					</li>
+					<li>
+						<capacity>Sight</capacity>
+						<offset>-0.3</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

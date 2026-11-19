@@ -14,6 +14,18 @@
       <li Class="VEF.AnimalBehaviours.CompProperties_FixedGender">
         <gender>Female</gender>
       </li>
+      <li Class="VEF.AnimalBehaviours.CompProperties_AnimalProduct">
+        <resourceDef>HardResin</resourceDef>
+        <gatheringIntervalDays>2</gatheringIntervalDays>
+        <resourceAmount>10</resourceAmount>
+        <customResourceString>Resin</customResourceString>
+        <hasAditional>true</hasAditional>
+        <additionalItemsProb>100</additionalItemsProb>
+        <additionalItemsNumber>20</additionalItemsNumber>
+        <additionalItems>
+          <li>SoftResin</li>
+        </additionalItems>
+      </li>
     </comps>
     <uiIconScale>1.1</uiIconScale>
     <race>
