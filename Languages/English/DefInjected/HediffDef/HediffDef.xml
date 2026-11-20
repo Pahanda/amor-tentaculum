@@ -4,6 +4,18 @@
 
 	<TentacleSoothe.label>soothing pheromones</TentacleSoothe.label>
 	<TentacleSoothe.description>This pawn is being affected by soothing phermones, emitted by a nearby Amor Tentculum creature. This increases the pawn's sex drive and psychic sensitivity. It also lowers its receptiveness to pain. All at a small penalty to consciousness.</TentacleSoothe.description>
+	<DefenderPersonalGuard.label>defender's bulwark</DefenderPersonalGuard.label>
+	<DefenderPersonalGuard.description>The Defender is reducing incoming damage and increasing regeneration.</DefenderPersonalGuard.description>
+	<DefenderAllyGuard.label>defender's protection</DefenderAllyGuard.label>
+	<DefenderAllyGuard.description>Nearby allied pawns take less incoming damage and increase their regeneration while protected by a Defender.</DefenderAllyGuard.description>
+	<ValkyriePersonalRally.label>valkyrie's charge</ValkyriePersonalRally.label>
+	<ValkyriePersonalRally.description>The Valkyrie gains increased movement speed, manipulation, and psychic sensitivity.</ValkyriePersonalRally.description>
+	<ValkyrieAllyRally.label>valkyrie's inspiration</ValkyrieAllyRally.label>
+	<ValkyrieAllyRally.description>Nearby allied pawns gain increased movement speed, manipulation, and psychic sensitivity.</ValkyrieAllyRally.description>
+	<DefenderEnrage.label>defender's enrage</DefenderEnrage.label>
+	<DefenderEnrage.description>After a nearby Valkyrie's death, this Defender rages, imitating the Valkyrie's charge for a short time.</DefenderEnrage.description>
+	<ValkyrieEnrage.label>valkyrie's enrage</ValkyrieEnrage.label>
+	<ValkyrieEnrage.description>After a nearby Defender's death, this Valkyrie rages, imitating the Defender's bulwark for a short time.</ValkyrieEnrage.description>
 
 	<!-- Implants/Bionics -->
 

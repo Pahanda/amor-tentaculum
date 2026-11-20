@@ -1,0 +1,129 @@
+<Defs>
+	<HediffDef Name="DefenderGuardEffects" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<regeneration>1000</regeneration>
+				<totalBleedFactor>0.1</totalBleedFactor>
+				<statOffsets>
+					<IncomingDamageFactor>-0.5</IncomingDamageFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef Name="ValkyrieRallyEffects" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<statFactors>
+					<PsychicSensitivity>2</PsychicSensitivity>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>2</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>2</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="DefenderGuardEffects">
+		<defName>DefenderPersonalGuard</defName>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>1200</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>DefenderAllyGuard</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>1200</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<regeneration>200</regeneration>
+				<totalBleedFactor>0.5</totalBleedFactor>
+				<statOffsets>
+					<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="ValkyrieRallyEffects">
+		<defName>ValkyriePersonalRally</defName>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>1200</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>ValkyrieAllyRally</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>1200</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<statFactors>
+					<PsychicSensitivity>1.2</PsychicSensitivity>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>1.2</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>1.1</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="ValkyrieRallyEffects">
+		<defName>DefenderEnrage</defName>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>5000</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef ParentName="DefenderGuardEffects">
+		<defName>ValkyrieEnrage</defName>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>5000</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

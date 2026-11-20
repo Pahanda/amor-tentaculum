@@ -29,5 +29,8 @@
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
+    <abilities>
+      <li>ValkyrieRally</li>
+    </abilities>
   </PawnKindDef>
 </Defs>

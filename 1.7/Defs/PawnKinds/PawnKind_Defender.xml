@@ -29,5 +29,8 @@
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
+    <abilities>
+      <li>DefenderGuard</li>
+    </abilities>
   </PawnKindDef>
 </Defs>
