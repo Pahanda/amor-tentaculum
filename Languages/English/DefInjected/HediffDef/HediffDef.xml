@@ -62,6 +62,11 @@
 
 	<!-- Brood Egg incubation -->
 
+	<BroodMotherIncubationCheck.label>Brood Mother incubation</BroodMotherIncubationCheck.label>
+	<BroodMotherIncubationCheck.labelNoun>incubation</BroodMotherIncubationCheck.labelNoun>
+	<BroodMotherIncubationCheck.description>The rate of incubation is dependend on several factors...</BroodMotherIncubationCheck.description>
+
+
 	<BroodMotherIncubation.label>Brood Mother egg</BroodMotherIncubation.label>
 	<BroodMotherIncubation.labelNoun>an amor brood mother egg</BroodMotherIncubation.labelNoun>
 	<BroodMotherIncubation.description>An Amor Brood Mother egg is being incubated by the Queen, and is growing inside her body. This process takes around 20 days (with default multipliers), and she will not enjoy it (although her Host body will adapt to suppress the pain over time).</BroodMotherIncubation.description>
@@ -250,36 +255,6 @@
 	<ServantEggOverrideFailure.description>The attempt to implant an Amor Servant egg failed, as this pawn already is an Amor Host. This will cause them pain for a few days, but they will recover.</ServantEggOverrideFailure.description>
 	<ServantEggOverrideFailure.comps.HediffComp_MessageAfterTicks.letterLabel>{0_labelShort} incubation failure</ServantEggOverrideFailure.comps.HediffComp_MessageAfterTicks.letterLabel>
 	<ServantEggOverrideFailure.comps.HediffComp_MessageAfterTicks.letterText>{0_labelShort} was unable to incubate a second Amor Host egg type. They will be in pain for a while, but will recover.</ServantEggOverrideFailure.comps.HediffComp_MessageAfterTicks.letterText>
-
-	<!-- Host incubation success -->
-
-	<QueenEggIncubationSuccess.label>Queen egg incubation</QueenEggIncubationSuccess.label>
-	<QueenEggIncubationSuccess.labelNoun>incubation</QueenEggIncubationSuccess.labelNoun>
-	<QueenEggIncubationSuccess.description>An Amor Queen egg has been implanted into the host.</QueenEggIncubationSuccess.description>
-
-	<BaronessEggIncubationSuccess.label>Baroness egg incubation</BaronessEggIncubationSuccess.label>
-	<BaronessEggIncubationSuccess.labelNoun>incubation</BaronessEggIncubationSuccess.labelNoun>
-	<BaronessEggIncubationSuccess.description>An Amor Baroness egg has been implanted into the host.</BaronessEggIncubationSuccess.description>
-
-	<NymphEggIncubationSuccess.label>Nymph egg incubation</NymphEggIncubationSuccess.label>
-	<NymphEggIncubationSuccess.labelNoun>incubation</NymphEggIncubationSuccess.labelNoun>
-	<NymphEggIncubationSuccess.description>An Amor Nymph egg has been implanted into the host.</NymphEggIncubationSuccess.description>
-
-	<BaronEggIncubationSuccess.label>Baron egg incubation</BaronEggIncubationSuccess.label>
-	<BaronEggIncubationSuccess.labelNoun>incubation</BaronEggIncubationSuccess.labelNoun>
-	<BaronEggIncubationSuccess.description>An Amor Baron egg has been implanted into the host.</BaronEggIncubationSuccess.description>
-
-	<RogueEggIncubationSuccess.label>Rogue egg incubation</RogueEggIncubationSuccess.label>
-	<RogueEggIncubationSuccess.labelNoun>incubation</RogueEggIncubationSuccess.labelNoun>
-	<RogueEggIncubationSuccess.description>An Amor Rogue egg has been implanted into the host.</RogueEggIncubationSuccess.description>
-
-	<KnightEggIncubationSuccess.label>Knight egg incubation</KnightEggIncubationSuccess.label>
-	<KnightEggIncubationSuccess.labelNoun>incubation</KnightEggIncubationSuccess.labelNoun>
-	<KnightEggIncubationSuccess.description>An Amor Knight egg has been implanted into the host.</KnightEggIncubationSuccess.description>
-
-	<ServantEggIncubationSuccess.label>Servant egg incubation</ServantEggIncubationSuccess.label>
-	<ServantEggIncubationSuccess.labelNoun>incubation</ServantEggIncubationSuccess.labelNoun>
-	<ServantEggIncubationSuccess.description>An Amor Servant egg has been implanted into the host.</ServantEggIncubationSuccess.description>
 
 	<!-- Host incubation -->
 

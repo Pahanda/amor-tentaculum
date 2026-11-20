@@ -33,21 +33,11 @@
     <hediffClass>HediffWithComps</hediffClass>
     <defName>TWombEnhanced</defName>
     <descriptionHyperlinks><ThingDef>TWombItem</ThingDef></descriptionHyperlinks>
+    <initialSeverity>1</initialSeverity>
+    <maxSeverity>1</maxSeverity>
     <spawnThingOnRemoved>TWombItem</spawnThingOnRemoved>
-        <comps>
-					<!-- TODO: This won't work as-is; it will need to be adjusted. -->
-      <li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
-                <hediff>BroodMotherIncubation</hediff>
-                <severity>0.08</severity>
-                <interval>90000</interval>
-                <bodyParts>
-                 <li>Genitals</li>
-                </bodyParts>
-                <validSeverities>0.1</validSeverities>
-                <multiplySeverityByParentSeverity>True</multiplySeverityByParentSeverity>
-      </li>
-    </comps>
   </HediffDef>
+
 
   <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
 		<defName>InstallTWombEnhance</defName>
