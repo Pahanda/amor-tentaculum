@@ -1,5 +1,5 @@
 <Defs>
-	
+
 	<rjw.HediffDef_SexPart Name="RJW_PrivatePartTent" Abstract="True">
 		<defaultBodyPartList />
 		<isBad>false</isBad>
@@ -24,6 +24,321 @@
 		</addedPartProps>
 		<organicAddedBodypart>true</organicAddedBodypart>
 	</rjw.HediffDef_SexPart>
+
+	<!-- Host Genitals-->
+
+	<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartTent" Name="NaturalPrivatePartTentHostPenis" Abstract="True">
+		<fluid>Cum</fluid>
+		<produceFluidOnOrgasm>true</produceFluidOnOrgasm>
+		<defaultBodyPart>Genitals</defaultBodyPart>
+		<sizeProfile>DefaultPenisSizes</sizeProfile>
+		<descriptionHyperlinks>
+			<ThingDef>Penis</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>Penis</spawnThingOnRemoved>
+		<genitalFamily>Penis</genitalFamily>
+		<genitalTags>
+			<li>CanPenetrate</li>
+			<li>CanFertilize</li>
+		</genitalTags>
+		<partTags>
+			<li>Deep</li>
+			<li>Loose</li>
+		</partTags>
+		<stages>
+			<li>
+				<minSeverity>0.01</minSeverity>
+			</li>
+			<li>
+				<minSeverity>0.20</minSeverity>
+			</li>
+			<li>
+				<minSeverity>0.40</minSeverity>
+			</li>
+			<li>
+				<minSeverity>0.60</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.02</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.80</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.05</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>1.01</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.10</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</rjw.HediffDef_SexPart>
+
+	<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartTent" Name="NaturalPrivatePartTentHostVagina" Abstract="True">
+		<fluid>GirlCum</fluid>
+		<produceFluidOnOrgasm>true</produceFluidOnOrgasm>
+		<fluidMultiplier>0.5</fluidMultiplier>
+		<defaultBodyPart>Genitals</defaultBodyPart>
+		<sizeProfile>DefaultVaginaSizes</sizeProfile>
+		<descriptionHyperlinks>
+			<ThingDef>Vagina</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>Vagina</spawnThingOnRemoved>
+		<genitalFamily>Vagina</genitalFamily>
+		<genitalTags>
+			<li>CanBePenetrated</li>
+			<li>CanBeFertilized</li>
+		</genitalTags>
+		<partTags>
+			<li>Deep</li>
+			<li>Loose</li>
+		</partTags>
+		<stages>
+			<li>
+				<minSeverity>0.01</minSeverity>
+			</li>
+			<li>
+				<minSeverity>0.20</minSeverity>
+			</li>
+			<li>
+				<minSeverity>0.40</minSeverity>
+			</li>
+			<li>
+				<minSeverity>0.60</minSeverity>
+			</li>
+			<li>
+				<minSeverity>0.80</minSeverity>
+			</li>
+			<li>
+				<minSeverity>1.01</minSeverity>
+			</li>
+			<li>
+				<minSeverity>1.5</minSeverity>
+			</li>
+			<li>
+				<minSeverity>2</minSeverity>
+			</li>
+		</stages>
+	</rjw.HediffDef_SexPart>
+
+	<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartTent" Name="NaturalPrivatePartTentHostBreast" Abstract="True">
+		<fluid>Milk</fluid>
+		<defaultBodyPart>Chest</defaultBodyPart>
+		<sizeProfile>DefaultBreastSizes</sizeProfile>
+		<descriptionHyperlinks>
+			<ThingDef>Breasts</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>Breasts</spawnThingOnRemoved>
+		<genitalFamily>Breasts</genitalFamily>
+		<genitalTags>
+			<li>CanLactate</li>
+		</genitalTags>
+		<stages>
+			<li>
+				<minSeverity>0.01</minSeverity>
+			</li>
+			<li>
+				<minSeverity>0.02</minSeverity>
+			</li>
+			<li>
+				<minSeverity>0.20</minSeverity>
+			</li>
+			<li>
+				<minSeverity>0.40</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.01</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.60</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.025</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.01</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.80</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.05</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.02</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>1.00</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.10</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.04</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>1.2</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.15</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.08</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>1.4</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.25</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.12</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>1.6</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.40</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.20</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>1.8</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.65</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.32</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>2.0</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.9</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.64</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</rjw.HediffDef_SexPart>
+
+	<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartTent" Name="NaturalPrivatePartTentHostAnus" Abstract="True">
+		<defaultBodyPart>Anus</defaultBodyPart>
+		<sizeProfile>DefaultAnusSizes</sizeProfile>
+		<descriptionHyperlinks>
+			<ThingDef>Anus</ThingDef>
+		</descriptionHyperlinks>
+		<spawnThingOnRemoved>Anus</spawnThingOnRemoved>
+		<genitalFamily>Anus</genitalFamily>
+		<genitalTags>
+			<li>CanBePenetrated</li>
+		</genitalTags>
+		<partTags>
+			<li>Deep</li>
+			<li>Loose</li>
+		</partTags>
+		<stages>
+			<li>
+				<minSeverity>0.01</minSeverity>
+			</li>
+			<li>
+				<minSeverity>0.20</minSeverity>
+			</li>
+			<li>
+				<minSeverity>0.40</minSeverity>
+				<statOffsets>
+        		</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.60</minSeverity>
+				<statOffsets>
+        		</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.80</minSeverity>
+				<statOffsets>
+        		</statOffsets>
+			</li>
+			<li>
+				<minSeverity>1.01</minSeverity>
+				<statOffsets>
+        		</statOffsets>
+			</li>
+			<li>
+				<minSeverity>1.5</minSeverity>
+			</li>
+			<li>
+				<minSeverity>2</minSeverity>
+			</li>
+		</stages>
+	</rjw.HediffDef_SexPart>
+
+	<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartTentHostVagina">
+		<defName>TentacleHostVagina</defName>
+	</rjw.HediffDef_SexPart>
+
+	<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartTentHostAnus">
+		<defName>TentacleHostAnus</defName>
+	</rjw.HediffDef_SexPart>
+
+	<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartTentHostPenis">
+		<defName>TentacleHostPenis</defName>
+	</rjw.HediffDef_SexPart>
+
+	<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartTentHostBreast">
+		<defName>TentacleHostBreasts</defName>
+	</rjw.HediffDef_SexPart>
+
+
+	<!-- Tentacle Genitals-->
 
 	<rjw.HediffDef_SexPart ParentName="NaturalPrivatePartTent" Name="NaturalPrivatePartTentPenis" Abstract="True">
 		<fluid>Cum</fluid>
@@ -127,15 +442,9 @@
 			</li>
 			<li>
 				<minSeverity>1.5</minSeverity>
-				<statOffsets>
-     			<TStorage>0.1</TStorage>
-     		</statOffsets>
 			</li>
 			<li>
 				<minSeverity>2</minSeverity>
-				<statOffsets>
-     			<TStorage>0.2</TStorage>
-     		</statOffsets>
 			</li>
 		</stages>
 	</rjw.HediffDef_SexPart>
@@ -183,15 +492,9 @@
 			</li>
 			<li>
 				<minSeverity>1.5</minSeverity>
-				<statOffsets>
-     			<TStorage>0.1</TStorage>
-     		</statOffsets>
 			</li>
 			<li>
 				<minSeverity>2</minSeverity>
-				<statOffsets>
-     			<TStorage>0.2</TStorage>
-     		</statOffsets>
 			</li>
 		</stages>
 	</rjw.HediffDef_SexPart>
@@ -378,15 +681,9 @@
 			</li>
 			<li>
 				<minSeverity>1.5</minSeverity>
-				<statOffsets>
-          			<TStorage>0.1</TStorage>
-        		</statOffsets>
 			</li>
 			<li>
 				<minSeverity>2</minSeverity>
-				<statOffsets>
-          			<TStorage>0.2</TStorage>
-        		</statOffsets>
 			</li>
 		</stages>
 	</rjw.HediffDef_SexPart>

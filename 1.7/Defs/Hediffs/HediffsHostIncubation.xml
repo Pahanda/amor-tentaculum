@@ -2,6 +2,45 @@
 
 	<HediffDef>
 		<hediffClass>HediffWithComps</hediffClass>
+		<defName>BroodMotherIncubationCheck</defName>
+		<defaultLabelColor>(240,189,234)</defaultLabelColor>
+		<minSeverity>0</minSeverity>
+		<initialSeverity>0.001</initialSeverity>
+		<maxSeverity>4</maxSeverity>
+		<stages>
+			<li>
+				<label>You shouldn't be seeing this...</label>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+		<comps>
+        		    <li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
+				<hediff>BroodMotherIncubation</hediff>
+				<severity>0.05</severity>
+				<bodyParts>
+					<li>Genitals</li>
+				</bodyParts>
+				<interval>60000</interval>
+				<multiplySeverityByParentSeverity>True</multiplySeverityByParentSeverity>
+			 </li>
+			<li Class="EBSGFramework.HediffCompProperties_SeverityByOtherHediffSeverities">
+				<baseSeverity>1</baseSeverity>
+				<hediffSets>
+					<li>
+					<hediff>AmorQueenHost</hediff>
+ 					<factor>1.333</factor>
+  					</li>
+					<li>
+					<hediff>TWombEnhanced</hediff>
+ 					<factor>1</factor>
+  					</li>
+ 				</hediffSets>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<hediffClass>HediffWithComps</hediffClass>
 		<defName>BroodMotherIncubation</defName>
 		<defaultLabelColor>(240,189,234)</defaultLabelColor>
 		<minSeverity>0</minSeverity>
@@ -76,10 +115,6 @@
 						<validSeverity>0.98~999</validSeverity>
 					</li>
 				</abilitiesAtSeverities>
-			</li>
-			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
-				<modSettingMultiplier>hostEggProductionSpeedFactor</modSettingMultiplier>
-				<baseSeverityPerDay>0.05</baseSeverityPerDay>
 			</li>
 		</comps>
 	</HediffDef>
