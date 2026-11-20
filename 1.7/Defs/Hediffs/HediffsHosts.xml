@@ -15,14 +15,6 @@
 				<modSettingMultiplier>hostIncubationSpeedFactor</modSettingMultiplier>
 				<baseSeverityPerDay>0.01</baseSeverityPerDay>
 			</li>
-			<li Class="EBSGFramework.HediffCompProperties_GiveAbilityAtSeverity">
-				<abilitiesAtSeverities>
-					<li>
-						<abilityDef>IncubateAmorBroodMotherEgg</abilityDef>
-						<validSeverity>0.6~999</validSeverity>
-					</li>
-				</abilitiesAtSeverities>
-			</li>
 		</comps>
 		<stages>
 			<li>

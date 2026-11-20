@@ -15,9 +15,9 @@
 		<modExtensions>
 			<li Class="RJW_Genes.GenitaliaTypeExtension">
 				<penis>Penis</penis>
-				<vagina>TentacleVagina</vagina>
-				<anus>TentacleAnus</anus>
-				<breasts>TentacleBreasts</breasts>
+				<vagina>TentacleHostVagina</vagina>
+				<anus>TentacleHostAnus</anus>
+				<breasts>TentacleHostBreasts</breasts>
 			</li>
 		</modExtensions>
 		<displayOrderInCategory>802</displayOrderInCategory>
@@ -34,6 +34,7 @@
 			<li>TentacleExpel</li>
 			<li>TentacleTransfer</li>
 			<li>TCumSpray</li>
+			<li>IncubateAmorBroodMotherEgg</li>
 		</abilities>
 		<modExtensions>
 			<li Class="EBSGFramework.EBSGExtension">
@@ -258,9 +259,9 @@
 		<iconPath>UI/Genes/Gene_InfestedPenis</iconPath>
 		<modExtensions>
 			<li Class="RJW_Genes.GenitaliaTypeExtension">
-				<penis>TentaclePenis</penis>
+				<penis>TentacleHostPenis</penis>
 				<vagina>Vagina</vagina>
-				<anus>TentacleAnus</anus>
+				<anus>TentacleHostAnus</anus>
 				<breasts>Breasts</breasts>
 			</li>
 		</modExtensions>
