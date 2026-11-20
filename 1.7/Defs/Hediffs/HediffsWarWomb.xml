@@ -2,7 +2,7 @@
 	<HediffDef>
 		<defName>WarWombCumDazed</defName>
 		<label>Covered in Cum and Tentacles</label>
-		<description>The War Womb's proyectiles detonate into a rain of small tentacles and cum, temporarily impairing movement and sight, and making the target horny.</description>
+		<description>The War Womb's projectiles detonate into a rain of small tentacles and cum, temporarily impairing movement and sight, and making the target horny.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(1,0.65,0.9)</defaultLabelColor>
 		<isBad>true</isBad>
