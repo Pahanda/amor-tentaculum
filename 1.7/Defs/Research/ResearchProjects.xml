@@ -100,7 +100,7 @@
 			<li>ATSummonFeral</li>
 		</prerequisites>
 		<requiredAnalyzed>
-			<li>BossGlandBrewer</li>
+			<li>BossLarvaBrewer</li>
 		</requiredAnalyzed>
 		<baseCost>1500</baseCost>
 		<techLevel>Spacer</techLevel>
@@ -115,7 +115,7 @@
 			<li>ATSummonFeral</li>
 		</prerequisites>
 		<requiredAnalyzed>
-			<li>BossGlandValkyrie</li>
+			<li>BossLarvaValkyrie</li>
 		</requiredAnalyzed>
 		<baseCost>1750</baseCost>
 		<techLevel>Spacer</techLevel>
@@ -130,7 +130,7 @@
 			<li>ATSummonFeral</li>
 		</prerequisites>
 		<requiredAnalyzed>
-			<li>BossGlandDefender</li>
+			<li>BossLarvaDefender</li>
 		</requiredAnalyzed>
 		<baseCost>1750</baseCost>
 		<techLevel>Spacer</techLevel>
@@ -145,7 +145,7 @@
 			<li>ATSummonFeral</li>
 		</prerequisites>
 		<requiredAnalyzed>
-			<li>BossGlandWarWomb</li>
+			<li>BossLarvaWarWomb</li>
 		</requiredAnalyzed>
 		<baseCost>1500</baseCost>
 		<techLevel>Spacer</techLevel>

@@ -245,7 +245,7 @@
     <renderNodeProperties>
             <li Class="PawnRenderNodeProperties_Eye">
               <workerClass>PawnRenderNodeWorker_HediffEye</workerClass>
-              <texPath>Things/Pawns/Parts/TentacleM</texPath>
+              <texPath>Things/Pawns/Parts/Addons/TentacleM</texPath>
               <parentTagDef>Head</parentTagDef>
               <drawSize>1</drawSize>
               <colorType>Skin</colorType>

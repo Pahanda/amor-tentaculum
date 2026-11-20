@@ -1098,15 +1098,6 @@
 				<modSettingMultiplier>hostAcclimationSpeedFactor</modSettingMultiplier>
 				<baseSeverityPerDay>0.05</baseSeverityPerDay>
 			</li>
-			<li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
-				<hediff>TentacleStorage</hediff>
-				<severity>0.05</severity>
-				<interval>5000</interval>
-				<bodyParts>
-					<li>Genitals</li>
-				</bodyParts>
-				<validSeverities>0.7~0.723</validSeverities>
-			</li>
 		</comps>
 	</HediffDef>
 	

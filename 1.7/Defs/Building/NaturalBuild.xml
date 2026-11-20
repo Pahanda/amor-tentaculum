@@ -239,6 +239,7 @@
     </researchPrerequisites>
   </ThingDef>
 
+	<!--
   <ThingDef ParentName="DoorBase">
     <defName>sphincterdoor</defName>
     <statBases>
@@ -267,7 +268,7 @@
     </researchPrerequisites>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
   </ThingDef>
-
+	 -->
 	<!--
     <TerrainDef ParentName="FloorBase">
     <defName>TentFloor</defName>
@@ -290,6 +291,6 @@
       <li>ATStructUtility</li>
     </researchPrerequisites>
   </TerrainDef>
- -->
+	 -->
 
 </Defs>

@@ -11,8 +11,10 @@
 	<THeater.description>A tentacle structure that generates heat. Requires no fuel or power, but generates less heat than industrial counterparts. Emits a slightly suspicious odor.</THeater.description>
 	<TCooler.label>amor frigus</TCooler.label>
 	<TCooler.description>A tentacle structure that sucks in heat. Requires no fuel or power, but chills the air far below safe limits.</TCooler.description>
+	<!--
 	<sphincterdoor.label>sphincter door</sphincterdoor.label>
 	<sphincterdoor.description>Divides rooms. This organic tentacle sphincter allows people to move through the door without slowing down, although they may feel a little strange about the process.</sphincterdoor.description>
+	 -->
 	<Building_RecyclingPod.label>recycling pod</Building_RecyclingPod.label>
 	<Building_RecyclingPod.description>A biological structure that will break its occupant down into component parts, turning it into raw resources. Needless to say, this is fatal for the pawn.</Building_RecyclingPod.description>
 	<HiveWall.label>hive wall</HiveWall.label>
@@ -180,45 +182,45 @@
 
 	<!-- Boss Drops -->
 	
-	<BossGlandBrewer.label>Brewer gland</BossGlandBrewer.label>
-	<BossGlandBrewer.description>A gland, extracted from Amor Brewer hybrids. It's squishy and slimy, and feels still alive.\n\nThis can be analyzed to unlock additional research, which will allow you to use the gland to craft advanced things, as well as your own Brewers.</BossGlandBrewer.description>
-	<BossGlandBrewer.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the Brewer gland.</BossGlandBrewer.comps.CompAnalyzableUnlockResearch.activateDescString>
-	<BossGlandBrewer.comps.CompAnalyzableUnlockResearch.activateLabelString>Analyze...</BossGlandBrewer.comps.CompAnalyzableUnlockResearch.activateLabelString>
-	<BossGlandBrewer.comps.CompAnalyzableUnlockResearch.completedLetter>By studying the Brewer gland, {PAWN_labelShort} has acquired the insight needed for the research project(s) : {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</BossGlandBrewer.comps.CompAnalyzableUnlockResearch.completedLetter>
-	<BossGlandBrewer.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Brewer gland studied : {RESEARCH} unlocked</BossGlandBrewer.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
-	<BossGlandBrewer.comps.CompAnalyzableUnlockResearch.guiLabelString>Choose who should analyze this...</BossGlandBrewer.comps.CompAnalyzableUnlockResearch.guiLabelString>
-	<BossGlandBrewer.comps.CompAnalyzableUnlockResearch.inspectString>Can be analyzed by a colonist.</BossGlandBrewer.comps.CompAnalyzableUnlockResearch.inspectString>
-	<BossGlandBrewer.comps.CompAnalyzableUnlockResearch.jobString>analyze Brewer gland</BossGlandBrewer.comps.CompAnalyzableUnlockResearch.jobString>
+	<BossLarvaBrewer.label>Brewer larva</BossLarvaBrewer.label>
+	<BossLarvaBrewer.description>A larva, extracted from an Amor Brewer hybrid. Who knows for how long it's been wriggling in there.\n\nIt can be analyzed to unlock additional research projects, which will allow you turn it into advanced implants and gear, as well as create your own Brewer.</BossLarvaBrewer.description>
+	<BossLarvaBrewer.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the Brewer larva.</BossLarvaBrewer.comps.CompAnalyzableUnlockResearch.activateDescString>
+	<BossLarvaBrewer.comps.CompAnalyzableUnlockResearch.activateLabelString>Analyze...</BossLarvaBrewer.comps.CompAnalyzableUnlockResearch.activateLabelString>
+	<BossLarvaBrewer.comps.CompAnalyzableUnlockResearch.completedLetter>By studying the Brewer larva, {PAWN_labelShort} has acquired the insight needed for the research project(s) : {RESEARCH}.\n\nYour researchers can now begin researching how to actually use the technology</BossLarvaBrewer.comps.CompAnalyzableUnlockResearch.completedLetter>
+	<BossLarvaBrewer.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Brewer larva studied : {RESEARCH} unlocked</BossLarvaBrewer.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+	<BossLarvaBrewer.comps.CompAnalyzableUnlockResearch.guiLabelString>Choose who should analyze this...</BossLarvaBrewer.comps.CompAnalyzableUnlockResearch.guiLabelString>
+	<BossLarvaBrewer.comps.CompAnalyzableUnlockResearch.inspectString>Can be analyzed by a colonist.</BossLarvaBrewer.comps.CompAnalyzableUnlockResearch.inspectString>
+	<BossLarvaBrewer.comps.CompAnalyzableUnlockResearch.jobString>analyze Brewer larva</BossLarvaBrewer.comps.CompAnalyzableUnlockResearch.jobString>
 
-	<BossGlandValkyrie.label>Valkyrie gland</BossGlandValkyrie.label>
-	<BossGlandValkyrie.description>A gland, extracted from Amor Valkyrie hybrids. It's squishy and slimy, and feels still alive.\n\nThis can be analyzed to unlock additional research, which will allow you to use the gland to craft advanced things, as well as your own Valkyries.</BossGlandValkyrie.description>
-	<BossGlandValkyrie.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the Valkyrie gland.</BossGlandValkyrie.comps.CompAnalyzableUnlockResearch.activateDescString>
-	<BossGlandValkyrie.comps.CompAnalyzableUnlockResearch.activateLabelString>Analyze...</BossGlandValkyrie.comps.CompAnalyzableUnlockResearch.activateLabelString>
-	<BossGlandValkyrie.comps.CompAnalyzableUnlockResearch.completedLetter>By studying the valkyrie gland, {PAWN_labelShort} has acquired the insight needed for the research project(s) : {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</BossGlandValkyrie.comps.CompAnalyzableUnlockResearch.completedLetter>
-	<BossGlandValkyrie.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Valkyrie gland studied : {RESEARCH} unlocked</BossGlandValkyrie.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
-	<BossGlandValkyrie.comps.CompAnalyzableUnlockResearch.guiLabelString>Choose who should analyze this...</BossGlandValkyrie.comps.CompAnalyzableUnlockResearch.guiLabelString>
-	<BossGlandValkyrie.comps.CompAnalyzableUnlockResearch.inspectString>Can be analyzed by a colonist.</BossGlandValkyrie.comps.CompAnalyzableUnlockResearch.inspectString>
-	<BossGlandValkyrie.comps.CompAnalyzableUnlockResearch.jobString>analyze Valkyrie gland</BossGlandValkyrie.comps.CompAnalyzableUnlockResearch.jobString>
+	<BossLarvaValkyrie.label>Valkyrie larva</BossLarvaValkyrie.label>
+	<BossLarvaValkyrie.description>A larva, extracted from an Amor Valkyrie hybrid. Who knows for how long it's been wriggling in there.\n\nIt can be analyzed to unlock additional research projects, which will allow you turn it into advanced implants and gear, as well as create your own Valkyrie.</BossLarvaValkyrie.description>
+	<BossLarvaValkyrie.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the Valkyrie larva.</BossLarvaValkyrie.comps.CompAnalyzableUnlockResearch.activateDescString>
+	<BossLarvaValkyrie.comps.CompAnalyzableUnlockResearch.activateLabelString>Analyze...</BossLarvaValkyrie.comps.CompAnalyzableUnlockResearch.activateLabelString>
+	<BossLarvaValkyrie.comps.CompAnalyzableUnlockResearch.completedLetter>By studying the valkyrie larva, {PAWN_labelShort} has acquired the insight needed for the research project(s) : {RESEARCH}.\n\nYour researchers can now begin researching how to actually use the technology.</BossLarvaValkyrie.comps.CompAnalyzableUnlockResearch.completedLetter>
+	<BossLarvaValkyrie.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Valkyrie larva studied : {RESEARCH} unlocked</BossLarvaValkyrie.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+	<BossLarvaValkyrie.comps.CompAnalyzableUnlockResearch.guiLabelString>Choose who should analyze this...</BossLarvaValkyrie.comps.CompAnalyzableUnlockResearch.guiLabelString>
+	<BossLarvaValkyrie.comps.CompAnalyzableUnlockResearch.inspectString>Can be analyzed by a colonist.</BossLarvaValkyrie.comps.CompAnalyzableUnlockResearch.inspectString>
+	<BossLarvaValkyrie.comps.CompAnalyzableUnlockResearch.jobString>analyze Valkyrie larva</BossLarvaValkyrie.comps.CompAnalyzableUnlockResearch.jobString>
 
-	<BossGlandDefender.label>Defender gland</BossGlandDefender.label>
-	<BossGlandDefender.description>A gland, extracted from Amor Defender hybrids. It's squishy and slimy, and feels still alive.\n\nThis can be analyzed to unlock additional research, which will allow you to use the gland to craft advanced things, as well as your own Defenders.</BossGlandDefender.description>
-	<BossGlandDefender.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the Defender gland.</BossGlandDefender.comps.CompAnalyzableUnlockResearch.activateDescString>
-	<BossGlandDefender.comps.CompAnalyzableUnlockResearch.activateLabelString>Analyze...</BossGlandDefender.comps.CompAnalyzableUnlockResearch.activateLabelString>
-	<BossGlandDefender.comps.CompAnalyzableUnlockResearch.completedLetter>By studying the Defender gland, {PAWN_labelShort} has acquired the insight needed for the research project(s) : {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</BossGlandDefender.comps.CompAnalyzableUnlockResearch.completedLetter>
-	<BossGlandDefender.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Defender gland studied : {RESEARCH} unlocked</BossGlandDefender.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
-	<BossGlandDefender.comps.CompAnalyzableUnlockResearch.guiLabelString>Choose who should analyze this...</BossGlandDefender.comps.CompAnalyzableUnlockResearch.guiLabelString>
-	<BossGlandDefender.comps.CompAnalyzableUnlockResearch.inspectString>Can be analyzed by a colonist.</BossGlandDefender.comps.CompAnalyzableUnlockResearch.inspectString>
-	<BossGlandDefender.comps.CompAnalyzableUnlockResearch.jobString>analyze Defender gland</BossGlandDefender.comps.CompAnalyzableUnlockResearch.jobString>
+	<BossLarvaDefender.label>Defender larva</BossLarvaDefender.label>
+	<BossLarvaDefender.description>A larva, extracted from an Amor Defender hybrid. Who knows for how long it's been wriggling in there.\n\nIt can be analyzed to unlock additional research projects, which will allow you turn it into advanced implants and gear, as well as create your own Defender.</BossLarvaDefender.description>
+	<BossLarvaDefender.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the Defender larva.</BossLarvaDefender.comps.CompAnalyzableUnlockResearch.activateDescString>
+	<BossLarvaDefender.comps.CompAnalyzableUnlockResearch.activateLabelString>Analyze...</BossLarvaDefender.comps.CompAnalyzableUnlockResearch.activateLabelString>
+	<BossLarvaDefender.comps.CompAnalyzableUnlockResearch.completedLetter>By studying the Defender larva, {PAWN_labelShort} has acquired the insight needed for the research project(s) : {RESEARCH}.\n\nYour researchers can now begin researching how to actually use the technology.</BossLarvaDefender.comps.CompAnalyzableUnlockResearch.completedLetter>
+	<BossLarvaDefender.comps.CompAnalyzableUnlockResearch.completedLetterLabel>Defender larva studied : {RESEARCH} unlocked</BossLarvaDefender.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+	<BossLarvaDefender.comps.CompAnalyzableUnlockResearch.guiLabelString>Choose who should analyze this...</BossLarvaDefender.comps.CompAnalyzableUnlockResearch.guiLabelString>
+	<BossLarvaDefender.comps.CompAnalyzableUnlockResearch.inspectString>Can be analyzed by a colonist.</BossLarvaDefender.comps.CompAnalyzableUnlockResearch.inspectString>
+	<BossLarvaDefender.comps.CompAnalyzableUnlockResearch.jobString>analyze Defender larva</BossLarvaDefender.comps.CompAnalyzableUnlockResearch.jobString>
 
-	<BossGlandWarWomb.label>War Womb gland</BossGlandWarWomb.label>
-	<BossGlandWarWomb.description>A gland, extracted from Amor War Womb hybrids. It's squishy and slimy, and feels still alive.\n\nThis can be analyzed to unlock additional research, which will allow you to use the gland to craft advanced things, as well as your own War Wombs.</BossGlandWarWomb.description>
-	<BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the War Womb gland.</BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.activateDescString>
-	<BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.activateLabelString>Analyze...</BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.activateLabelString>
-	<BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.completedLetter>By studying the War Womb gland, {PAWN_labelShort} has acquired the insight needed for the research project(s) : {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.completedLetter>
-	<BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.completedLetterLabel>War Womb gland studied : {RESEARCH} unlocked</BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
-	<BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.guiLabelString>Choose who should analyze this...</BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.guiLabelString>
-	<BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.inspectString>Can be analyzed by a colonist.</BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.inspectString>
-	<BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.jobString>analyze War Womb gland</BossGlandWarWomb.comps.CompAnalyzableUnlockResearch.jobString>
+	<BossLarvaWarWomb.label>War Womb larva</BossLarvaWarWomb.label>
+	<BossLarvaWarWomb.description>A larva, extracted from an Amor War Womb hybrid. Who knows how long it's been wriggling in there.\n\nIt can be analyzed to unlock additional research projects, which will allow you turn it into advanced implants and gear, as well as create your own War Womb.</BossLarvaWarWomb.description>
+	<BossLarvaWarWomb.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the War Womb larva.</BossLarvaWarWomb.comps.CompAnalyzableUnlockResearch.activateDescString>
+	<BossLarvaWarWomb.comps.CompAnalyzableUnlockResearch.activateLabelString>Analyze...</BossLarvaWarWomb.comps.CompAnalyzableUnlockResearch.activateLabelString>
+	<BossLarvaWarWomb.comps.CompAnalyzableUnlockResearch.completedLetter>By studying the War Womb larva, {PAWN_labelShort} has acquired the insight needed for the research project(s) : {RESEARCH}.\n\nYour researchers can now begin researching how to actually use the technology.</BossLarvaWarWomb.comps.CompAnalyzableUnlockResearch.completedLetter>
+	<BossLarvaWarWomb.comps.CompAnalyzableUnlockResearch.completedLetterLabel>War Womb larva studied : {RESEARCH} unlocked</BossLarvaWarWomb.comps.CompAnalyzableUnlockResearch.completedLetterLabel>
+	<BossLarvaWarWomb.comps.CompAnalyzableUnlockResearch.guiLabelString>Choose who should analyze this...</BossLarvaWarWomb.comps.CompAnalyzableUnlockResearch.guiLabelString>
+	<BossLarvaWarWomb.comps.CompAnalyzableUnlockResearch.inspectString>Can be analyzed by a colonist.</BossLarvaWarWomb.comps.CompAnalyzableUnlockResearch.inspectString>
+	<BossLarvaWarWomb.comps.CompAnalyzableUnlockResearch.jobString>analyze War Womb larva</BossLarvaWarWomb.comps.CompAnalyzableUnlockResearch.jobString>
 
 	<!-- Filth and Fluids -->
 	
