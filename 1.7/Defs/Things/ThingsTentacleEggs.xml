@@ -26,6 +26,7 @@
 		<childrenDefs>
 			<li>TentacleSquirmer</li>
 		</childrenDefs>
+		<selffertilized>true</selffertilized>
 		<UnFertEggDef>AmorSquirmerEggUnfert</UnFertEggDef>
 		<FertEggDef>AmorSquirmerEggFert</FertEggDef>
 	</rjw.HediffDef_InsectEgg>
@@ -81,6 +82,7 @@
 		<childrenDefs>
 			<li>TentacleLarva</li>
 		</childrenDefs>
+		<selffertilized>true</selffertilized>
 		<UnFertEggDef>AmorLarvaEggUnfert</UnFertEggDef>
 		<FertEggDef>AmorLarvaEggFert</FertEggDef>
 	</rjw.HediffDef_InsectEgg>
