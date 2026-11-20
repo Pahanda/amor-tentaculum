@@ -1,0 +1,40 @@
+<Defs>
+	<AbilityDef>
+		<defName>ValkyrieRally</defName>
+		<iconPath>Abilities/SlimeSpray</iconPath>
+		<category>Tentacle</category>
+		<jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
+		<targetRequired>false</targetRequired>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<cooldownTicksRange>6000</cooldownTicksRange>
+		<aiCanUse>true</aiCanUse>
+		<ai_IsOffensive>true</ai_IsOffensive>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>1.9</range>
+			<warmupTime>1</warmupTime>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<targetParams>
+				<canTargetLocations>false</canTargetLocations>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetHumans>false</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="AmorTentaculum.CompProperties_AbilityNearbyFactionBuff">
+				<selfBuff>ValkyriePersonalRally</selfBuff>
+				<friendlyBuff>ValkyrieAllyRally</friendlyBuff>
+				<activationEffecter MayRequire="Ludeon.RimWorld.Biotech">NearbyFactionBuff_AnimalWarcallVisual</activationEffecter>
+				<radius>15</radius>
+			</li>
+		</comps>
+	</AbilityDef>
+</Defs>
