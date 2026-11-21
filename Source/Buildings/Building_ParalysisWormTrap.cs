@@ -7,8 +7,8 @@ namespace AmorTentaculum;
 
 public class Building_ParalysisWormTrap : Building
 {
-    private const float TriggerRadius = 1f;
-    private const int WormCount = 3;
+    private const float TriggerRadius = 1.5f;
+    private const int WormCount = 4;
 
     protected override void Tick()
     {

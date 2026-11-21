@@ -5,7 +5,7 @@
     <graphicData>
       <texPath>Things/Buildings/Traps/ParalysisTrap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1,1)</drawSize>
+      <drawSize>(2,2)</drawSize>
     </graphicData>
     <tickerType>Normal</tickerType>
     <altitudeLayer>Building</altitudeLayer>
@@ -21,7 +21,7 @@
       <Flammability>0.8</Flammability>
       <Beauty>-4</Beauty>
     </statBases>
-    <specialDisplayRadius>1</specialDisplayRadius>
+    <specialDisplayRadius>1.5</specialDisplayRadius>
     <costList>
       <SoftResin>50</SoftResin>
       <TentacleSlime>1</TentacleSlime>

@@ -15,14 +15,4 @@
 			</li>
 		</additionalHediffs>
 	</DamageDef>
-	<DamageDef ParentName="ParalyticPoisonDamageBase">
-		<defName>ParalyticPoisonDamageSmall</defName>
-		<label>mild paralytic poison</label>
-		<additionalHediffs>
-			<li>
-				<hediff>ParalyticPoison</hediff>
-				<severityFixed>0.05</severityFixed>
-			</li>
-		</additionalHediffs>
-	</DamageDef>
 </Defs>

@@ -14,7 +14,7 @@
     <tools>
       <li>
         <capacities>
-          <li>Sting</li>
+          <li>Blunt</li>
         </capacities>
         <power>1</power>
         <cooldownTime>2</cooldownTime>
@@ -23,7 +23,7 @@
         <chanceFactor>0.2</chanceFactor>
         <extraMeleeDamages>
           <li>
-            <def>ParalyticPoisonDamageSmall</def>
+            <def>ParalyticPoisonDamage</def>
             <amount>1</amount>
           </li>
         </extraMeleeDamages>
@@ -34,7 +34,7 @@
         <gender>None</gender>
       </li>
       <li Class="VEF.AnimalBehaviours.CompProperties_InitialHediff">
-        <hediffname>AmorDroneLimitedLifespan</hediffname>
+        <hediffname>AmorLimitedLifespan</hediffname>
         <hediffseverity>0.001</hediffseverity>
       </li>
     </comps>
@@ -45,7 +45,7 @@
       <maxPreyBodySize>700</maxPreyBodySize>
       <baseBodySize>0.04</baseBodySize>
       <baseHungerRate>0.01</baseHungerRate>
-      <baseHealthScale>0.5</baseHealthScale>
+      <baseHealthScale>0.1</baseHealthScale>
       <hasCorpse>false</hasCorpse>
       <hasMeat>false</hasMeat>
       <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
