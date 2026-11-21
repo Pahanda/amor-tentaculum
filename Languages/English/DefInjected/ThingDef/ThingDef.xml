@@ -83,6 +83,10 @@
 	<TentacleSpawner.description>A huge mass of tentacles with a smaller, central female body. The Amor Spawner is entirely dedicated to breeding Squirmers, which Hosts use to fuel their abilities.</TentacleSpawner.description>
 	<TentacleSquirmer.label>Amor Squirmer</TentacleSquirmer.label>
 	<TentacleSquirmer.description>A long, snake-like tentacle meant to live inside Host bodies. Freezes to death quickly when not inside its native habitat.</TentacleSquirmer.description>
+	<TentacleParalysisWorm.label>Amor Paralysis Worm</TentacleParalysisWorm.label>
+	<TentacleParalysisWorm.description>A small tentacle worm that injects paralytic poison with its bite. Probably the first thing that an unfortunate raider encounters in Amor territory.</TentacleParalysisWorm.description>
+	<ParalysisWormTrap.label>paralysis worm trap</ParalysisWormTrap.label>
+	<ParalysisWormTrap.description>A proximity trap that releases four Amor Paralysis Worms when a hostile pawn approaches. The worms's venom can incapacitate enemies and leave them defenseless and horny for the hive to harvest.</ParalysisWormTrap.description>
 	<TentacleDrone.label>Amor Drone</TentacleDrone.label>
 	<TentacleDrone.description>A snake-like tentacle that has crawled out of a War Womb's pussy, ready to attack. It has a limited lifespan, dying a few hours after being created.</TentacleDrone.description>
 	<TentacleLarva.label>Amor Larva</TentacleLarva.label>
@@ -121,6 +125,7 @@
 	<TentacleLarva.tools.0.label>head</TentacleLarva.tools.0.label>
 	<TentacleSpawner.tools.0.label>tentacle</TentacleSpawner.tools.0.label>
 	<TentacleSquirmer.tools.0.label>head</TentacleSquirmer.tools.0.label>
+	<TentacleParalysisWorm.tools.0.label>venomous bite</TentacleParalysisWorm.tools.0.label>
 	<TentacleDrone.tools.0.label>head</TentacleDrone.tools.0.label>
 	<TentacleStinger.tools.0.label>venom stinger</TentacleStinger.tools.0.label>
 	<TentacleStriker.tools.0.label>mouth tentacle</TentacleStriker.tools.0.label>

@@ -28,7 +28,7 @@
         <gender>Male</gender>
       </li>
       <li Class="VEF.AnimalBehaviours.CompProperties_InitialHediff">
-        <hediffname>AmorDroneLimitedLifespan</hediffname>
+        <hediffname>AmorLimitedLifespan</hediffname>
         <hediffseverity>0.001</hediffseverity>
       </li>
       <li Class="VEF.AnimalBehaviours.CompProperties_Draftable" />

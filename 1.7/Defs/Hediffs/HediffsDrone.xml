@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <HediffDef>
-    <defName>AmorDroneLimitedLifespan</defName>
-    <label>Unstable Vitals</label>
-    <description>Drones are never meant to live long; they die a few hours after crawling out of the War Womb.</description>
+    <defName>AmorLimitedLifespan</defName>
     <hediffClass>HediffWithComps</hediffClass>
     <isBad>true</isBad>
     <everCurableByItem>false</everCurableByItem>

@@ -1,11 +1,13 @@
 <Defs>
-	<DamageDef>
-		<defName>ParalyticPoisonDamage</defName>
+	<DamageDef Name="ParalyticPoisonDamageBase" Abstract="True">
 		<label>paralytic poison</label>
 		<canInterruptJobs>false</canInterruptJobs>
 		<makesBlood>false</makesBlood>
 		<defaultDamage>0</defaultDamage>
 		<harmsHealth>false</harmsHealth>
+	</DamageDef>
+	<DamageDef ParentName="ParalyticPoisonDamageBase">
+		<defName>ParalyticPoisonDamage</defName>
 		<additionalHediffs>
 			<li>
 				<hediff>ParalyticPoison</hediff>

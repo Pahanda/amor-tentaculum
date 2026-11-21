@@ -1,0 +1,44 @@
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>ParalysisWormTrap</defName>
+    <thingClass>AmorTentaculum.Building_ParalysisWormTrap</thingClass>
+    <graphicData>
+      <texPath>Things/Buildings/Traps/ParalysisTrap</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsSecurity</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>5400</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>0.8</Flammability>
+      <Beauty>-4</Beauty>
+    </statBases>
+    <specialDisplayRadius>1.5</specialDisplayRadius>
+    <costList>
+      <SoftResin>50</SoftResin>
+      <TentacleSlime>1</TentacleSlime>
+    </costList>
+    <building>
+      <isTrap>true</isTrap>
+      <trapDestroyOnSpring>true</trapDestroyOnSpring>
+      <expandHomeArea>false</expandHomeArea>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <designationCategory>Tentacles</designationCategory>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>ATStructDefense</li>
+    </researchPrerequisites>
+    <placeWorkers>
+      <li>PlaceWorker_NeverAdjacentTrap</li>
+    </placeWorkers>
+  </ThingDef>
+</Defs>

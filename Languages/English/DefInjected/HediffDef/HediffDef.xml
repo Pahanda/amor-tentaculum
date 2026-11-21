@@ -427,8 +427,8 @@
 	<AmorServantHost.stages.2.label>industrious</AmorServantHost.stages.2.label>
 
 	<!-- Tentacle hediffs -->
-	<AmorDroneLimitedLifespan.label>Unstable Vitals</AmorDroneLimitedLifespan.label>
-	<AmorDroneLimitedLifespan.description>Drones are never meant to live long; they die a few hours after crawling out of the War Womb.</AmorDroneLimitedLifespan.description>
+	<AmorLimitedLifespan.label>Unstable Vitals</AmorLimitedLifespan.label>
+	<AmorLimitedLifespan.description>This is a short-lived creature; it will die a few hours after being born.</AmorLimitedLifespan.description>
 	
 	<BodyVagrancy.label>body vagrancy</BodyVagrancy.label>
 	<BodyVagrancy.labelNoun>vagrancy</BodyVagrancy.labelNoun>
