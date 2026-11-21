@@ -1,15 +1,27 @@
 <Defs>
-	<DamageDef>
-		<defName>ParalyticPoisonDamage</defName>
+	<DamageDef Name="ParalyticPoisonDamageBase" Abstract="True">
 		<label>paralytic poison</label>
 		<canInterruptJobs>false</canInterruptJobs>
 		<makesBlood>false</makesBlood>
 		<defaultDamage>0</defaultDamage>
 		<harmsHealth>false</harmsHealth>
+	</DamageDef>
+	<DamageDef ParentName="ParalyticPoisonDamageBase">
+		<defName>ParalyticPoisonDamage</defName>
 		<additionalHediffs>
 			<li>
 				<hediff>ParalyticPoison</hediff>
 				<severityFixed>0.1</severityFixed>
+			</li>
+		</additionalHediffs>
+	</DamageDef>
+	<DamageDef ParentName="ParalyticPoisonDamageBase">
+		<defName>ParalyticPoisonDamageSmall</defName>
+		<label>mild paralytic poison</label>
+		<additionalHediffs>
+			<li>
+				<hediff>ParalyticPoison</hediff>
+				<severityFixed>0.05</severityFixed>
 			</li>
 		</additionalHediffs>
 	</DamageDef>
