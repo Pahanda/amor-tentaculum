@@ -64,9 +64,6 @@
 						<hediff>TentacleStorage</hediff>
 						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
-						<bodyParts>
-							<li>Genitals</li>
-						</bodyParts>
 					</li>
 					<li>
 						<hediff>TentacleInfestedStomach</hediff>
@@ -136,9 +133,6 @@
 						<hediff>TentacleStorage</hediff>
 						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
-						<bodyParts>
-							<li>Genitals</li>
-						</bodyParts>
 					</li>
 					<li>
 						<hediff>TentacleInfestedStomach</hediff>
@@ -210,9 +204,6 @@
 						<hediff>TentacleStorage</hediff>
 						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
-						<bodyParts>
-							<li>Genitals</li>
-						</bodyParts>
 					</li>
 					<li>
 						<hediff>TentacleInfestedStomach</hediff>
@@ -292,9 +283,6 @@
 						<hediff>TentacleStorage</hediff>
 						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
-						<bodyParts>
-							<li>Genitals</li>
-						</bodyParts>
 					</li>
 					<li>
 						<hediff>TentacleInfestedStomach</hediff>
@@ -348,9 +336,6 @@
 						<hediff>TentacleStorage</hediff>
 						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
-						<bodyParts>
-							<li>Genitals</li>
-						</bodyParts>
 					</li>
 					<li>
 						<hediff>TentacleInfestedStomach</hediff>
@@ -404,9 +389,6 @@
 						<hediff>TentacleStorage</hediff>
 						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
-						<bodyParts>
-							<li>Genitals</li>
-						</bodyParts>
 					</li>
 					<li>
 						<hediff>TentacleInfestedStomach</hediff>
@@ -460,9 +442,6 @@
 						<hediff>TentacleStorage</hediff>
 						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
-						<bodyParts>
-							<li>Genitals</li>
-						</bodyParts>
 					</li>
 					<li>
 						<hediff>TentacleInfestedStomach</hediff>

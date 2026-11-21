@@ -42,14 +42,6 @@
 			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
 				<hediffsToGive>
 					<li>
-						<hediffDef>TentacleStorage</hediffDef>
-						<onlyApplyToSelf>false</onlyApplyToSelf>
-						<severity>1</severity>
-						<bodyParts>
-							<li>Genitals</li>
-						</bodyParts>
-					</li>
-					<li>
 						<hediffDef>TentacleSacrifice</hediffDef>
 						<onlyApplyToSelf>true</onlyApplyToSelf>
 						<replaceExisting>false</replaceExisting>

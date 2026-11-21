@@ -649,80 +649,19 @@
 				</statOffsets>
 			</li>
 		</stages>
-		<comps>
-			<li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
-				<hediff>TentacleStorage</hediff>
-				<severity>0.01</severity>
-				<interval>15000</interval>
-				<bodyParts>
-					<li>Genitals</li>
-				</bodyParts>
-				<validSeverities>0.1</validSeverities>
-			</li>
-		</comps>
 	</HediffDef>
 
 	<HediffDef>
 		<defName>TentacleStorage</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(203,120,227)</defaultLabelColor>
-		<minSeverity>1</minSeverity>
 		<initialSeverity>1</initialSeverity>
-		<maxSeverity>100</maxSeverity>
-		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<maxSeverity>1</maxSeverity>
 		<stages>
 			<li>
-				<minSeverity>1</minSeverity>
-				<painOffset>-0.01</painOffset>
-				<statOffsets>
-					<MoveSpeed>0.01</MoveSpeed>
-					<PsychicSensitivity>0.05</PsychicSensitivity>
-				</statOffsets>
-				<regeneration>5</regeneration>
-			</li>
-			<li>
-				<minSeverity>10</minSeverity>
-				<painOffset>-0.05</painOffset>
-				<statOffsets>
-					<MoveSpeed>0.05</MoveSpeed>
-					<PsychicSensitivity>0.1</PsychicSensitivity>
-				</statOffsets>
-				<regeneration>10</regeneration>
-			</li>
-			<li>
-				<minSeverity>40</minSeverity>
-				<painOffset>-0.1</painOffset>
-				<statOffsets>
-					<MoveSpeed>0.1</MoveSpeed>
-					<PsychicSensitivity>0.25</PsychicSensitivity>
-				</statOffsets>
-				<regeneration>20</regeneration>
-			</li>
-			<li>
-				<minSeverity>80</minSeverity>
-				<painOffset>-0.2</painOffset>
-				<statOffsets>
-					<MoveSpeed>0.2</MoveSpeed>
-					<PsychicSensitivity>0.5</PsychicSensitivity>
-				</statOffsets>
-				<regeneration>40</regeneration>
-			</li>
-			<li>
-				<minSeverity>100</minSeverity>
-				<painOffset>-0.3</painOffset>
-				<statOffsets>
-					<MoveSpeed>0.3</MoveSpeed>
-					<PsychicSensitivity>1</PsychicSensitivity>
-				</statOffsets>
-				<regeneration>80</regeneration>
+				<becomeVisible>false</becomeVisible>
 			</li>
 		</stages>
-		<comps>
-			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
-				<modSettingMultiplier>hostAcclimationSpeedFactor</modSettingMultiplier>
-				<baseSeverityPerDay>0.01</baseSeverityPerDay>
-			</li>
-		</comps>
 	</HediffDef>
 
 	<HediffDef>

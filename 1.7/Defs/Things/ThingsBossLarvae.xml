@@ -1,6 +1,6 @@
 <Defs>
 
-	<ThingDef Name="TentacleBossGlandBase" ParentName="ResourceBase" Abstract="True">
+	<ThingDef Name="TentacleBossLarvaBase" ParentName="ResourceBase" Abstract="True">
 		<soundInteract>Standard_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<stackLimit>10</stackLimit>
@@ -19,10 +19,10 @@
 		<isTechHediff>true</isTechHediff>
 	</ThingDef>
 
-	<ThingDef ParentName="TentacleBossGlandBase">
-		<defName>BossGlandBrewer</defName>
+	<ThingDef ParentName="TentacleBossLarvaBase">
+		<defName>BossLarvaBrewer</defName>
 		<graphicData>
-			<texPath>Things/Items/BossGlands/BossGlandBrewer</texPath>
+			<texPath>Things/Items/BossLarvae/BossLarvaBrewer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -46,10 +46,10 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="TentacleBossGlandBase">
-		<defName>BossGlandValkyrie</defName>
+	<ThingDef ParentName="TentacleBossLarvaBase">
+		<defName>BossLarvaValkyrie</defName>
 		<graphicData>
-			<texPath>Things/Items/BossGlands/BossGlandValkyrie</texPath>
+			<texPath>Things/Items/BossLarvae/BossLarvaValkyrie</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -73,10 +73,10 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="TentacleBossGlandBase">
-		<defName>BossGlandDefender</defName>
+	<ThingDef ParentName="TentacleBossLarvaBase">
+		<defName>BossLarvaDefender</defName>
 		<graphicData>
-			<texPath>Things/Items/BossGlands/BossGlandDefender</texPath>
+			<texPath>Things/Items/BossLarvae/BossLarvaDefender</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -100,10 +100,10 @@
 		</comps>
 	</ThingDef>
 
-	<ThingDef ParentName="TentacleBossGlandBase">
-		<defName>BossGlandWarWomb</defName>
+	<ThingDef ParentName="TentacleBossLarvaBase">
+		<defName>BossLarvaWarWomb</defName>
 		<graphicData>
-			<texPath>Things/Items/BossGlands/BossGlandWarWomb</texPath>
+			<texPath>Things/Items/BossLarvae/BossLarvaWarWomb</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>

@@ -4,7 +4,7 @@
 
 	<XenotypeDef>
 		<defName>AmorQueenXenotype</defName>
-		<iconPath>Genes/Xenotype-host</iconPath>
+		<iconPath>TexturesOld/Xenotype-host</iconPath>
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
@@ -17,7 +17,7 @@
 
 	<XenotypeDef>
 		<defName>AmorBaronessXenotype</defName>
-		<iconPath>Genes/Xenotype-host</iconPath>
+		<iconPath>TexturesOld/Xenotype-host</iconPath>
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
@@ -30,7 +30,7 @@
 
 	<XenotypeDef>
 		<defName>AmorNymphXenotype</defName>
-		<iconPath>Genes/Xenotype-host</iconPath>
+		<iconPath>TexturesOld/Xenotype-host</iconPath>
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
@@ -46,7 +46,7 @@
 
 	<XenotypeDef>
 		<defName>AmorBaronXenotype</defName>
-		<iconPath>Genes/Xenotype-host</iconPath>
+		<iconPath>TexturesOld/Xenotype-host</iconPath>
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
@@ -59,7 +59,7 @@
 
 	<XenotypeDef>
 		<defName>AmorRogueXenotype</defName>
-		<iconPath>Genes/Xenotype-host</iconPath>
+		<iconPath>TexturesOld/Xenotype-host</iconPath>
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
@@ -72,7 +72,7 @@
 
 	<XenotypeDef>
 		<defName>AmorKnightXenotype</defName>
-		<iconPath>Genes/Xenotype-host</iconPath>
+		<iconPath>TexturesOld/Xenotype-host</iconPath>
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>
@@ -85,7 +85,7 @@
 
 	<XenotypeDef>
 		<defName>AmorServantXenotype</defName>
-		<iconPath>Genes/Xenotype-host</iconPath>
+		<iconPath>TexturesOld/Xenotype-host</iconPath>
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>0</chanceToUseNameMaker>
 		<genes>

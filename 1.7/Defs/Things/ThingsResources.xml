@@ -71,7 +71,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>SoftResin</defName>
 		<graphicData>
-			<texPath>Things/Items/SoftRes</texPath>
+			<texPath>Things/Items/SoftResin</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<soundInteract>Wood_Drop</soundInteract>
@@ -134,7 +134,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>HardResin</defName>
 		<graphicData>
-			<texPath>Things/Items/HardRes</texPath>
+			<texPath>Things/Items/HardResin</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<soundInteract>Metal_Drop</soundInteract>
