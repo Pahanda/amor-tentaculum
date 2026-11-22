@@ -6,10 +6,9 @@
     <description>How many tentacles a host body can store.</description>
     <offsetLabel>brood offset</offsetLabel>
     <category>BasicsPawn</category>
-    <showOnDefaultValue>true</showOnDefaultValue>
+    <showOnDefaultValue>false</showOnDefaultValue>
     <defaultBaseValue>0</defaultBaseValue>
     <minValue>0</minValue>
-    <hideAtValue>0</hideAtValue>
     <toStringStyle>FloatTwo</toStringStyle>
   </StatDef>
 

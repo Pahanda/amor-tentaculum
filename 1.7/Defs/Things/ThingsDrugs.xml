@@ -1,9 +1,11 @@
 <Defs>
 
-  <ThingDef ParentName="DrugBase">
-    <defName>TentBeer</defName>
+	<!-- Amornuum-->
+
+<ThingDef ParentName="DrugBase">
+    <defName>Amornuum</defName>
     <descriptionHyperlinks>
-      <HediffDef>Tentbeerhigh</HediffDef>
+      <HediffDef>AmornuumHigh</HediffDef>
       <HediffDef>AlcoholTolerance</HediffDef>
       <HediffDef>Hangover</HediffDef>
       <HediffDef>AlcoholAddiction</HediffDef>
@@ -14,6 +16,7 @@
     <graphicData>
       <texPath>Things/Items/Food/Amornuum</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
     </graphicData>
     <equippedAngleOffset>-150</equippedAngleOffset>
     <rotatable>false</rotatable>
@@ -45,7 +48,7 @@
       <tableDesired>false</tableDesired>
       <outcomeDoers>
         <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>Tentbeerhigh</hediffDef>
+          <hediffDef>AmornuumHigh</hediffDef>
           <severity>0.15</severity>
           <toleranceChemical>Alcohol</toleranceChemical>
         </li>
@@ -99,10 +102,10 @@
   </ThingDef>
 
   <HediffDef>
-    <defName>Tentbeerhigh</defName>
+    <defName>AmornuumHigh</defName>
     <label>drunk on amornuum</label>
     <labelNoun>drunkenness</labelNoun>
-    <description>Amornuum in the bloodstream. It makes people happy and horney, but reduces capacities.</description>
+    <description>Amornuum in the bloodstream. It makes people happy and horny, but reduces capacities.</description>
     <hediffClass>Hediff_Alcohol</hediffClass>
     <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
     <scenarioCanAdd>true</scenarioCanAdd>
@@ -213,7 +216,7 @@
   </HediffDef>
 
  <!--<ThoughtDef>
-    <defName>Tentbeerhigh</defName>
+    <defName>AmornuumHigh</defName>
     <workerClass>ThoughtWorker_Hediff</workerClass>
     <hediff>AttachedV</hediff>
     <stackLimit>1</stackLimit>
@@ -246,5 +249,132 @@
       </li>
     </stages>
   </ThoughtDef>-->
+
+	<!-- Queeix-->
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>Queeix</defName>
+    <descriptionHyperlinks>
+      <HediffDef>QueeixHigh</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Items/Queeix</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.75</drawSize>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>50</stackLimit>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>300</WorkToMake>
+      <MarketValue>21</MarketValue>
+      <Mass>0.05</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <ingestible>
+      <foodType>Processed</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.3</joy>
+      <baseIngestTicks>450</baseIngestTicks>
+      <nurseable>true</nurseable>
+      <drugCategory>Hard</drugCategory>
+      <ingestSound>Ingest_Smoke</ingestSound>
+      <ingestEffect>Smoke_Flake</ingestEffect>
+      <ingestEffectEat>EatVegetarian</ingestEffectEat>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.23,0,0.065)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Snort {0}</ingestCommandString>
+      <ingestReportString>Snorting {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>QueeixHigh</hediffDef>
+          <severity>0.3</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>PsychiteRefining</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+      <displayPriority>1600</displayPriority>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>3</Neutroamine>
+      <TentacleSlime>2</TentacleSlime>
+      <MedicineHerbal>1</MedicineHerbal>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <listOrder>110</listOrder>
+        <overdoseSeverityOffset>0.18~0.35</overdoseSeverityOffset>
+        <largeOverdoseChance>0.015</largeOverdoseChance>
+      </li>
+    </comps>
+  </ThingDef>
+  
+	<HediffDef>
+		<defName>QueeixHigh</defName>
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<maxSeverity>1</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+			<severityPerDay>-0.1</severityPerDay>
+			<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>0.01</minSeverity>
+				<painFactor>0.9</painFactor>
+				<statOffsets>
+						<Vulnerability>0.15</Vulnerability>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.95</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.35</minSeverity>
+				<painFactor>0.8</painFactor>
+				<vomitMtbDays>3</vomitMtbDays>
+				<statOffsets>
+						<Vulnerability>0.3</Vulnerability>
+				</statOffsets>
+				<capMods>
+				        	<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.85</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.65</minSeverity>
+				<painFactor>0.6</painFactor>
+				<vomitMtbDays>0.75</vomitMtbDays>
+				<statOffsets>
+						<Vulnerability>0.5</Vulnerability>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<postFactor>0.7</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
 
 </Defs>

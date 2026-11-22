@@ -52,9 +52,11 @@
 	
 	<!-- Drugs, food, and other consumables -->
 	
-	<TentBeer.label>amornuum</TentBeer.label>
-	<TentBeer.description>A strange alcohol-like substance. When drunk, induces a "loose" and "relaxed" feeling, as well as minor hallucinations - and an increased drive for sexual activity. Tastes a little bit salty.</TentBeer.description>
-	
+	<Amornuum.label>amornuum</Amornuum.label>
+	<Amornuum.description>A strange alcohol-like substance. When drunk, induces a "loose" and "relaxed" feeling, as well as minor hallucinations - and an increased drive for sexual activity. Tastes a little bit salty.</Amornuum.description>
+	<Queeix.label>queeix</Queeix.label>
+	<Queeix.description>A strong synthetic drug for Amor Queens, which accelerates the incubation of Brood Mother eggs. Must be taken every three days for stable results. Excessive use results in increased effectiveness, but also debilitating intoxication.</Queeix.description>
+
 	<!-- Implants, Bionics, etc. -->
 
 	<IndoWorm.label>indoctrination worm</IndoWorm.label>
@@ -63,8 +65,8 @@
 	<BreedWorm.description>A parisitic worm, implanted in the victim's brain stem. Causes excessive arousal, significant energy boosts, and will trigger aggressive behavior.</BreedWorm.description>
 	<FeedWorm.label>feeding worm</FeedWorm.label>
 	<FeedWorm.description>A tentacle meant, implanted in the patient's esophagus. Rapidly digests food for them and injects it as a slurry into the stomach. Makes the target immune to gut worms and food poisoning.</FeedWorm.description>
-	<TWombItem.label>in-utero incubator</TWombItem.label>
-	<TWombItem.description>An Womb implant for Amor Queens which aids in the incubation of Amor Brood Mother eggs.</TWombItem.description>
+	<UterineIncubator.label>uterine incubator</UterineIncubator.label>
+	<UterineIncubator.description>An Womb implant for Amor Queens which aids in the incubation of Amor Brood Mother eggs. The effect puts a strain on the body, increasing the runger rate.</UterineIncubator.description>
 	<TSpecItem.label>anal speculum</TSpecItem.label>
 	<TSpecItem.description>An speculum that permanently forces the rectum further open, allowing for additional tentacle capacity.</TSpecItem.description>
 	<TStomachEItem.label>storage stomach</TStomachEItem.label>
@@ -218,7 +220,7 @@
 	<BossLarvaDefender.comps.CompAnalyzableUnlockResearch.jobString>analyze Defender larva</BossLarvaDefender.comps.CompAnalyzableUnlockResearch.jobString>
 
 	<BossLarvaWarWomb.label>War Womb larva</BossLarvaWarWomb.label>
-	<BossLarvaWarWomb.description>A larva, extracted from an Amor War Womb hybrid. Who knows how long it's been wriggling in there.\n\nIt can be analyzed to unlock additional research projects, which will allow you turn it into advanced implants and gear, as well as create your own War Womb.</BossLarvaWarWomb.description>
+	<BossLarvaWarWomb.description>A larva, extracted from an Amor War Womb hybrid. Who knows for how long it's been wriggling in there.\n\nIt can be analyzed to unlock additional research projects, which will allow you turn it into advanced implants and gear, as well as create your own War Womb.</BossLarvaWarWomb.description>
 	<BossLarvaWarWomb.comps.CompAnalyzableUnlockResearch.activateDescString>Analyze the War Womb larva.</BossLarvaWarWomb.comps.CompAnalyzableUnlockResearch.activateDescString>
 	<BossLarvaWarWomb.comps.CompAnalyzableUnlockResearch.activateLabelString>Analyze...</BossLarvaWarWomb.comps.CompAnalyzableUnlockResearch.activateLabelString>
 	<BossLarvaWarWomb.comps.CompAnalyzableUnlockResearch.completedLetter>By studying the War Womb larva, {PAWN_labelShort} has acquired the insight needed for the research project(s) : {RESEARCH}.\n\nYour researchers can now begin researching how to actually use the technology.</BossLarvaWarWomb.comps.CompAnalyzableUnlockResearch.completedLetter>

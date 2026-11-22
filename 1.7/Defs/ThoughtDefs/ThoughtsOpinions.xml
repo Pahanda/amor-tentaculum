@@ -1,0 +1,27 @@
+<Defs>
+
+   <ThoughtDef>
+        <defName>OpinionQueenRival</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>EBSGFramework.ThoughtWorker_Gene_GeneSocial</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>Rival Queen</label>
+                <baseOpinionOffset>-100</baseOpinionOffset>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGThoughtExtension">
+                <relatedGenes>
+                    <li>AmorQueenHostBody</li>
+                </relatedGenes>
+                <requiredGenes>
+                    <li>AmorQueenHostBody</li>
+                </requiredGenes>
+            </li>
+        </modExtensions>
+    </ThoughtDef>
+
+</Defs>

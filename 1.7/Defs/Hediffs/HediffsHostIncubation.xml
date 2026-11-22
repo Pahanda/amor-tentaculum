@@ -9,14 +9,13 @@
 		<maxSeverity>4</maxSeverity>
 		<stages>
 			<li>
-				<label>You shouldn't be seeing this...</label>
 				<becomeVisible>false</becomeVisible>
 			</li>
 		</stages>
 		<comps>
         		    <li Class="EBSGFramework.HediffCompProperties_GiveOtherHediffPeriodically">
 				<hediff>BroodMotherIncubation</hediff>
-				<severity>0.05</severity>
+				<severity>0.03</severity>
 				<bodyParts>
 					<li>Genitals</li>
 				</bodyParts>
@@ -28,11 +27,15 @@
 				<hediffSets>
 					<li>
 					<hediff>AmorQueenHost</hediff>
- 					<factor>1.333</factor>
+ 					<factor>0.5</factor>
   					</li>
 					<li>
-					<hediff>TWombEnhanced</hediff>
+					<hediff>UterineIncubator</hediff>
  					<factor>1</factor>
+  					</li>
+					<li>
+					<hediff>QueeixHigh</hediff>
+ 					<factor>1.5</factor>
   					</li>
  				</hediffSets>
 			</li>
@@ -55,14 +58,14 @@
 			</li>
 			<li>
 				<minSeverity>0.1</minSeverity>
-				<painOffset>0.05</painOffset>
+				<painOffset>0.03</painOffset>
 				<statOffsets>
-					<MoveSpeed>-0.025</MoveSpeed>
+					<MoveSpeed>-0.03</MoveSpeed>
 				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>0.3</minSeverity>
-				<painOffset>0.075</painOffset>
+				<painOffset>0.05</painOffset>
 				<statOffsets>
 					<MoveSpeed>-0.05</MoveSpeed>
 				</statOffsets>
@@ -71,37 +74,33 @@
 				<minSeverity>0.5</minSeverity>
 				<painOffset>0.1</painOffset>
 				<statOffsets>
-					<MoveSpeed>-0.075</MoveSpeed>
+					<MoveSpeed>-0.07</MoveSpeed>
 				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>0.7</minSeverity>
-				<partEfficiencyOffset>-0.20</partEfficiencyOffset>
-				<painOffset>0.125</painOffset>
+				<painOffset>0.15</painOffset>
 				<statOffsets>
-					<MoveSpeed>-0.01</MoveSpeed>
+					<MoveSpeed>-0.1</MoveSpeed>
 				</statOffsets>
 			</li>
 			<li>
-				<minSeverity>0.98</minSeverity>
-				<partEfficiencyOffset>-0.25</partEfficiencyOffset>
-				<painOffset>0.15</painOffset>
+				<minSeverity>0.9</minSeverity>
+				<painOffset>0.2</painOffset>
 				<statOffsets>
 					<MoveSpeed>-0.15</MoveSpeed>
 				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>1.2</minSeverity>
-				<partEfficiencyOffset>-0.5</partEfficiencyOffset>
-				<painOffset>0.33</painOffset>
+				<painOffset>0.35</painOffset>
 				<statOffsets>
 					<MoveSpeed>-0.25</MoveSpeed>
 				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>1.4</minSeverity>
-				<partEfficiencyOffset>-0.5</partEfficiencyOffset>
-				<painOffset>0.66</painOffset>
+				<painOffset>0.5</painOffset>
 				<statOffsets>
 					<MoveSpeed>-0.5</MoveSpeed>
 				</statOffsets>
@@ -112,7 +111,7 @@
 				<abilitiesAtSeverities>
 					<li>
 						<abilityDef>BirthAmorBroodMotherEgg</abilityDef>
-						<validSeverity>0.98~999</validSeverity>
+						<validSeverity>0.9~1.19</validSeverity>
 					</li>
 				</abilitiesAtSeverities>
 			</li>

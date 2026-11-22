@@ -31,9 +31,9 @@
 	<RemoveFeedWorm.description>Remove a Feeding Tentacle from the users's esophagus.</RemoveFeedWorm.description>
 	<RemoveFeedWorm.jobString>removing feeding tentacle.</RemoveFeedWorm.jobString>
 
-	<InstallTWombEnhance.label>install in-utero incubator</InstallTWombEnhance.label>
-	<InstallTWombEnhance.description>Install an in-utero incubator in the patient's womb.</InstallTWombEnhance.description>
-	<InstallTWombEnhance.jobString>installing in-utero incubator.</InstallTWombEnhance.jobString>
+	<InstallUterineIncubator.label>install uterine incubator</InstallUterineIncubator.label>
+	<InstallUterineIncubator.description>Install an uterine incubator in the patient's womb.</InstallUterineIncubator.description>
+	<InstallUterineIncubator.jobString>installing uterine incubator.</InstallUterineIncubator.jobString>
 
 	<InstallTAnusEnhance.label>install anal speculum</InstallTAnusEnhance.label>
 	<InstallTAnusEnhance.description>Install a speculum in the patient's anus.</InstallTAnusEnhance.description>
