@@ -39,16 +39,17 @@
 				<useDuration>900</useDuration>
 				<floatMenuFactionIcon>Tentacles</floatMenuFactionIcon>
 			</li>
-			<li Class="CompProperties_UseEffectDestroySelf">
-				<delayTicks>120</delayTicks>
-				<spawnKilledLeavings>true</spawnKilledLeavings>
-				<effecterDef>ButcherFlesh</effecterDef>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>160~600</wickTicks>
+				<explosiveRadius>0.5</explosiveRadius>
+				<explosiveDamageType>Stun</explosiveDamageType>
+				<damageAmountBase>1</damageAmountBase>
 			</li>
 		</comps>
 		<tickerType>Normal</tickerType>
 		<filthLeaving>Filth_Blood</filthLeaving>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="BossSummonBase">
 		<defName>BossSummonFeralSwarm</defName>
 		<graphicData>
@@ -94,13 +95,8 @@
 			</shadowData>
 		</graphicData>
 		<comps>
-			<li Class="AmorTentaculum.CompProperties_Useable_OrganicCallBossgroup">
-				<bossgroupDef>Apocriton</bossgroupDef>
-				<effecterDef>SanguophageMeeting</effecterDef>
-				<prepareEffecterDef>Surgery</prepareEffecterDef>
-				<unlockedLetterLabelKey>LetterLabelTentacleBossgroupCallerUnlocked</unlockedLetterLabelKey>
-				<unlockedLetterTextKey>LetterTentacleBossgroupCallerUnlocked</unlockedLetterTextKey>
-				<delayTicks>120</delayTicks>
+			<li Class="AmorTentaculum.CompProperties_BossSummoner">
+				<wave>BossWave_Brewer</wave>
 			</li>
 		</comps>
 	</ThingDef>
@@ -127,50 +123,6 @@
 		</comps>
 	</ThingDef>
 
-	<!--<ThingDef ParentName="BossSummonBase">
-		<defName>BossSummonValkyrie</defName>
-		<graphicData>
-			<texPath>Things/Building/Misc/MechbandDish</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
-			<shadowData>
-				<volume>(1.1, 0.75, 1.1</volume>
-			</shadowData>
-		</graphicData>
-		<comps>
-			<li Class="AmorTentaculum.CompProperties_Useable_OrganicCallBossgroup">
-				<bossgroupDef>Apocriton</bossgroupDef>
-				<effecterDef>SanguophageMeeting</effecterDef>
-				<prepareEffecterDef>Surgery</prepareEffecterDef>
-				<unlockedLetterLabelKey>LetterLabelTentacleBossgroupCallerUnlocked</unlockedLetterLabelKey>
-				<unlockedLetterTextKey>LetterTentacleBossgroupCallerUnlocked</unlockedLetterTextKey>
-				<delayTicks>120</delayTicks>
-			</li>
-		</comps>
-	</ThingDef>
-
-	<ThingDef ParentName="BossSummonBase">
-		<defName>BossSummonDefender</defName>
-		<graphicData>
-			<texPath>Things/Building/Misc/MechbandDish</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>(2,2)</drawSize>
-			<shadowData>
-				<volume>(1.1, 0.75, 1.1</volume>
-			</shadowData>
-		</graphicData>
-		<comps>
-			<li Class="AmorTentaculum.CompProperties_Useable_OrganicCallBossgroup">
-				<bossgroupDef>Apocriton</bossgroupDef>
-				<effecterDef>SanguophageMeeting</effecterDef>
-				<prepareEffecterDef>Surgery</prepareEffecterDef>
-				<unlockedLetterLabelKey>LetterLabelTentacleBossgroupCallerUnlocked</unlockedLetterLabelKey>
-				<unlockedLetterTextKey>LetterTentacleBossgroupCallerUnlocked</unlockedLetterTextKey>
-				<delayTicks>120</delayTicks>
-			</li>
-		</comps>
-	</ThingDef>-->
-
 	<ThingDef ParentName="BossSummonBase">
 		<defName>BossSummonWarWomb</defName>
 		<graphicData>
@@ -192,5 +144,50 @@
 			</li>
 		</comps>
 	</ThingDef>
-	
+
+
+	<AmorTentaculum.BossWaveDef>
+		<defName>BossWave_Brewer</defName>
+		<minWaveRepeatIndex>2</minWaveRepeatIndex>
+		<waves>
+			<li>
+				<!-- 0 -->
+				<pawns>
+					<TentacleBrewer>1</TentacleBrewer>
+					<TentacleStriker>3</TentacleStriker>
+					<TentacleHunter>2</TentacleHunter>
+				</pawns>
+			</li>
+			<li>
+				<!-- 1 -->
+				<pawns>
+					<TentacleBrewer>1</TentacleBrewer>
+					<TentacleStriker>5</TentacleStriker>
+					<TentacleHunter>4</TentacleHunter>
+				</pawns>
+			</li>
+			<li>
+				<!-- 2 -->
+				<pawns>
+					<TentacleBrewer>1</TentacleBrewer>
+					<TentacleAbductor>2</TentacleAbductor>
+					<TentacleStriker>6</TentacleStriker>
+					<TentacleHunter>5</TentacleHunter>
+				</pawns>
+			</li>
+			<li>
+				<!-- 3 -->
+				<pawns>
+					<TentacleBrewer>2</TentacleBrewer>
+					<TentacleBorer>2</TentacleBorer>
+					<TentacleStriker>4</TentacleStriker>
+					<TentacleHunter>8</TentacleHunter>
+				</pawns>
+
+			</li>
+
+
+		</waves>
+	</AmorTentaculum.BossWaveDef>
+
 </Defs>

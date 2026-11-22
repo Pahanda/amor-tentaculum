@@ -1,0 +1,14 @@
+<languageData>
+
+	<BossSummon_RequiresOrbit>can't activate; not in orbit</BossSummon_RequiresOrbit>
+	<BossSummon_AlreadyActivated>already activated</BossSummon_AlreadyActivated>
+	<BossSummon_OtherSummonActive>another summoning beacon currently active</BossSummon_OtherSummonActive>
+	<BossSummon_CooldownActive>will be available in {0}</BossSummon_CooldownActive>
+
+	<BossSummon_Warning>Activating the {0} will summon the following hostile tentacles:\n\n{PAWNS}\n\nAre you ready to fight?</BossSummon_Warning>
+	<BossSummon_LetterLabelWaveSummoned>{0} summoned</BossSummon_LetterLabelWaveSummoned>
+	<BossSummon_LetterWaveSummoned>Attracted by your psychic beacon, a swarm of tentacles from {0} will assault your colony soon. Be prepared.</BossSummon_LetterWaveSummoned>
+	<BossSummon_LetterLabelWaveArrived>{0} arrived</BossSummon_LetterLabelWaveArrived>
+	<BossSummon_LetterWaveArrived>An tentacle swarm from {0} has come to attack you.\n\nThe assault group is composed of the following hostiles:\n\n{1}</BossSummon_LetterWaveArrived>
+
+	</languageData>

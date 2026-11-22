@@ -79,7 +79,7 @@
       </headPosPerRotation>
     </race>
 		<killedLeavings>
-			<BossGlandDefender>1</BossGlandDefender>
+			<BossLarvaDefender>1</BossLarvaDefender>
 		</killedLeavings>
     <tradeTags>
       <li>AnimalUncommon</li>

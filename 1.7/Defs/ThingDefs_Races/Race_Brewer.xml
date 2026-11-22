@@ -70,7 +70,7 @@
       </headPosPerRotation>
     </race>
 		<killedLeavings>
-			<BossGlandBrewer>1</BossGlandBrewer>
+			<BossLarvaBrewer>1</BossLarvaBrewer>
 		</killedLeavings>
     <tradeTags>
       <li>AnimalUncommon</li>
