@@ -148,11 +148,7 @@ namespace AmorTentaculum
                     GenSpawn.Spawn(tentacle, spawnCell, map);
 
                     Lord backgroundLord = tentacle.GetLord();
-                    
-
                     bossSquad.Add(tentacle);
-
-
                 }
             }
 
@@ -169,8 +165,7 @@ namespace AmorTentaculum
                 tentacle.mindState?.priorityWork.Clear();
             }
 
-            var enemiesJustSpawned = map.mapPawns.AllPawnsSpawned.Where(p => p.Faction == tentacleFaction && p.HostileTo(Find.FactionManager.OfPlayer)).ToList();
-            var lookTargets = new LookTargets(enemiesJustSpawned);
+            var lookTargets = new LookTargets(spawnCell, map);
 
             var waveLeaderKind = wave.pawns.First().kindDef;
             Find.LetterStack.ReceiveLetter(
