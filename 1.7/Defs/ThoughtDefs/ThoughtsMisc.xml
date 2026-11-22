@@ -39,4 +39,46 @@
      </stages>
    </ThoughtDef>
 
+  <!-- Multiple Queen penalty thought -->
+
+   <ThoughtDef>
+     <defName>AmorQueenRivalThought</defName>
+     <workerClass>ThoughtWorker_Hediff</workerClass>
+     <hediff>AmorQueenRival</hediff>
+     <stackLimit>1</stackLimit>
+     <validWhileDespawned>true</validWhileDespawned>
+     <stages>
+      <li>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+      <li>
+        <baseMoodEffect>-20</baseMoodEffect>
+      </li>
+      <li>
+        <baseMoodEffect>-40</baseMoodEffect>
+      </li>
+     </stages>
+   </ThoughtDef>
+
+  <!-- Seduction penalty mood thought -->
+
+   <ThoughtDef>
+     <defName>QueeixHighThought</defName>
+     <workerClass>ThoughtWorker_Hediff</workerClass>
+     <hediff>QueeixHigh</hediff>
+     <stackLimit>1</stackLimit>
+     <validWhileDespawned>true</validWhileDespawned>
+     <stages>
+     <li>
+        <baseMoodEffect>3</baseMoodEffect>
+      </li>
+      <li>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+      <li>
+        <baseMoodEffect>11</baseMoodEffect>
+      </li>
+     </stages>
+   </ThoughtDef>
+
 </Defs>

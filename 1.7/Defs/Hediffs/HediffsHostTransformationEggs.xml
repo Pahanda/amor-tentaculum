@@ -163,12 +163,6 @@
 						<severityPerDay>0</severityPerDay>
 						<initialSeverity>0.1</initialSeverity>
 					</li>
-					<li>
-						<hediffDef>AmorQueenHost</hediffDef>
-						<validSeverity>1.48~1.51</validSeverity>
-						<severityPerDay>0</severityPerDay>
-						<initialSeverity>0.1</initialSeverity>
-					</li>
 				</hediffSets>
 			</li>
 		</comps>
@@ -362,6 +356,14 @@
 						<mtbDays>0.1</mtbDays>
 						<partsToAffect>
 							<li>Stomach</li>
+						</partsToAffect>
+						<countToAffect>1</countToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>TentacleInfestedVagina</hediff>
+						<mtbDays>0.1</mtbDays>
+						<partsToAffect>
+							<li>Genitals</li>
 						</partsToAffect>
 						<countToAffect>1</countToAffect>
 					</li>
@@ -920,185 +922,6 @@
 				<painOffset>0.1</painOffset>
 			</li>
 		</stages>
-	</HediffDef>
-
-	<!-- Tentacle-infested body parts -->
-	
-	<HediffDef>
-		<defName>TentacleInfestedAnus</defName>
-		<hediffClass>HediffWithComps</hediffClass>
-		<defaultLabelColor>(255,20,147)</defaultLabelColor>
-		<minSeverity>0.001</minSeverity>
-		<initialSeverity>0.001</initialSeverity>
-		<maxSeverity>1</maxSeverity>
-		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
-		<stages>
-			<li>
-				<minSeverity>0.001</minSeverity>
-				<painOffset>0.05</painOffset>
-				<statOffsets>
-					<MoveSpeed>-0.01</MoveSpeed>
-				</statOffsets>
-			</li>
-			<li>
-				<minSeverity>0.25</minSeverity>
-				<painOffset>0.2</painOffset>
-				<statOffsets>
-					<MoveSpeed>-0.02</MoveSpeed>
-				</statOffsets>
-			</li>
-			<li>
-				<minSeverity>0.5</minSeverity>
-				<painOffset>0.3</painOffset>
-				<statOffsets>
-					<MoveSpeed>-0.03</MoveSpeed>
-				</statOffsets>
-			</li>
-			<li>
-				<minSeverity>0.75</minSeverity>
-				<painOffset>0.2</painOffset>
-				<statOffsets>
-					<MoveSpeed>-0.02</MoveSpeed>
-				</statOffsets>
-			</li>
-			<li>
-				<minSeverity>1</minSeverity>
-				<painOffset>0.01</painOffset>
-				<statOffsets>
-					<TStorage>0.02</TStorage>
-					<MoveSpeed>-0.01</MoveSpeed>
-				</statOffsets>
-			</li>
-		</stages>
-		<comps>
-			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
-				<modSettingMultiplier>hostAcclimationSpeedFactor</modSettingMultiplier>
-				<baseSeverityPerDay>0.05</baseSeverityPerDay>
-			</li>
-		</comps>
-	</HediffDef>
-
-	<HediffDef>
-		<defName>TentacleInfestedStomach</defName>
-		<hediffClass>HediffWithComps</hediffClass>
-		<defaultLabelColor>(255,20,147)</defaultLabelColor>
-		<minSeverity>0.001</minSeverity>
-		<initialSeverity>0.001</initialSeverity>
-		<maxSeverity>1</maxSeverity>
-		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
-		<stages>
-			<li>
-				<minSeverity>0.001</minSeverity>
-				<painOffset>0.05</painOffset>
-				<partEfficiencyOffset>-0.2</partEfficiencyOffset>
-				<statOffsets>
-					<VEF_FoodCapacityMultiplier>0.2</VEF_FoodCapacityMultiplier>
-					<MoveSpeed>-0.01</MoveSpeed>
-				</statOffsets>
-			</li>
-			<li>
-				<minSeverity>0.25</minSeverity>
-				<painOffset>0.2</painOffset>
-				<partEfficiencyOffset>-0.3</partEfficiencyOffset>
-				<statOffsets>
-					<VEF_FoodCapacityMultiplier>0.3</VEF_FoodCapacityMultiplier>
-					<MoveSpeed>-0.02</MoveSpeed>
-				</statOffsets>
-			</li>
-			<li>
-				<minSeverity>0.5</minSeverity>
-				<painOffset>0.3</painOffset>
-				<vomitMtbDays>0.08</vomitMtbDays>
-				<partEfficiencyOffset>-0.8</partEfficiencyOffset>
-				<statOffsets>
-					<VEF_FoodCapacityMultiplier>0.5</VEF_FoodCapacityMultiplier>
-					<MoveSpeed>-0.03</MoveSpeed>
-				</statOffsets>
-			</li>
-			<li>
-				<minSeverity>0.75</minSeverity>
-				<painOffset>0.2</painOffset>
-				<partEfficiencyOffset>-0.8</partEfficiencyOffset>
-				<statOffsets>
-					<VEF_FoodCapacityMultiplier>0.5</VEF_FoodCapacityMultiplier>
-					<MoveSpeed>-0.03</MoveSpeed>
-				</statOffsets>
-			</li>
-			<li>
-				<minSeverity>1</minSeverity>
-				<painOffset>0.01</painOffset>
-				<partEfficiencyOffset>-0.7</partEfficiencyOffset>
-				<statOffsets>
-					<VEF_FoodCapacityMultiplier>0.5</VEF_FoodCapacityMultiplier>
-					<MoveSpeed>-0.02</MoveSpeed>
-					<TStorage>0.02</TStorage>
-				</statOffsets>
-			</li>
-		</stages>
-		<comps>
-			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
-				<modSettingMultiplier>hostAcclimationSpeedFactor</modSettingMultiplier>
-				<baseSeverityPerDay>0.05</baseSeverityPerDay>
-			</li>
-		</comps>
-	</HediffDef>
-
-	<HediffDef>
-		<defName>TentacleInfestedVagina</defName>
-		<hediffClass>HediffWithComps</hediffClass>
-		<defaultLabelColor>(255,20,147)</defaultLabelColor>
-		<minSeverity>0.001</minSeverity>
-		<initialSeverity>0.001</initialSeverity>
-		<maxSeverity>1</maxSeverity>
-		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
-		<stages>
-			<li>
-				<minSeverity>0.001</minSeverity>
-				<painOffset>0.05</painOffset>
-				<statOffsets>
-					<MoveSpeed>-0.01</MoveSpeed>
-				</statOffsets>
-			</li>
-			<li>
-				<minSeverity>0.25</minSeverity>
-				<painOffset>0.2</painOffset>
-				<partEfficiencyOffset>0.2</partEfficiencyOffset>
-				<statOffsets>
-					<MoveSpeed>-0.02</MoveSpeed>
-				</statOffsets>
-			</li>
-			<li>
-				<minSeverity>0.5</minSeverity>
-				<painOffset>0.5</painOffset>
-				<partEfficiencyOffset>0.3</partEfficiencyOffset>
-				<statOffsets>
-					<MoveSpeed>-0.3</MoveSpeed>
-				</statOffsets>
-			</li>
-			<li>
-				<minSeverity>0.75</minSeverity>
-				<painOffset>0.2</painOffset>
-				<partEfficiencyOffset>0.5</partEfficiencyOffset>
-				<statOffsets>
-					<MoveSpeed>-0.03</MoveSpeed>
-				</statOffsets>
-			</li>
-			<li>
-				<minSeverity>1</minSeverity>
-				<painOffset>0.01</painOffset>
-				<partEfficiencyOffset>0.5</partEfficiencyOffset>
-				<statOffsets>
-					<TStorage>0.02</TStorage>
-					<MoveSpeed>-0.02</MoveSpeed>
-				</statOffsets>
-			</li>
-		</stages>
-		<comps>
-			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
-				<modSettingMultiplier>hostAcclimationSpeedFactor</modSettingMultiplier>
-				<baseSeverityPerDay>0.05</baseSeverityPerDay>
-			</li>
-		</comps>
 	</HediffDef>
 	
 </Defs>

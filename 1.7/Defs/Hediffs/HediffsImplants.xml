@@ -1,9 +1,9 @@
 <Defs>
 
   <ThingDef ParentName="BodyPartBionicBase">
-    <defName>TWombItem</defName>
+    <defName>UterineIncubator</defName>
     <descriptionHyperlinks>
-      <RecipeDef>InstallTWombEnhance</RecipeDef>
+      <RecipeDef>InstallUterineIncubator</RecipeDef>
     </descriptionHyperlinks>
     <statBases>
       <WorkToMake>26000</WorkToMake>
@@ -31,25 +31,28 @@
 
   <HediffDef ParentName="ImplantHediffBase">
     <hediffClass>HediffWithComps</hediffClass>
-    <defName>TWombEnhanced</defName>
-    <descriptionHyperlinks><ThingDef>TWombItem</ThingDef></descriptionHyperlinks>
+    <defName>UterineIncubator</defName>
+    <descriptionHyperlinks><ThingDef>UterineIncubator</ThingDef></descriptionHyperlinks>
     <initialSeverity>1</initialSeverity>
     <maxSeverity>1</maxSeverity>
-    <spawnThingOnRemoved>TWombItem</spawnThingOnRemoved>
+    <spawnThingOnRemoved>UterineIncubator</spawnThingOnRemoved>    <stages>
+      <li>
+        <hungerRateFactorOffset>0.15</hungerRateFactorOffset>
+      </li>
+    </stages>
   </HediffDef>
 
-
   <RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
-		<defName>InstallTWombEnhance</defName>
+		<defName>InstallUterineIncubator</defName>
     <descriptionHyperlinks>
-      <ThingDef>TWombItem</ThingDef>
-      <HediffDef>TWombEnhanced</HediffDef>
+      <ThingDef>UterineIncubator</ThingDef>
+      <HediffDef>UterineIncubator</HediffDef>
     </descriptionHyperlinks>
     <ingredients>
       <li>
         <filter>
           <thingDefs>
-            <li>TWombItem</li>
+            <li>UterineIncubator</li>
           </thingDefs>
         </filter>
         <count>1</count>
@@ -57,13 +60,13 @@
     </ingredients>
     <fixedIngredientFilter>
       <thingDefs>
-        <li>TWombItem</li>
+        <li>UterineIncubator</li>
       </thingDefs>
     </fixedIngredientFilter>
     <appliedOnFixedBodyParts>
       <li>Genitals</li>
     </appliedOnFixedBodyParts>
-    <addsHediff>TWombEnhanced</addsHediff>
+    <addsHediff>UterineIncubator</addsHediff>
     <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
   </RecipeDef>
 

@@ -99,6 +99,17 @@
 					</li>
 				</hediffsToApply>
 			</li>
+			<li Class="EBSGFramework.HiveMindExtension">
+				<key>AmorQueen</key>
+				<hiveKey>AmorTentacleHive</hiveKey>
+				<hiveRolesToCheckFor>
+					<li>
+						<checkKey>AmorQueen</checkKey>
+						<maxCount>1</maxCount>
+						<hediffWhenTooMany>AmorQueenRival</hediffWhenTooMany>
+					</li>
+				</hiveRolesToCheckFor>
+			</li>
 		</modExtensions>
 	</GeneDef>
 

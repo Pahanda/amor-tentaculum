@@ -17,6 +17,15 @@
 	<ValkyrieEnrage.label>valkyrie's enrage</ValkyrieEnrage.label>
 	<ValkyrieEnrage.description>After a nearby Defender's death, this Valkyrie rages, imitating the Defender's bulwark for a short time.</ValkyrieEnrage.description>
 
+	<!-- Drugs, food, and other consumables -->
+
+	<QueeixHigh.label>queeix high</QueeixHigh.label>
+	<QueeixHigh.labelNoun>queeix</QueeixHigh.labelNoun>
+	<QueeixHigh.description>A strong drug is accelerating the incubation of Brood Mother eggs. Higher concentrations induce stronger growth and temporary bodily disfunction.</QueeixHigh.description>
+	<QueeixHigh.stages.0.label>weak</QueeixHigh.stages.0.label>
+	<QueeixHigh.stages.1.label>nauseous</QueeixHigh.stages.1.label>
+	<QueeixHigh.stages.2.label>intoxicated</QueeixHigh.stages.2.label>
+
 	<!-- Implants/Bionics -->
 
 	<IBworm.label>indoctrination worm</IBworm.label>
@@ -31,9 +40,9 @@
 	<Fworm.labelNoun>a feeding worm</Fworm.labelNoun>
 	<Fworm.description>A tentacle living in the esophagus. Rapidly digests food for the host and injects it as a slurry into their stomach. Grants immunity to gut worms and food poisoning.</Fworm.description>
 
-	<TWombEnhanced.label>in-utero incubator</TWombEnhanced.label>
-	<TWombEnhanced.labelNoun>an in-utero incubator</TWombEnhanced.labelNoun>
-	<TWombEnhanced.description>An artificial implant inside the Host's womb which aids in the incubation of Amor Brood Mother eggs.</TWombEnhanced.description>
+	<UterineIncubator.label>uterine incubator</UterineIncubator.label>
+	<UterineIncubator.labelNoun>a uterine incubator</UterineIncubator.labelNoun>
+	<UterineIncubator.description>An artificial implant inside the Host's womb which aids in the incubation of Amor Brood Mother eggs.</UterineIncubator.description>
 
 	<ImplantAnalSpeculum.label>anal speculum</ImplantAnalSpeculum.label>
 	<ImplantAnalSpeculum.labelNoun>an anal speculum</ImplantAnalSpeculum.labelNoun>
@@ -69,7 +78,7 @@
 
 	<BroodMotherIncubation.label>Brood Mother egg</BroodMotherIncubation.label>
 	<BroodMotherIncubation.labelNoun>an amor brood mother egg</BroodMotherIncubation.labelNoun>
-	<BroodMotherIncubation.description>An Amor Brood Mother egg is being incubated by the Queen, and is growing inside her body. This process takes around 20 days (with default multipliers), and she will not enjoy it (although her Host body will adapt to suppress the pain over time).</BroodMotherIncubation.description>
+	<BroodMotherIncubation.description>An Amor Brood Mother egg is being incubated by the Queen. It will grow increasingly bigger, which may lead to physical complications. The process takes around 30 days without any outside factors.</BroodMotherIncubation.description>
 	<BroodMotherIncubation.stages.0.label>tiny</BroodMotherIncubation.stages.0.label>
 	<BroodMotherIncubation.stages.1.label>small</BroodMotherIncubation.stages.1.label>
 	<BroodMotherIncubation.stages.2.label>large</BroodMotherIncubation.stages.2.label>

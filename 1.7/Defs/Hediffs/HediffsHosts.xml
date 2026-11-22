@@ -7,7 +7,7 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(203,120,227)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
-		<maxSeverity>1.5</maxSeverity>
+		<maxSeverity>1</maxSeverity>
 		<isBad>false</isBad>
 		<tendable>false</tendable>
 		<comps>
@@ -19,38 +19,16 @@
 		<stages>
 			<li>
 				<minSeverity>0.01</minSeverity>
-				<restFallFactor>1.2</restFallFactor>
-				<hungerRateFactorOffset>0.5</hungerRateFactorOffset>
-				<regeneration>1</regeneration>
+				<restFallFactor>1.25</restFallFactor>
+				<hungerRateFactorOffset>0.6</hungerRateFactorOffset>
 				<statOffsets>
-					<PsychicSensitivity>0.4</PsychicSensitivity>
-					<SexFrequency>1</SexFrequency>
+					<PsychicSensitivity>0.35</PsychicSensitivity>
+					<SexFrequency>0.7</SexFrequency>
 					<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
-					<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.7</ArmorRating_Heat>
-					<ComfyTemperatureMin>-20</ComfyTemperatureMin>
+					<ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.35</ArmorRating_Heat>
+					<ComfyTemperatureMin>-18</ComfyTemperatureMin>
 					<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.3</VacuumResistance>
-				</statOffsets>
-				<capMods>
-					<li>
-						<capacity>Moving</capacity>
-						<offset>-0.01</offset>
-					</li>
-				</capMods>
-			</li>
-			<li>
-				<minSeverity>0.2</minSeverity>
-				<restFallFactor>1.2</restFallFactor>
-				<hungerRateFactorOffset>0.7</hungerRateFactorOffset>
-				<regeneration>5</regeneration>
-				<statOffsets>
-					<PsychicSensitivity>0.5</PsychicSensitivity>
-					<SexFrequency>1.2</SexFrequency>
-					<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
-					<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
-					<ArmorRating_Heat>0.8</ArmorRating_Heat>
-					<ComfyTemperatureMin>-24</ComfyTemperatureMin>
-					<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.6</VacuumResistance>
 				</statOffsets>
 				<capMods>
 					<li>
@@ -60,18 +38,17 @@
 				</capMods>
 			</li>
 			<li>
-				<minSeverity>0.6</minSeverity>
+				<minSeverity>0.2</minSeverity>
 				<restFallFactor>1.3</restFallFactor>
-				<hungerRateFactorOffset>1</hungerRateFactorOffset>
-				<regeneration>10</regeneration>
+				<hungerRateFactorOffset>0.8</hungerRateFactorOffset>
 				<statOffsets>
-					<PsychicSensitivity>1</PsychicSensitivity>
-					<SexFrequency>2</SexFrequency>
-					<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-					<ArmorRating_Blunt>0.8</ArmorRating_Blunt>
-					<ArmorRating_Heat>1</ArmorRating_Heat>
-					<ComfyTemperatureMin>-30</ComfyTemperatureMin>
-					<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+					<PsychicSensitivity>0.5</PsychicSensitivity>
+					<SexFrequency>1.2</SexFrequency>
+					<ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.5</ArmorRating_Heat>
+					<ComfyTemperatureMin>-22</ComfyTemperatureMin>
+					<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.6</VacuumResistance>
 				</statOffsets>
 				<capMods>
 					<li>
@@ -81,17 +58,36 @@
 				</capMods>
 			</li>
 			<li>
-				<minSeverity>0.9</minSeverity>
-				<restFallFactor>1.4</restFallFactor>
-				<hungerRateFactorOffset>2</hungerRateFactorOffset>
-				<regeneration>20</regeneration>
+				<minSeverity>0.6</minSeverity>
+				<restFallFactor>1.35</restFallFactor>
+				<hungerRateFactorOffset>1.1</hungerRateFactorOffset>
 				<statOffsets>
-					<PsychicSensitivity>2</PsychicSensitivity>
-					<SexFrequency>3</SexFrequency>
-					<ArmorRating_Sharp>0.8</ArmorRating_Sharp>
-					<ArmorRating_Blunt>1.6</ArmorRating_Blunt>
-					<ArmorRating_Heat>2</ArmorRating_Heat>
-					<ComfyTemperatureMin>-35</ComfyTemperatureMin>
+					<PsychicSensitivity>0.65</PsychicSensitivity>
+					<SexFrequency>1.8</SexFrequency>
+					<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.6</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.65</ArmorRating_Heat>
+					<ComfyTemperatureMin>-26</ComfyTemperatureMin>
+					<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.07</offset>
+					</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<restFallFactor>1.4</restFallFactor>
+				<hungerRateFactorOffset>1.5</hungerRateFactorOffset>
+				<statOffsets>
+					<PsychicSensitivity>0.8</PsychicSensitivity>
+					<SexFrequency>2.5</SexFrequency>
+					<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+					<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+					<ArmorRating_Heat>0.8</ArmorRating_Heat>
+					<ComfyTemperatureMin>-30</ComfyTemperatureMin>
 					<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
 				</statOffsets>
 				<capMods>
@@ -568,6 +564,19 @@
 	<!-- Miscellaneous-->
 
 	<HediffDef>
+		<defName>TentacleStorage</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(203,120,227)</defaultLabelColor>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
 		<defName>OrganElasticity</defName>
 		<isBad>False</isBad>
 		<defaultLabelColor>(255,182,193)</defaultLabelColor>
@@ -652,19 +661,6 @@
 	</HediffDef>
 
 	<HediffDef>
-		<defName>TentacleStorage</defName>
-		<hediffClass>HediffWithComps</hediffClass>
-		<defaultLabelColor>(203,120,227)</defaultLabelColor>
-		<initialSeverity>1</initialSeverity>
-		<maxSeverity>1</maxSeverity>
-		<stages>
-			<li>
-				<becomeVisible>false</becomeVisible>
-			</li>
-		</stages>
-	</HediffDef>
-
-	<HediffDef>
 		<defName>AmorQueenSlimeProduction</defName>
 		<defaultLabelColor>(203,120,227)</defaultLabelColor>
 		<everCurableByItem>false</everCurableByItem>
@@ -728,6 +724,74 @@
 	</HediffDef>
 
 	<HediffDef>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defName>AmorQueenRival</defName>
+		<label>Queen rivalry</label>
+		<description>The presence of another Queen is causing extreme irritation. Things might get out of control if this situation isn't resolved quickly...</description>
+		<initialSeverity>0.01</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<stages>
+			<li>
+				<minSeverity>0.01</minSeverity>
+				<socialFightChanceFactor>0.5</socialFightChanceFactor>
+				<mentalStateGivers>
+				</mentalStateGivers>
+				<statOffsets>
+					<Vulnerability>-0.5</Vulnerability>
+					<SexFrequency>-0.5</SexFrequency>
+				</statOffsets>
+				<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<offset>-0.05</offset>
+				</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<socialFightChanceFactor>1</socialFightChanceFactor>
+				<mentalStateGivers>
+				</mentalStateGivers>
+				<statOffsets>
+					<Vulnerability>-1</Vulnerability>
+					<SexFrequency>-1</SexFrequency>
+				</statOffsets>
+				<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<offset>-0.1</offset>
+				</li>
+				</capMods>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<socialFightChanceFactor>2</socialFightChanceFactor>
+				<mentalStateGivers>
+					<li>
+						<mentalState>MurderousRage</mentalState>
+						<mtbDays>1</mtbDays>
+					</li>
+				</mentalStateGivers>
+				<statOffsets>
+					<Vulnerability>-2</Vulnerability>
+					<SexFrequency>-2</SexFrequency>
+				</statOffsets>
+				<capMods>
+				<li>
+					<capacity>Consciousness</capacity>
+					<offset>-0.20</offset>
+				</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+					<severityPerDay>0.33</severityPerDay>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
 		<defName>TentacleLimbVagina</defName>
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(255,182,193)</defaultLabelColor>
@@ -739,25 +803,19 @@
 			<li>
 				<minSeverity>1</minSeverity>
 				<statOffsets>
-					<MoveSpeed>0.2</MoveSpeed>
-				</statOffsets>
-			</li>
-			<li>
-				<minSeverity>2</minSeverity>
-				<statOffsets>
-					<MoveSpeed>0.3</MoveSpeed>
+					<MoveSpeed>0.1</MoveSpeed>
 				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>Manipulation</capacity>
-						<postFactor>1.01</postFactor>
+						<postFactor>1.03</postFactor>
 					</li>
 				</capMods>
 			</li>
 			<li>
-				<minSeverity>3</minSeverity>
+				<minSeverity>2</minSeverity>
 				<statOffsets>
-					<MoveSpeed>0.45</MoveSpeed>
+					<MoveSpeed>0.15</MoveSpeed>
 				</statOffsets>
 				<capMods>
 					<li>
@@ -767,9 +825,21 @@
 				</capMods>
 			</li>
 			<li>
+				<minSeverity>3</minSeverity>
+				<statOffsets>
+					<MoveSpeed>0.2</MoveSpeed>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>1.07</postFactor>
+					</li>
+				</capMods>
+			</li>
+			<li>
 				<minSeverity>4</minSeverity>
 				<statOffsets>
-					<MoveSpeed>0.55</MoveSpeed>
+					<MoveSpeed>0.25</MoveSpeed>
 				</statOffsets>
 				<capMods>
 					<li>
@@ -781,7 +851,7 @@
 			<li>
 				<minSeverity>5</minSeverity>
 				<statOffsets>
-					<MoveSpeed>0.65</MoveSpeed>
+					<MoveSpeed>0.3</MoveSpeed>
 				</statOffsets>
 				<capMods>
 					<li>
@@ -843,8 +913,8 @@
 						<capacities>
 							<li>Stab</li>
 						</capacities>
-						<armorPenetration>0.6</armorPenetration>
-						<power>32.5</power>
+						<armorPenetration>0.5</armorPenetration>
+						<power>22.5</power>
 						<cooldownTime>2</cooldownTime>
 					</li>
 				</tools>
@@ -868,13 +938,19 @@
 			<li>
 				<minSeverity>1</minSeverity>
 				<statOffsets>
-					<MoveSpeed>0.15</MoveSpeed>
+					<MoveSpeed>0.1</MoveSpeed>
 				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>1.05</postFactor>
+					</li>
+				</capMods>
 			</li>
 			<li>
 				<minSeverity>2</minSeverity>
 				<statOffsets>
-					<MoveSpeed>0.25</MoveSpeed>
+					<MoveSpeed>0.15</MoveSpeed>
 				</statOffsets>
 				<capMods>
 					<li>
@@ -886,36 +962,36 @@
 			<li>
 				<minSeverity>3</minSeverity>
 				<statOffsets>
-					<MoveSpeed>0.35</MoveSpeed>
+					<MoveSpeed>0.2</MoveSpeed>
 				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>Manipulation</capacity>
-						<postFactor>1.25</postFactor>
+						<postFactor>1.15</postFactor>
 					</li>
 				</capMods>
 			</li>
 			<li>
 				<minSeverity>4</minSeverity>
 				<statOffsets>
-					<MoveSpeed>0.45</MoveSpeed>
+					<MoveSpeed>0.25</MoveSpeed>
 				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>Manipulation</capacity>
-						<postFactor>1.5</postFactor>
+						<postFactor>1.2</postFactor>
 					</li>
 				</capMods>
 			</li>
 			<li>
 				<minSeverity>5</minSeverity>
 				<statOffsets>
-					<MoveSpeed>0.65</MoveSpeed>
+					<MoveSpeed>0.3</MoveSpeed>
 				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>Manipulation</capacity>
-						<postFactor>2</postFactor>
+						<postFactor>1.25</postFactor>
 					</li>
 				</capMods>
 			</li>
@@ -974,8 +1050,8 @@
 						<capacities>
 							<li>Stab</li>
 						</capacities>
-						<armorPenetration>0.6</armorPenetration>
-						<power>34.5</power>
+						<armorPenetration>0.4</armorPenetration>
+						<power>17.5</power>
 						<cooldownTime>2</cooldownTime>
 					</li>
 				</tools>
@@ -983,6 +1059,188 @@
 			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
 				<modSettingMultiplier>hostAcclimationSpeedFactor</modSettingMultiplier>
 				<baseSeverityPerDay>0.025</baseSeverityPerDay>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!-- Tentacle-infested body parts -->
+	
+	<HediffDef>
+		<defName>TentacleInfestedAnus</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(255,20,147)</defaultLabelColor>
+		<minSeverity>0.001</minSeverity>
+		<initialSeverity>0.001</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<stages>
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<painOffset>0.05</painOffset>
+				<statOffsets>
+					<MoveSpeed>-0.01</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.25</minSeverity>
+				<painOffset>0.2</painOffset>
+				<statOffsets>
+					<MoveSpeed>-0.02</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<painOffset>0.3</painOffset>
+				<statOffsets>
+					<MoveSpeed>-0.03</MoveSpeed>
+					<TStorage>0.01</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.75</minSeverity>
+				<painOffset>0.2</painOffset>
+				<statOffsets>
+					<MoveSpeed>-0.02</MoveSpeed>
+					<TStorage>0.02</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<painOffset>0.01</painOffset>
+				<statOffsets>
+					<TStorage>0.02</TStorage>
+					<MoveSpeed>-0.01</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>hostAcclimationSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.1</baseSeverityPerDay>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>TentacleInfestedStomach</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(255,20,147)</defaultLabelColor>
+		<minSeverity>0.001</minSeverity>
+		<initialSeverity>0.001</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<stages>
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<painOffset>0.05</painOffset>
+				<partEfficiencyOffset>-0.2</partEfficiencyOffset>
+				<statOffsets>
+					<MoveSpeed>-0.01</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.25</minSeverity>
+				<painOffset>0.2</painOffset>
+				<partEfficiencyOffset>-0.3</partEfficiencyOffset>
+				<statOffsets>
+					<VEF_FoodCapacityMultiplier>0.1</VEF_FoodCapacityMultiplier>
+					<MoveSpeed>-0.02</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<painOffset>0.3</painOffset>
+				<vomitMtbDays>0.08</vomitMtbDays>
+				<partEfficiencyOffset>-0.8</partEfficiencyOffset>
+				<statOffsets>
+					<VEF_FoodCapacityMultiplier>0.3</VEF_FoodCapacityMultiplier>
+					<MoveSpeed>-0.03</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.75</minSeverity>
+				<painOffset>0.2</painOffset>
+				<partEfficiencyOffset>-0.8</partEfficiencyOffset>
+				<statOffsets>
+					<VEF_FoodCapacityMultiplier>0.5</VEF_FoodCapacityMultiplier>
+					<MoveSpeed>-0.03</MoveSpeed>
+					<TStorage>0.01</TStorage>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<painOffset>0.01</painOffset>
+				<partEfficiencyOffset>-0.7</partEfficiencyOffset>
+				<statOffsets>
+					<VEF_FoodCapacityMultiplier>0.5</VEF_FoodCapacityMultiplier>
+					<MoveSpeed>-0.02</MoveSpeed>
+					<TStorage>0.02</TStorage>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>hostAcclimationSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.1</baseSeverityPerDay>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>TentacleInfestedVagina</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(255,20,147)</defaultLabelColor>
+		<minSeverity>0.001</minSeverity>
+		<initialSeverity>0.001</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<keepOnBodyPartRestoration>True</keepOnBodyPartRestoration>
+		<stages>
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<painOffset>0.05</painOffset>
+				<statOffsets>
+					<MoveSpeed>-0.01</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.25</minSeverity>
+				<painOffset>0.2</painOffset>
+				<partEfficiencyOffset>0.2</partEfficiencyOffset>
+				<statOffsets>
+					<MoveSpeed>-0.02</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.5</minSeverity>
+				<painOffset>0.5</painOffset>
+				<partEfficiencyOffset>0.3</partEfficiencyOffset>
+				<statOffsets>
+					<MoveSpeed>-0.3</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>0.75</minSeverity>
+				<painOffset>0.2</painOffset>
+				<partEfficiencyOffset>0.5</partEfficiencyOffset>
+				<statOffsets>
+					<TStorage>0.02</TStorage>
+					<MoveSpeed>-0.03</MoveSpeed>
+				</statOffsets>
+			</li>
+			<li>
+				<minSeverity>1</minSeverity>
+				<painOffset>0.01</painOffset>
+				<partEfficiencyOffset>0.5</partEfficiencyOffset>
+				<statOffsets>
+					<TStorage>0.02</TStorage>
+					<MoveSpeed>-0.02</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
+				<modSettingMultiplier>hostAcclimationSpeedFactor</modSettingMultiplier>
+				<baseSeverityPerDay>0.1</baseSeverityPerDay>
 			</li>
 		</comps>
 	</HediffDef>
