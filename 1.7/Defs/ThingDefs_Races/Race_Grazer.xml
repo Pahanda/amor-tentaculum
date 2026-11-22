@@ -10,6 +10,16 @@
       <ComfyTemperatureMax>90</ComfyTemperatureMax>
       <Wildness>0</Wildness>
     </statBases>
+		<tools>
+			<li>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2.6</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			</li>
+		</tools>
     <comps>
       <li Class="VEF.AnimalBehaviours.CompProperties_FixedGender">
         <gender>Male</gender>
