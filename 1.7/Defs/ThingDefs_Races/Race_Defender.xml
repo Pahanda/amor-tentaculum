@@ -78,6 +78,9 @@
         <li>(-0.03, 0, 0.36)</li>
       </headPosPerRotation>
     </race>
+		<killedLeavings>
+			<BossLarvaDefender>1</BossLarvaDefender>
+		</killedLeavings>
     <tradeTags>
       <li>AnimalUncommon</li>
       <li>AnimalFighter</li>

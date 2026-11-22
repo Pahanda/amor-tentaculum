@@ -1,0 +1,418 @@
+<Defs>
+
+	<ThingDef ParentName="BuildingBase" Name="BossSummonBase" Abstract="True">
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.3</fillPercent>
+		<building>
+			<ai_chillDestination>false</ai_chillDestination>
+			<buildingTags>
+				<li>Tentacles</li>
+			</buildingTags>
+		</building>
+		<designatorDropdown>BossSummonBuildings</designatorDropdown>
+		<designationCategory>Tentacles</designationCategory>
+		<uiOrder>2460</uiOrder>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>8000</WorkToBuild>
+			<Mass>25</Mass>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<size>(2,2)</size>
+		<costList>
+			<HardResin>75</HardResin>
+			<SoftResin>25</SoftResin>
+			<TentacleSlime>5</TentacleSlime>
+			<TentacleCatalyst>1</TentacleCatalyst>
+		</costList>
+		<killedLeavings>
+			<HardResin>5</HardResin>
+			<SoftResin>3</SoftResin>
+		</killedLeavings>
+		<researchPrerequisites>
+			<li>ATLarvaAdvanced</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Usable">
+				<useJob>TriggerObject</useJob>
+				<useDuration>900</useDuration>
+				<floatMenuFactionIcon>Tentacles</floatMenuFactionIcon>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<wickTicks>160~600</wickTicks>
+				<explosiveRadius>0.5</explosiveRadius>
+				<explosiveDamageType>Stun</explosiveDamageType>
+				<damageAmountBase>1</damageAmountBase>
+			</li>
+		</comps>
+		<tickerType>Normal</tickerType>
+		<filthLeaving>Filth_Blood</filthLeaving>
+	</ThingDef>
+
+	<ThingDef ParentName="BossSummonBase">
+		<defName>BossSummonFeralSwarm</defName>
+		<graphicData>
+			<texPath>Things/Buildings/Summoners/TentacleSummoner</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(1.1, 0.75, 1.1</volume>
+			</shadowData>
+		</graphicData>
+		<costList>
+			<Steel>50</Steel>
+			<HardResin>25</HardResin>
+			<SoftResin>10</SoftResin>
+			<TentacleSlime>1</TentacleSlime>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<killedLeavings>
+			<HardResin>2</HardResin>
+			<SoftResin>1</SoftResin>
+			<ChunkSlagSteel>2</ChunkSlagSteel>
+		</killedLeavings>
+		<comps>
+			<li Class="AmorTentaculum.CompProperties_BossSummoner">
+				<wave>BossWave_FeralSwarm</wave>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BossSummonBase">
+		<defName>BossSummonBrewer</defName>
+		<graphicData>
+			<texPath>Things/Buildings/Summoners/BrewerSummoner</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(1.1, 0.75, 1.1</volume>
+			</shadowData>
+		</graphicData>
+		<comps>
+			<li Class="AmorTentaculum.CompProperties_BossSummoner">
+				<wave>BossWave_Brewer</wave>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BossSummonBase">
+		<defName>BossSummonTwins</defName>
+		<graphicData>
+			<texPath>Things/Buildings/Summoners/TwinsSummoner</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(1.1, 0.75, 1.1</volume>
+			</shadowData>
+		</graphicData>
+		<comps>
+			<li Class="AmorTentaculum.CompProperties_BossSummoner">
+				<wave>BossWave_Twins</wave>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="BossSummonBase">
+		<defName>BossSummonWarWomb</defName>
+		<graphicData>
+			<texPath>Things/Buildings/Summoners/WarWombSummoner</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2,2)</drawSize>
+			<shadowData>
+				<volume>(1.1, 0.75, 1.1</volume>
+			</shadowData>
+		</graphicData>
+		<comps>
+			<li Class="AmorTentaculum.CompProperties_BossSummoner">
+				<wave>BossWave_WarWomb</wave>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<AmorTentaculum.BossWaveDef>
+		<defName>BossWave_FeralSwarm</defName>
+		<minWaveRepeatIndex>2</minWaveRepeatIndex>
+		<waves>
+			<li>
+				<!-- 0 -->
+				<pawns>
+					<TentacleGrazer>2</TentacleGrazer>
+					<TentacleProducer>2</TentacleProducer>
+					<TentacleStriker>2</TentacleStriker>					
+				</pawns>
+			</li>
+			<li>
+				<!-- 1 -->
+				<pawns>
+					<TentacleGrazer>2</TentacleGrazer>
+					<TentacleProducer>2</TentacleProducer>
+					<TentacleStriker>4</TentacleStriker>
+					<TentacleHunter>2</TentacleHunter>
+				</pawns>
+			</li>
+			<li>
+				<!-- 2 -->
+				<pawns>
+					<TentacleGrazer>4</TentacleGrazer>
+					<TentacleProducer>4</TentacleProducer>
+					<TentacleStriker>4</TentacleStriker>
+					<TentacleHunter>2</TentacleHunter>
+				</pawns>
+			</li>
+			<li>
+				<!-- 3 -->
+				<pawns>
+					<TentacleGrazer>6</TentacleGrazer>
+					<TentacleProducer>6</TentacleProducer>
+					<TentacleStriker>4</TentacleStriker>
+					<TentacleHunter>2</TentacleHunter>
+					<TentacleBorer>2</TentacleBorer>
+				</pawns>
+			</li>
+			<li>
+				<!-- 4 -->
+				<pawns>
+					<TentacleGrazer>8</TentacleGrazer>
+					<TentacleProducer>8</TentacleProducer>
+					<TentacleStriker>4</TentacleStriker>
+					<TentacleHunter>4</TentacleHunter>
+					<TentacleBorer>2</TentacleBorer>
+				</pawns>
+			</li>
+			<li>
+				<!-- 5 -->
+				<pawns>
+					<TentacleGrazer>8</TentacleGrazer>
+					<TentacleProducer>8</TentacleProducer>
+					<TentacleStriker>8</TentacleStriker>
+					<TentacleHunter>8</TentacleHunter>
+					<TentacleBorer>2</TentacleBorer>
+				</pawns>
+			</li>
+			<li>
+				<!-- 6 -->
+				<pawns>
+					<TentacleGrazer>8</TentacleGrazer>
+					<TentacleProducer>8</TentacleProducer>
+					<TentacleStriker>10</TentacleStriker>
+					<TentacleHunter>10</TentacleHunter>
+					<TentacleBorer>4</TentacleBorer>
+				</pawns>
+			</li>
+		</waves>
+	</AmorTentaculum.BossWaveDef>
+	
+	<AmorTentaculum.BossWaveDef>
+		<defName>BossWave_Brewer</defName>
+		<minWaveRepeatIndex>2</minWaveRepeatIndex>
+		<waves>
+			<li>
+				<!-- 0 -->
+				<pawns>
+					<TentacleBrewer>1</TentacleBrewer>
+					<TentacleStriker>3</TentacleStriker>
+					<TentacleHunter>2</TentacleHunter>
+				</pawns>
+			</li>
+			<li>
+				<!-- 1 -->
+				<pawns>
+					<TentacleBrewer>1</TentacleBrewer>
+					<TentacleStriker>5</TentacleStriker>
+					<TentacleHunter>4</TentacleHunter>
+				</pawns>
+			</li>
+			<li>
+				<!-- 2 -->
+				<pawns>
+					<TentacleBrewer>1</TentacleBrewer>
+					<TentacleAbductor>2</TentacleAbductor>
+					<TentacleStriker>6</TentacleStriker>
+					<TentacleHunter>5</TentacleHunter>
+				</pawns>
+			</li>
+			<li>
+				<!-- 3 -->
+				<pawns>
+					<TentacleBrewer>2</TentacleBrewer>
+					<TentacleAbductor>2</TentacleAbductor>
+					<TentacleBorer>2</TentacleBorer>
+					<TentacleStriker>4</TentacleStriker>
+					<TentacleHunter>6</TentacleHunter>
+				</pawns>
+			</li>
+			<li>
+				<!-- 4 -->
+				<pawns>
+					<TentacleBrewer>2</TentacleBrewer>
+					<TentacleAbductor>4</TentacleAbductor>
+					<TentacleBorer>4</TentacleBorer>
+					<TentacleStriker>4</TentacleStriker>
+					<TentacleHunter>12</TentacleHunter>
+				</pawns>
+			</li>
+			<li>
+				<!-- 5 -->
+				<pawns>
+					<TentacleBrewer>3</TentacleBrewer>
+					<TentacleAbductor>4</TentacleAbductor>
+					<TentacleBorer>6</TentacleBorer>
+					<TentacleStriker>6</TentacleStriker>
+					<TentacleHunter>14</TentacleHunter>
+				</pawns>
+			</li>
+		</waves>
+	</AmorTentaculum.BossWaveDef>
+
+	<AmorTentaculum.BossWaveDef>
+		<defName>BossWave_Twins</defName>
+		<minWaveRepeatIndex>2</minWaveRepeatIndex>
+		<waves>
+			<li>
+				<!-- 0 -->
+				<pawns>
+					<TentacleValkyrie>1</TentacleValkyrie>
+					<TentacleDefender>1</TentacleDefender>
+					<TentacleStriker>4</TentacleStriker>
+				</pawns>
+			</li>
+			<li>
+				<!-- 1 -->
+				<pawns>
+					<TentacleValkyrie>1</TentacleValkyrie>
+					<TentacleDefender>1</TentacleDefender>
+					<TentacleHunter>4</TentacleHunter>
+					<TentacleStriker>6</TentacleStriker>
+				</pawns>
+			</li>
+			<li>
+				<!-- 2 -->
+				<pawns>
+					<TentacleValkyrie>1</TentacleValkyrie>
+					<TentacleDefender>1</TentacleDefender>
+					<TentacleHunter>6</TentacleHunter>
+					<TentacleStriker>8</TentacleStriker>
+				</pawns>
+			</li>
+			<li>
+				<!-- 3 -->
+				<pawns>
+					<TentacleValkyrie>1</TentacleValkyrie>
+					<TentacleDefender>1</TentacleDefender>
+					<TentacleHunter>8</TentacleHunter>
+					<TentacleStriker>8</TentacleStriker>
+					<TentacleBorer>2</TentacleBorer>
+				</pawns>
+			</li>
+			<li>
+				<!-- 4 -->
+				<pawns>
+					<TentacleValkyrie>2</TentacleValkyrie>
+					<TentacleDefender>2</TentacleDefender>
+					<TentacleHunter>10</TentacleHunter>
+					<TentacleStriker>8</TentacleStriker>
+					<TentacleBorer>4</TentacleBorer>
+				</pawns>
+			</li>
+			<li>
+				<!-- 5 -->
+				<pawns>
+					<TentacleValkyrie>2</TentacleValkyrie>
+					<TentacleDefender>2</TentacleDefender>
+					<TentacleHunter>12</TentacleHunter>
+					<TentacleStriker>10</TentacleStriker>
+					<TentacleBorer>8</TentacleBorer>
+				</pawns>
+			</li>
+			<li>
+				<!-- 6 -->
+				<pawns>
+					<TentacleValkyrie>3</TentacleValkyrie>
+					<TentacleDefender>3</TentacleDefender>
+					<TentacleHunter>16</TentacleHunter>
+					<TentacleStriker>12</TentacleStriker>
+					<TentacleBorer>8</TentacleBorer>
+				</pawns>
+			</li>
+		</waves>
+	</AmorTentaculum.BossWaveDef>
+
+	<AmorTentaculum.BossWaveDef>
+		<defName>BossWave_WarWomb</defName>
+		<minWaveRepeatIndex>2</minWaveRepeatIndex>
+		<waves>
+			<li>
+				<!-- 0 -->
+				<pawns>
+					<TentacleWarWomb>1</TentacleWarWomb>
+					<TentacleHunter>4</TentacleHunter>
+					<TentacleAbductor>4</TentacleAbductor>
+				</pawns>
+			</li>
+			<li>
+				<!-- 1 -->
+				<pawns>
+					<TentacleWarWomb>1</TentacleWarWomb>
+					<TentacleHunter>6</TentacleHunter>
+					<TentacleAbductor>4</TentacleAbductor>
+					<TentacleBorer>2</TentacleBorer>
+				</pawns>
+			</li>
+			<li>
+				<!-- 2 -->
+				<pawns>
+					<TentacleWarWomb>1</TentacleWarWomb>
+					<TentacleHunter>6</TentacleHunter>
+					<TentacleAbductor>6</TentacleAbductor>
+					<TentacleStriker>4</TentacleStriker>
+					<TentacleBorer>2</TentacleBorer>
+				</pawns>
+			</li>
+			<li>
+				<!-- 3 -->
+				<pawns>
+					<TentacleWarWomb>1</TentacleWarWomb>
+					<TentacleHunter>8</TentacleHunter>
+					<TentacleAbductor>6</TentacleAbductor>
+					<TentacleStriker>6</TentacleStriker>
+					<TentacleBorer>4</TentacleBorer>
+				</pawns>
+			</li>
+			<li>
+				<!-- 4 -->
+				<pawns>
+					<TentacleWarWomb>1</TentacleWarWomb>
+					<TentacleBrewer>1</TentacleBrewer>
+					<TentacleHunter>8</TentacleHunter>
+					<TentacleAbductor>6</TentacleAbductor>
+					<TentacleStriker>8</TentacleStriker>
+					<TentacleBorer>4</TentacleBorer>
+				</pawns>
+			</li>
+			<li>
+				<!-- 5 -->
+				<pawns>
+					<TentacleWarWomb>1</TentacleWarWomb>
+					<TentacleBrewer>1</TentacleBrewer>
+					<TentacleHunter>10</TentacleHunter>
+					<TentacleAbductor>8</TentacleAbductor>
+					<TentacleStriker>8</TentacleStriker>
+					<TentacleBorer>6</TentacleBorer>
+				</pawns>
+			</li>
+			<li>
+				<!-- 6 -->
+				<pawns>
+					<TentacleWarWomb>1</TentacleWarWomb>
+					<TentacleBrewer>2</TentacleBrewer>
+					<TentacleHunter>12</TentacleHunter>
+					<TentacleAbductor>10</TentacleAbductor>
+					<TentacleStriker>10</TentacleStriker>
+					<TentacleBorer>8</TentacleBorer>
+				</pawns>
+			</li>
+		</waves>
+	</AmorTentaculum.BossWaveDef>
+	
+</Defs>
