@@ -1,6 +1,7 @@
 <Defs>
   <AbilityDef>
     <defName>GrabberLeap</defName>
+    <iconPath>Abilities/GenitalLatch</iconPath>
     <cooldownTicksRange>1732~1732</cooldownTicksRange> 
     <jobDef>CastJump</jobDef>
     <targetRequired>true</targetRequired>
