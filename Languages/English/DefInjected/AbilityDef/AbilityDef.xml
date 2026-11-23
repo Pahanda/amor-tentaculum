@@ -50,4 +50,14 @@
 	<AbilityLarvaEvolveHunter.label>evolve into hunter</AbilityLarvaEvolveHunter.label>
 	<AbilityLarvaEvolveHunter.description>Evolve the Larva into an Amor Hunter, which can shower enemies with chemical secretions.</AbilityLarvaEvolveHunter.description>
 
+	<!-- Striker and Stinger abilities -->
+	<GrabberLeap.description>Leap onto a target and attempt to attach to its eligible, unoccupied body part with the highest grab-success chance; target will be relentlessly fucked if successful, with a chance to strip relevant apparel. Success chance and strip chance depends on the target&apos;s armor and it&apos;s vacuum resistance.</GrabberLeap.description>
+	<GrabberLeap.label>striker leap</GrabberLeap.label>
+	<GrabberLeap.verbProperties.label>jump</GrabberLeap.verbProperties.label>
+	<ParaBarbs.description>Launch several venom-laced barbs that apply a small amount of Amor Paralytic Poison on hit.</ParaBarbs.description>
+	<ParaBarbs.label>venom barbs</ParaBarbs.label>
+	<StingerLatch.description>Leap onto an incapacitated pawn&apos;s head, using it's tentacles to fuck their brain and completely take control of them. The pawn feels no pain and is unusually alert, mobile, and dexterous. They will die when the Stinger&apos;s hold ends unless it is surgically removed.</StingerLatch.description>
+	<StingerLatch.label>stinger latch</StingerLatch.label>
+	<StingerLatch.verbProperties.label>latch</StingerLatch.verbProperties.label>
+
 </languageData>

@@ -3,4 +3,9 @@
 	<LetterLabelTentacleBossgroupCallerUnlocked>Summon {LEADER_label} possible</LetterLabelTentacleBossgroupCallerUnlocked>
 	<LetterTentacleBossgroupCallerUnlocked>You can now build a {PARENT_label} which your pawns can use to summon a {LEADER_label}. If you defeat the {LEADER_label}, it will drop the following items:\n\n{REWARDSLIST}</LetterTentacleBossgroupCallerUnlocked>
 
+	<!-- Striker leap rejection messages -->
+	<StrikerLeapRejectInput>Cannot use {0} on {1}: {2}</StrikerLeapRejectInput>
+	<StrikerLeapRejectMissingAnatomy>The target lacks the anatomy required for this leap.</StrikerLeapRejectMissingAnatomy>
+	<StrikerLeapRejectNoEligibleBodyPart>The target has no unoccupied eligible body part for this leap.</StrikerLeapRejectNoEligibleBodyPart>
+
 </languageData>
