@@ -10,7 +10,7 @@
     <lifeStages>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawns/Grazer/Grazer</texPath>
+          <texPath>Things/Pawns/Producer/Producer</texPath>
           <drawSize>2.0</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
@@ -20,7 +20,7 @@
       </li>
       <li>
         <bodyGraphicData>
-          <texPath>Things/Pawns/Grazer/Grazer</texPath>
+          <texPath>Things/Pawns/Producer/Producer</texPath>
           <drawSize>2.6</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
