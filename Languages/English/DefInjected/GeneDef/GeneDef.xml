@@ -30,4 +30,8 @@
 	<AmorServantHostBody.label>Amor Servant</AmorServantHostBody.label>
 	<AmorServantHostBody.description>Carriers of this gene have a body that has been turned into a holding vessel for Amor Squirmer tentacles. They can support the colony by efficiently performing menial labor.</AmorServantHostBody.description>
 
+	<!-- Striker -->
+	<TStrip.description>An Amor Striker is latched onto the victim. Clothing may be stripped when the grab occurs.</TStrip.description>
+	<TStrip.label>Face Amor Striker</TStrip.label>
+
 </languageData>

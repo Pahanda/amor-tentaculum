@@ -29,5 +29,8 @@
         </dessicatedBodyGraphicData>
       </li>
     </lifeStages>
+    <abilities>
+      <li>GrabberLeap</li>
+    </abilities>
   </PawnKindDef>
 </Defs>

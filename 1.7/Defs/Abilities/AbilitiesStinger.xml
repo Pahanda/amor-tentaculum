@@ -1,0 +1,54 @@
+<Defs>
+  <AbilityDef>
+    <defName>StingerLatch</defName>
+    <iconPath>UI/Abilities/PiercingSpine</iconPath>
+    <cooldownTicksRange>60000</cooldownTicksRange>
+    <jobDef>CastJump</jobDef>
+    <targetRequired>true</targetRequired>
+    <ai_IsOffensive>true</ai_IsOffensive>
+    <aiCanUse>true</aiCanUse>
+    <showWhenDrafted>true</showWhenDrafted>
+    <verbProperties>
+      <verbClass>AmorTentaculum.Verb_CastAbilityJumpWithTarget</verbClass>
+      <range>5</range>
+      <requireLineOfSight>true</requireLineOfSight>
+      <warmupTime>0</warmupTime>
+      <soundCast>Pawn_Devourer_Jump</soundCast>
+      <soundLanding>Pawn_Devourer_Land</soundLanding>
+      <targetParams>
+        <canTargetLocations>false</canTargetLocations>
+        <canTargetPawns>true</canTargetPawns>
+        <canTargetAnimals>false</canTargetAnimals>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetHumans>true</canTargetHumans>
+        <canTargetMechs>false</canTargetMechs>
+        <canTargetSelf>false</canTargetSelf>
+        <canTargetSubhumans>true</canTargetSubhumans>
+        <neverTargetIncapacitated>false</neverTargetIncapacitated>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="AmorTentaculum.CompProperties_AbilityStingerLatch" />
+    </comps>
+  </AbilityDef>
+
+  <AbilityDef>
+    <defName>ParaBarbs</defName>
+    <iconPath>UI/Abilities/PiercingSpine</iconPath>
+    <cooldownTicksRange>600</cooldownTicksRange>
+    <displayOrder>200</displayOrder>
+    <aiCanUse>true</aiCanUse>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>15</range>
+      <warmupTime>0.5</warmupTime>
+      <soundCast>PiercingSpine_Launch</soundCast>
+    </verbProperties>
+    <comps>
+      <li Class="EBSGFramework.CompProperties_AbilityLaunchProjectileBurst">
+        <projectileDef>Barbs</projectileDef>
+        <burstCount>3</burstCount>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>

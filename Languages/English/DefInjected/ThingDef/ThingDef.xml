@@ -235,4 +235,8 @@
 	<ResinSword.description>A sword forged from hard tentacle resin. Its sharp edge and point have a little more armor penetration than a conventional longsword.</ResinSword.description>
 	<ResinScimitar.label>resin scimitar</ResinScimitar.label>
 	<ResinScimitar.description>A curved blade forged from hard tentacle resin. It is slower and more difficult to craft than the resin sword, but its edge and point penetrate armor more effectively.</ResinScimitar.description>
+
+	<!-- Stinger -->
+	<Barbs.label>poisoned barbs</Barbs.label>
+
 </languageData>

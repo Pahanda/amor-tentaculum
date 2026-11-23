@@ -3,7 +3,6 @@
   <RecipeDef ParentName="SurgeryRemoveImplantBase">
     <defName>AbortAmorBroodMotherEgg</defName>
     <workerClass>Recipe_RemoveHediff</workerClass>
-    <jobString>Aborting incubation.</jobString>
     <workAmount>1000</workAmount>
     <hideBodyPartNames>false</hideBodyPartNames>
     <targetsBodyPart>true</targetsBodyPart>
@@ -13,6 +12,62 @@
     <skillRequirements>
       <Medicine>5</Medicine>
     </skillRequirements>
+  </RecipeDef>
+
+  <RecipeDef Name="SurgeryRemoveStrikerBase" ParentName="SurgeryFlesh" Abstract="True">
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <workAmount>1000</workAmount>
+    <isViolation>true</isViolation>
+    <hideBodyPartNames>false</hideBodyPartNames>
+    <targetsBodyPart>true</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <recipeUsers>
+      <li>Human</li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly">CreepJoiner</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter><categories><li>Medicine</li></categories></filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>Medicine</li>
+      </categories>
+    </fixedIngredientFilter>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveStrikerBase">
+    <defName>RemoveStrikerA</defName>
+    <removesHediff>AttachedA</removesHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveStrikerBase">
+    <defName>RemoveStrikerM</defName>
+    <removesHediff>AttachedM</removesHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveStrikerBase">
+    <defName>RemoveStrikerV</defName>
+    <removesHediff>AttachedV</removesHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveStrikerBase">
+    <defName>RemoveStrikerP</defName>
+    <removesHediff>AttachedP</removesHediff>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveStingerThrall</defName>
+    <workerClass>Recipe_RemoveHediff</workerClass>
+    <targetsBodyPart>true</targetsBodyPart>
+    <appliedOnFixedBodyParts>
+      <li>Head</li>
+    </appliedOnFixedBodyParts>
+    <removesHediff>StingerThrallAttachment</removesHediff>
+    <deathOnFailedSurgeryChance>0.25</deathOnFailedSurgeryChance>
+    <anesthetize>true</anesthetize>
   </RecipeDef>
 
 </Defs>

@@ -21,12 +21,14 @@
         <power>8</power>
         <cooldownTime>1.8</cooldownTime>
         <linkedBodyPartsGroup>StrikerMouthTentacle</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
       </li>
     </tools>
     <comps>
       <li Class="VEF.AnimalBehaviours.CompProperties_FixedGender">
         <gender>Male</gender>
       </li>
+      <li Class="VEF.AnimalBehaviours.CompProperties_Draftable" />
     </comps>
     <race>
       <body>StrikerBody</body>
