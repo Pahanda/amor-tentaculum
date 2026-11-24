@@ -8,7 +8,11 @@ using Verse.AI;
 using Verse.Sound;
 
 [StaticConstructorOnStartup]
-public class Building_TentaclePod : Building_Enterable, IThingHolderWithDrawnPawn, IThingHolder
+public class Building_TentaclePod :
+    Building_Enterable,
+    IThingHolderWithDrawnPawn,
+    IThingHolder,
+    IIngredientLoadingBuilding
 {
     private bool initScanner;
 
@@ -100,6 +104,8 @@ public class Building_TentaclePod : Building_Enterable, IThingHolderWithDrawnPaw
             return true;
         }
     }
+
+    public bool NeedsIngredients => State == SubcoreScannerState.WaitingForIngredients;
 
     public SubcoreScannerState State
     {
