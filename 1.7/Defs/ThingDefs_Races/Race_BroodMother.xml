@@ -98,15 +98,11 @@
       <manhunterOnTameFailChance>0.10</manhunterOnTameFailChance>
       <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
       <nameOnTameChance>1</nameOnTameChance>
-      <lifeExpectancy>4</lifeExpectancy>
+      <lifeExpectancy>100</lifeExpectancy>
       <lifeStageAges>
         <li>
-          <def>AnimalJuvenile</def>
-          <minAge>0</minAge>
-        </li>
-        <li>
           <def>AnimalAdult</def>
-          <minAge>0.4</minAge>
+          <minAge>0</minAge>
           <soundWounded>Pawn_Cobra_Wounded</soundWounded>
           <soundDeath>Pawn_Cobra_Death</soundDeath>
           <soundCall>Pawn_Cobra_Call</soundCall>
