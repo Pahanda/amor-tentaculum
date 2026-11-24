@@ -46,7 +46,7 @@ namespace AmorTentaculum
         public override bool CanApplyOn(LocalTargetInfo target, LocalTargetInfo dest)
         {
             Pawn? targetPawn = target.Pawn;
-            if (targetPawn == null || !base.CanApplyOn(target, dest))
+            if (targetPawn == null || !targetPawn.RaceProps.Humanlike || !base.CanApplyOn(target, dest))
             {
                 return false;
             }
@@ -71,6 +71,7 @@ namespace AmorTentaculum
         {
             Pawn? targetPawn = target.Pawn;
             return targetPawn != null &&
+                targetPawn.RaceProps.Humanlike &&
                 base.Valid(target, throwMessages) &&
                 GetAvailableAttachments(targetPawn).Count > 0;
         }
@@ -90,7 +91,15 @@ namespace AmorTentaculum
 
             StrikerLeapCooldown.Start(parent, parent.def.cooldownTicksRange.RandomInRange);
 
-            if (targetPawn == null || !targetPawn.RaceProps.Humanlike || targetPawn.Destroyed || targetPawn.Dead)
+            if (targetPawn != null && !targetPawn.RaceProps.Humanlike)
+            {
+                Log.Warning(
+                    $"Striker leap {parent.def.defName} landed on non-humanlike pawn " +
+                    $"(target={targetPawn.LabelShort}, callback={target}); attachment skipped.");
+                return;
+            }
+
+            if (targetPawn == null || targetPawn.Destroyed || targetPawn.Dead)
             {
                 Log.Error(
                     $"Striker leap {parent.def.defName} completed without a valid pawn target " +
