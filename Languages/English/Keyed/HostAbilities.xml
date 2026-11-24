@@ -1,0 +1,6 @@
+<languageData>
+	<SquirmerAssistanceNoResource>{0} does not have enough internal tentacles to activate Squirmer Assistance.</SquirmerAssistanceNoResource>
+	<SquirmerAssistanceStopped>{0}'s Squirmer Assistance has stopped to preserve its remaining tentacle reserve.</SquirmerAssistanceStopped>
+	<RogueInvisibilityNoResource>{0} does not have enough internal tentacles to activate invisibility.</RogueInvisibilityNoResource>
+	<RogueInvisibilityStopped>{0}'s invisibility has stopped to preserve its remaining tentacle reserve.</RogueInvisibilityStopped>
+</languageData>

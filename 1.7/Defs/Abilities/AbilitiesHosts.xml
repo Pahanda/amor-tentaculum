@@ -429,6 +429,134 @@
 		</comps>
 	</AbilityDef>
 
+	<AbilityDef>
+		<defName>SquirmerAssistance</defName>
+		<iconPath>Abilities/ExpelTentacles</iconPath>
+		<category>Tentacle</category>
+		<targetRequired>false</targetRequired>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<cooldownTicksRange>0</cooldownTicksRange>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<jobDef>CastAbilityOnThing</jobDef>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>0</range>
+			<warmupTime>0</warmupTime>
+			<drawAimPie>false</drawAimPie>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetLocations>false</canTargetLocations>
+				<canTargetPawns>false</canTargetPawns>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="AmorTentaculum.CompProperties_AbilityToggleResourceHediff">
+				<activeHediff>SquirmerAssistanceActive</activeHediff>
+				<resourceGene>HostTentacleNeed</resourceGene>
+				<noResourceMessage>SquirmerAssistanceNoResource</noResourceMessage>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef>
+		<defName>AmorTentacleJump</defName>
+		<iconPath>UI/Abilities/Longjump</iconPath>
+		<category>Tentacle</category>
+		<cooldownTicksRange>60</cooldownTicksRange>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbilityJump</verbClass>
+			<violent>false</violent>
+			<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+			<warmupTime>0.5</warmupTime>
+			<range>19.9</range>
+			<requireLineOfSight>true</requireLineOfSight>
+			<soundCast>Longjump_Jump</soundCast>
+			<soundLanding>Longjump_Land</soundLanding>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetBuildings>false</canTargetBuildings>
+			</targetParams>
+		</verbProperties>
+		<jobDef>CastJump</jobDef>
+		<comps>
+			<li Class="EBSGFramework.CompProperties_AbilityResourceCost">
+				<resourceCost>0.01</resourceCost>
+				<mainResourceGene>HostTentacleNeed</mainResourceGene>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef>
+		<defName>QueenSummonAmorDrone</defName>
+		<iconPath>Abilities/ExpelTentacles</iconPath>
+		<category>Tentacle</category>
+		<jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
+		<targetRequired>false</targetRequired>
+		<cooldownTicksRange>0</cooldownTicksRange>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>1.9</range>
+			<warmupTime>1</warmupTime>
+			<drawAimPie>false</drawAimPie>
+			<requireLineOfSight>false</requireLineOfSight>
+			<targetParams>
+				<canTargetLocations>false</canTargetLocations>
+				<canTargetPawns>false</canTargetPawns>
+				<canTargetSelf>true</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="EBSGFramework.CompProperties_AbilityResourceCost">
+				<resourceCost>0.03</resourceCost>
+				<mainResourceGene>HostTentacleNeed</mainResourceGene>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilitySpawnPawnKind">
+				<pawnKind>TentacleDrone</pawnKind>
+				<count>1</count>
+				<stage>Newborn</stage>
+				<inCreatorFaction>true</inCreatorFaction>
+			</li>
+		</comps>
+	</AbilityDef>
+
+	<AbilityDef>
+		<defName>RogueInvisibility</defName>
+		<iconPath>UI/Abilities/Invisibility</iconPath>
+		<category>Tentacle</category>
+		<jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
+		<targetRequired>false</targetRequired>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+		<cooldownTicksRange>0</cooldownTicksRange>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>0</range>
+			<warmupTime>0</warmupTime>
+			<drawAimPie>false</drawAimPie>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetLocations>false</canTargetLocations>
+				<canTargetPawns>false</canTargetPawns>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class="AmorTentaculum.CompProperties_AbilityToggleResourceHediff">
+				<activeHediff>RogueInvisibilityActive</activeHediff>
+				<resourceGene>HostTentacleNeed</resourceGene>
+				<noResourceMessage>RogueInvisibilityNoResource</noResourceMessage>
+			</li>
+		</comps>
+	</AbilityDef>
+
 	<DamageDef>
 		<defName>Cummies</defName>
 		<label>cum</label>

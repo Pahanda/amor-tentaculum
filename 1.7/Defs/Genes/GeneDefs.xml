@@ -35,6 +35,7 @@
 			<li>TentacleTransfer</li>
 			<li>TCumSpray</li>
 			<li>IncubateAmorBroodMotherEgg</li>
+			<li>QueenSummonAmorDrone</li>
 		</abilities>
 		<modExtensions>
 			<li Class="EBSGFramework.EBSGExtension">
@@ -312,6 +313,7 @@
 			<li>TentacleIngest</li>
 			<li>TentacleExpel</li>
 			<li>TentacleTransfer</li>
+			<li>RogueInvisibility</li>
 		</abilities>
 		<modExtensions>
 			<li Class="EBSGFramework.EBSGExtension">
@@ -363,6 +365,7 @@
 			<li>TentacleIngest</li>
 			<li>TentacleExpel</li>
 			<li>TentacleTransfer</li>
+			<li>AmorTentacleJump</li>
 		</abilities>
 		<modExtensions>
 			<li Class="EBSGFramework.EBSGExtension">
@@ -414,6 +417,7 @@
 			<li>TentacleIngest</li>
 			<li>TentacleExpel</li>
 			<li>TentacleTransfer</li>
+			<li>SquirmerAssistance</li>
 		</abilities>
 		<modExtensions>
 			<li Class="EBSGFramework.EBSGExtension">
