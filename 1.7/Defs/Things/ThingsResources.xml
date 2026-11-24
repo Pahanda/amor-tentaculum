@@ -18,6 +18,7 @@
 		</statBases>
 		<thingCategories>
 			<li>TentacleProducedResources</li>
+			<li>Leathers</li>
 		</thingCategories>
 		<stuffProps>
 			<color>(235,205,180)</color>
@@ -44,6 +45,7 @@
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<possessionCount>50</possessionCount>
+		<stackLimit>50</stackLimit>
 		<socialPropernessMatters>true</socialPropernessMatters>
 		<tradeability>Sellable</tradeability>
 		<statBases>
@@ -66,6 +68,7 @@
 		-->
 		
 		<thingCategories>
+			<li>ResourcesRaw</li>
 			<li>HostProducedResources</li>
 		</thingCategories>
 		<allowedArchonexusCount>150</allowedArchonexusCount>
@@ -79,6 +82,7 @@
 		</graphicData>
 		<soundInteract>Wood_Drop</soundInteract>
 		<soundDrop>Wood_Drop</soundDrop>
+		<stackLimit>75</stackLimit>
 		<tradeability>Sellable</tradeability>
 		<generateCommonality>0</generateCommonality>
 		<generateAllowChance>0</generateAllowChance>
@@ -125,6 +129,7 @@
 		</stuffProps>
 		<isTechHediff>true</isTechHediff>
 		<thingCategories>
+			<li>ResourcesRaw</li>
 			<li>TentacleProducedResources</li>
 		</thingCategories>
 		<techHediffsTags>
@@ -142,6 +147,7 @@
 		</graphicData>
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Metal_Drop</soundDrop>
+		<stackLimit>75</stackLimit>
 		<useHitPoints>false</useHitPoints>
 		<healthAffectsPrice>false</healthAffectsPrice>
 		<tradeability>Sellable</tradeability>
@@ -159,6 +165,7 @@
 			<BluntDamageMultiplier>0.9</BluntDamageMultiplier>
 		</statBases>
 		<thingCategories>
+			<li>ResourcesRaw</li>
 			<li>TentacleProducedResources</li>
 		</thingCategories>
 		<stuffProps>
@@ -206,6 +213,7 @@
 		<intricate>true</intricate>
 		<thingCategories>
 			<li>CraftedTentacleProducts</li>
+			<li>Manufactured</li>
 		</thingCategories>
 		<graphicData>
 			<texPath>Things/Items/Catalyst/Catalyst</texPath>
