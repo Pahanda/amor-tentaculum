@@ -8,22 +8,21 @@
 		<researchPrerequisites>
 			<li>ATStructBasic</li>
 		</researchPrerequisites>
-		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 	</TerrainDef>
 
 	<TerrainDef ParentName="TendrilTileBase">
 		<defName>SoftResinTendrilTile</defName>
 		<renderPrecedence>240</renderPrecedence>
-		<color>(0.753, 0.549, 0.91)</color>
+		<color>(232, 70, 210)</color>
 		<statBases>
-			<WorkToBuild>600</WorkToBuild>
-			<Beauty>0.2</Beauty>
+			<WorkToBuild>800</WorkToBuild>
 			<Cleanliness>0.2</Cleanliness>
-			<CleaningTimeFactor>0.4</CleaningTimeFactor>
+			<FilthMultiplier>0.7</FilthMultiplier>
 		</statBases>
 		<costList>
 			<SoftResin>7</SoftResin>
 		</costList>
+		<constructionSkillPrerequisite>3</constructionSkillPrerequisite>
 		<designationHotKey>Misc7</designationHotKey>
 		<uiOrder>2040</uiOrder>
 	</TerrainDef>
@@ -31,16 +30,17 @@
 	<TerrainDef ParentName="TendrilTileBase">
 		<defName>HardResinTendrilTile</defName>
 		<renderPrecedence>240</renderPrecedence>
-		<color>(0.87, 0.19, 0.57)</color>
+		<color>(222, 48, 145)</color>
 		<statBases>
-			<WorkToBuild>500</WorkToBuild>
-			<Beauty>0</Beauty>
+			<WorkToBuild>1200</WorkToBuild>
+			<Beauty>1</Beauty>
 			<Cleanliness>0.1</Cleanliness>
-			<CleaningTimeFactor>0.4</CleaningTimeFactor>
+			<FilthMultiplier>0.8</FilthMultiplier>
 		</statBases>
 		<costList>
 			<HardResin>7</HardResin>
 		</costList>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<designationHotKey>Misc7</designationHotKey>
 		<uiOrder>2040</uiOrder>
 	</TerrainDef>
