@@ -3,21 +3,25 @@
 	<ThingCategoryDef>
 		<defName>TentacleResources</defName>
 		<parent>ResourcesRaw</parent>
+		<iconPath>Things/Items/TentacleSlime/TentacleSlimeA</iconPath>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
 		<defName>TentacleProducedResources</defName>
 		<parent>TentacleResources</parent>
+		<iconPath>Things/Items/HardResin/HardResinA</iconPath>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
 		<defName>HostProducedResources</defName>
 		<parent>TentacleResources</parent>
+		<iconPath>Things/Items/TentacleSlime/TentacleSlimeA</iconPath>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
 		<defName>CraftedTentacleProducts</defName>
 		<parent>Manufactured</parent>
+		<iconPath>Things/Items/Catalyst/Catalyst</iconPath>
 	</ThingCategoryDef>
 	
 </Defs>
