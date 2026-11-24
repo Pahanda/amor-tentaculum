@@ -1,7 +1,7 @@
 <Defs>
 
-	<ThingDef ParentName="BuildingBase" Name="HiveWall">
-		<defName>HiveWall</defName>
+	<ThingDef ParentName="BuildingBase" Name="TentacleResinWall">
+		<defName>TentacleResinWall</defName>
 		<thingClass>Building</thingClass>
 		<category>Building</category>
 		<noRightClickDraftAttack>true</noRightClickDraftAttack>
@@ -32,8 +32,8 @@
 			<li>ATStructBasic</li>
 		</researchPrerequisites>
 		<statBases>
-			<MaxHitPoints>800</MaxHitPoints>
-			<WorkToBuild>250</WorkToBuild>
+			<MaxHitPoints>400</MaxHitPoints>
+			<WorkToBuild>400</WorkToBuild>
 			<Flammability>0.1</Flammability>
 			<MeditationFocusStrength>0.22</MeditationFocusStrength>
 		</statBases>
