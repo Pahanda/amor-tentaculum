@@ -17,8 +17,8 @@
 	 -->
 	<Building_RecyclingPod.label>recycling pod</Building_RecyclingPod.label>
 	<Building_RecyclingPod.description>A biological structure that will break its occupant down into component parts, turning it into raw resources. Needless to say, this is fatal for the pawn.</Building_RecyclingPod.description>
-	<HiveWall.label>hive wall</HiveWall.label>
-	<HiveWall.description>An impassable wall. Capable of holding up a roof. This one is crafted from resinous tentacles.</HiveWall.description>
+	<TentacleResinWall.label>hive wall</TentacleResinWall.label>
+	<TentacleResinWall.description>An impassable wall. Capable of holding up a roof. This one is made from resinous tentacles and tougher than conventional ones.</TentacleResinWall.description>
 	<TentacleWorkbench.label>tentacle workbench</TentacleWorkbench.label>
 	<TentacleWorkbench.description>A workbench equipped with all of the equipment required to craft basic tentacle-related things.</TentacleWorkbench.description>
 	<WombWorker.label>womb worker</WombWorker.label>
