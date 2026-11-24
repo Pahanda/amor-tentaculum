@@ -16,6 +16,9 @@
 			<StuffPower_Insulation_Cold>25</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
 		</statBases>
+		<thingCategories>
+			<li>TentacleProducedResources</li>
+		</thingCategories>
 		<stuffProps>
 			<color>(235,205,180)</color>
 			<commonality>0.0001</commonality>
@@ -122,7 +125,7 @@
 		</stuffProps>
 		<isTechHediff>true</isTechHediff>
 		<thingCategories>
-			<li>ResourcesRaw</li>
+			<li>TentacleProducedResources</li>
 		</thingCategories>
 		<techHediffsTags>
 			<li>Poor</li>
@@ -156,7 +159,7 @@
 			<BluntDamageMultiplier>0.9</BluntDamageMultiplier>
 		</statBases>
 		<thingCategories>
-			<li>ResourcesRaw</li>
+			<li>TentacleProducedResources</li>
 		</thingCategories>
 		<stuffProps>
 			<categories>
