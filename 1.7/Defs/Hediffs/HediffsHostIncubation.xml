@@ -111,7 +111,7 @@
 				<abilitiesAtSeverities>
 					<li>
 						<abilityDef>BirthAmorBroodMotherEgg</abilityDef>
-						<validSeverity>0.9~1.19</validSeverity>
+						<validSeverity>0.9~1.99</validSeverity>
 					</li>
 				</abilitiesAtSeverities>
 			</li>
