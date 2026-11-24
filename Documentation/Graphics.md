@@ -3,7 +3,7 @@
 | Tentacle | Neutral | Squirmer | ![](../Textures/Things/Pawns/Squirmer/Squirmer_east.png) | `Textures/Things/Pawns/Squirmer` | |
 | Tentacle | Neutral | Larva | ![](../Textures/Things/Pawns/Larva/Larva_east.png) | `Textures/Things/Pawns/Larva` | |
 | Tentacle | Male | Grazer | ![](../Textures/Things/Pawns/Grazer/Grazer_east.png) | `Textures/Things/Pawns/Grazer` | |
-| Tentacle | Male | Stinger | ![](../Textures/Things/Pawns/Stinger/Stinger_east.png) | `Textures/Things/Pawns/Stinger` | |
+| Tentacle | Male | Stinger | ![](../Textures/Things/Pawns/Stinger/Stinger_east.png) (pawn) ![](../Textures/Things/Pawns/Stinger/StingerLatch_east.png) (latched) | `Textures/Things/Pawns/Stinger` | |
 | Tentacle | Male | Borer | ![](../Textures/Things/Pawns/Borer/Borer_east.png) | `Textures/Things/Pawns/Borer` | |
 | Tentacle | Male | Striker | ![](../Textures/Things/Pawns/Striker/Striker_east.png) | `Textures/Things/Pawns/Striker` | |
 | Tentacle | Male | Abductor | ![](../Textures/Things/Pawns/Abductor/Abductor_east.png) | `Textures/Things/Pawns/Abductor` | |
