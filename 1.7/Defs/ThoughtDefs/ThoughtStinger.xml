@@ -1,0 +1,14 @@
+<Defs>
+  <ThoughtDef>
+    <defName>StingerThrallMood</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>StingerThrallAttachment</hediff>
+    <stackLimit>1</stackLimit>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <baseMoodEffect>100</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

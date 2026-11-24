@@ -1,0 +1,22 @@
+<Defs>
+  <ThingDef ParentName="BaseBullet">
+    <defName>Barbs</defName>
+    <graphicData>
+      <texPath>Things/Projectile/PiercingSpine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>RangedStab</damageDef>
+      <damageAmountBase>2</damageAmountBase>
+      <armorPenetrationBase>7</armorPenetrationBase>
+      <stoppingPower>0.1</stoppingPower>
+      <speed>80</speed>
+      <extraDamages>
+        <li>
+          <def>ParalyticPoisonDamage</def>
+          <amount>1</amount>
+        </li>
+      </extraDamages>
+    </projectile>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,65 @@
+<Defs>
+  <HediffDef>
+    <defName>StingerThrallAttachment</defName>
+    <hediffClass>AmorTentaculum.Hediff_StingerThrallAttachment</hediffClass>
+    <defaultLabelColor>(0.86, 0.18, 0.56)</defaultLabelColor>
+    <minSeverity>0</minSeverity>
+    <initialSeverity>1</initialSeverity>
+    <maxSeverity>1</maxSeverity>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <minSeverity>0.1</minSeverity>
+        <painFactor>0</painFactor>
+        <totalBleedFactor>0.5</totalBleedFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <postFactor>1.25</postFactor>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <postFactor>1.25</postFactor>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>1.25</postFactor>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <renderNodeProperties>
+      <li Class="PawnRenderNodeProperties_Spastic">
+        <workerClass>PawnRenderNodeWorker_Spastic</workerClass>
+        <texPath>Things/Pawns/Stinger/Stinger</texPath>
+        <parentTagDef>Head</parentTagDef>
+        <baseLayer>64</baseLayer>
+        <drawSize>1.105</drawSize>
+        <rotationRange>-5~5</rotationRange>
+        <durationTicksRange>5~15</durationTicksRange>
+        <nextSpasmTicksRange>10~50</nextSpasmTicksRange>
+        <drawData>
+          <useBodyPartAnchor>true</useBodyPartAnchor>
+          <defaultData>
+            <rotationOffset>180</rotationOffset>
+            <layer>63</layer>
+            <offset>(0, 0, -0.05)</offset>
+          </defaultData>
+          <dataNorth>
+            <rotationOffset>0</rotationOffset>
+          </dataNorth>
+          <dataWest>
+            <rotationOffset>-90</rotationOffset>
+            <offset>(-0.07, 0, -0.05)</offset>
+            <flip>true</flip>
+          </dataWest>
+          <dataEast>
+            <rotationOffset>-90</rotationOffset>
+            <offset>(0.07, 0, -0.05)</offset>
+            <flip>false</flip>
+          </dataEast>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </HediffDef>
+</Defs>

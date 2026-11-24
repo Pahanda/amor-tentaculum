@@ -63,6 +63,20 @@
 		<requiredMemes>
 			<li>AmorTentaculumSupremacy</li>
 		</requiredMemes>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>grabberAThought_Accepted</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>grabberMThought_Accepted</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>grabberPThought_Accepted</thought>
+			</li>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>grabberVThought_Accepted</thought>
+			</li>
+		</comps>
 	</PreceptDef>
 
 	<PreceptDef MayRequire="Ludeon.RimWorld.Ideology">

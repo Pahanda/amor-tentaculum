@@ -42,5 +42,17 @@
 	<InstallTStomachEnhance.label>install storage stomach</InstallTStomachEnhance.label>
 	<InstallTStomachEnhance.description>Replace the patient's stomach with a storage stomach.</InstallTStomachEnhance.description>
 	<InstallTStomachEnhance.jobString>installing storage stomach.</InstallTStomachEnhance.jobString>
+
+	<!-- Striker and Stinger surgeries -->
+	<RemoveStingerThrall.jobString>Attempts to remove a Stinger without harming the host.</RemoveStingerThrall.jobString>
+	<RemoveStingerThrall.label>remove Stinger from head</RemoveStingerThrall.label>
+	<RemoveStrikerA.jobString>Removing an Amor Striker.</RemoveStrikerA.jobString>
+	<RemoveStrikerA.label>remove Amor Striker from anus</RemoveStrikerA.label>
+	<RemoveStrikerM.jobString>Removing an Amor Striker.</RemoveStrikerM.jobString>
+	<RemoveStrikerM.label>remove Amor Striker from face</RemoveStrikerM.label>
+	<RemoveStrikerP.jobString>Removing an Amor Striker.</RemoveStrikerP.jobString>
+	<RemoveStrikerP.label>remove penile Amor Striker</RemoveStrikerP.label>
+	<RemoveStrikerV.jobString>Removing an Amor Striker.</RemoveStrikerV.jobString>
+	<RemoveStrikerV.label>remove vaginal Amor Striker</RemoveStrikerV.label>
 	
 </languageData>
