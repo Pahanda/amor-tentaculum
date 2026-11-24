@@ -23,7 +23,7 @@ namespace AmorTentaculum
                 int sexMatched = 0;
                 int sexMatches = conditionalSet.genderConditionals.Count();
 
-                Log.Message("Checking gender set of size "+sexMatches);
+                // Log.Message("Checking gender set of size "+sexMatches);
 
                 // Check for sex matches.
                 String pawnSex = rjw.GenderHelper.GetSex(pawn).ToString();
