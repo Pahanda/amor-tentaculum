@@ -1093,15 +1093,14 @@
 				<painOffset>0.3</painOffset>
 				<statOffsets>
 					<MoveSpeed>-0.03</MoveSpeed>
-					<TStorage>0.01</TStorage>
 				</statOffsets>
 			</li>
 			<li>
 				<minSeverity>0.75</minSeverity>
 				<painOffset>0.2</painOffset>
 				<statOffsets>
+					<TStorage>0.01</TStorage>
 					<MoveSpeed>-0.02</MoveSpeed>
-					<TStorage>0.02</TStorage>
 				</statOffsets>
 			</li>
 			<li>
@@ -1116,7 +1115,7 @@
 		<comps>
 			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
 				<modSettingMultiplier>hostAcclimationSpeedFactor</modSettingMultiplier>
-				<baseSeverityPerDay>0.1</baseSeverityPerDay>
+				<baseSeverityPerDay>0.25</baseSeverityPerDay>
 			</li>
 		</comps>
 	</HediffDef>
@@ -1162,9 +1161,9 @@
 				<painOffset>0.2</painOffset>
 				<partEfficiencyOffset>-0.8</partEfficiencyOffset>
 				<statOffsets>
+					<TStorage>0.01</TStorage>
 					<VEF_FoodCapacityMultiplier>0.5</VEF_FoodCapacityMultiplier>
 					<MoveSpeed>-0.03</MoveSpeed>
-					<TStorage>0.01</TStorage>
 				</statOffsets>
 			</li>
 			<li>
@@ -1172,16 +1171,16 @@
 				<painOffset>0.01</painOffset>
 				<partEfficiencyOffset>-0.7</partEfficiencyOffset>
 				<statOffsets>
+					<TStorage>0.02</TStorage>
 					<VEF_FoodCapacityMultiplier>0.5</VEF_FoodCapacityMultiplier>
 					<MoveSpeed>-0.02</MoveSpeed>
-					<TStorage>0.02</TStorage>
 				</statOffsets>
 			</li>
 		</stages>
 		<comps>
 			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
 				<modSettingMultiplier>hostAcclimationSpeedFactor</modSettingMultiplier>
-				<baseSeverityPerDay>0.1</baseSeverityPerDay>
+				<baseSeverityPerDay>0.25</baseSeverityPerDay>
 			</li>
 		</comps>
 	</HediffDef>
@@ -1223,7 +1222,7 @@
 				<painOffset>0.2</painOffset>
 				<partEfficiencyOffset>0.5</partEfficiencyOffset>
 				<statOffsets>
-					<TStorage>0.02</TStorage>
+					<TStorage>0.01</TStorage>
 					<MoveSpeed>-0.03</MoveSpeed>
 				</statOffsets>
 			</li>
@@ -1240,7 +1239,7 @@
 		<comps>
 			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
 				<modSettingMultiplier>hostAcclimationSpeedFactor</modSettingMultiplier>
-				<baseSeverityPerDay>0.1</baseSeverityPerDay>
+				<baseSeverityPerDay>0.25</baseSeverityPerDay>
 			</li>
 		</comps>
 	</HediffDef>

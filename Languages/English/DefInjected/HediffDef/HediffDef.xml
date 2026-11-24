@@ -308,7 +308,7 @@
 
 	<RogueEggIncubation.label>Rogue egg incubation</RogueEggIncubation.label>
 	<RogueEggIncubation.labelNoun>incubation</RogueEggIncubation.labelNoun>
-	<RogueEggIncubation.description>An Amor Rogue egg is incubating within the host. The tentacle will not only grow, but gradually transform the host into an Amor Rogue. The incubation process takes approximately 10 days (with default multipliers).</RogueEggIncubation.description>
+	<RogueEggIncubation.description>An Amor Rogue egg is incubating within the host. The tentacle will not only grow, but gradually transform the host into an Amor Rogue. The incubation process takes approximately 7 days (with default multipliers).</RogueEggIncubation.description>
 	<RogueEggIncubation.comps.HediffComp_MessageAfterTicks.letterLabel>{0_labelShort} implanted</RogueEggIncubation.comps.HediffComp_MessageAfterTicks.letterLabel>
 	<RogueEggIncubation.comps.HediffComp_MessageAfterTicks.letterText>{0_labelShort} has been implanted with an Amor Host egg!</RogueEggIncubation.comps.HediffComp_MessageAfterTicks.letterText>
 	<RogueEggIncubation.stages.0.label>incubating egg</RogueEggIncubation.stages.0.label>
@@ -319,7 +319,7 @@
 
 	<KnightEggIncubation.label>Knight egg incubation</KnightEggIncubation.label>
 	<KnightEggIncubation.labelNoun>incubation</KnightEggIncubation.labelNoun>
-	<KnightEggIncubation.description>An Amor Knight egg is incubating within the host. The tentacle will not only grow, but gradually transform the host into an Amor Knight. The incubation process takes approximately 10 days (with default multipliers).</KnightEggIncubation.description>
+	<KnightEggIncubation.description>An Amor Knight egg is incubating within the host. The tentacle will not only grow, but gradually transform the host into an Amor Knight. The incubation process takes approximately 8 days (with default multipliers).</KnightEggIncubation.description>
 	<KnightEggIncubation.comps.HediffComp_MessageAfterTicks.letterLabel>{0_labelShort} implanted</KnightEggIncubation.comps.HediffComp_MessageAfterTicks.letterLabel>
 	<KnightEggIncubation.comps.HediffComp_MessageAfterTicks.letterText>{0_labelShort} has been implanted with an Amor Host egg!</KnightEggIncubation.comps.HediffComp_MessageAfterTicks.letterText>
 	<KnightEggIncubation.stages.0.label>incubating egg</KnightEggIncubation.stages.0.label>
@@ -330,7 +330,7 @@
 
 	<ServantEggIncubation.label>Servant egg incubation</ServantEggIncubation.label>
 	<ServantEggIncubation.labelNoun>incubation</ServantEggIncubation.labelNoun>
-	<ServantEggIncubation.description>An Amor Servant egg is incubating within the host. The tentacle will not only grow, but gradually transform the host into an Amor Servant. The incubation process takes approximately 10 days (with default multipliers).</ServantEggIncubation.description>
+	<ServantEggIncubation.description>An Amor Servant egg is incubating within the host. The tentacle will not only grow, but gradually transform the host into an Amor Servant. The incubation process takes approximately 5 days (with default multipliers).</ServantEggIncubation.description>
 	<ServantEggIncubation.comps.HediffComp_MessageAfterTicks.letterLabel>{0_labelShort} implanted</ServantEggIncubation.comps.HediffComp_MessageAfterTicks.letterLabel>
 	<ServantEggIncubation.comps.HediffComp_MessageAfterTicks.letterText>{0_labelShort} has been implanted with an Amor Host egg!</ServantEggIncubation.comps.HediffComp_MessageAfterTicks.letterText>
 	<ServantEggIncubation.stages.0.label>incubating egg</ServantEggIncubation.stages.0.label>

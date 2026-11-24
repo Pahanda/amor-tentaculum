@@ -171,16 +171,16 @@
 				<minSeverity>0.001</minSeverity>
 			</li>
 			<li>
-				<minSeverity>0.6</minSeverity>
-				<hungerRateFactorOffset>0.1</hungerRateFactorOffset>
+				<minSeverity>0.5</minSeverity>
+				<hungerRateFactorOffset>0.15</hungerRateFactorOffset>
 				<statOffsets>
 					<Vulnerability>0.1</Vulnerability>
 				</statOffsets>
 			</li>
 			<li>
-				<minSeverity>0.65</minSeverity>
+				<minSeverity>0.6</minSeverity>
 				<restFallFactor>1.05</restFallFactor>
-				<hungerRateFactorOffset>0.15</hungerRateFactorOffset>
+				<hungerRateFactorOffset>0.25</hungerRateFactorOffset>
 				<statOffsets>
 					<PsychicSensitivity>0.1</PsychicSensitivity>
 					<Vulnerability>0.2</Vulnerability>
@@ -188,7 +188,7 @@
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedStomach</hediff>
-						<mtbDays>4</mtbDays>
+						<mtbDays>3</mtbDays>
 						<partsToAffect>
 							<li>Stomach</li>
 						</partsToAffect>
@@ -200,7 +200,7 @@
 			<li>
 				<minSeverity>0.9</minSeverity>
 				<restFallFactor>1.1</restFallFactor>
-				<hungerRateFactorOffset>0.3</hungerRateFactorOffset>
+				<hungerRateFactorOffset>0.35</hungerRateFactorOffset>
 				<statOffsets>
 					<PsychicSensitivity>0.2</PsychicSensitivity>
 					<Vulnerability>0.3</Vulnerability>
@@ -209,7 +209,7 @@
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedStomach</hediff>
-						<mtbDays>3</mtbDays>
+						<mtbDays>2</mtbDays>
 						<partsToAffect>
 							<li>Stomach</li>
 						</partsToAffect>
@@ -217,7 +217,7 @@
 					</li>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedAnus</hediff>
-						<mtbDays>2</mtbDays>
+						<mtbDays>1</mtbDays>
 						<partsToAffect>
 							<li>Anus</li>
 						</partsToAffect>
@@ -289,23 +289,23 @@
 				<minSeverity>0.001</minSeverity>
 			</li>
 			<li>
-				<minSeverity>0.6</minSeverity>
-				<hungerRateFactorOffset>0.1</hungerRateFactorOffset>
+				<minSeverity>0.5</minSeverity>
+				<hungerRateFactorOffset>0.15</hungerRateFactorOffset>
 				<statOffsets>
-					<Vulnerability>0.1</Vulnerability>
+					<Vulnerability>0.15</Vulnerability>
 				</statOffsets>
 			</li>
 			<li>
-				<minSeverity>0.65</minSeverity>
+				<minSeverity>0.6</minSeverity>
 				<restFallFactor>1.05</restFallFactor>
-				<hungerRateFactorOffset>0.15</hungerRateFactorOffset>
+				<hungerRateFactorOffset>0.25</hungerRateFactorOffset>
 				<statOffsets>
-					<Vulnerability>0.2</Vulnerability>
+					<Vulnerability>0.25</Vulnerability>
 				</statOffsets>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedStomach</hediff>
-						<mtbDays>4</mtbDays>
+						<mtbDays>2</mtbDays>
 						<partsToAffect>
 							<li>Stomach</li>
 						</partsToAffect>
@@ -317,15 +317,15 @@
 			<li>
 				<minSeverity>0.9</minSeverity>
 				<restFallFactor>1.1</restFallFactor>
-				<hungerRateFactorOffset>0.3</hungerRateFactorOffset>
+				<hungerRateFactorOffset>0.35</hungerRateFactorOffset>
 				<statOffsets>
-					<Vulnerability>0.3</Vulnerability>
-					<SexFrequency>0.5</SexFrequency>
+					<Vulnerability>0.35</Vulnerability>
+					<SexFrequency>0.3</SexFrequency>
 				</statOffsets>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedStomach</hediff>
-						<mtbDays>3</mtbDays>
+						<mtbDays>1</mtbDays>
 						<partsToAffect>
 							<li>Stomach</li>
 						</partsToAffect>
@@ -333,7 +333,7 @@
 					</li>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedAnus</hediff>
-						<mtbDays>2</mtbDays>
+						<mtbDays>1</mtbDays>
 						<partsToAffect>
 							<li>Anus</li>
 						</partsToAffect>
@@ -345,10 +345,10 @@
 			<li>
 				<minSeverity>1.3</minSeverity>
 				<restFallFactor>1.2</restFallFactor>
-				<hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+				<hungerRateFactorOffset>0.45</hungerRateFactorOffset>
 				<statOffsets>
 					<Vulnerability>0.5</Vulnerability>
-					<SexFrequency>1</SexFrequency>
+					<SexFrequency>0.45</SexFrequency>
 				</statOffsets>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
@@ -404,23 +404,24 @@
 				<minSeverity>0.001</minSeverity>
 			</li>
 			<li>
-				<minSeverity>0.6</minSeverity>
+				<minSeverity>0.5</minSeverity>
 				<hungerRateFactorOffset>0.1</hungerRateFactorOffset>
 				<statOffsets>
 					<Vulnerability>0.1</Vulnerability>
 				</statOffsets>
 			</li>
 			<li>
-				<minSeverity>0.65</minSeverity>
+				<minSeverity>0.6</minSeverity>
 				<restFallFactor>1.05</restFallFactor>
-				<hungerRateFactorOffset>0.15</hungerRateFactorOffset>
+				<hungerRateFactorOffset>0.2</hungerRateFactorOffset>
 				<statOffsets>
-					<Vulnerability>0.2</Vulnerability>
+					<Vulnerability>0.1</Vulnerability>
+					<SexFrequency>0.2</SexFrequency>
 				</statOffsets>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedStomach</hediff>
-						<mtbDays>4</mtbDays>
+						<mtbDays>3</mtbDays>
 						<partsToAffect>
 							<li>Stomach</li>
 						</partsToAffect>
@@ -434,13 +435,13 @@
 				<restFallFactor>1.1</restFallFactor>
 				<hungerRateFactorOffset>0.3</hungerRateFactorOffset>
 				<statOffsets>
-					<Vulnerability>0.3</Vulnerability>
-					<SexFrequency>0.5</SexFrequency>
+					<Vulnerability>0.25</Vulnerability>
+					<SexFrequency>0.45</SexFrequency>
 				</statOffsets>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedStomach</hediff>
-						<mtbDays>3</mtbDays>
+						<mtbDays>1</mtbDays>
 						<partsToAffect>
 							<li>Stomach</li>
 						</partsToAffect>
@@ -448,7 +449,7 @@
 					</li>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedAnus</hediff>
-						<mtbDays>2</mtbDays>
+						<mtbDays>1</mtbDays>
 						<partsToAffect>
 							<li>Anus</li>
 						</partsToAffect>
@@ -460,10 +461,10 @@
 			<li>
 				<minSeverity>1.3</minSeverity>
 				<restFallFactor>1.2</restFallFactor>
-				<hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+				<hungerRateFactorOffset>0.4</hungerRateFactorOffset>
 				<statOffsets>
-					<Vulnerability>0.5</Vulnerability>
-					<SexFrequency>1</SexFrequency>
+					<Vulnerability>0.35</Vulnerability>
+					<SexFrequency>0.7</SexFrequency>
 				</statOffsets>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
@@ -519,23 +520,23 @@
 				<minSeverity>0.001</minSeverity>
 			</li>
 			<li>
-				<minSeverity>0.6</minSeverity>
+				<minSeverity>0.5</minSeverity>
 				<hungerRateFactorOffset>0.1</hungerRateFactorOffset>
 				<statOffsets>
 					<Vulnerability>0.1</Vulnerability>
 				</statOffsets>
 			</li>
 			<li>
-				<minSeverity>0.65</minSeverity>
+				<minSeverity>0.6</minSeverity>
 				<restFallFactor>1.05</restFallFactor>
-				<hungerRateFactorOffset>0.15</hungerRateFactorOffset>
+				<hungerRateFactorOffset>0.2</hungerRateFactorOffset>
 				<statOffsets>
-					<Vulnerability>0.2</Vulnerability>
+					<Vulnerability>0.1</Vulnerability>
 				</statOffsets>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedStomach</hediff>
-						<mtbDays>4</mtbDays>
+						<mtbDays>2</mtbDays>
 						<partsToAffect>
 							<li>Stomach</li>
 						</partsToAffect>
@@ -549,13 +550,13 @@
 				<restFallFactor>1.1</restFallFactor>
 				<hungerRateFactorOffset>0.3</hungerRateFactorOffset>
 				<statOffsets>
-					<Vulnerability>0.3</Vulnerability>
+					<Vulnerability>0.15</Vulnerability>
 					<SexFrequency>0.5</SexFrequency>
 				</statOffsets>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedStomach</hediff>
-						<mtbDays>3</mtbDays>
+						<mtbDays>1</mtbDays>
 						<partsToAffect>
 							<li>Stomach</li>
 						</partsToAffect>
@@ -563,7 +564,7 @@
 					</li>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedAnus</hediff>
-						<mtbDays>2</mtbDays>
+						<mtbDays>1</mtbDays>
 						<partsToAffect>
 							<li>Anus</li>
 						</partsToAffect>
@@ -575,10 +576,10 @@
 			<li>
 				<minSeverity>1.3</minSeverity>
 				<restFallFactor>1.2</restFallFactor>
-				<hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+				<hungerRateFactorOffset>0.4</hungerRateFactorOffset>
 				<statOffsets>
-					<Vulnerability>0.5</Vulnerability>
-					<SexFrequency>1</SexFrequency>
+					<Vulnerability>0.25</Vulnerability>
+					<SexFrequency>0.5</SexFrequency>
 				</statOffsets>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
@@ -608,7 +609,7 @@
 		<comps>
 			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
 				<modSettingMultiplier>hostIncubationSpeedFactor</modSettingMultiplier>
-				<baseSeverityPerDay>0.15</baseSeverityPerDay>
+				<baseSeverityPerDay>0.2</baseSeverityPerDay>
 			</li>
 			<li Class="EBSGFramework.HediffCompProperties_CreateOtherHediffs">
 				<hediffSets>
@@ -626,23 +627,23 @@
 				<minSeverity>0.001</minSeverity>
 			</li>
 			<li>
-				<minSeverity>0.6</minSeverity>
+				<minSeverity>0.5</minSeverity>
 				<hungerRateFactorOffset>0.1</hungerRateFactorOffset>
 				<statOffsets>
 					<Vulnerability>0.1</Vulnerability>
 				</statOffsets>
 			</li>
 			<li>
-				<minSeverity>0.65</minSeverity>
+				<minSeverity>0.6</minSeverity>
 				<restFallFactor>1.05</restFallFactor>
 				<hungerRateFactorOffset>0.15</hungerRateFactorOffset>
 				<statOffsets>
-					<Vulnerability>0.2</Vulnerability>
+					<Vulnerability>0.1</Vulnerability>
 				</statOffsets>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedStomach</hediff>
-						<mtbDays>4</mtbDays>
+						<mtbDays>1.5</mtbDays>
 						<partsToAffect>
 							<li>Stomach</li>
 						</partsToAffect>
@@ -654,15 +655,15 @@
 			<li>
 				<minSeverity>0.9</minSeverity>
 				<restFallFactor>1.1</restFallFactor>
-				<hungerRateFactorOffset>0.3</hungerRateFactorOffset>
+				<hungerRateFactorOffset>0.25</hungerRateFactorOffset>
 				<statOffsets>
-					<Vulnerability>0.3</Vulnerability>
-					<SexFrequency>0.5</SexFrequency>
+					<Vulnerability>0.2</Vulnerability>
+					<SexFrequency>0.25</SexFrequency>
 				</statOffsets>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedStomach</hediff>
-						<mtbDays>3</mtbDays>
+						<mtbDays>1</mtbDays>
 						<partsToAffect>
 							<li>Stomach</li>
 						</partsToAffect>
@@ -670,7 +671,7 @@
 					</li>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedAnus</hediff>
-						<mtbDays>2</mtbDays>
+						<mtbDays>1</mtbDays>
 						<partsToAffect>
 							<li>Anus</li>
 						</partsToAffect>
@@ -682,10 +683,10 @@
 			<li>
 				<minSeverity>1.3</minSeverity>
 				<restFallFactor>1.2</restFallFactor>
-				<hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+				<hungerRateFactorOffset>0.3</hungerRateFactorOffset>
 				<statOffsets>
-					<Vulnerability>0.5</Vulnerability>
-					<SexFrequency>1</SexFrequency>
+					<Vulnerability>0.3</Vulnerability>
+					<SexFrequency>0.4</SexFrequency>
 				</statOffsets>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
@@ -715,7 +716,7 @@
 		<comps>
 			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
 				<modSettingMultiplier>hostIncubationSpeedFactor</modSettingMultiplier>
-				<baseSeverityPerDay>0.15</baseSeverityPerDay>
+				<baseSeverityPerDay>0.1875</baseSeverityPerDay>
 			</li>
 			<li Class="EBSGFramework.HediffCompProperties_CreateOtherHediffs">
 				<hediffSets>
@@ -733,23 +734,23 @@
 				<minSeverity>0.001</minSeverity>
 			</li>
 			<li>
-				<minSeverity>0.6</minSeverity>
+				<minSeverity>0.5</minSeverity>
 				<hungerRateFactorOffset>0.1</hungerRateFactorOffset>
 				<statOffsets>
-					<Vulnerability>0.1</Vulnerability>
+					<Vulnerability>0.05</Vulnerability>
 				</statOffsets>
 			</li>
 			<li>
-				<minSeverity>0.65</minSeverity>
+				<minSeverity>0.6</minSeverity>
 				<restFallFactor>1.05</restFallFactor>
-				<hungerRateFactorOffset>0.15</hungerRateFactorOffset>
+				<hungerRateFactorOffset>0.2</hungerRateFactorOffset>
 				<statOffsets>
 					<Vulnerability>0.2</Vulnerability>
 				</statOffsets>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedStomach</hediff>
-						<mtbDays>4</mtbDays>
+						<mtbDays>2</mtbDays>
 						<partsToAffect>
 							<li>Stomach</li>
 						</partsToAffect>
@@ -761,15 +762,15 @@
 			<li>
 				<minSeverity>0.9</minSeverity>
 				<restFallFactor>1.1</restFallFactor>
-				<hungerRateFactorOffset>0.3</hungerRateFactorOffset>
+				<hungerRateFactorOffset>0.25</hungerRateFactorOffset>
 				<statOffsets>
-					<Vulnerability>0.3</Vulnerability>
-					<SexFrequency>0.5</SexFrequency>
+					<Vulnerability>0.15</Vulnerability>
+					<SexFrequency>0.3</SexFrequency>
 				</statOffsets>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedStomach</hediff>
-						<mtbDays>3</mtbDays>
+						<mtbDays>1</mtbDays>
 						<partsToAffect>
 							<li>Stomach</li>
 						</partsToAffect>
@@ -777,7 +778,7 @@
 					</li>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedAnus</hediff>
-						<mtbDays>2</mtbDays>
+						<mtbDays>1</mtbDays>
 						<partsToAffect>
 							<li>Anus</li>
 						</partsToAffect>
@@ -789,10 +790,10 @@
 			<li>
 				<minSeverity>1.3</minSeverity>
 				<restFallFactor>1.2</restFallFactor>
-				<hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+				<hungerRateFactorOffset>0.35</hungerRateFactorOffset>
 				<statOffsets>
-					<Vulnerability>0.5</Vulnerability>
-					<SexFrequency>1</SexFrequency>
+					<Vulnerability>0.3</Vulnerability>
+					<SexFrequency>0.6</SexFrequency>
 				</statOffsets>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
@@ -822,7 +823,7 @@
 		<comps>
 			<li Class="AmorTentaculum.HediffCompProperties_MultipliedSeverityPerDay">
 				<modSettingMultiplier>hostIncubationSpeedFactor</modSettingMultiplier>
-				<baseSeverityPerDay>0.15</baseSeverityPerDay>
+				<baseSeverityPerDay>0.3</baseSeverityPerDay>
 			</li>
 			<li Class="EBSGFramework.HediffCompProperties_CreateOtherHediffs">
 				<hediffSets>
@@ -840,14 +841,14 @@
 				<minSeverity>0.001</minSeverity>
 			</li>
 			<li>
-				<minSeverity>0.6</minSeverity>
+				<minSeverity>0.5</minSeverity>
 				<hungerRateFactorOffset>0.1</hungerRateFactorOffset>
 				<statOffsets>
 					<Vulnerability>0.1</Vulnerability>
 				</statOffsets>
 			</li>
 			<li>
-				<minSeverity>0.65</minSeverity>
+				<minSeverity>0.6</minSeverity>
 				<restFallFactor>1.05</restFallFactor>
 				<hungerRateFactorOffset>0.15</hungerRateFactorOffset>
 				<statOffsets>
@@ -856,7 +857,7 @@
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedStomach</hediff>
-						<mtbDays>4</mtbDays>
+						<mtbDays>0.5</mtbDays>
 						<partsToAffect>
 							<li>Stomach</li>
 						</partsToAffect>
@@ -868,15 +869,15 @@
 			<li>
 				<minSeverity>0.9</minSeverity>
 				<restFallFactor>1.1</restFallFactor>
-				<hungerRateFactorOffset>0.3</hungerRateFactorOffset>
+				<hungerRateFactorOffset>0.2</hungerRateFactorOffset>
 				<statOffsets>
 					<Vulnerability>0.3</Vulnerability>
-					<SexFrequency>0.5</SexFrequency>
+					<SexFrequency>0.2</SexFrequency>
 				</statOffsets>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedStomach</hediff>
-						<mtbDays>3</mtbDays>
+						<mtbDays>0.5</mtbDays>
 						<partsToAffect>
 							<li>Stomach</li>
 						</partsToAffect>
@@ -884,7 +885,7 @@
 					</li>
 					<li Class="HediffGiver_Random">
 						<hediff>TentacleInfestedAnus</hediff>
-						<mtbDays>2</mtbDays>
+						<mtbDays>0.5</mtbDays>
 						<partsToAffect>
 							<li>Anus</li>
 						</partsToAffect>
@@ -896,10 +897,10 @@
 			<li>
 				<minSeverity>1.3</minSeverity>
 				<restFallFactor>1.2</restFallFactor>
-				<hungerRateFactorOffset>0.5</hungerRateFactorOffset>
+				<hungerRateFactorOffset>0.25</hungerRateFactorOffset>
 				<statOffsets>
 					<Vulnerability>0.5</Vulnerability>
-					<SexFrequency>1</SexFrequency>
+					<SexFrequency>0.3</SexFrequency>
 				</statOffsets>
 				<hediffGivers>
 					<li Class="HediffGiver_Random">

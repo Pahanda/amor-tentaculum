@@ -53,21 +53,12 @@
 						<severity>0.01</severity>
 					</li>
 					<li>
-						<hediff>TentacleInfestedVagina</hediff>
-						<onlyIfNew>true</onlyIfNew>
-						<severity>1</severity>
-						<bodyParts>
-							<li>Genitals</li>
-						</bodyParts>
-					</li>
-					<li>
 						<hediff>TentacleStorage</hediff>
 						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 					</li>
 					<li>
 						<hediff>TentacleInfestedStomach</hediff>
-						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 						<bodyParts>
 							<li>Stomach</li>
@@ -75,10 +66,16 @@
 					</li>
 					<li>
 						<hediff>TentacleInfestedAnus</hediff>
-						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 						<bodyParts>
 							<li>Anus</li>
+						</bodyParts>
+					</li>
+					<li>
+						<hediff>TentacleInfestedVagina</hediff>
+						<severity>1</severity>
+						<bodyParts>
+							<li>Genitals</li>
 						</bodyParts>
 					</li>
 					<li>
@@ -98,17 +95,6 @@
 						</bodyParts>
 					</li>
 				</hediffsToApply>
-			</li>
-			<li Class="EBSGFramework.HiveMindExtension">
-				<key>AmorQueen</key>
-				<hiveKey>AmorTentacleHive</hiveKey>
-				<hiveRolesToCheckFor>
-					<li>
-						<checkKey>AmorQueen</checkKey>
-						<maxCount>1</maxCount>
-						<hediffWhenTooMany>AmorQueenRival</hediffWhenTooMany>
-					</li>
-				</hiveRolesToCheckFor>
 			</li>
 		</modExtensions>
 	</GeneDef>
@@ -133,21 +119,12 @@
 						<severity>0.01</severity>
 					</li>
 					<li>
-						<hediff>TentacleInfestedVagina</hediff>
-						<onlyIfNew>true</onlyIfNew>
-						<severity>1</severity>
-						<bodyParts>
-							<li>Genitals</li>
-						</bodyParts>
-					</li>
-					<li>
 						<hediff>TentacleStorage</hediff>
 						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 					</li>
 					<li>
 						<hediff>TentacleInfestedStomach</hediff>
-						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 						<bodyParts>
 							<li>Stomach</li>
@@ -155,10 +132,16 @@
 					</li>
 					<li>
 						<hediff>TentacleInfestedAnus</hediff>
-						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 						<bodyParts>
 							<li>Anus</li>
+						</bodyParts>
+					</li>
+					<li>
+						<hediff>TentacleInfestedVagina</hediff>
+						<severity>1</severity>
+						<bodyParts>
+							<li>Genitals</li>
 						</bodyParts>
 					</li>
 					<li>
@@ -204,21 +187,12 @@
 						<severity>0.01</severity>
 					</li>
 					<li>
-						<hediff>TentacleInfestedVagina</hediff>
-						<onlyIfNew>true</onlyIfNew>
-						<severity>1</severity>
-						<bodyParts>
-							<li>Genitals</li>
-						</bodyParts>
-					</li>
-					<li>
 						<hediff>TentacleStorage</hediff>
 						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 					</li>
 					<li>
 						<hediff>TentacleInfestedStomach</hediff>
-						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 						<bodyParts>
 							<li>Stomach</li>
@@ -226,10 +200,16 @@
 					</li>
 					<li>
 						<hediff>TentacleInfestedAnus</hediff>
-						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 						<bodyParts>
 							<li>Anus</li>
+						</bodyParts>
+					</li>
+					<li>
+						<hediff>TentacleInfestedVagina</hediff>
+						<severity>1</severity>
+						<bodyParts>
+							<li>Genitals</li>
 						</bodyParts>
 					</li>
 					<li>
@@ -297,7 +277,6 @@
 					</li>
 					<li>
 						<hediff>TentacleInfestedStomach</hediff>
-						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 						<bodyParts>
 							<li>Stomach</li>
@@ -305,7 +284,6 @@
 					</li>
 					<li>
 						<hediff>TentacleInfestedAnus</hediff>
-						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 						<bodyParts>
 							<li>Anus</li>
@@ -350,7 +328,6 @@
 					</li>
 					<li>
 						<hediff>TentacleInfestedStomach</hediff>
-						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 						<bodyParts>
 							<li>Stomach</li>
@@ -358,7 +335,6 @@
 					</li>
 					<li>
 						<hediff>TentacleInfestedAnus</hediff>
-						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 						<bodyParts>
 							<li>Anus</li>
@@ -403,7 +379,6 @@
 					</li>
 					<li>
 						<hediff>TentacleInfestedStomach</hediff>
-						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 						<bodyParts>
 							<li>Stomach</li>
@@ -411,7 +386,6 @@
 					</li>
 					<li>
 						<hediff>TentacleInfestedAnus</hediff>
-						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 						<bodyParts>
 							<li>Anus</li>
@@ -456,7 +430,6 @@
 					</li>
 					<li>
 						<hediff>TentacleInfestedStomach</hediff>
-						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 						<bodyParts>
 							<li>Stomach</li>
@@ -464,7 +437,6 @@
 					</li>
 					<li>
 						<hediff>TentacleInfestedAnus</hediff>
-						<onlyIfNew>true</onlyIfNew>
 						<severity>1</severity>
 						<bodyParts>
 							<li>Anus</li>

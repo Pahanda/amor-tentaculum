@@ -197,6 +197,15 @@
 						</bodyParts>
 						<severity>0.01</severity>
 					</li>
+					<li>
+						<hediffDef>BroodMotherIncubation</hediffDef>
+						<onlyApplyToSelf>true</onlyApplyToSelf>
+						<replaceExisting>true</replaceExisting>
+						<bodyParts>
+							<li>Genitals</li>
+						</bodyParts>
+						<severity>0.001</severity>
+					</li>
 				</hediffsToGive>
 			</li>
 			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">

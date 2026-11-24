@@ -7,6 +7,7 @@
 		<iconPath>TexturesOld/Xenotype-host</iconPath>
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<genes>
 			<li>AmorQueenHostBody</li>
 			<li>RJWGenes_AmorTentacleInfestedFemaleGenitalia</li>
@@ -20,6 +21,7 @@
 		<iconPath>TexturesOld/Xenotype-host</iconPath>
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<genes>
 			<li>AmorBaronessHostBody</li>
 			<li>RJWGenes_AmorTentacleInfestedFemaleGenitalia</li>
@@ -33,6 +35,7 @@
 		<iconPath>TexturesOld/Xenotype-host</iconPath>
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<genes>
 			<li>AmorNymphHostBody</li>
 			<li>RJWGenes_AmorTentacleInfestedFemaleGenitalia</li>
@@ -49,6 +52,7 @@
 		<iconPath>TexturesOld/Xenotype-host</iconPath>
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<genes>
 			<li>AmorBaronHostBody</li>
 			<li>RJWGenes_AmorTentacleInfestedMaleGenitalia</li>
@@ -62,6 +66,7 @@
 		<iconPath>TexturesOld/Xenotype-host</iconPath>
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<genes>
 			<li>AmorRogueHostBody</li>
 			<li>RJWGenes_AmorTentacleInfestedMaleGenitalia</li>
@@ -75,6 +80,7 @@
 		<iconPath>TexturesOld/Xenotype-host</iconPath>
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<genes>
 			<li>AmorKnightHostBody</li>
 			<li>RJWGenes_AmorTentacleInfestedMaleGenitalia</li>
@@ -88,6 +94,7 @@
 		<iconPath>TexturesOld/Xenotype-host</iconPath>
 		<inheritable>false</inheritable>
 		<chanceToUseNameMaker>0</chanceToUseNameMaker>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
 		<genes>
 			<li>AmorServantHostBody</li>
 			<li>RJWGenes_AmorTentacleInfestedMaleGenitalia</li>
