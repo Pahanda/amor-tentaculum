@@ -7,11 +7,15 @@
 		<defaultFactionDef>Tentacles</defaultFactionDef>
     <combatPower>45</combatPower>
     <ecoSystemWeight>0.4</ecoSystemWeight>
+    <abilities>
+      <li>StingerLatch</li>
+      <li>ParaBarbs</li>
+    </abilities>
     <lifeStages>
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawns/Stinger/Stinger</texPath>
-          <drawSize>0.75</drawSize>
+          <drawSize>1.5</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
@@ -21,7 +25,7 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawns/Stinger/Stinger</texPath>
-          <drawSize>0.9</drawSize>
+          <drawSize>1.8</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>
           <texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>

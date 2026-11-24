@@ -509,4 +509,44 @@
 	<ParalyticPoison.stages.3.label>severely weakened</ParalyticPoison.stages.3.label>
 	<ParalyticPoison.stages.4.label>paralyzed</ParalyticPoison.stages.4.label>
 
+	<!-- Striker and Stinger attachments -->
+	<AttachedA.description>An Amor Striker has latched onto the victim&apos;s anus. It reduces Moving capacity and causes pain; the Striker will speed up as it gets more horny, increasing the penalizers; will take a small rest at some point before getting into a breeding frenzy. It will mindlessly fuck the host silly until detached or it dies from exhaustion.</AttachedA.description>
+	<AttachedA.label>Amor Striker on anus</AttachedA.label>
+	<AttachedA.labelNoun>Amor Striker</AttachedA.labelNoun>
+	<AttachedA.stages.0.label>breeding frenzy</AttachedA.stages.0.label>
+	<AttachedA.stages.1.label>fucking hard</AttachedA.stages.1.label>
+	<AttachedA.stages.2.label>resting</AttachedA.stages.2.label>
+	<AttachedA.stages.3.label>fucking hard</AttachedA.stages.3.label>
+	<AttachedA.stages.4.label>warming up</AttachedA.stages.4.label>
+	<AttachedA.stages.5.label>getting grabbed</AttachedA.stages.5.label>
+	<AttachedM.description>An Amor Striker has latched onto the victim&apos;s face. It reduces Sight and Breathing capacities. The Striker will speed up as it gets more horny, increasing the penalizers; will take a small rest at some point before getting into a breeding frenzy. It will mindlessly fuck the host silly until detached or it dies from exhaustion.</AttachedM.description>
+	<AttachedM.label>Amor Striker on face</AttachedM.label>
+	<AttachedM.labelNoun>Amor Striker</AttachedM.labelNoun>
+	<AttachedM.stages.0.label>breeding frenzy</AttachedM.stages.0.label>
+	<AttachedM.stages.1.label>fucking hard</AttachedM.stages.1.label>
+	<AttachedM.stages.2.label>resting</AttachedM.stages.2.label>
+	<AttachedM.stages.3.label>fucking hard</AttachedM.stages.3.label>
+	<AttachedM.stages.4.label>warming up</AttachedM.stages.4.label>
+	<AttachedM.stages.5.label>getting grabbed</AttachedM.stages.5.label>
+	<AttachedP.description>An Amor Striker has latched onto the victim&apos;s penis. It reduces Manipulation and Consciousness capacities. The Striker will speed up as it gets more horny, increasing the penalizers; will take a small rest at some point before getting into a breeding frenzy. It will mindlessly fuck the host silly until detached or it dies from exhaustion.</AttachedP.description>
+	<AttachedP.label>Amor Striker on penis</AttachedP.label>
+	<AttachedP.labelNoun>Amor Striker</AttachedP.labelNoun>
+	<AttachedP.stages.0.label>dying</AttachedP.stages.0.label>
+	<AttachedP.stages.1.label>fucking hard</AttachedP.stages.1.label>
+	<AttachedP.stages.2.label>resting</AttachedP.stages.2.label>
+	<AttachedP.stages.3.label>fucking hard</AttachedP.stages.3.label>
+	<AttachedP.stages.4.label>warming up</AttachedP.stages.4.label>
+	<AttachedP.stages.5.label>getting grabbed</AttachedP.stages.5.label>
+	<AttachedV.description>An Amor Striker has latched onto the victim&apos;s vagina. It reduces Manipulation and Consciousness capacities. The Striker will speed up as it gets more horny, increasing the penalizers; will take a small rest at some point before getting into a breeding frenzy. It will mindlessly fuck the host silly until detached or it dies from exhaustion.</AttachedV.description>
+	<AttachedV.label>Amor Striker on vagina</AttachedV.label>
+	<AttachedV.labelNoun>Amor Striker</AttachedV.labelNoun>
+	<AttachedV.stages.0.label>breeding frenzy</AttachedV.stages.0.label>
+	<AttachedV.stages.1.label>resting</AttachedV.stages.1.label>
+	<AttachedV.stages.2.label>fucking hard</AttachedV.stages.2.label>
+	<AttachedV.stages.3.label>warming up</AttachedV.stages.3.label>
+	<AttachedV.stages.4.label>getting grabbed</AttachedV.stages.4.label>
+	<StingerThrallAttachment.description>A Stinger has latched onto this pawn&apos;s head, using it's tentacles to fuck their brain and completely take control of them. The pawn feels no pain and is unusually alert, mobile, and dexterous. They will die when the Stinger&apos;s hold ends unless it is surgically removed.</StingerThrallAttachment.description>
+	<StingerThrallAttachment.label>Stinger Embrace</StingerThrallAttachment.label>
+	<StingerThrallAttachment.labelNoun>Stinger Embrace</StingerThrallAttachment.labelNoun>
+
 </languageData>
