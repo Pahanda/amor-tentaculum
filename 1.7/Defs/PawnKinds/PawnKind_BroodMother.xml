@@ -11,17 +11,6 @@
       <li>
         <bodyGraphicData>
           <texPath>Things/Pawns/BroodMother/BroodMother</texPath>
-          <drawSize>3.0</drawSize>
-        </bodyGraphicData>
-        <dessicatedBodyGraphicData>
-          <texPath>Things/Pawn/Animal/Cobra/Dessicated_Cobra</texPath>
-          <graphicClass>Graphic_Single</graphicClass>
-          <drawSize>3.0</drawSize>
-        </dessicatedBodyGraphicData>
-      </li>
-      <li>
-        <bodyGraphicData>
-          <texPath>Things/Pawns/BroodMother/BroodMother</texPath>
           <drawSize>4.0</drawSize>
         </bodyGraphicData>
         <dessicatedBodyGraphicData>

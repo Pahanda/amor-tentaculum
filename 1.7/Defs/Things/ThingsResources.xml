@@ -10,22 +10,22 @@
 		<generateAllowChance>0</generateAllowChance>
 		<tradeability>Sellable</tradeability>
 		<statBases>
-			<MarketValue>1.5</MarketValue>
-			<StuffPower_Armor_Sharp>0.05</StuffPower_Armor_Sharp>
-			<StuffPower_Armor_Blunt>0.05</StuffPower_Armor_Blunt>
+			<MarketValue>1.8</MarketValue>
+			<StuffPower_Armor_Sharp>0.06</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>0.14</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1.7</StuffPower_Armor_Heat>
 			<StuffPower_Insulation_Cold>25</StuffPower_Insulation_Cold>
 			<StuffPower_Insulation_Heat>15</StuffPower_Insulation_Heat>
 		</statBases>
 		<thingCategories>
 			<li>TentacleProducedResources</li>
-			<li>Leathers</li>
 		</thingCategories>
 		<stuffProps>
-			<color>(235,205,180)</color>
+			<color>(224,85,180)</color>
 			<commonality>0.0001</commonality>
 			<statFactors>
 				<MaxHitPoints>0.5</MaxHitPoints>
-				<Beauty>2.5</Beauty>
+				<Beauty>2</Beauty>
 				<Flammability>0</Flammability>
 			</statFactors>
 		</stuffProps>
@@ -110,7 +110,7 @@
 				<li>Resinous</li>
 			</categories>
 			<commonality>0.0001</commonality>
-			<color>(203,180,227)</color>
+			<color>(224,110,210)</color>
 			<constructEffect>ConstructWood</constructEffect>
 			<appearance>Planks</appearance>
 			<soundImpactBullet>BulletImpact_Wood</soundImpactBullet>
@@ -118,7 +118,7 @@
 			<soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
 			<soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Wood</soundImpactMelee>
 			<statFactors>
-				<MaxHitPoints>0.5</MaxHitPoints>
+				<MaxHitPoints>0.7</MaxHitPoints>
 				<Beauty>1.5</Beauty>
 				<Flammability>0</Flammability>
 				<WorkToMake>0.7</WorkToMake>
@@ -154,7 +154,7 @@
 		<generateCommonality>0</generateCommonality>
 		<generateAllowChance>0</generateAllowChance>
 		<statBases>
-			<MarketValue>9</MarketValue>
+			<MarketValue>6.5</MarketValue>
 			<Mass>0.2</Mass>
 			<StuffPower_Armor_Sharp>0.57</StuffPower_Armor_Sharp>
 			<StuffPower_Armor_Blunt>0.57</StuffPower_Armor_Blunt>
@@ -176,7 +176,7 @@
 			<appearance>Metal</appearance>
 			<commonality>0.0001</commonality>
 			<constructEffect>ConstructMetal</constructEffect>
-			<color>(203,45,227)</color>
+			<color>(203,45,150)</color>
 			<soundImpactBullet>BulletImpact_Metal</soundImpactBullet>
 			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
 			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>

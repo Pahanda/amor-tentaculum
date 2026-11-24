@@ -3,7 +3,7 @@
 | Tentacle | Neutral | Squirmer | ![](../Textures/Things/Pawns/Squirmer/Squirmer_east.png) | `Textures/Things/Pawns/Squirmer` | |
 | Tentacle | Neutral | Larva | ![](../Textures/Things/Pawns/Larva/Larva_east.png) | `Textures/Things/Pawns/Larva` | |
 | Tentacle | Male | Grazer | ![](../Textures/Things/Pawns/Grazer/Grazer_east.png) | `Textures/Things/Pawns/Grazer` | |
-| Tentacle | Male | Stinger | ![](../Textures/Things/Pawns/Stinger/Stinger_east.png) | `Textures/Things/Pawns/Stinger` | |
+| Tentacle | Male | Stinger | ![](../Textures/Things/Pawns/Stinger/Stinger_east.png) (pawn) ![](../Textures/Things/Pawns/Stinger/StingerLatch_east.png) (latched) | `Textures/Things/Pawns/Stinger` | |
 | Tentacle | Male | Borer | ![](../Textures/Things/Pawns/Borer/Borer_east.png) | `Textures/Things/Pawns/Borer` | |
 | Tentacle | Male | Striker | ![](../Textures/Things/Pawns/Striker/Striker_east.png) | `Textures/Things/Pawns/Striker` | |
 | Tentacle | Male | Abductor | ![](../Textures/Things/Pawns/Abductor/Abductor_east.png) | `Textures/Things/Pawns/Abductor` | |
@@ -15,10 +15,10 @@
 | Boss | Male | Defender | ![](../Textures/Things/Pawns/Defender/Defender_east.png) | `Textures/Things/Pawns/Defender` | |
 | Boss | Female | Valkyrie | ![](../Textures/Things/Pawns/Valkyrie/Valkyrie_east.png) | `Textures/Things/Pawns/Valkyrie` | |
 | Boss | Female | War Womb | ![](../Textures/Things/Pawns/WarWomb/WarWomb_east.png) | `Textures/Things/Pawns/WarWomb` | |
-| Material | Natural | Hard Resin | ![](../Textures/Things/Items/HardRes/HardResinA.png) ![](../Textures/Things/Items/HardRes/HardResinB.png) | `Textures/Things/Items/HardRes` | |
-| Material | Natural | Soft Resin | ![](../Textures/Things/Items/SoftRes/SoftResinA.png) ![](../Textures/Things/Items/SoftRes/SoftResinB.png) | `Textures/Things/Items/SoftRes` | |
+| Material | Natural | Hard Resin | ![](../Textures/Things/Items/HardResin/HardResinA.png) ![](../Textures/Things/Items/HardResin/HardResinB.png) | `Textures/Things/Items/HardResin` | |
+| Material | Natural | Soft Resin | ![](../Textures/Things/Items/SoftResin/SoftResinA.png) ![](../Textures/Things/Items/SoftResin/SoftResinB.png) | `Textures/Things/Items/SoftResin` | |
 | Material | Natural | Soft Flesh | ![](../Textures/Things/Items/SoftFlesh/SoftFleshA.png) ![](../Textures/Things/Items/SoftFlesh/SoftFleshB.png) | `Textures/Things/Items/SoftFlesh` | |
-| Material | Natural | Tentacle Slime | ![](../Textures/Things/Items/TentacleSlime/TentacleSlimeA.png) ![](../Textures/Things/Items/TentacleSlime/TentacleSlimeB.png) | `Textures/Things/Items/TentacleSlime` | |
+| Material | Natural | Tentacle Slime | ![](../Textures/Things/Items/TentacleSlime/TentacleSlimeA.png) ![](../Textures/Things/Items/TentacleSlime/TentacleSlimeB.png) ![](../Textures/Things/Items/TentacleSlime/TentacleSlimeC.png) | `Textures/Things/Items/TentacleSlime` | |
 | Material | Crafted | Tentacle Catalyst | ![](../Textures/Things/Items/Catalyst/Catalyst.png) | `Textures/Things/Items/Catalyst` | |
 | Drugs | Natural | Amornuum | ![](../Textures/Things/Items/Food/Amornuum/AmornuumA.png) ![](../Textures/Things/Items/Food/Amornuum/AmornuumB.png) | `Textures/Things/Items/Food/Amornuum` | |
 | Drugs | Natural | NotSlurm | ![](../Textures/Things/Items/Food/NotSlurm/LewdDrinkA.png) ![](../Textures/Things/Items/Food/NotSlurm/LewdDrinkB.png) | `Textures/Things/Items/Food/NotSlurm` | |
@@ -52,15 +52,15 @@
 | Abilities | Host | Expel Tentacle | ![](../Textures/Abilities/OviAss.png) | `Textures/Abilities` | |
 | Abilities | Host | Transfer Tentacle | ![](../Textures/Abilities/TentacleKiss.png) | `Textures/Abilities` | |
 | Abilities | Host | Slime Spray | ![](../Textures/Abilities/SlimeSpray.png) | `Textures/Abilities` | |
-| Abilities | Host | Seduction Kiss | ![](../Textures/Abilities/Kisses.png) | `Textures/Abilities` | |
+| Abilities | Host | Seduction Kiss | ![](../Textures/Abilities/TentacleKiss.png) | `Textures/Abilities` | |
 | Abilities | Host | Invisibility | ![](../Textures/Abilities/InvisibilityFemale.png) ![](../Textures/Abilities/InvisibilityMale.png) | `Textures/Abilities` | Invisbility is for a Male Host type, but we can definitely re-use these icons. |
 | Abilities | Host | Hyper Regeneration | ![](../Textures/Abilities/HyperRegeneration.png) | `Textures/Abilities` | |
 | Abilities | ? | ? | ![](../Textures/Abilities/TentacleHandler.png) | `Textures/Abilities` | No associated ability, but looks good. |
 | Abilities | ? | ? | ![](../Textures/Abilities/ExpelTentacles.png) | `Textures/Abilities` | No associated ability, but looks good. |
-| Items | Boss Drops | Brewer Gland | ![](../Textures/Things/Items/BossGlands/BossGlandBrewer.png) | `Textures/Things/Items/BossGlands` | |
-| Items | Boss Drops | Valkyrie Gland | ![](../Textures/Things/Items/BossGlands/BossGlandValkyrie.png) | `Textures/Things/Items/BossGlands` | |
-| Items | Boss Drops | Defender Gland | ![](../Textures/Things/Items/BossGlands/BossGlandDefender.png) | `Textures/Things/Items/BossGlands` | |
-| Items | Boss Drops | War Womb Gland | ![](../Textures/Things/Items/BossGlands/BossGlandWarWomb.png) | `Textures/Things/Items/BossGlands` | |
+| Items | Boss Drops | Brewer Larva | ![](../Textures/Things/Items/BossLarvae/BossLarvaBrewer.png) | `Textures/Things/Items/BossLarvae` | |
+| Items | Boss Drops | Valkyrie Larva | ![](../Textures/Things/Items/BossLarvae/BossLarvaValkyrie.png) | `Textures/Things/Items/BossLarvae` | |
+| Items | Boss Drops | Defender Larva | ![](../Textures/Things/Items/BossLarvae/BossLarvaDefender.png) | `Textures/Things/Items/BossLarvae` | |
+| Items | Boss Drops | War Womb Larva | ![](../Textures/Things/Items/BossLarvae/BossLarvaWarWomb.png) | `Textures/Things/Items/BossLarvae` | |
 | Buildings | Encounter Summon | Feral Tentacle Beacon | ![](../Textures/Things/Buildings/Summoners/TentacleSummoner.png) | `Textures/Things/Buildings/Summoners` | |
 | Buildings | Encounter Summon | Brewer Beacon | ![](../Textures/Things/Buildings/Summoners/BrewerSummoner.png) | `Textures/Things/Buildings/Summoners` | |
 | Buildings | Encounter Summon | Valkyrie Beacon | ![](../Textures/Things/Buildings/Summoners/TwinsSummoner.png) | `Textures/Things/Buildings/Summoners` | |

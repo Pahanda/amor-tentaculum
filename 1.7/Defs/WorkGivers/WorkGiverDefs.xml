@@ -16,5 +16,18 @@
 		</requiredCapacities>
 		<prioritizeSustains>true</prioritizeSustains>
 	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>HaulToRecyclingPod</defName>
+		<label>haul resources to recycling pod</label>
+		<giverClass>WorkGiver_HaulToRecyclingPod</giverClass>
+		<workType>Hauling</workType>
+		<verb>haul to</verb>
+		<gerund>hauling to</gerund>
+		<priorityInType>90</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
 	
 </Defs>
