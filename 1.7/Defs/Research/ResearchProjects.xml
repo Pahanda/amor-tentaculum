@@ -3,7 +3,7 @@
 	<ResearchProjectDef>
 		<defName>ATCore</defName>
 		<tab>AmorTentaculum</tab>
-		<baseCost>1000</baseCost>
+		<baseCost>2000</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>0.50</researchViewX>
 		<researchViewY>0.50</researchViewY>
@@ -15,7 +15,7 @@
 		<prerequisites>
 			<li>ATCore</li>
 		</prerequisites>
-		<baseCost>600</baseCost>
+		<baseCost>1200</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>1.50</researchViewX>
 		<researchViewY>0.50</researchViewY>
@@ -27,7 +27,7 @@
 		<prerequisites>
 			<li>ATHostBasic</li>
 		</prerequisites>
-		<baseCost>700</baseCost>
+		<baseCost>1400</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>2.50</researchViewX>
 		<researchViewY>0.50</researchViewY>
@@ -39,7 +39,7 @@
 		<prerequisites>
 			<li>ATHostIntermediate</li>
 		</prerequisites>
-		<baseCost>800</baseCost>
+		<baseCost>1600</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>3.50</researchViewX>
 		<researchViewY>0.50</researchViewY>
@@ -51,7 +51,7 @@
 		<prerequisites>
 			<li>ATCore</li>
 		</prerequisites>
-		<baseCost>600</baseCost>
+		<baseCost>1200</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>1.50</researchViewX>
 		<researchViewY>1.50</researchViewY>
@@ -63,7 +63,7 @@
 		<prerequisites>
 			<li>ATLarvaBasic</li>
 		</prerequisites>
-		<baseCost>700</baseCost>
+		<baseCost>1400</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>2.50</researchViewX>
 		<researchViewY>1.50</researchViewY>
@@ -75,7 +75,7 @@
 		<prerequisites>
 			<li>ATLarvaIntermediate</li>
 		</prerequisites>
-		<baseCost>800</baseCost>
+		<baseCost>1600</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>3.50</researchViewX>
 		<researchViewY>1.50</researchViewY>
@@ -87,7 +87,7 @@
 		<prerequisites>
 			<li>ATLarvaAdvanced</li>
 		</prerequisites>
-		<baseCost>900</baseCost>
+		<baseCost>1800</baseCost>
 		<techLevel>Spacer</techLevel>
 		<researchViewX>4.50</researchViewX>
 		<researchViewY>1.50</researchViewY>
@@ -102,7 +102,7 @@
 		<requiredAnalyzed>
 			<li>BossLarvaBrewer</li>
 		</requiredAnalyzed>
-		<baseCost>1500</baseCost>
+		<baseCost>3000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<researchViewX>5.50</researchViewX>
 		<researchViewY>0.50</researchViewY>
@@ -117,7 +117,7 @@
 		<requiredAnalyzed>
 			<li>BossLarvaValkyrie</li>
 		</requiredAnalyzed>
-		<baseCost>1750</baseCost>
+		<baseCost>3500</baseCost>
 		<techLevel>Spacer</techLevel>
 		<researchViewX>5.50</researchViewX>
 		<researchViewY>1.50</researchViewY>
@@ -132,7 +132,7 @@
 		<requiredAnalyzed>
 			<li>BossLarvaDefender</li>
 		</requiredAnalyzed>
-		<baseCost>1750</baseCost>
+		<baseCost>3500</baseCost>
 		<techLevel>Spacer</techLevel>
 		<researchViewX>5.50</researchViewX>
 		<researchViewY>2.50</researchViewY>
@@ -147,7 +147,7 @@
 		<requiredAnalyzed>
 			<li>BossLarvaWarWomb</li>
 		</requiredAnalyzed>
-		<baseCost>1500</baseCost>
+		<baseCost>4000</baseCost>
 		<techLevel>Spacer</techLevel>
 		<researchViewX>5.50</researchViewX>
 		<researchViewY>3.50</researchViewY>
@@ -174,7 +174,7 @@
 		<prerequisites>
 			<li>ATCore</li>
 		</prerequisites>
-		<baseCost>800</baseCost>
+		<baseCost>1600</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>1.5</researchViewX>
 		<researchViewY>2.5</researchViewY>
@@ -186,7 +186,7 @@
 		<prerequisites>
 			<li>ATStructBasic</li>
 		</prerequisites>
-		<baseCost>900</baseCost>
+		<baseCost>1800</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>2.5</researchViewX>
 		<researchViewY>2.25</researchViewY>
@@ -198,7 +198,7 @@
 		<prerequisites>
 			<li>ATStructBasic</li>
 		</prerequisites>
-		<baseCost>1000</baseCost>
+		<baseCost>2000</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>2.5</researchViewX>
 		<researchViewY>2.75</researchViewY>
@@ -210,7 +210,7 @@
 		<prerequisites>
 			<li>ATCore</li>
 		</prerequisites>
-		<baseCost>500</baseCost>
+		<baseCost>1000</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>1.5</researchViewX>
 		<researchViewY>3.5</researchViewY>
@@ -222,7 +222,7 @@
 		<prerequisites>
 			<li>ATImplantBasic</li>
 		</prerequisites>
-		<baseCost>750</baseCost>
+		<baseCost>1500</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>2.5</researchViewX>
 		<researchViewY>3.25</researchViewY>
@@ -234,7 +234,7 @@
 		<prerequisites>
 			<li>ATImplantBasic</li>
 		</prerequisites>
-		<baseCost>750</baseCost>
+		<baseCost>1500</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>2.5</researchViewX>
 		<researchViewY>3.75</researchViewY>
@@ -246,7 +246,7 @@
 		<prerequisites>
 			<li>ATCore</li>
 		</prerequisites>
-		<baseCost>1000</baseCost>
+		<baseCost>2000</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>1.5</researchViewX>
 		<researchViewY>4.5</researchViewY>
@@ -258,7 +258,7 @@
 		<prerequisites>
 			<li>ATGearBasic</li>
 		</prerequisites>
-		<baseCost>1250</baseCost>
+		<baseCost>2500</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>2.5</researchViewX>
 		<researchViewY>4.25</researchViewY>
@@ -270,7 +270,7 @@
 		<prerequisites>
 			<li>ATGearBasic</li>
 		</prerequisites>
-		<baseCost>1500</baseCost>
+		<baseCost>3000</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>2.5</researchViewX>
 		<researchViewY>4.75</researchViewY>
