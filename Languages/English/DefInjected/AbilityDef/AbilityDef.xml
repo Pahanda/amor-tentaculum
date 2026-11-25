@@ -8,6 +8,15 @@
 	<TentacleExpel.description>Expels an Amor Squirmer tentacle from the Host.\n\nWARNING: This is dangerous if the pawn runs out of stored tentacles!</TentacleExpel.description>
 	<TentacleTransfer.label>transfer tentacle</TentacleTransfer.label>
 	<TentacleTransfer.description>Transfer an Amor Squirmer tentacle from one Host to another.  With a sloppy kiss.\n\nWARNING: This is dangerous if the pawn runs out of stored tentacles!</TentacleTransfer.description>
+	<SquirmerAssistance.label>squirmer assistance</SquirmerAssistance.label>
+	<SquirmerAssistance.description>Overwork and make the Squirmers inside the Servant pull from their orifices into extra working hands. Work speed is increased while active, consuming one stored tentacle about every twenty seconds. Cast again to turn it off.</SquirmerAssistance.description>
+	<AmorTentacleJump.label>tentacle jump</AmorTentacleJump.label>
+	<AmorTentacleJump.description>Leap to a distant location using the Squirmers stored inside the Knight as assistance. Costs one stored tentacle.</AmorTentacleJump.description>
+	<AmorTentacleJump.verbProperties.label>jump</AmorTentacleJump.verbProperties.label>
+	<QueenSummonAmorDrone.label>summon Amor Drone</QueenSummonAmorDrone.label>
+	<QueenSummonAmorDrone.description>Birth an Amor Drone to fight for the Queen. Costs three stored tentacles.</QueenSummonAmorDrone.description>
+	<RogueInvisibility.label>invisibility</RogueInvisibility.label>
+	<RogueInvisibility.description>Toggle invisibility. While active, it consumes one stored tentacle every ten seconds. Cast again to turn it off.</RogueInvisibility.description>
 	<SeducingKiss.label>seducing kiss</SeducingKiss.label>
 	<SeducingKiss.description>Plant an Amor Squirmer in the target, weakening and incapacitating them for a short time.</SeducingKiss.description>
 	<PlacatingKiss.label>placating kiss</PlacatingKiss.label>

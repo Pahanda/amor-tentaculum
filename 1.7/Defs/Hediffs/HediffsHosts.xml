@@ -1244,4 +1244,47 @@
 		</comps>
 	</HediffDef>
 
+	<HediffDef>
+		<defName>SquirmerAssistanceActive</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<minSeverity>0.001</minSeverity>
+				<statFactors>
+					<WorkSpeedGlobal>1.5</WorkSpeedGlobal>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+			<li Class="AmorTentaculum.HediffCompProperties_ResourceDrain">
+				<resourceGene>HostTentacleNeed</resourceGene>
+				<drainIntervalTicks>60</drainIntervalTicks>
+				<resourceDrain>0.0005</resourceDrain>
+				<stopMessage>SquirmerAssistanceStopped</stopMessage>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>RogueInvisibilityActive</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Invisibility">
+				<visibleToPlayer>true</visibleToPlayer>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+			<li Class="AmorTentaculum.HediffCompProperties_ResourceDrain">
+				<resourceGene>HostTentacleNeed</resourceGene>
+				<drainIntervalTicks>60</drainIntervalTicks>
+				<resourceDrain>0.001</resourceDrain>
+				<stopMessage>RogueInvisibilityStopped</stopMessage>
+			</li>
+		</comps>
+	</HediffDef>
 </Defs>

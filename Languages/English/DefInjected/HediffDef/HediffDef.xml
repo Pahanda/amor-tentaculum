@@ -16,6 +16,10 @@
 	<DefenderEnrage.description>After a nearby Valkyrie's death, this Defender rages, imitating the Valkyrie's charge for a short time.</DefenderEnrage.description>
 	<ValkyrieEnrage.label>valkyrie's enrage</ValkyrieEnrage.label>
 	<ValkyrieEnrage.description>After a nearby Defender's death, this Valkyrie rages, imitating the Defender's bulwark for a short time.</ValkyrieEnrage.description>
+	<SquirmerAssistanceActive.label>squirmer assistance</SquirmerAssistanceActive.label>
+	<SquirmerAssistanceActive.description>The Servant is overextending its internal Squirmers as extra hands, increasing work speed while consuming its stored tentacles.</SquirmerAssistanceActive.description>
+	<RogueInvisibilityActive.label>psychic invisibility</RogueInvisibilityActive.label>
+	<RogueInvisibilityActive.description>The Rogue bends others' perception via pheromonesto become invisible, consuming stored tentacles over time.</RogueInvisibilityActive.description>
 
 	<!-- Drugs, food, and other consumables -->
 
