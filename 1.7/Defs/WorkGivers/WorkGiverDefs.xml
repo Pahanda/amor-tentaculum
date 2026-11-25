@@ -29,5 +29,17 @@
 			<li>Manipulation</li>
 		</requiredCapacities>
 	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>HaulToTransformationPod</defName>
+		<giverClass>WorkGiver_HaulToTransformationPod</giverClass>
+		<workType>Hauling</workType>
+		<verb>haul to</verb>
+		<gerund>hauling to</gerund>
+		<priorityInType>90</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+	</WorkGiverDef>
 	
 </Defs>

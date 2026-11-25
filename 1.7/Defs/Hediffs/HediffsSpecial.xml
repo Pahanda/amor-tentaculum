@@ -6,13 +6,13 @@
 		<hediffClass>HediffWithComps</hediffClass>
 		<defaultLabelColor>(1,1,1)</defaultLabelColor>
 		<minSeverity>0</minSeverity>
-		<initialSeverity>0.001</initialSeverity>
+		<initialSeverity>0.00001</initialSeverity>
 		<maxSeverity>1</maxSeverity>
-		<lethalSeverity>0.002</lethalSeverity>
+		<lethalSeverity>0.00002</lethalSeverity>
 		<stages />
 		<comps>
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>9999</severityPerDay>
+			<li Class="AmorTentaculum.HediffCompProperties_DeathAfterTicks">
+				<ticksToDeath>6</ticksToDeath>
 			</li>
 			<li Class="VEF.AnimalBehaviours.HediffCompProperties_FilthProducer">
 				<filthType>Filth_Blood</filthType>
