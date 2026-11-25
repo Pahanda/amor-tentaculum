@@ -14,6 +14,13 @@
 	<MessageProcessingPodCompleted>Transformation process has been completed for {PAWN_nameDef}.</MessageProcessingPodCompleted>
 	<ConfirmRecyclePawn>Recycling {PAWN_nameDef} will kill {PAWN_objective}. Are you sure you want to continue?</ConfirmRecyclePawn>
 	<ConfirmCancelRecycling>Canceling the recycling process will still kill {PAWN_nameDef}. Are you sure you want to continue?</ConfirmCancelRecycling>
+	<TransformationPodChooseBoss>Grow {0}</TransformationPodChooseBoss>
+	<TransformationPodChooseBossDesc>Choose to grow {0}. Requires one {1} and some materials. Processing kills the inserted pawn.</TransformationPodChooseBossDesc>
+	<TransformationPodSelectedBoss>Selected transformation: {0}</TransformationPodSelectedBoss>
+	<TransformationPodSelectedLarvaRequirement>Required larva: {0} ({1} / 1)</TransformationPodSelectedLarvaRequirement>
+	<TransformationPodMissingSelectedBossLarva>Requires one {0} ({1} / 1).</TransformationPodMissingSelectedBossLarva>
+	<ConfirmTransformationPodPawn>Transforming {PAWN_nameDef} will kill {PAWN_objective} and create the selected Amor Tentacle. Are you sure you want to continue?</ConfirmTransformationPodPawn>
+	<MessageTransformationPodCompleted>{PAWN_nameDef} has died in the Transformation Pod, and a player-controlled Amor Tentacle has emerged.</MessageTransformationPodCompleted>
 	<CommandCancelProcessing>Cancel processing</CommandCancelProcessing>
 	<CommandCancelProcessingDesc>Cancel the processing. The contained person will be ejected.</CommandCancelProcessingDesc>
 

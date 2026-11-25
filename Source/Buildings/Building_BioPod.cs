@@ -8,7 +8,7 @@ using Verse.AI;
 using Verse.Sound;
 
 [StaticConstructorOnStartup]
-public class Building_TentaclePod :
+public abstract class Building_TentaclePod :
     Building_Enterable,
     IThingHolderWithDrawnPawn,
     IThingHolder,
@@ -87,7 +87,7 @@ public class Building_TentaclePod :
         }
     }
 
-    public bool AllRequiredIngredientsLoaded
+    public virtual bool AllRequiredIngredientsLoaded
     {
         get
         {
@@ -129,6 +129,35 @@ public class Building_TentaclePod :
 
     public bool DestroyOccupantBrain => def.building.destroyBrain;
 
+    protected bool ScannerInitialized => initScanner;
+
+    protected virtual bool ShouldShowStartProcessingGizmos => !initScanner;
+
+    protected void BeginProcessing()
+    {
+        initScanner = true;
+    }
+
+    protected virtual IEnumerable<Gizmo> GetStartProcessingGizmos()
+    {
+        Command_Action command = new Command_Action();
+        command.defaultLabel = "ProcessingPodStart".Translate();
+        StringBuilder description = new StringBuilder();
+        description.Append("ProcessingPodProduces".Translate() + " " + ProcessingOutputDescription + ".");
+        description.Append("\n\n");
+        description.Append("DurationHours".Translate() + ": " + def.building.subcoreScannerTicks.ToStringTicksToPeriod());
+        description.Append("\n\n");
+        string ingredients = def.building.subcoreScannerFixedIngredients
+            .Select(ingredient => ingredient.Summary)
+            .ToCommaList(useAnd: true);
+        description.Append("ProcessingPodStartDesc".Translate(def.label, ingredients));
+        command.defaultDesc = description.ToString();
+        command.icon = InitScannerIcon.Texture;
+        command.action = BeginProcessing;
+        command.activateSound = SoundDefOf.Tick_Tiny;
+        yield return command;
+    }
+
     public override void SpawnSetup(Map map, bool respawningAfterLoad)
     {
         base.SpawnSetup(map, respawningAfterLoad);
@@ -146,14 +175,10 @@ public class Building_TentaclePod :
         effectHusk = null;
         effectStart?.Cleanup();
         effectStart = null;
-        if (!BeingTransportedOnGravship && DestroyOccupantBrain && Occupant != null)
-        {
-            KillOccupant();
-        }
         base.DeSpawn(mode);
     }
 
-    public int GetRequiredCountOf(ThingDef thingDef)
+    public virtual int GetRequiredCountOf(ThingDef thingDef)
     {
         for (int i = 0; i < def.building.subcoreScannerFixedIngredients.Count; i++)
         {
@@ -250,12 +275,12 @@ public class Building_TentaclePod :
         }
     }
 
-    public bool CanAcceptIngredient(Thing thing)
+    public virtual bool CanAcceptIngredient(Thing thing)
     {
         return GetRequiredCountOf(thing.def) > 0;
     }
 
-    public void EjectContents()
+    public virtual void EjectContents()
     {
         Pawn occupant = Occupant;
         if (occupant == null)
@@ -264,14 +289,6 @@ public class Building_TentaclePod :
         }
         else
         {
-            if (def.building.subcoreScannerHediff != null)
-            {
-                occupant.health?.AddHediff(def.building.subcoreScannerHediff);
-            }
-            if (DestroyOccupantBrain)
-            {
-                KillOccupant();
-            }
             for (int num = innerContainer.Count - 1; num >= 0; num--)
             {
                 if (innerContainer[num] is Pawn || innerContainer[num] is Corpse)
@@ -285,17 +302,43 @@ public class Building_TentaclePod :
         initScanner = false;
     }
 
-    private void KillOccupant()
+    protected void EjectContents(bool dropAllContents)
     {
-        Pawn occupant = Occupant;
-        // DamageInfo dinfo = new DamageInfo(DamageDefOf.ExecutionCut, 9999f, 999f, -1f, null, occupant.health.hediffSet.GetBrain());
-        // dinfo.SetIgnoreInstantKillProtection(ignore: true);
-        // dinfo.SetAllowDamagePropagation(val: false);
-        occupant.forceNoDeathNotification = true;
-        // occupant.TakeDamage(dinfo);
-        occupant.forceNoDeathNotification = false;
-        ThoughtUtility.GiveThoughtsForPawnExecuted(occupant, null, PawnExecutionKind.Ripscanned);
-        Messages.Message("MessagePawnKilledProcessingPod".Translate(occupant.Named("PAWN")), occupant, MessageTypeDefOf.NegativeHealthEvent);
+        if (dropAllContents)
+        {
+            innerContainer.TryDropAll(InteractionCell, Map, ThingPlaceMode.Near);
+            selectedPawn = null;
+            initScanner = false;
+            return;
+        }
+
+        EjectContents();
+    }
+
+    protected void EjectContents(
+        bool dropAllContents,
+        bool destroyRemainingContents,
+        bool ejectPawnAndCorpse = true)
+    {
+        if (dropAllContents || !destroyRemainingContents)
+        {
+            EjectContents(dropAllContents);
+            return;
+        }
+
+        if (ejectPawnAndCorpse)
+        {
+            for (int i = innerContainer.Count - 1; i >= 0; i--)
+            {
+                if (innerContainer[i] is Pawn || innerContainer[i] is Corpse)
+                {
+                    innerContainer.TryDrop(innerContainer[i], InteractionCell, Map, ThingPlaceMode.Near, 1, out var _);
+                }
+            }
+        }
+        innerContainer.ClearAndDestroyContents();
+        selectedPawn = null;
+        initScanner = false;
     }
 
     public override IEnumerable<FloatMenuOption> GetFloatMenuOptions(Pawn selPawn)
@@ -314,9 +357,9 @@ public class Building_TentaclePod :
         {
             yield return FloatMenuUtility.DecoratePrioritizedTask(new FloatMenuOption("EnterBuilding".Translate(this), () =>
             {
-                if (DestroyOccupantBrain)
+                if (RequiresPawnConfirmation(selPawn))
                 {
-                    Find.WindowStack.Add(Dialog_MessageBox.CreateConfirmation("ConfirmRecyclePawn".Translate(selPawn.Named("PAWN")), () =>
+                    Find.WindowStack.Add(Dialog_MessageBox.CreateConfirmation(GetPawnConfirmationText(selPawn), () =>
                     {
                         SelectPawn(selPawn);
                     }, destructive: true));
@@ -400,16 +443,7 @@ public class Building_TentaclePod :
             fabricationTicksLeft--;
             if (fabricationTicksLeft <= 0)
             {
-                if (!DestroyOccupantBrain)
-                {
-                    Messages.Message("MessageProcessingPodCompleted".Translate(Occupant.Named("PAWN")), Occupant, MessageTypeDefOf.PositiveEvent);
-                }
-                EjectContents();
-                GenPlace.TryPlaceThing(ThingMaker.MakeThing(def.building.subcoreScannerOutputDef), InteractionCell, Map, ThingPlaceMode.Near);
-                if (def.building.subcoreScannerComplete != null)
-                {
-                    def.building.subcoreScannerComplete.PlayOneShot(this);
-                }
+                CompleteProcessing();
             }
             /*
             if (workingMote == null || workingMote.Destroyed)
@@ -478,25 +512,12 @@ public class Building_TentaclePod :
         {
             yield return gizmo;
         }
-        if (!initScanner)
+        if (ShouldShowStartProcessingGizmos)
         {
-            Command_Action command_Action = new Command_Action();
-            command_Action.defaultLabel = "ProcessingPodStart".Translate();
-            StringBuilder stringBuilder = new StringBuilder();
-            stringBuilder.Append("ProcessingPodProduces".Translate() + " " + def.building.subcoreScannerOutputDef.label + ".");
-            stringBuilder.Append("\n\n");
-            stringBuilder.Append("DurationHours".Translate() + ": " + def.building.subcoreScannerTicks.ToStringTicksToPeriod());
-            stringBuilder.Append("\n\n");
-            string text = def.building.subcoreScannerFixedIngredients.Select((IngredientCount i) => i.Summary).ToCommaList(useAnd: true);
-            stringBuilder.Append("ProcessingPodStartDesc".Translate(def.label, text));
-            command_Action.defaultDesc = stringBuilder.ToString();
-            command_Action.icon = InitScannerIcon.Texture;
-            command_Action.action = () =>
+            foreach (Gizmo gizmo in GetStartProcessingGizmos())
             {
-                initScanner = true;
-            };
-            command_Action.activateSound = SoundDefOf.Tick_Tiny;
-            yield return command_Action;
+                yield return gizmo;
+            }
         }
         else if (SelectedPawn == null)
         {
@@ -523,9 +544,9 @@ public class Building_TentaclePod :
                     {
                         list.Add(new FloatMenuOption(pawn.LabelShortCap, () =>
                         {
-                            if (def.building.destroyBrain)
+                            if (RequiresPawnConfirmation(pawn))
                             {
-                                Find.WindowStack.Add(Dialog_MessageBox.CreateConfirmation("ConfirmRecyclePawn".Translate(pawn.Named("PAWN")), () =>
+                                Find.WindowStack.Add(Dialog_MessageBox.CreateConfirmation(GetPawnConfirmationText(pawn), () =>
                                 {
                                     SelectPawn(pawn);
                                 }, destructive: true));
@@ -559,9 +580,9 @@ public class Building_TentaclePod :
             command_Action3.icon = CancelLoadingIcon;
             command_Action3.action = () =>
             {
-                if (State == SubcoreScannerState.Occupied && DestroyOccupantBrain)
+                if (State == SubcoreScannerState.Occupied && RequiresCancelConfirmation)
                 {
-                    Find.WindowStack.Add(Dialog_MessageBox.CreateConfirmation("ConfirmCancelRecycling".Translate(Occupant.Named("PAWN")), EjectContents, destructive: true));
+                    Find.WindowStack.Add(Dialog_MessageBox.CreateConfirmation(CancelConfirmationKey.Translate(Occupant.Named("PAWN")), EjectContents, destructive: true));
                 }
                 else
                 {
@@ -617,7 +638,7 @@ public class Building_TentaclePod :
         return stringBuilder.ToString();
     }
 
-    private void AppendIngredientsList(StringBuilder sb)
+    protected virtual void AppendIngredientsList(StringBuilder sb)
     {
         for (int i = 0; i < def.building.subcoreScannerFixedIngredients.Count; i++)
         {
@@ -627,6 +648,22 @@ public class Building_TentaclePod :
             sb.AppendInNewLine($" - {ingredientCount.FixedIngredient.LabelCap} {value} / {value2}");
         }
     }
+
+    protected virtual string ProcessingOutputDescription =>
+        def.building.subcoreScannerOutputDef?.label ?? string.Empty;
+
+    protected abstract string PawnConfirmationKey { get; }
+
+    protected virtual string GetPawnConfirmationText(Pawn pawn) =>
+        PawnConfirmationKey.Translate(pawn.Named("PAWN"));
+
+    protected virtual string CancelConfirmationKey => string.Empty;
+
+    protected virtual bool RequiresPawnConfirmation(Pawn pawn) => false;
+
+    protected virtual bool RequiresCancelConfirmation => false;
+
+    protected abstract void CompleteProcessing();
 
     public override void ExposeData()
     {

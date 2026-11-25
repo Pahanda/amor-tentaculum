@@ -36,6 +36,7 @@
 
 	<ThingDef ParentName="ProcessingPodBase">
 		<defName>Building_RecyclingPod</defName>
+		<thingClass>Building_RecyclingPod</thingClass>
 		<graphicData>
 			<texPath>Things/Buildings/Pods/RecyclerPod</texPath>
 		</graphicData>
@@ -70,6 +71,75 @@
 			<destroyBrain>true</destroyBrain>
 			<subcoreScannerHediff>PawnRecycled</subcoreScannerHediff>
 		</building>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+	</ThingDef>
+
+	<ThingDef ParentName="ProcessingPodBase">
+		<defName>Building_TransformationPod</defName>
+		<thingClass>Building_TransformationPod</thingClass>
+		<graphicData>
+			<texPath>Things/Buildings/Pods/TransformationPod</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToBuild>8000</WorkToBuild>
+			<MaxHitPoints>250</MaxHitPoints>
+		</statBases>
+		<costList>
+			<HardResin>200</HardResin>
+			<SoftResin>25</SoftResin>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<researchPrerequisites>
+			<li>ATLarvaAdvanced</li>
+		</researchPrerequisites>
+		<building>
+			<subcoreScannerFixedIngredients>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>TentacleSlime</li>
+						</thingDefs>
+					</filter>
+					<count>50</count>
+				</li>
+				<li>
+					<filter>
+						<thingDefs>
+							<li>SoftResin</li>
+						</thingDefs>
+					</filter>
+					<count>100</count>
+				</li>
+			</subcoreScannerFixedIngredients>
+			<subcoreScannerTicks>30000</subcoreScannerTicks>
+			<subcoreScannerStartEffect>ButcherFlesh</subcoreScannerStartEffect>
+			<subcoreScannerWorking>Recipe_Surgery</subcoreScannerWorking>
+			<subcoreScannerComplete>Execute_Cut</subcoreScannerComplete>
+			<destroyBrain>false</destroyBrain>
+		</building>
+		<modExtensions>
+			<li Class="TransformationPodExtension">
+				<recipes>
+					<li>
+						<larva>BossLarvaBrewer</larva>
+						<pawnKind>TentacleBrewer</pawnKind>
+					</li>
+					<li>
+						<larva>BossLarvaValkyrie</larva>
+						<pawnKind>TentacleValkyrie</pawnKind>
+					</li>
+					<li>
+						<larva>BossLarvaDefender</larva>
+						<pawnKind>TentacleDefender</pawnKind>
+					</li>
+					<li>
+						<larva>BossLarvaWarWomb</larva>
+						<pawnKind>TentacleWarWomb</pawnKind>
+					</li>
+				</recipes>
+			</li>
+		</modExtensions>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 	</ThingDef>
 
