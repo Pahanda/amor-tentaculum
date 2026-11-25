@@ -40,7 +40,7 @@
 | Equipment | Weapons | Resin Sword | ![](../Textures/Things/Items/MeleeWeapons/ResinSword.png) | `Textures/Things/Items/MeleeWeapons` | |
 | Equipment | Weapons | Resin Scimitar | ![](../Textures/Things/Items/MeleeWeapons/ResinScimitar.png) | `Textures/Things/Items/MeleeWeapons` | More high-tech, with higher armor penetration. |
 | Equipment | Armor | Tentacle Slave Collar | ![](../Textures/Things/Items/Equipment/TentacleCollar_east.png) | `Textures/Things/Items/Equipment` | |
-| Equipment | Armor | Bodysuit | NYI | NYI | |
+| Equipment | Armor | Bodysuit | ![](../Textures/Things/Items/Equipment/TentacleBodysuitFemale_south.png) ![](../Textures/Things/Items/Equipment/TentacleBodysuitHelmet_south.png) | | |
 | Equipment | Armor | Cuirass | ![](../Textures/Things/Items/Equipment/ResinCuirassUI.png) | `Textures/Things/Items/Equipment` | |
 | Equipment | Armor | Helmet | ![](../Textures/Things/Items/Equipment/ResinHelmet_north.png) | `Textures/Things/Items/Equipment` | |
 | Equipment | Armor | Powered Armor | NYI | NYI | |
