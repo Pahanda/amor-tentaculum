@@ -31,7 +31,7 @@
 			<SoftResin>3</SoftResin>
 		</killedLeavings>
 		<researchPrerequisites>
-			<li>ATLarvaAdvanced</li>
+			<li>ATSummonFeral</li>
 		</researchPrerequisites>
 		<comps>
 			<li Class="CompProperties_Usable">

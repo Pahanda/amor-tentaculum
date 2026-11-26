@@ -91,7 +91,7 @@
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 		<researchPrerequisites>
-			<li>ATLarvaAdvanced</li>
+			<li>ATSummonFeral</li>
 		</researchPrerequisites>
 		<building>
 			<subcoreScannerFixedIngredients>
