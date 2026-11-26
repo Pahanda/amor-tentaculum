@@ -106,13 +106,13 @@
 			<destroySound>BuildingDestroyed_Metal_Small</destroySound>
 		</building>
 		<researchPrerequisites>
-			<li>ComplexFurniture</li>
+			<li>ATStructUtility</li>
 		</researchPrerequisites>
 		<designationCategory>Misc</designationCategory>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
 		<thingCategories>
-			<li>ATStructUtility</li>
+			<li>Tentacles</li>
 		</thingCategories>
 		<comps>
 			<li Class="CompProperties_Facility">
