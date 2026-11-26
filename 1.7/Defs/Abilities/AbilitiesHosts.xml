@@ -431,7 +431,7 @@
 
 	<AbilityDef>
 		<defName>SquirmerAssistance</defName>
-		<iconPath>Abilities/ExpelTentacles</iconPath>
+		<iconPath>Abilities/HyperRegeneration</iconPath>
 		<category>Tentacle</category>
 		<targetRequired>false</targetRequired>
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
@@ -493,7 +493,7 @@
 
 	<AbilityDef>
 		<defName>QueenSummonAmorDrone</defName>
-		<iconPath>Abilities/ExpelTentacles</iconPath>
+		<iconPath>Abilities/BirthTentacle</iconPath>
 		<category>Tentacle</category>
 		<jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
 		<targetRequired>false</targetRequired>

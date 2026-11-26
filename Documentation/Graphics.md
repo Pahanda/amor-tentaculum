@@ -36,15 +36,15 @@
 | Buildings | Defensive | Turret | ![](../Textures/Things/Buildings/Turret/TurretBase.png) ![](../Textures/Things/Buildings/Turret/TurretHead.png) | `Textures/Things/Buildings/Turret` | |
 | Buildings | Defensive | Paralysis Trap | ![](../Textures/Things/Buildings/Traps/ParalysisTrap.png) | `Textures/Things/Buildings/Traps` | |
 | Buildings | Defensive | Paralysis Worms | ![](../Textures/Things/Pawns/ParalysisWorm/PWorm_east.png) | `Textures/Things/Pawns/ParalysisWorm` | |
-| Equipment | Weapons | Tentacle Whip | ![](../Textures/Things/Items/MeleeWeapons/TentacleWhip.png) | `Textures/Things/Items/MeleeWeapons` | |
-| Equipment | Weapons | Resin Sword | ![](../Textures/Things/Items/MeleeWeapons/ResinSword.png) | `Textures/Things/Items/MeleeWeapons` | |
-| Equipment | Weapons | Resin Scimitar | ![](../Textures/Things/Items/MeleeWeapons/ResinScimitar.png) | `Textures/Things/Items/MeleeWeapons` | More high-tech, with higher armor penetration. |
-| Equipment | Armor | Tentacle Slave Collar | ![](../Textures/Things/Items/Equipment/TentacleCollar_east.png) | `Textures/Things/Items/Equipment` | |
-| Equipment | Armor | Bodysuit | ![](../Textures/Things/Items/Equipment/TentacleBodysuitFemale_south.png) ![](../Textures/Things/Items/Equipment/TentacleBodysuitHelmet_south.png) | | |
-| Equipment | Armor | Cuirass | ![](../Textures/Things/Items/Equipment/ResinCuirassUI.png) | `Textures/Things/Items/Equipment` | |
-| Equipment | Armor | Helmet | ![](../Textures/Things/Items/Equipment/ResinHelmet_north.png) | `Textures/Things/Items/Equipment` | |
-| Equipment | Armor | Powered Armor | NYI | NYI | |
-| Equipment | Armor | Powered Helmet | NYI | NYI | |
+| Apparel | Weapons | Tentacle Whip | ![](../Textures/Things/Items/MeleeWeapons/TentacleWhip.png) | `Textures/Things/Items/MeleeWeapons` | |
+| Apparel | Weapons | Resin Sword | ![](../Textures/Things/Items/MeleeWeapons/ResinSword.png) | `Textures/Things/Items/MeleeWeapons` | |
+| Apparel | Weapons | Resin Scimitar | ![](../Textures/Things/Items/MeleeWeapons/ResinScimitar.png) | `Textures/Things/Items/MeleeWeapons` | More high-tech, with higher armor penetration. |
+| Apparel | Armor | Tentacle Slave Collar | ![](../Textures/Things/Items/Apparel/TentacleCollar_east.png) | `Textures/Things/Items/Apparel` | |
+| Apparel | Armor | Bodysuit | ![](../Textures/Things/Items/Apparel/TentacleBodysuitFemale_south.png) ![](../Textures/Things/Items/Apparel/TentacleBodysuitHelmet_south.png) | | |
+| Apparel | Armor | Plating | ![](../Textures/Things/Items/Apparel/ResinPlatingUI.png) | `Textures/Things/Items/Apparel` | |
+| Apparel | Armor | Helmet | ![](../Textures/Things/Items/Apparel/ResinHelmet_south.png) | `Textures/Things/Items/Apparel` | |
+| Apparel | Armor | Powered Armor | NYI | NYI | |
+| Apparel | Armor | Powered Helmet | NYI | NYI | |
 | Abilities | Animal | Genital Latch | ![](../Textures/Abilities/GenitalLatch.png) | `Textures/Abilities` | |
 | Abilities | Animal | Larval Transformation | ![](../Textures/Abilities/LarvalTransformation.png) | `Textures/Abilities` | Will eventually want one for each type of Tentacle evolution (everything except Brood Mother). |
 | Abilities | Animal | Crawl Inside (Squirmer Only) | ![](../Textures/Abilities/ButtVore.png) | `Textures/Abilities` | |
@@ -56,7 +56,7 @@
 | Abilities | Host | Invisibility | ![](../Textures/Abilities/InvisibilityFemale.png) ![](../Textures/Abilities/InvisibilityMale.png) | `Textures/Abilities` | Invisbility is for a Male Host type, but we can definitely re-use these icons. |
 | Abilities | Host | Hyper Regeneration | ![](../Textures/Abilities/HyperRegeneration.png) | `Textures/Abilities` | |
 | Abilities | ? | ? | ![](../Textures/Abilities/TentacleHandler.png) | `Textures/Abilities` | No associated ability, but looks good. |
-| Abilities | ? | ? | ![](../Textures/Abilities/ExpelTentacles.png) | `Textures/Abilities` | No associated ability, but looks good. |
+| Abilities | Host | Summon Drone | ![](../Textures/Abilities/BirthTentacle.png) | `Textures/Abilities` | |
 | Items | Boss Drops | Brewer Larva | ![](../Textures/Things/Items/BossLarvae/BossLarvaBrewer.png) | `Textures/Things/Items/BossLarvae` | |
 | Items | Boss Drops | Valkyrie Larva | ![](../Textures/Things/Items/BossLarvae/BossLarvaValkyrie.png) | `Textures/Things/Items/BossLarvae` | |
 | Items | Boss Drops | Defender Larva | ![](../Textures/Things/Items/BossLarvae/BossLarvaDefender.png) | `Textures/Things/Items/BossLarvae` | |

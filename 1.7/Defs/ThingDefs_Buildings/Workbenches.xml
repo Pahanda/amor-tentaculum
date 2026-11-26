@@ -111,6 +111,9 @@
 		<designationCategory>Tentacles</designationCategory>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>
 		<comps>
 			<li Class="CompProperties_Facility">
 				<statOffsets>
