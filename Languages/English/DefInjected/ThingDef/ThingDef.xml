@@ -240,6 +240,10 @@
 	<!-- Equipment -->
 	<TentacleCollar.label>tentacle collar</TentacleCollar.label>
 	<TentacleCollar.description>A large tentacle, curled tightly around the wearer's neck, used in controlling slaves. The tip goes over the wearer's mouth, hindering their ability to eat. Once settled, a small tendril will be extended inside the mouth, and will secrete drugs that provide a mild euphoric effert, suppressing the slave's resistance, increasing their sex drive, and making them more docile. Not nearly as invasive as an Indoctrination Implant.</TentacleCollar.description>
+	<TentacleResinPlating.label>resin plating</TentacleResinPlating.label>
+	<TentacleResinPlating.description>A slime-coated plate forged from hard resin. While it's generally less effective against cuts than its flak counterpart, it makes up for it with its fire resistance and lower weight.</TentacleResinPlating.description>
+	<TentacleResinHelmet.label>resin helmet</TentacleResinHelmet.label>
+	<TentacleResinHelmet.description>A slime-coated helmet forged from hard resin. It can reliably protect its wearer from burns and concussions.</TentacleResinHelmet.description>
 	<TentacleWhip.label>tentacle whip</TentacleWhip.label>
 	<TentacleWhip.description>A whip crafted from tentacle resin and soft flesh.  Not particularly strong for raw damage output, but inflicts paralytic poison that builds up after repeated strikes.  Definitely Less-Than-Lethal, but can still kill.</TentacleWhip.description>
 	<ResinSword.label>resin sword</ResinSword.label>

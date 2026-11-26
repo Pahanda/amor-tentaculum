@@ -1,0 +1,221 @@
+<Defs>
+
+	<ThingDef ParentName="HatMakeableBase">
+		<defName>TentacleCollar</defName>
+		<generateCommonality>0</generateCommonality>
+		<tradeability>Sellable</tradeability>
+		<possessionCount>1</possessionCount>
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>Things/Items/Apparel/TentacleCollar_south</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+		</graphicData>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToMake>6000</WorkToMake>
+			<Mass>0.25</Mass>
+			<ArmorRating_Sharp>0.0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.0</ArmorRating_Blunt>
+			<Insulation_Cold>0.0</Insulation_Cold>
+			<EquipDelay>2.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.05</ToxicEnvironmentResistance>
+			<EatingSpeed>-0.1</EatingSpeed>
+			<SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.15</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>ATGearBasic</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>UnfinishedArmor</unfinishedThingDef>
+			<recipeUsers>
+				<li>TentacleWorkbench</li>
+			</recipeUsers>
+			<soundWorking>Recipe_Drug</soundWorking>
+			<displayPriority>215</displayPriority>
+		</recipeMaker>
+		<costList>
+			<TentacleSlime>5</TentacleSlime>
+			<TentacleLeather>25</TentacleLeather>
+		</costList>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<developmentalStageFilter>Adult</developmentalStageFilter>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			<bodyPartGroups>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Apparel/TentacleCollar</wornGraphicPath>
+			<canBeDesiredForIdeo>true</canBeDesiredForIdeo>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+		</apparel>
+		<comps>
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>TentacleCollarNumb</hediff>
+				<part>Brain</part>
+			</li>
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ArmorSmithableBase">
+		<defName>TentacleResinPlating</defName>
+		<generateCommonality>0</generateCommonality>
+		<tradeability>Sellable</tradeability>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Smithing</li>
+				<li>ATGearBasic</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<displayPriority>220</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Apparel/ResinPlatingUI</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<statBases>
+			<WorkToMake>7200</WorkToMake>
+			<MaxHitPoints>185</MaxHitPoints>
+			<Mass>2</Mass>
+			<Flammability>0.15</Flammability>
+			<ArmorRating_Sharp>0.72</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.44</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.52</ArmorRating_Heat>
+			<Insulation_Heat>1</Insulation_Heat>
+			<EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.04</MoveSpeed>
+		</equippedStatOffsets>
+		<thingCategories>
+	 		<li>ApparelArmor</li>
+		</thingCategories>
+		<costList>
+			<Cloth>25</Cloth>
+			<HardResin>50</HardResin>
+			<TentacleSlime>7</TentacleSlime>
+		</costList>
+		<apparel>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Apparel/ResinPlating</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+			</layers>
+			<tags>
+				<li>IndustrialMilitaryBasic</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<only>(210, 50, 145)</only>
+				</li>
+				<li>
+					<only>(210, 50, 185)</only>
+				</li>
+				<li>
+					<only>(210, 50, 225)</only>
+				</li>
+				<li>
+					<weight>0.5</weight>
+					<min>(210, 50, 145)</min>
+					<max>(210, 50, 225)</max>
+				</li>
+			</options>
+		</colorGenerator>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="ArmorHelmetMakeableBase">
+		<defName>TentacleResinHelmet</defName>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<researchPrerequisites>
+				<li>Smithing</li>
+				<li>ATGearBasic</li>
+			</researchPrerequisites>
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<displayPriority>205</displayPriority>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Items/Apparel/ResinHelmet_south</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<statBases>
+			<WorkToMake>5200</WorkToMake>
+			<MaxHitPoints>110</MaxHitPoints>
+			<Mass>1.3</Mass>
+			<Flammability>0</Flammability>
+			<ArmorRating_Sharp>0.56</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.42</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.54</ArmorRating_Heat>
+			<Insulation_Cold>0.5</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<costList>
+			<HardResin>40</HardResin>
+			<SoftResin>10</SoftResin>
+			<TentacleSlime>3</TentacleSlime>
+		</costList>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Items/Apparel/ResinHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>IndustrialMilitaryBasic</li>
+			 </tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<only>(210, 50, 145)</only>
+				</li>
+				<li>
+					<only>(210, 50, 185)</only>
+				</li>
+				<li>
+					<only>(210, 50, 225)</only>
+				</li>
+				<li>
+					<weight>0.5</weight>
+					<min>(210, 50, 145)</min>
+					<max>(210, 50, 225)</max>
+				</li>
+			</options>
+		</colorGenerator>
+		<tradeTags>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>
