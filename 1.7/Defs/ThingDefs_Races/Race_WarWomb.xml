@@ -39,7 +39,7 @@
       <baseBodySize>3.25</baseBodySize>
       <baseHungerRate>2</baseHungerRate>
       <baseHealthScale>6</baseHealthScale>
-      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+      <foodType>CarnivoreAnimal</foodType>
       <leatherDef>TentacleLeather</leatherDef>
       <useMeatFrom>TentacleBroodMother</useMeatFrom>
       <trainability>Advanced</trainability>

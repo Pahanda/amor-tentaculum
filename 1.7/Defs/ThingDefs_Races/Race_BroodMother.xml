@@ -90,7 +90,7 @@
       <baseBodySize>3.25</baseBodySize>
       <baseHungerRate>2</baseHungerRate>
       <baseHealthScale>6</baseHealthScale>
-      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+      <foodType>CarnivoreAnimal</foodType>
       <leatherDef>TentacleLeather</leatherDef>
       <meatLabel>tentacle meat</meatLabel>
       <trainability>Advanced</trainability>

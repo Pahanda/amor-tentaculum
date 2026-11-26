@@ -43,7 +43,7 @@
       <baseHealthScale>0.7</baseHealthScale>
       <hasCorpse>false</hasCorpse>
       <hasMeat>false</hasMeat>
-      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+      <foodType>CarnivoreAnimal</foodType>
       <trainability>Intermediate</trainability>
       <petness>0.05</petness>
       <manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>

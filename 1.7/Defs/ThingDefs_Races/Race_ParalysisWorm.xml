@@ -48,7 +48,7 @@
       <baseHealthScale>0.1</baseHealthScale>
       <hasCorpse>false</hasCorpse>
       <hasMeat>false</hasMeat>
-      <foodType>CarnivoreAnimal, OvivoreAnimal</foodType>
+      <foodType>CarnivoreAnimal</foodType>
       <leatherDef>TentacleLeather</leatherDef>
       <useMeatFrom>TentacleBroodMother</useMeatFrom>
       <trainability>None</trainability>
