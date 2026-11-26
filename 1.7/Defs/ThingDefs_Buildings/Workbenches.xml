@@ -108,12 +108,9 @@
 		<researchPrerequisites>
 			<li>ATStructUtility</li>
 		</researchPrerequisites>
-		<designationCategory>Misc</designationCategory>
+		<designationCategory>Tentacles</designationCategory>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-		<thingCategories>
-			<li>Tentacles</li>
-		</thingCategories>
 		<comps>
 			<li Class="CompProperties_Facility">
 				<statOffsets>
