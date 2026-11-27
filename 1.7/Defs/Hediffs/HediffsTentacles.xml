@@ -339,6 +339,9 @@
 			</li>
 			<li Class="EBSGFramework.HediffCompProperties_DestroyOnDeath" />
 			<li Class="EBSGFramework.HediffCompProperties_PreventDeathNotifications" />
+			<li Class="AmorTentaculum.HediffCompProperties_DeathAfterTicks">
+				<ticksToDeath>6</ticksToDeath>
+			</li>
 		</comps>
 	</HediffDef>
 	
