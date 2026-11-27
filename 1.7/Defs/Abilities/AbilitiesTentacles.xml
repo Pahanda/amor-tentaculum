@@ -33,11 +33,11 @@
 			</li>
 			<li Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
 				<targetHasAnyOfHediffs>
-					<li>TentacleInfestedAnus</li>
+					<li>TentacleStorage</li>
 				</targetHasAnyOfHediffs>
-				<casterHasNoneOfHediffs>
+				<targetHasNoneOfHediffs>
 					<li>FullOfTentacles</li>
-				</casterHasNoneOfHediffs>
+				</targetHasNoneOfHediffs>
 			</li>
 			<li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
 				<hediffsToGive>
@@ -47,13 +47,6 @@
 						<replaceExisting>false</replaceExisting>
 						<bodyParts>
 							<li>Brain</li>
-						</bodyParts>
-					</li>
-					<li>
-						<hediffDef>TentacleInfestedAnus</hediffDef>
-						<replaceExisting>false</replaceExisting>
-						<bodyParts>
-							<li>Anus</li>
 						</bodyParts>
 					</li>
 				</hediffsToGive>
