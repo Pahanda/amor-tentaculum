@@ -75,6 +75,7 @@
 				<texPath>Things/Buildings/Wall/TendrilWalls_Atlas</texPath>
 			</blueprintGraphicData>
 			<relatedBuildCommands>
+				<li>TendrilDoor</li>
 				<li>Door</li>
 				<li>Autodoor</li>
 				<li>OrnateDoor</li>
