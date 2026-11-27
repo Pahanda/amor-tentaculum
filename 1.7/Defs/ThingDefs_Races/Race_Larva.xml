@@ -38,9 +38,9 @@
       <body>SmallTentacleSnake</body>
       <predator>false</predator>
       <baseBodySize>0.07</baseBodySize>
-      <baseHungerRate>0.02</baseHungerRate>
+      <baseHungerRate>0.005</baseHungerRate>
       <baseHealthScale>0.5</baseHealthScale>
-      <foodType>CarnivoreAnimal</foodType>
+      <foodType>VegetarianRoughAnimal</foodType>
       <leatherDef>TentacleLeather</leatherDef>
       <useMeatFrom>TentacleBroodMother</useMeatFrom>
       <trainability>None</trainability>
