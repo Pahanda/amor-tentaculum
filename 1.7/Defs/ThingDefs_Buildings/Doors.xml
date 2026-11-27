@@ -65,10 +65,10 @@
 		</graphicData>
 		<uiIconPath>Things/Buildings/Door/CircleTendrilDoorUI</uiIconPath>
 		<costList>
-			<HardResin>40</HardResin>
+			<HardResin>10</HardResin>
 			<TentacleSlime>1</TentacleSlime>
 		</costList>
-		<costStuffCount>25</costStuffCount>
+		<costStuffCount>20</costStuffCount>
 		<designationHotKey>Misc2</designationHotKey>
 		<researchPrerequisites>
 			<li>Autodoors</li>
