@@ -68,7 +68,7 @@
 	<FeedWorm.label>feeding worm</FeedWorm.label>
 	<FeedWorm.description>A tentacle meant, implanted in the patient's esophagus. Rapidly digests food for them and injects it as a slurry into the stomach. Makes the target immune to gut worms and food poisoning.</FeedWorm.description>
 	<UterineIncubator.label>uterine incubator</UterineIncubator.label>
-	<UterineIncubator.description>An Womb implant for Amor Queens which aids in the incubation of Amor Brood Mother eggs. The effect puts a strain on the body, increasing the runger rate.</UterineIncubator.description>
+	<UterineIncubator.description>A womb implant for Amor Queens which aids in the incubation of Amor Brood Mother eggs. The effect puts a strain on the body, increasing the hunger rate.</UterineIncubator.description>
 	<TSpecItem.label>anal speculum</TSpecItem.label>
 	<TSpecItem.description>An speculum that permanently forces the rectum further open, allowing for additional tentacle capacity.</TSpecItem.description>
 	<TStomachEItem.label>storage stomach</TStomachEItem.label>

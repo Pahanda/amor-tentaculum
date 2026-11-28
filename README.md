@@ -56,4 +56,6 @@ Recommended Mods (never required, but provide useful things to suppliment a tent
 
 [Here](./Documentation/Graphics.md) is an overview of the graphics used in the mod. Intended for use by the artists, but you're free to browse.
 
+[Here](./Documentation/HostKits.md) is an overview of the "kits" planned for the Hosts included in the mod.
+
 [Here](./Documentation/ModContents.md) is a detailed overview of everything that is included in (and planned for) the mod.
